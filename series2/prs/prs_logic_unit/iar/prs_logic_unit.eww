@@ -1,0 +1,27 @@
+<?xml version ="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\EFR32FG25_prs_logic_unit.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\EFR32MG21_prs_logic_unit.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\EFR32MG22_prs_logic_unit.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\EFR32MG24_prs_logic_unit.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\EFR32MG27_prs_logic_unit.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\EFR32ZG23_prs_logic_unit.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\EFR32ZG28_prs_logic_unit.ewp</path>
+  </project>
+
+  <batchBuild/>
+</workspace>
