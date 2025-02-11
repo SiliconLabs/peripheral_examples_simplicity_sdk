@@ -37,16 +37,17 @@ This repo contains simple peripheral examples based on emlib in Simplicity SDK f
 ## Requirements ##
 1. Desired Silicon Labs Starter Kit
 2. Simplicity Studio 5 or IAR Workbech IDE
-3. Simplicity SDK 2024.6.1 available via Simplicity Studio
-4. This repo cloned to `C:\SiliconLabs\SimplicityStudio\v5\developer\repos\` 
+3. Simplicity SDK 2024.6.2 available via Simplicity Studio
+
+## Additional Requirements for Simplicity Studio IDE ##
+4. Clone this repository to `C:\SiliconLabs\SimplicityStudio\v5\developer\repos\` 
 
 ## Additional Requirements for IAR ##
-5. Open Windows Command Prompt and navigate to the Simplicity SDK directory, 
+4. Open Windows Command Prompt and navigate to the Simplicity SDK directory, 
    which can be found by opening Simplicity Studio and navigating to
    Preferences -> Simplicity Studio -> SDKs
-6. Run the following command: `mklink /J <path to Simplicity SDK>\peripheral_examples_simplicity_sdk <path to peripheral_examples_simplicity_sdk repo>`
-   For example, if the Simplicity SDK is located in `C:\Users\myUserName\SimplicityStudio\SDKs`, then the command would be
-   `mklink /J C:\Users\myUserName\SimplicityStudio\SDKs\peripheral_examples_simplicity_sdk C:\SiliconLabs\SimplicityStudio\v5\developer\repos\peripheral_examples_simplicity_sdk`
+5. Clone this repository to the Simplicity SDK directory
+   For example, if the Simplicity SDK is located in `C:\Users\myUserName\SimplicityStudio\SDKs\simplicity_sdk`, then clone the repo to this location
 
 ## How to import to Simplicity Studio IDE ##
 1. In Simplicity Studio: 
