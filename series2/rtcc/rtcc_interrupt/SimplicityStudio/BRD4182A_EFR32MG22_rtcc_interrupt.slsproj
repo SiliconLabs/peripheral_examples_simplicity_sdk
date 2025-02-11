@@ -27,10 +27,14 @@
     <include pattern="Drivers/mx25flash_spi.c" />
   </module>
   <module id="com.silabs.sdk.exx32.part">
-    <include pattern="CMSIS/.*/startup_.*_.*.s" />
     <include pattern="CMSIS/.*/system_.*.c" />
   </module>
+  <macroDefinition name="SL_LEGACY_LINKER" />
   <includePath uri="$(sdkInstallationPath)/platform/common/config" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
+  <folder name="CMSIS">
+    <file name="startup_efr32mg22.c" uri="$(sdkInstallationPath)/platform/Device/SiliconLabs/EFR32MG22/Source/startup_efr32mg22.c" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
+    <file name="startup_efr32mg22.c" uri="../../../../platform/Device/SiliconLabs/EFR32MG22/Source/startup_efr32mg22.c" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.iar" />
+  </folder>
   <folder name="src">
     <file name="readme.txt" uri="readme.txt" />
     <file name="main_xg2x.c" uri="src/main_xg2x.c" />

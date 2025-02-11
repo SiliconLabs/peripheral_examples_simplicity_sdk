@@ -22,13 +22,17 @@
     <include pattern=".*/sl_syscalls.c" />
   </module>
   <module id="com.silabs.sdk.exx32.part">
-    <include pattern="CMSIS/.*/startup_.*_.*.s" />
     <include pattern="CMSIS/.*/system_.*.c" />
   </module>
+  <macroDefinition name="SL_LEGACY_LINKER" />
   <includePath uri="../../kit/EFR32FG25_BRD4270B" />
   <includePath uri="../../kit/common/bsp" />
   <includePath uri="../../kit/common/drivers" />
   <includePath uri="$(sdkInstallationPath)/platform/common/config" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
+  <folder name="CMSIS">
+    <file name="startup_efr32fg25.c" uri="$(sdkInstallationPath)/platform/Device/SiliconLabs/EFR32FG25/Source/startup_efr32fg25.c" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
+    <file name="startup_efr32fg25.c" uri="../../../../platform/Device/SiliconLabs/EFR32FG25/Source/startup_efr32fg25.c" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.iar" />
+  </folder>
   <folder name="Drivers">
     <file name="mx25flash_spi_eusart.c" uri="../../kit/common/drivers/mx25flash_spi_eusart.c" />
   </folder>

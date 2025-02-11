@@ -25,7 +25,8 @@
       <path only_ide="iar">##em-path-platform##\common\config</path>
     </includepaths>
     <group name="CMSIS">
-      <source>##em-path-device##\EFR32BG22\Source\$IDE$\startup_efr32bg22.s</source>
+      <source only_ide="slsproj">$(sdkInstallationPath)\platform\Device\SiliconLabs\EFR32BG22\Source\startup_efr32bg22.c</source>
+      <source only_ide="iar">##em-path-platform##\Device\SiliconLabs\EFR32BG22\Source\startup_efr32bg22.c</source>
       <source>##em-path-device##\EFR32BG22\Source\system_efr32bg22.c</source>
     </group>
     <group name="emlib">
@@ -45,6 +46,7 @@
       <source>$PROJ_DIR$\..\readme.txt</source>
     </group>
     <cflags>
+      <define>SL_LEGACY_LINKER</define>
       <tooloption only_ide="slsproj">&lt;toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="com.silabs.gnu.c.compiler.option.misc.otherlist"&gt;</tooloption>
       <tooloption only_ide="slsproj">  &lt;toolListOption value="-c -fmessage-length=0"/&gt;</tooloption>
       <tooloption only_ide="slsproj">  &lt;toolListOption value="-mcmse"/&gt;</tooloption>

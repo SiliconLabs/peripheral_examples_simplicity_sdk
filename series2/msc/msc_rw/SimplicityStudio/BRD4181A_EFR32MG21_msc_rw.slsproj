@@ -8,7 +8,6 @@
   </module>
   <module id="com.silabs.sdk.exx32.common.emlib">
     <include pattern="emlib/em_system.c" />
-    <include pattern="emlib/em_se.c" />
   </module>
   <module id="com.silabs.sdk.exx32.common.bsp">
     <exclude pattern=".*" />
@@ -21,7 +20,6 @@
     <exclude pattern=".*" />
   </module>
   <module id="com.silabs.sdk.exx32.part">
-    <include pattern="CMSIS/.*/startup_.*_.*.s" />
     <include pattern="CMSIS/.*/system_.*.c" />
   </module>
   <module id="com.silabs.sdk.exx32.common.se_manager">
@@ -29,7 +27,14 @@
     <include pattern="se_manager/sl_se_manager_util.c" />
     <include pattern="se_manager/sli_se_manager_mailbox.c" />
   </module>
+  <macroDefinition name="SL_LEGACY_LINKER" />
   <includePath uri="$(sdkInstallationPath)/platform/common/config" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
+  <includePath uri="$(sdkInstallationPath)/platform/security/sl_component/sli_psec_osal/inc" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
+  <includePath uri="../../../../platform/security/sl_component/sli_psec_osal/inc" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.iar" />
+  <folder name="CMSIS">
+    <file name="startup_efr32mg21.c" uri="$(sdkInstallationPath)/platform/Device/SiliconLabs/EFR32MG21/Source/startup_efr32mg21.c" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
+    <file name="startup_efr32mg21.c" uri="../../../../platform/Device/SiliconLabs/EFR32MG21/Source/startup_efr32mg21.c" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.iar" />
+  </folder>
   <folder name="src">
     <file name="readme.txt" uri="readme.txt" />
     <file name="main_xG21.c" uri="src/main_xG21.c" />

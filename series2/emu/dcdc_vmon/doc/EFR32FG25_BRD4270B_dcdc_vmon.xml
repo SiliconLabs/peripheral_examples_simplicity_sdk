@@ -23,7 +23,8 @@
       <path only_ide="iar">##em-path-platform##\common\config</path>
     </includepaths>
     <group name="CMSIS">
-      <source>##em-path-device##\EFR32FG25\Source\$IDE$\startup_efr32fg25.s</source>
+      <source only_ide="slsproj">$(sdkInstallationPath)\platform\Device\SiliconLabs\EFR32FG25\Source\startup_efr32fg25.c</source>
+      <source only_ide="iar">##em-path-platform##\Device\SiliconLabs\EFR32FG25\Source\startup_efr32fg25.c</source>
       <source>##em-path-device##\EFR32FG25\Source\system_efr32fg25.c</source>
     </group>
     <group name="Drivers">
@@ -50,6 +51,7 @@
       <source only_ide="slsproj">$PROJ_DIR$\..\..\..\linker_scripts\xg25_linker_script.ld</source>
     </group>
     <cflags>
+      <define>SL_LEGACY_LINKER</define>
       <tooloption only_ide="slsproj">&lt;toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.compiler.base" optionId="gnu.c.compiler.option.optimization.level" value="gnu.c.optimization.level.none"/&gt;</tooloption>
       <define>RETARGET_VCOM</define>
       <tooloption only_ide="slsproj">&lt;toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base" optionId="com.silabs.gnu.c.link.option.ldflags" value="-Wl,--no-warn-rwx-segments"/&gt;</tooloption>

@@ -183,7 +183,7 @@
           <name>CCDefines</name>
           <state>STR(x)=#x</state>
           <state>EFR32MG21A010F1024IM32</state>
-          
+          <state>SL_LEGACY_LINKER</state>
         </option>
         <option>
           <name>CCPreprocFile</name>
@@ -323,6 +323,7 @@
           <state>$PROJ_DIR$\..\..\..\..\..\hardware\kit\common\bsp</state>
           <state>$PROJ_DIR$\..\..\..\..\..\hardware\kit\common\drivers</state>
           <state>$PROJ_DIR$\..\..\..\..\..\platform\common\config</state>
+          <state>$PROJ_DIR$\..\..\..\..\..\platform\security\sl_component\sli_psec_osal\inc</state>
 
         </option>
         <option>
@@ -490,7 +491,7 @@
         <option>
           <name>ADefines</name>
           <state>EFR32MG21A010F1024IM32</state>
-          
+          <state>SL_LEGACY_LINKER</state>
         </option>
         <option>
           <name>AList</name>
@@ -597,6 +598,7 @@
           <state>$PROJ_DIR$\..\..\..\..\..\hardware\kit\common\bsp</state>
           <state>$PROJ_DIR$\..\..\..\..\..\hardware\kit\common\drivers</state>
           <state>$PROJ_DIR$\..\..\..\..\..\platform\common\config</state>
+          <state>$PROJ_DIR$\..\..\..\..\..\platform\security\sl_component\sli_psec_osal\inc</state>
 
         </option>
         <option>
@@ -1172,7 +1174,7 @@
           <state>NDEBUG</state>
           <state>STR(x)=#x</state>
           <state>EFR32MG21A010F1024IM32</state>
-          
+          <state>SL_LEGACY_LINKER</state>
         </option>
         <option>
           <name>CCPreprocFile</name>
@@ -1312,6 +1314,7 @@
           <state>$PROJ_DIR$\..\..\..\..\..\hardware\kit\common\bsp</state>
           <state>$PROJ_DIR$\..\..\..\..\..\hardware\kit\common\drivers</state>
           <state>$PROJ_DIR$\..\..\..\..\..\platform\common\config</state>
+          <state>$PROJ_DIR$\..\..\..\..\..\platform\security\sl_component\sli_psec_osal\inc</state>
 
         </option>
         <option>
@@ -1480,7 +1483,7 @@
           <name>ADefines</name>
           <state>NDEBUG</state>
           <state>EFR32MG21A010F1024IM32</state>
-          
+          <state>SL_LEGACY_LINKER</state>
         </option>
         <option>
           <name>AList</name>
@@ -1587,6 +1590,7 @@
           <state>$PROJ_DIR$\..\..\..\..\..\hardware\kit\common\bsp</state>
           <state>$PROJ_DIR$\..\..\..\..\..\hardware\kit\common\drivers</state>
           <state>$PROJ_DIR$\..\..\..\..\..\platform\common\config</state>
+          <state>$PROJ_DIR$\..\..\..\..\..\platform\security\sl_component\sli_psec_osal\inc</state>
 
         </option>
         <option>
@@ -1983,7 +1987,7 @@
   <group>
     <name>CMSIS</name>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\platform\Device\SiliconLabs\EFR32MG21\Source\IAR\startup_efr32mg21.s</name>
+      <name>$PROJ_DIR$\..\..\..\..\..\platform\Device\SiliconLabs\EFR32MG21\Source\startup_efr32mg21.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\platform\Device\SiliconLabs\EFR32MG21\Source\system_efr32mg21.c</name>
@@ -1993,9 +1997,6 @@
     <name>emlib</name>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\platform\emlib\src\em_system.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\platform\emlib\src\em_se.c</name>
     </file>
   </group>
   <group>

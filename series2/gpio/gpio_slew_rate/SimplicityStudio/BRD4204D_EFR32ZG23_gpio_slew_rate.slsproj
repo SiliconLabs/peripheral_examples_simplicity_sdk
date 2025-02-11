@@ -19,13 +19,17 @@
     <include pattern=".*/sl_syscalls.c" />
   </module>
   <module id="com.silabs.sdk.exx32.part">
-    <include pattern="CMSIS/.*/startup_.*_.*.s" />
     <include pattern="CMSIS/.*/system_.*.c" />
   </module>
+  <macroDefinition name="SL_LEGACY_LINKER" />
   <includePath uri="../../kit/EFR32ZG23_BRD4204D" />
   <includePath uri="../../kit/common/bsp" />
   <includePath uri="../../kit/common/drivers" />
   <includePath uri="$(sdkInstallationPath)/platform/common/config" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
+  <folder name="CMSIS">
+    <file name="startup_efr32zg23.c" uri="$(sdkInstallationPath)/platform/Device/SiliconLabs/EFR32ZG23/Source/startup_efr32zg23.c" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
+    <file name="startup_efr32zg23.c" uri="../../../../platform/Device/SiliconLabs/EFR32ZG23/Source/startup_efr32zg23.c" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.iar" />
+  </folder>
   <folder name="src">
     <file name="main_gpio_slew_rate_pb0_odd_s2.c" uri="src/main_gpio_slew_rate_pb0_odd_s2.c" />
     <file name="readme.txt" uri="readme.txt" />

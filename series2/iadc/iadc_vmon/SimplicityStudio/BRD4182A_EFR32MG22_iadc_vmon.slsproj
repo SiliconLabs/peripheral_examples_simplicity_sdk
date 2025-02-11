@@ -26,11 +26,15 @@
     <exclude pattern=".*" />
   </module>
   <module id="com.silabs.sdk.exx32.part">
-    <include pattern="CMSIS/.*/startup_.*_.*.s" />
     <include pattern="CMSIS/.*/system_.*.c" />
   </module>
+  <macroDefinition name="SL_LEGACY_LINKER" />
   <macroDefinition name="RETARGET_VCOM" />
   <includePath uri="$(sdkInstallationPath)/platform/common/config" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
+  <folder name="CMSIS">
+    <file name="startup_efr32mg22.c" uri="$(sdkInstallationPath)/platform/Device/SiliconLabs/EFR32MG22/Source/startup_efr32mg22.c" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
+    <file name="startup_efr32mg22.c" uri="../../../../platform/Device/SiliconLabs/EFR32MG22/Source/startup_efr32mg22.c" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.iar" />
+  </folder>
   <folder name="Drivers">
     <file name="mx25flash_spi.c" uri="../../kit/common/drivers/mx25flash_spi.c" />
     <file name="retargetio.c" uri="../../kit/common/drivers/retargetio.c" />

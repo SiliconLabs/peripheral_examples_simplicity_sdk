@@ -21,10 +21,13 @@
     <exclude pattern=".*" />
   </module>
   <module id="com.silabs.sdk.exx32.part">
-    <include pattern="CMSIS/.*/startup_.*_.*.s" />
+    <exclude pattern=".*" />
   </module>
+  <macroDefinition name="SL_LEGACY_LINKER" />
   <includePath uri="$(sdkInstallationPath)/platform/common/config" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
   <folder name="CMSIS">
+    <file name="startup_efr32mg21.c" uri="$(sdkInstallationPath)/platform/Device/SiliconLabs/EFR32MG21/Source/startup_efr32mg21.c" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
+    <file name="startup_efr32mg21.c" uri="../../../../platform/Device/SiliconLabs/EFR32MG21/Source/startup_efr32mg21.c" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.iar" />
     <file name="custom_system_efr32xg21.c" uri="CMSIS/EFR32xG21/custom_system_efr32xg21.c" />
   </folder>
   <folder name="src">

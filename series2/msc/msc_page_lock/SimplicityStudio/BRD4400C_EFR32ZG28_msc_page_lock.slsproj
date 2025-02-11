@@ -15,13 +15,16 @@
     <include pattern=".*/sl_syscalls.c" />
   </module>
   <module id="com.silabs.sdk.exx32.part">
-    <include pattern="CMSIS/.*/startup_.*_.*.s" />
+    <exclude pattern=".*" />
   </module>
+  <macroDefinition name="SL_LEGACY_LINKER" />
   <includePath uri="../../kit/EFR32ZG28_BRD4400C" />
   <includePath uri="../../kit/common/bsp" />
   <includePath uri="../../kit/common/drivers" />
   <includePath uri="$(sdkInstallationPath)/platform/common/config" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
   <folder name="CMSIS">
+    <file name="startup_efr32zg28.c" uri="$(sdkInstallationPath)/platform/Device/SiliconLabs/EFR32ZG28/Source/startup_efr32zg28.c" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.gnu.*" />
+    <file name="startup_efr32zg28.c" uri="../../../../platform/Device/SiliconLabs/EFR32ZG28/Source/startup_efr32zg28.c" toolchainCompatibility="com.silabs.ss.tool.ide.arm.toolchain.iar" />
     <file name="custom_system_efr32xg28.c" uri="CMSIS/EFR32xG28/custom_system_efr32xg28.c" />
   </folder>
   <folder name="src">

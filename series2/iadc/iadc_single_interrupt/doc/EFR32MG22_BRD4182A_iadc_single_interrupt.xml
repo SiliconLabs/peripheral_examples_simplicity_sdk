@@ -14,6 +14,7 @@
       <kitconfig>$PROJ_DIR$\..\..\..\..\..\hardware\kit\EFR32MG22_BRD4182A\config</kitconfig>
     </directories>
     <cflags>
+      <define>SL_LEGACY_LINKER</define>
       <diagsuppress only_ide="iar">Pe188</diagsuppress>
       <tooloption only_ide="slsproj">&lt;toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base" optionId="com.silabs.gnu.c.link.option.ldflags" value="-Wl,--no-warn-rwx-segments"/&gt;</tooloption>
     </cflags>
@@ -29,7 +30,8 @@
       <path only_ide="iar">##em-path-platform##\common\config</path>
     </includepaths>
     <group name="CMSIS">
-      <source>##em-path-device##\EFR32MG22\Source\$IDE$\startup_efr32mg22.s</source>
+      <source only_ide="slsproj">$(sdkInstallationPath)\platform\Device\SiliconLabs\EFR32MG22\Source\startup_efr32mg22.c</source>
+      <source only_ide="iar">##em-path-platform##\Device\SiliconLabs\EFR32MG22\Source\startup_efr32mg22.c</source>
       <source>##em-path-device##\EFR32MG22\Source\system_efr32mg22.c</source>
     </group>
     <group name="emlib">

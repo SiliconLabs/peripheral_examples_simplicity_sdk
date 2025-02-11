@@ -183,6 +183,7 @@
           <name>CCDefines</name>
           <state>STR(x)=#x</state>
           <state>EFR32FG25B222F1920IM56</state>
+          <state>SL_LEGACY_LINKER</state>
           <state>RETARGET_VCOM</state>
         </option>
         <option>
@@ -487,6 +488,7 @@
         <option>
           <name>ADefines</name>
           <state>EFR32FG25B222F1920IM56</state>
+          <state>SL_LEGACY_LINKER</state>
           <state>RETARGET_VCOM</state>
         </option>
         <option>
@@ -1166,6 +1168,7 @@
           <state>NDEBUG</state>
           <state>STR(x)=#x</state>
           <state>EFR32FG25B222F1920IM56</state>
+          <state>SL_LEGACY_LINKER</state>
           <state>RETARGET_VCOM</state>
         </option>
         <option>
@@ -1471,6 +1474,7 @@
           <name>ADefines</name>
           <state>NDEBUG</state>
           <state>EFR32FG25B222F1920IM56</state>
+          <state>SL_LEGACY_LINKER</state>
           <state>RETARGET_VCOM</state>
         </option>
         <option>
@@ -1971,7 +1975,7 @@
   <group>
     <name>CMSIS</name>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\platform\Device\SiliconLabs\EFR32FG25\Source\IAR\startup_efr32fg25.s</name>
+      <name>$PROJ_DIR$\..\..\..\..\..\platform\Device\SiliconLabs\EFR32FG25\Source\startup_efr32fg25.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\platform\Device\SiliconLabs\EFR32FG25\Source\system_efr32fg25.c</name>

@@ -183,7 +183,7 @@
           <name>CCDefines</name>
           <state>STR(x)=#x</state>
           <state>EFR32MG24B210F1536IM48</state>
-          
+          <state>SL_LEGACY_LINKER</state>
         </option>
         <option>
           <name>CCPreprocFile</name>
@@ -488,7 +488,7 @@
         <option>
           <name>ADefines</name>
           <state>EFR32MG24B210F1536IM48</state>
-          
+          <state>SL_LEGACY_LINKER</state>
         </option>
         <option>
           <name>AList</name>
@@ -1168,7 +1168,7 @@
           <state>NDEBUG</state>
           <state>STR(x)=#x</state>
           <state>EFR32MG24B210F1536IM48</state>
-          
+          <state>SL_LEGACY_LINKER</state>
         </option>
         <option>
           <name>CCPreprocFile</name>
@@ -1474,7 +1474,7 @@
           <name>ADefines</name>
           <state>NDEBUG</state>
           <state>EFR32MG24B210F1536IM48</state>
-          
+          <state>SL_LEGACY_LINKER</state>
         </option>
         <option>
           <name>AList</name>
@@ -1975,7 +1975,7 @@
   <group>
     <name>CMSIS</name>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\platform\Device\SiliconLabs\EFR32MG24\Source\IAR\startup_efr32mg24.s</name>
+      <name>$PROJ_DIR$\..\..\..\..\..\platform\Device\SiliconLabs\EFR32MG24\Source\startup_efr32mg24.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\platform\Device\SiliconLabs\EFR32MG24\Source\system_efr32mg24.c</name>

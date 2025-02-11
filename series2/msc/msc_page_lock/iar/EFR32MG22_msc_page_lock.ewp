@@ -183,7 +183,7 @@
           <name>CCDefines</name>
           <state>STR(x)=#x</state>
           <state>EFR32MG22C224F512IM40</state>
-          
+          <state>SL_LEGACY_LINKER</state>
         </option>
         <option>
           <name>CCPreprocFile</name>
@@ -487,7 +487,7 @@
         <option>
           <name>ADefines</name>
           <state>EFR32MG22C224F512IM40</state>
-          
+          <state>SL_LEGACY_LINKER</state>
         </option>
         <option>
           <name>AList</name>
@@ -1166,7 +1166,7 @@
           <state>NDEBUG</state>
           <state>STR(x)=#x</state>
           <state>EFR32MG22C224F512IM40</state>
-          
+          <state>SL_LEGACY_LINKER</state>
         </option>
         <option>
           <name>CCPreprocFile</name>
@@ -1471,7 +1471,7 @@
           <name>ADefines</name>
           <state>NDEBUG</state>
           <state>EFR32MG22C224F512IM40</state>
-          
+          <state>SL_LEGACY_LINKER</state>
         </option>
         <option>
           <name>AList</name>
@@ -1971,7 +1971,7 @@
   <group>
     <name>CMSIS</name>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\platform\Device\SiliconLabs\EFR32MG22\Source\IAR\startup_efr32mg22.s</name>
+      <name>$PROJ_DIR$\..\..\..\..\..\platform\Device\SiliconLabs\EFR32MG22\Source\startup_efr32mg22.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\CMSIS\EFR32xG22\custom_system_efr32xg22.c</name>
