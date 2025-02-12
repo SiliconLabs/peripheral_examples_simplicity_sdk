@@ -49,7 +49,7 @@
       <source>##em-path-platform##\common\src\sl_syscalls.c</source>
     </group>
     <group name="Source">
-      <source>$PROJ_DIR$\..\src\main_scan_interrupt_dvl_4.c</source>
+      <source>$PROJ_DIR$\..\src\main_scan_interrupt_dvl_4_xG27.c</source>
       <source>$PROJ_DIR$\..\readme.txt</source>
       <source only_ide="slsproj">$PROJ_DIR$\..\..\..\linker_scripts\xg27_linker_script.ld</source>
     </group>
