@@ -27,6 +27,9 @@ This repo contains simple peripheral examples based on emlib in Simplicity SDK f
 - EFR32BG24
 - EFR32MG24
 - EFR32FG25
+- EFR32BG26
+- EFR32MG26
+- EFM32PG26
 - EFR32BG27
 - EFR32MG27
 - EFR32FG28
@@ -37,7 +40,7 @@ This repo contains simple peripheral examples based on emlib in Simplicity SDK f
 ## Requirements ##
 1. Desired Silicon Labs Starter Kit
 2. Simplicity Studio 5 or IAR Workbech IDE
-3. Simplicity SDK 2024.12.0 available via Simplicity Studio
+3. Simplicity SDK 2024.12.1 available via Simplicity Studio
 
 ## Additional Requirements for Simplicity Studio IDE ##
 4. Clone this repository to `C:\SiliconLabs\SimplicityStudio\v5\developer\repos\` 
