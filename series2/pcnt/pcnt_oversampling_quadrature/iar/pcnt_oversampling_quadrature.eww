@@ -8,6 +8,9 @@
     <path>$WS_DIR$\EFR32MG24_pcnt_oversampling_quadrature.ewp</path>
   </project>
   <project>
+    <path>$WS_DIR$\EFR32MG26_pcnt_oversampling_quadrature.ewp</path>
+  </project>
+  <project>
     <path>$WS_DIR$\EFR32ZG23_pcnt_oversampling_quadrature.ewp</path>
   </project>
   <project>

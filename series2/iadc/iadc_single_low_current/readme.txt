@@ -47,6 +47,7 @@ How To Test:
     EFR32xG24 ~23uA
     EFR32xG25 ~34uA
     EFR32xG27 ~25uA
+    EFR32xG26 ~29uA
     EFR32xG28 ~28uA
     *There is some part-to-part/board-to-board variance; this is a rough typical
     current*	
@@ -126,6 +127,14 @@ BURTC - 32768 Hz LFRCO clock source, 256 prescaler
 PC06  - GPIO Push/Pull output, WSTK Pin 27, LED0
 PA05  - IADC input, single-ended, Expansion Header pin 7, WSTK P4
 PB00  - GPIO pull filtered input, Push Button 0 (PB0) on the WSTK
+
+Board:  Silicon Labs EFR32xG26 Radio Board (BRD4117A) + 
+        Wireless Starter Kit Mainboard
+Device: EFR32MG26B420F3200IM48
+BURTC - 32768 Hz LFRCO clock source, 256 prescaler
+PB02  - GPIO Push/Pull output, WSTK Pin 19, LED0
+PA05  - IADC input, single-ended, Expansion Header pin 7, WSTK P4
+PB01  - GPIO pull filtered input, Push Button 0 (PB0) on the WSTK
 
 Board:  Silicon Labs EFR32xG27 Radio Board (BRD4194A) + 
         Wireless Starter Kit Mainboard

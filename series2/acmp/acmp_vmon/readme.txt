@@ -104,6 +104,14 @@ PC07 - GPIO Push/Pull output, WSTK Pin 26, LED1
 VMCU - Expansion Header Pin 2
 GND  - Expansion Header Pin 1 
 
+Board:  Silicon Labs EFR32MG26 2.4 GHz 20 dBm Radio Board (BRD4117A)
+        + Wireless Starter Kit Mainboard (BRD4001A)
+Device: EFR32MG26B420F3200IM48
+PB02 - GPIO Push/Pull output, WSTK Pin 19, LED0
+PB04 - GPIO Push/Pull output, WSTK Pin 26, LED1
+VMCU - Expansion Header Pin 2
+GND  - Expansion Header Pin 1 
+
 Board:  Silicon Labs EFR32xG27 2.4 GHz 8 dBm Buck DCDC Radio Board (BRD4194A)
         + Wireless Starter Kit Mainboard (BRD4001A)
 Device: EFR32MG27C140F768IM40

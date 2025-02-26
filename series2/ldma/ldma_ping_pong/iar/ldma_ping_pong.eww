@@ -14,6 +14,9 @@
     <path>$WS_DIR$\EFR32MG24_ldma_ping_pong.ewp</path>
   </project>
   <project>
+    <path>$WS_DIR$\EFR32MG26_ldma_ping_pong.ewp</path>
+  </project>
+  <project>
     <path>$WS_DIR$\EFR32MG27_ldma_ping_pong.ewp</path>
   </project>
   <project>

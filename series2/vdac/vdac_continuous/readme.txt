@@ -31,6 +31,7 @@ Board     | avg current EM3 | avg current EM0 (Enter EM3 code commented out)
 BRD4204D  |           35 uA |           950 uA
 BRD4186C  |           38 uA |           725 uA
 BRD4270B  |           36 uA |           885 uA
+BRD4117A  |           33 uA |          1850 uA
 BRD4400C  |           33 uA |           916 uA
 
 ================================================================================
@@ -65,6 +66,11 @@ Board:  Silicon Labs EFR32xG25 Radio Board (BRD4270B) +
         Wireless Starter Kit Mainboard
 Device: EFR32FG25B222F1920IM56
 PB00 -  VDAC0 CH0 Main Output (Pin 17 of breakout pads)
+
+Board:  Silicon Labs EFR32xG26 Radio Board (BRD4117A) + 
+        Wireless Starter Kit Mainboard
+Device: EFR32MG26B420F3200IM48
+PB00 -  VDAC0 CH0 Main Output (Pin 15 of breakout pads)
 
 Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm Radio Board (BRD4400C) + 
         Wireless Starter Kit Mainboard

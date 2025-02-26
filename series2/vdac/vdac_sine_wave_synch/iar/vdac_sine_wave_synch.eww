@@ -8,6 +8,9 @@
     <path>$WS_DIR$\EFR32MG24_vdac_sine_wave_synch.ewp</path>
   </project>
   <project>
+    <path>$WS_DIR$\EFR32MG26_vdac_sine_wave_synch.ewp</path>
+  </project>
+  <project>
     <path>$WS_DIR$\EFR32ZG23_vdac_sine_wave_synch.ewp</path>
   </project>
   <project>

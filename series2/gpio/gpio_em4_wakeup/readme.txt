@@ -23,7 +23,7 @@ How To Test:
 
 Note for Testing on xG28:
 BRD4400C has a RF SPDT switch on the 2.4 GHz radio output that draws
-~63 uA of additional current when powered by a logic high level on GPIO
+~63 µA of additional current when powered by a logic high level on GPIO
 PD02. Unless configured otherwise, this pin defaults to GPIO disabled
 mode (high-Z), such that the switch is powered down. Driving PD02 high
 turns the switch on, causing current consumption to be higher than what
@@ -69,6 +69,13 @@ Device: EFR32FG25B222F1920IM56
 PB00 -  Push Button PB0 (Escape hatch)
 PB01 -  Push Button PB1
 PC06 -  LED0
+
+Board:  Silicon Labs EFR32MG26 2.4 GHz 20 dBm Radio Board (BRD4117A)
+        + Wireless Starter Kit Mainboard (BRD4001A)
+Device: EFR32MG26B420F3200IM48
+PB01 -  Push Button PB0 (Escape hatch)
+PB03 -  Push Button PB1
+PB02 -  LED0
 
 Board:  Silicon Labs EFR32xG27 2.4 GHz 8 dBm Buck DCDC Radio Board (BRD4194A)
         + Wireless Starter Kit Mainboard (BRD4001A)

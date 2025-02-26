@@ -20,6 +20,12 @@
     <path>$WS_DIR$\EFR32MG24_iadc_single_oversampling_20bit.ewp</path>
   </project>
   <project>
+    <path>$WS_DIR$\EFR32MG26_iadc_single_oversampling_16bit.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\EFR32MG26_iadc_single_oversampling_20bit.ewp</path>
+  </project>
+  <project>
     <path>$WS_DIR$\EFR32MG27_iadc_single_oversampling_16bit.ewp</path>
   </project>
   <project>

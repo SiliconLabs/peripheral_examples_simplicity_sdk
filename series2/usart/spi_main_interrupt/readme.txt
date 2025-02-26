@@ -134,6 +134,14 @@ PC01  - USART0_RX (MISO)  - Expansion Header pin 4
 PC02  - USART0_CLK (SCLK) - Expansion Header pin 6
 PC03  - USART0_CS (CSn)   - Expansion Header pin 8
 
+Board:  Silicon Labs EFR32MG26 2.4 GHz 20 dBm Radio Board (BRD4117A)
+        + Wireless Starter Kit Mainboard (BRD4001A)
+Device: EFR32MG26B420F3200IM48
+PC00  - USART0_TX (MOSI)  - Expansion Header pin 10
+PC01  - USART0_RX (MISO)  - Expansion Header pin 4
+PC02  - USART0_CLK (SCLK) - Expansion Header pin 6
+PC03  - USART0_CS (CSn)   - Expansion Header pin 8
+
 Board:  Silicon Labs EFR32xG27 Buck Radio Board (BRD4194A) + 
         Wireless Starter Kit Mainboard
 Device: EFR32MG27C140F768IM40

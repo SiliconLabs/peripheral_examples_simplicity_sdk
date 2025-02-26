@@ -84,7 +84,13 @@ Board:  Silicon Labs EFR32FG25 902-928 MHz 14 dBm Radio Board (BRD4270B)
         + Wireless Starter Kit Mainboard (BRD4001A)
 Device: EFR32FG25B222F1920IM56
 PB01 -  ACMP positive input, push button PB1, WSTK Pin 21
-PC06 -  LED0, GPIO output from ACMP
+PC06 -  LED0, GPIO output from ACMP, WSTK Pin 27
+
+Board:  Silicon Labs EFR32MG26 2.4 GHz 20 dBm Radio Board (BRD4117A)
+        + Wireless Starter Kit Mainboard (BRD4001A)
+Device: EFR32MG26B420F3200IM48
+PB01 -  ACMP positive input, push button PB0, WSTK Pin 17
+PB02 -  LED0, WSTK Pin 19
 
 Board:  Silicon Labs EFR32xG27 2.4 GHz 8 dBm Buck DCDC Radio Board (BRD4194A)
         + Wireless Starter Kit Mainboard (BRD4001A)

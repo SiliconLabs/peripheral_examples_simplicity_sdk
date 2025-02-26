@@ -90,6 +90,13 @@ Device: EFR32FG25B222F1920IM56 (this code will run unchanged on any
 PA08 -  EUSART0_TX (Expansion Header Pin 12)
 PA11 -  VCOM_ENABLE (WSTK P15)
 
+Board:  Silicon Labs EFR32xG26 2.4 GHz 20 dBm Radio Board (BRD4117A)
+        + Wireless Starter Kit Mainboard (BRD4001A)
+Device: EFR32MG26B420F3200IM48 (this code will run unchanged on any
+        EFR32MG26 variant so long as the pins used as present).
+PA08 -  EUSART0_TX (Expansion Header Pin 12)
+PB00 -  VCOM_ENABLE (WSTK P15)
+
 Board:  Silicon Labs EFR32xG27 Buck Radio Board (BRD4194A) + 
         Wireless Starter Kit Mainboard
 Device: EFR32MG27C140F768IM40

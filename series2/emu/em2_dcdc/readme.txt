@@ -61,13 +61,13 @@ following extra steps must be taken.
    Connect these leads to a multimeter to measure the current consumption of the 
    device.
 
-Note for Testing on xG27:
-On BRD4194A, VMCU is a 3.3V supply that powers AVDD and IOVDD on xG27.
-In the datasheet, current consumption test conditions have AVDD and IOVDD
-powered by either the DC-DC at 1.8V, an external 1.8V supply, 
-or an external 3.0V supply. Due to the design of the radio board, this 
-board does not replicate the datasheet test conditions for current consumption,
-and the measured value may differ from the datasheet value.
+Note for Testing on xG26 and xG27:
+On BRD4117A/BRD4194A, VMCU is a 3.3V supply that powers AVDD and IOVDD. In the 
+datasheet, current consumption test conditions have AVDD and IOVDD powered by 
+either the DC-DC at 1.8V, an external 1.8V supply, or an external 3.0V supply. 
+Due to the design of the radio board, this board does not replicate the 
+datasheet test conditions for current consumption, and the measured value may 
+differ from the datasheet value.
 On BRD4111A, the VMCU is the input to an on-board voltage regulator that outputs
 1.5V, which is then connected to the boost DC-DC input, VBAT. This additional
 voltage regulator consumes an extra 10 to 12 uA of current and will make the
@@ -134,6 +134,16 @@ PC00  - FLASH MOSI
 PC01  - FLASH MISO
 PC02  - FLASH SCLK
 PC03  - FLASH CS
+
+Board:  Silicon Labs EFR32xG26 Radio Board (BRD4117A) + 
+        Wireless Starter Kit Mainboard
+Device: EFR32MG26B420F3200IM48
+PB01 -  Push Button PB0
+PB02 -  LED0
+PC01  - USART0 MOSI
+PC02  - USART0 MISO
+PC03  - USART0 SCLK
+PC04  - USART0 CS
 
 Board:  Silicon Labs EFR32xG27 Buck Radio Board (BRD4194A) + 
         Wireless Starter Kit Mainboard

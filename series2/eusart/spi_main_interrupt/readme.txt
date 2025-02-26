@@ -119,6 +119,15 @@ PC01 -  EUSART1_RX (MISO)  - Expansion Header pin 6
 PC02 -  EUSART1_CLK (SCLK) - Expansion Header pin 8
 PB04 -  EUSART1_CS (CSn)   - Expansion Header pin 10
 
+Board:  Silicon Labs EFR32xG26 2.4 GHz 20 dBm Radio Board (BRD4117A)
+        + Wireless Starter Kit Mainboard (BRD4001A)
+Device: EFR32MG26B420F3200IM48 (this code will run unchanged on any
+        EFR32MG26 variant so long as the pins used as present).
+PC01 -  EUSART1_TX (MOSI)  - Expansion Header pin 4
+PC02 -  EUSART1_RX (MISO)  - Expansion Header pin 6
+PC03 -  EUSART1_CLK (SCLK) - Expansion Header pin 8
+PC00 -  EUSART1_CS (CSn)   - Expansion Header pin 10
+
 Board:  Silicon Labs EFR32xG27 Buck Radio Board (BRD4194A) + 
         Wireless Starter Kit Mainboard
 Device: EFR32MG27C140F768IM40

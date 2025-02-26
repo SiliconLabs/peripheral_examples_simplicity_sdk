@@ -176,6 +176,16 @@ PC07 -  LED1,Mainboard Breakout Pad, pin P28
 PB02 -  I2C_SCL, Expansion Header, pin 15
 PB03 -  I2C_SDA, Expansion Header, pin 16
 
+Board:  Silicon Labs EFR32MG26 2.4 GHz 20 dBm Radio Board (BRD4117A)
+        + Wireless Starter Kit Mainboard (BRD4001A)
+Device: EFR32MG24B210F1536IM48
+PB01 -  Button PB0, Mainboard Breakout Pad, pin P17
+PB02 -  LED0, Mainboard Breakout Pad, pin P19
+PB04 -  LED1, Mainboard Breakout Pad, pin P26
+PC05 -  I2C_SCL, Expansion Header, pin 15
+PC07 -  I2C_SDA, Expansion Header, pin 16
+PD03 -  SENSOR_ENABLE, Mainboard Breakout Pad, pin P37
+
 Board:  Silicon Labs EFR32xG27 Radio Board (BRD4194A) + 
         Wireless Starter/Pro Kit Mainboard (BRD4001A/BRD4002A)
 Device: EFR32MG27C140F768IM40

@@ -114,6 +114,14 @@ PB01 -  Push Button PB1
 VMCU - Expansion Header Pin 2
 GND  - Expansion Header Pin 1
 
+Board:  Silicon Labs EFR32xG26 Radio Board (BRD4117A) + 
+        Wireless Starter Kit Mainboard
+Device: EFR32MG26B420F3200IM48
+PB01 -  Push Button PB0
+PB03 -  Push Button PB1
+VMCU - Expansion Header Pin 2
+GND  - Expansion Header Pin 1
+
 Board:  Silicon Labs EFR32xG27 Radio Board (BRD4194A) + 
         Wireless Starter Kit Mainboard
 Device: EFR32MG27C140F768IM40

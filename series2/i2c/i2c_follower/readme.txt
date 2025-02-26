@@ -100,6 +100,14 @@ PC07 -  LED1, WSTK Pin 26
 PA05 -  I2C_SDA, Expansion Header Pin 7, WSTK Pin 4
 PA06 -  I2C_SCL, Expansion Header Pin 11, WSTK Pin 8
 
+Board:  Silicon Labs EFR32MG26 2.4 GHz 20 dBm Radio Board (BRD4117A)
+        + Wireless Starter Kit Mainboard (BRD4001A)
+Device: EFR32MG24B210F1536IM48
+PB02 -  LED0, WSTK Pin 19
+PB04 -  LED1, WSTK Pin 26
+PA05 -  I2C_SDA, Expansion Header Pin 7, WSTK Pin 4
+PA06 -  I2C_SCL, Expansion Header Pin 11, WSTK Pin 8
+
 Board:  Silicon Labs EFR32xG27 Radio Board (BRD4194A) + 
         Wireless Starter Kit Mainboard
 Device: EFR32MG27C140F768IM40

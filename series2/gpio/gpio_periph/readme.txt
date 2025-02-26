@@ -41,6 +41,11 @@ Board:  Silicon Labs EFR32FG25 902-928 MHz 14 dBm Radio Board (BRD4270B)
 Device: EFR32FG25B222F1920IM56
 PC02 -  LFRCO output (Expansion Header Pin 8)
 
+Board:  Silicon Labs EFR32MG26 2.4 GHz 20 dBm Radio Board (BRD4117A)
+        + Wireless Starter Kit Mainboard (BRD4001A)
+Device: EFR32MG26B420F3200IM48
+PC03 -  LFRCO output (Expansion Header Pin 8)
+
 Board:  Silicon Labs EFR32xG27 2.4 GHz 8 dBm Buck DCDC Radio Board (BRD4194A)
         + Wireless Starter Kit Mainboard (BRD4001A)
 Device: EFR32MG27C140F768IM40

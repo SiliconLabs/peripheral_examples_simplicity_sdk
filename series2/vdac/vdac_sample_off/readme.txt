@@ -42,7 +42,8 @@ EFR32ZG28 device datasheet due to this additional integrated circuit.
 Board     | 32 clks | 64 clks | 128 clks | 256 clks
 ================================================================================
 BRD4186C  |   22 uA |   17 uA |    14 uA |    13 uA
-BRD4270B  |   17 uA |   11 uA |     8 uA |     7 uA 
+BRD4270B  |   17 uA |   11 uA |     8 uA |     7 uA
+BRD4117A  |   17 uA |   11 uA |     8 uA |     7 uA
 BRD4400C  |   16 uA |   10 uA |     8 uA |     6 uA
 
 RMS output|  380 mV |  265 mV |   185 mV |   130 mV
@@ -74,6 +75,11 @@ Board:  Silicon Labs EFR32xG25 Radio Board (BRD4270B) +
         Wireless Starter Kit Mainboard
 Device: EFR32FG25B222F1920IM56
 PA06 -  VDAC0 CH0 Auxiliary Output (Pin 8 of breakout pads)
+
+Board:  Silicon Labs EFR32xG26 Radio Board (BRD4117A) + 
+        Wireless Starter Kit Mainboard
+Device: EFR32MG26B420F3200IM48
+PB00 -  VDAC0 CH0 Main Output (Pin 15 of breakout pads)
 
 Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm Radio Board (BRD4400C) + 
         Wireless Starter Kit Mainboard

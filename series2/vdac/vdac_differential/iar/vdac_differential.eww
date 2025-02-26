@@ -8,6 +8,9 @@
     <path>$WS_DIR$\EFR32MG24_vdac_differential.ewp</path>
   </project>
   <project>
+    <path>$WS_DIR$\EFR32MG26_vdac_differential.ewp</path>
+  </project>
+  <project>
     <path>$WS_DIR$\EFR32ZG23_vdac_differential.ewp</path>
   </project>
   <project>
