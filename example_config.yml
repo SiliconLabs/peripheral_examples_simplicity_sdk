@@ -1,0 +1,25 @@
+# Templated lists of boards or device families for use in the example specific section below
+template:
+  # Compatibility needs to be explicitly declared in all sample apps.
+
+  # All supported boards
+  board_whitelist: &board_whitelist
+    - brd4111a             # efr32bg27
+    - brd4117a             # efr32mg26
+    - brd4181a             # efr32mg21
+    - brd4182a             # efr32mg22
+    - brd4186c             # efr32mg24
+    - brd4194a             # efr32mg27
+    - brd4204d             # efr32zg23
+    - brd4270b             # efr32fg25
+    - brd4400c             # efr32zg28
+
+# Example-specific settings
+example:
+## Template 
+#    # GPIO examples
+#  - path: series2/gpio/switch_led_interrupt/SimplicityStudio/switch_led_interrupt.slcp # Path to the SLCP file
+#    board_whitelist: *board_whitelist        # Reference the supported boards
+#    board_blacklist:                         # Define boards that should NOT be used for this example
+#      - brd4111a                             # Exclude a specific board
+#      - brd4420a                             # Exclude a specific board

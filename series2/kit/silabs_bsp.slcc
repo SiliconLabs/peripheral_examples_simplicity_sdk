@@ -1,0 +1,50 @@
+id: silabs_bsp
+package: peripheral_examples
+description: >
+  Board Support Package
+label: Board Support Package
+category: BSP
+quality: production
+provides:
+  - name: silabs_bsp
+    allow_multiple: false
+template_contribution:
+  - name: component_catalog
+    value: silabs_bsp
+config_file:
+  - override:
+      component: "%extension-peripheral_examples%silabs_bsp"
+  - path: series2/kit/EFR32BG27_BRD4111A/pin_config.h
+    condition: [brd4111a]
+  - override:
+      component: "%extension-peripheral_examples%silabs_bsp"
+  - path: series2/kit/EFR32FG25_BRD4270B/pin_config.h
+    condition: [brd4270b]
+  - override:
+      component: "%extension-peripheral_examples%silabs_bsp"
+  - path: series2/kit/EFR32MG21_BRD4181A/pin_config.h
+    condition: [brd4181a]
+  - override:
+      component: "%extension-peripheral_examples%silabs_bsp"
+  - path: series2/kit/EFR32MG22_BRD4182A/pin_config.h
+    condition: [brd4182a]
+  - override:
+      component: "%extension-peripheral_examples%silabs_bsp"
+  - path: series2/kit/EFR32MG24_BRD4186C/pin_config.h
+    condition: [brd4186c]
+  - override:
+      component: "%extension-peripheral_examples%silabs_bsp"
+  - path: series2/kit/EFR32MG26_BRD4117A/pin_config.h
+    condition: [brd4117a]
+  - override:
+      component: "%extension-peripheral_examples%silabs_bsp"
+  - path: series2/kit/EFR32MG27_BRD4194A/pin_config.h
+    condition: [brd4194a] 
+  - override:
+      component: "%extension-peripheral_examples%silabs_bsp"
+  - path: series2/kit/EFR32ZG23_BRD4204D/pin_config.h
+    condition: [brd4204d]
+  - override:
+      component: "%extension-peripheral_examples%silabs_bsp"
+  - path: series2/kit/EFR32ZG28_BRD4400C/pin_config.h
+    condition: [brd4400c]
