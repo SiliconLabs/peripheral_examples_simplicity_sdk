@@ -1,3 +1,7 @@
+// LED active high
+#define LED_ON  1
+#define LED_OFF 0
+
 // <<< sl:start pin_tool >>>
 
 // <gpio> LED0
@@ -35,5 +39,11 @@
 #define EXP_UART_RX_PORT SL_GPIO_PORT_A
 #define EXP_UART_RX_PIN  6
 // [GPIO_EXP_UART_RX]$
+
+// <gpio> WDOG_PRS
+// $[GPIO_WDOG_PRS]
+#define WDOG_PRS_PORT SL_GPIO_PORT_A
+#define WDOG_PRS_PIN  5
+// [GPIO_WDOG_PRS]$
 
 // <<< sl:end pin_tool >>>

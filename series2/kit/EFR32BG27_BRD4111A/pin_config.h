@@ -1,3 +1,7 @@
+// LED active low
+#define LED_ON  0
+#define LED_OFF 1
+
 // <<< sl:start pin_tool >>>
 
 // <gpio> LED0_BUTTON0

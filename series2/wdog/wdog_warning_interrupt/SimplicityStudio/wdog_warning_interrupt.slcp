@@ -1,0 +1,40 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: wdog_warning_interrupt
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - WDOG Warning Interrupt
+description: >
+  This project demonstrates the warning interrupt functionality of the watchdog timer.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: udelay
+  - id: emlib_rmu
+  - id: emlib_wdog
+  - id: silabs_bsp
+    from: peripheral_examples
+configuration:
+  - name: "SL_CLOCK_MANAGER_WDOG0CLK_SOURCE"
+    value: "CMU_WDOG0CLKCTRL_CLKSEL_ULFRCO"
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0
+  

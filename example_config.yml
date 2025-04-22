@@ -22,4 +22,34 @@ example:
 #    board_whitelist: *board_whitelist        # Reference the supported boards
 #    board_blacklist:                         # Define boards that should NOT be used for this example
 #      - brd4111a                             # Exclude a specific board
-#      - brd4420a                             # Exclude a specific board
+
+  # WDOG examples
+- path: series2/wdog/wdog_prs_clear/SimplicityStudio/wdog_prs_clear.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/wdog/wdog_prs_monitor/SimplicityStudio/wdog_prs_monitor.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/wdog/wdog_timeout_interrupt/SimplicityStudio/wdog_timeout_interrupt.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/wdog/wdog_timeout_reset/SimplicityStudio/wdog_timeout_reset.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/wdog/wdog_warning_interrupt/SimplicityStudio/wdog_warning_interrupt.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/wdog/wdog_window_interrupt/SimplicityStudio/wdog_window_interrupt.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board

@@ -1,10 +1,9 @@
 /***************************************************************************//**
  * @file main.c
- * @brief This project demonstrates the warning interrupt functionality of the
- * watchdog timer. See readme.txt for details.
+ * @brief main() function.
  *******************************************************************************
  * # License
- * <b>Copyright 2024 Silicon Laboratories Inc. www.silabs.com</b>
+ * <b>Copyright 2025 Silicon Laboratories Inc. www.silabs.com</b>
  *******************************************************************************
  *
  * SPDX-License-Identifier: Zlib
@@ -27,146 +26,47 @@
  *    misrepresented as being the original software.
  * 3. This notice may not be removed or altered from any source distribution.
  *
- *******************************************************************************
- * # Evaluation Quality
- * This code has been minimally tested to ensure that it builds and is suitable 
- * as a demonstration for evaluation purposes only. This code will be maintained
- * at the sole discretion of Silicon Labs.
  ******************************************************************************/
+#include "sl_component_catalog.h"
+#include "sl_main_init.h"
+#if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+#include "sl_power_manager.h"
+#endif
+#if defined(SL_CATALOG_KERNEL_PRESENT)
+#include "sl_main_kernel.h"
+#else // SL_CATALOG_KERNEL_PRESENT
+#include "sl_main_process_action.h"
+#endif // SL_CATALOG_KERNEL_PRESENT
 
-#include <stdbool.h>
-#include "em_chip.h" 
-#include "em_cmu.h" 
-#include "em_emu.h"
-#include "em_gpio.h"
-#include "em_rmu.h"
-#include "em_wdog.h"
-#include "bspconfig.h"
-
-volatile uint32_t msTicks = 0;
-volatile uint32_t msDelay = 800;
-volatile bool clearedTooLate = false;
-
-/**************************************************************************//**
- * @brief SysTick_Handler
- * Interrupt Service Routine for system tick counter
- *****************************************************************************/
-void SysTick_Handler(void)
-{
-  msTicks++;
-}
-
-/**************************************************************************//**
- * @brief Delays number of msTick Systicks (typically 1 ms)
- * @param dlyTicks Number of ticks to delay
- *****************************************************************************/
-void Delay(uint32_t dlyTicks)
-{
-  uint32_t curTicks;
-
-  curTicks = msTicks;
-  while((msTicks - curTicks) < dlyTicks);
-}
-
-/**************************************************************************//**
- * @brief SysTick initialization
- *****************************************************************************/
-void initSYSTICK(void)
-{
-  if(SysTick_Config(CMU_ClockFreqGet(cmuClock_CORE) / 1000)) {
-    while(1);
-  }
-}
-
-/**************************************************************************//**
- * @brief GPIO initialization
- *****************************************************************************/
-void initGPIO(void)
-{
-  CMU_ClockEnable(cmuClock_GPIO, true);
-
-  GPIO_PinModeSet(BSP_GPIO_LED0_PORT, BSP_GPIO_LED0_PIN, gpioModePushPull, 0);
-
-  GPIO_PinModeSet(BSP_GPIO_PB1_PORT, BSP_GPIO_PB1_PIN, gpioModeInputPull, 1);
-  GPIO_ExtIntConfig(BSP_GPIO_PB1_PORT, BSP_GPIO_PB1_PIN, BSP_GPIO_PB1_PIN, false, true, true);
-
-  NVIC_ClearPendingIRQ(GPIO_ODD_IRQn);
-  NVIC_EnableIRQ(GPIO_ODD_IRQn);
-}
-
-/**************************************************************************//**
- * @brief Watchdog initialization
- *****************************************************************************/
-void initWDOG(void)
-{
-  CMU_ClockSelectSet(cmuClock_WDOG0, cmuSelect_ULFRCO);
-  CMU_ClockEnable(cmuClock_WDOG0, true);
-
-  WDOG_Init_TypeDef wdogInit = WDOG_INIT_DEFAULT;
-  wdogInit.debugRun = true;
-  wdogInit.warnSel = wdogWarnTime50pct;
-  wdogInit.perSel = wdogPeriod_2k;
-
-  WDOGn_IntEnable(WDOG0, WDOG_IEN_WARN);
-  NVIC_EnableIRQ(WDOG0_IRQn);
-
-  WDOGn_Init(WDOG0, &wdogInit);
-}
-
-/**************************************************************************//**
- * @brief GPIO Interrupt handler for even pins.
- *****************************************************************************/
-void GPIO_ODD_IRQHandler(void)
-{
-  uint32_t flags = GPIO_IntGet();
-  GPIO_IntClear(flags);
-
-  msDelay =  1100;
-}
-
-/**************************************************************************//**
- * @brief Watchdog ISR triggers when counter reaches warning level
- *****************************************************************************/
-void WDOG0_IRQHandler(void)
-{
-  uint32_t flags = WDOGn_IntGet(WDOG0);
-  WDOGn_IntClear(WDOG0, flags);
-
-  clearedTooLate = true;
-}
-
-/**************************************************************************//**
- * @brief  Main function
- *****************************************************************************/
 int main(void)
 {
-  uint32_t resetCause;
+  // Initialize Silicon Labs device, system, service(s) and protocol stack(s).
+  // Note that if the kernel is present, the start task will be started and software component
+  // configuration will take place there.
+  sl_main_init();
 
-  CHIP_Init();
+#if defined(SL_CATALOG_KERNEL_PRESENT)
+  // Start the kernel. The start task will be executed (Highest priority) to complete
+  // the Simplicity SDK components initialization and the user app_init() hook function will be called.
+  sl_main_kernel_start();
+#else // SL_CATALOG_KERNEL_PRESENT
 
-  EMU_DCDCInit_TypeDef dcdcInit = EMU_DCDCINIT_DEFAULT;
-  EMU_DCDCInit(&dcdcInit);
+  // User provided code.
+  app_init();
 
-  resetCause = RMU_ResetCauseGet();
-  RMU_ResetCauseClear();
+  while (1) {
+    // Silicon Labs components process action routine
+    // must be called from the super loop.
+    sl_main_process_action();
 
-  if(resetCause & EMU_RSTCAUSE_WDOG0) {
-	CMU_ClockEnable(cmuClock_GPIO, true);
-    GPIO_PinModeSet(BSP_GPIO_LED0_PORT, BSP_GPIO_LED0_PIN, gpioModePushPull, 1);
-    while(1);
+    // User provided code. Application process.
+    app_process_action();
+
+#if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+    // Let the CPU go to sleep if the system allows it.
+    sl_power_manager_sleep();
+#endif
   }
-
-  initSYSTICK();
-  initGPIO();
-  initWDOG();
-
-  while(1) {
-    if(clearedTooLate) {
-      GPIO_PinOutSet(BSP_GPIO_LED0_PORT, BSP_GPIO_LED0_PIN);
-      while(1);
-    }
-    WDOGn_Feed(WDOG0);
-    GPIO_PinOutToggle(BSP_GPIO_LED0_PORT, BSP_GPIO_LED0_PIN);
-    Delay(msDelay);
-  }
+#endif // SL_CATALOG_KERNEL_PRESENT
 }
+
