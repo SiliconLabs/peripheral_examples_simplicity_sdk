@@ -14,9 +14,9 @@ This project demonstrates the PRS clear functionality of the WDOG timer. The WDO
 
 1. Connect the periodic external signal to the GPIO input pin
 2. Build the project and download to the Starter Kit
-3. LED0 should be blinking
+3. LED0 should be off
 4. Disconnect the periodic external signal
-5. LED0 is now on and not blinking anymore, indicating a WDOG reset
+5. LED0 is now on, indicating a WDOG reset
 
 ## Hardware & Connections ##
 
@@ -52,3 +52,7 @@ This project demonstrates the PRS clear functionality of the WDOG timer. The WDO
     * Device: EFR32ZG28B312F1024IM68
         * PB02 - LED0
         * PB04 - GPIO PRS WDOG input (Expansion Header Pin 11)
+* Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PB00 - LED0
+        * PA05 - GPIO PRS WDOG input (Expansion Header Pin 12)

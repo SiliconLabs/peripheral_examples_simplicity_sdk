@@ -4,7 +4,7 @@
 
 This project demonstrates the window interrupt functionality of the WDOG timer. The WDOG is configured to trigger an interrupt when the WDOG is fed within 50% of the timer period. The timer period is set to 2049 ms, so the WDOG must be fed after 1024 ms otherwise the interrupt will trigger. The application feeds the WDOG every 1100 ms. When Push Button 1 (PB1) is pressed, the application feeds the WDOG after 800 ms, triggering the WDOG warning interrupt. LED0 turns on and the application stops running, causing the WDOG timer to overflow and trigger a reset. The reset source is checked in the beginning of the application. If the latest reset was caused by the WDOG, LED0 turns on again and the application stops running.
 
-Note: For the EFR32xG27 Radio Board, PB1 is connected to LED1 via hardware, so LED1 will be on while PB1 is pressed and off while PB1 is not pressed.
+Note: For the EFR32xG27 and EFR32xG29 Radio Boards, PB1 is connected to LED1 via hardware, so LED1 will be on while PB1 is pressed and off while PB1 is not pressed.
 
 ## Peripherals used ##
 
@@ -52,3 +52,7 @@ Note: For the EFR32xG27 Radio Board, PB1 is connected to LED1 via hardware, so L
     * Device: EFR32ZG28B312F1024IM68
         * PB02 - LED0
         * PB03 - Push Button PB1
+* Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PB00 - LED0
+        * PB01 - Push Button PB1

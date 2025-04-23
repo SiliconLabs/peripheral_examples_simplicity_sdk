@@ -52,3 +52,7 @@ This project demonstrates the PRS monitoring functionality of the WDOG timer. Th
     * Device: EFR32ZG28B312F1024IM68
         * PB02 - LED0
         * PB04 - GPIO PRS WDOG input (Expansion Header Pin 11)
+* Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PB00 - LED0
+        * PA05 - GPIO PRS WDOG input (Expansion Header Pin 12)
