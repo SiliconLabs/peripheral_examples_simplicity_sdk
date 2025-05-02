@@ -1955,4 +1955,106 @@
     <properties key="sltPackagePath" value="series2/wdog/wdog_window_interrupt/SimplicityStudio/wdog_window_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+   <descriptors name="wdog_prs_clear" label="Peripheral Examples - WDOG PRS Clear" description="This project demonstrates the prs clear functionality of the watchdog timer.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.wdog.wdog_prs_clear.SimplicityStudio.wdog_prs_clear_series3.slcp"/>
+    <properties key="projectFilePaths" value="series3/wdog/wdog_prs_clear/SimplicityStudio/wdog_prs_clear_series3.slcp"/>
+    <properties key="readmeFiles" value="series3/wdog/wdog_prs_clear/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/wdog/wdog_prs_clear/SimplicityStudio/wdog_prs_clear_series3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="wdog_prs_monitor" label="Peripheral Examples - WDOG PRS Monitor" description="This project demonstrates the prs monitoring functionality of the watchdog timer.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.wdog.wdog_prs_monitor.SimplicityStudio.wdog_prs_monitor_series3.slcp"/>
+    <properties key="projectFilePaths" value="series3/wdog/wdog_prs_monitor/SimplicityStudio/wdog_prs_monitor_series3.slcp"/>
+    <properties key="readmeFiles" value="series3/wdog/wdog_prs_monitor/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/wdog/wdog_prs_monitor/SimplicityStudio/wdog_prs_monitor_series3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="wdog_timeout_interrupt" label="Peripheral Examples - WDOG Timeout Interrupt" description="This project demonstrates the functionality of the watchdog timer interrupt.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.wdog.wdog_timeout_interrupt.SimplicityStudio.wdog_timeout_interrupt_series3.slcp"/>
+    <properties key="projectFilePaths" value="series3/wdog/wdog_timeout_interrupt/SimplicityStudio/wdog_timeout_interrupt_series3.slcp"/>
+    <properties key="readmeFiles" value="series3/wdog/wdog_timeout_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/wdog/wdog_timeout_interrupt/SimplicityStudio/wdog_timeout_interrupt_series3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="wdog_timeout_reset" label="Peripheral Examples - WDOG Timeout Reset" description="This project demonstrates the functionality of the watchdog timer.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.wdog.wdog_timeout_reset.SimplicityStudio.wdog_timeout_reset_series3.slcp"/>
+    <properties key="projectFilePaths" value="series3/wdog/wdog_timeout_reset/SimplicityStudio/wdog_timeout_reset_series3.slcp"/>
+    <properties key="readmeFiles" value="series3/wdog/wdog_timeout_reset/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/wdog/wdog_timeout_reset/SimplicityStudio/wdog_timeout_reset_series3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="wdog_warning_interrupt" label="Peripheral Examples - WDOG Warning Interrupt" description="This project demonstrates the warning interrupt functionality of the watchdog timer.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.wdog.wdog_warning_interrupt.SimplicityStudio.wdog_warning_interrupt_series3.slcp"/>
+    <properties key="projectFilePaths" value="series3/wdog/wdog_warning_interrupt/SimplicityStudio/wdog_warning_interrupt_series3.slcp"/>
+    <properties key="readmeFiles" value="series3/wdog/wdog_warning_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/wdog/wdog_warning_interrupt/SimplicityStudio/wdog_warning_interrupt_series3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="wdog_window_interrupt" label="Peripheral Examples - WDOG Window Interrupt" description="This project demonstrates the window interrupt functionality of the watchdog timer.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.wdog.wdog_window_interrupt.SimplicityStudio.wdog_window_interrupt_series3.slcp"/>
+    <properties key="projectFilePaths" value="series3/wdog/wdog_window_interrupt/SimplicityStudio/wdog_window_interrupt_series3.slcp"/>
+    <properties key="readmeFiles" value="series3/wdog/wdog_window_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/wdog/wdog_window_interrupt/SimplicityStudio/wdog_window_interrupt_series3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
 </model:MDescriptors>

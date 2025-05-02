@@ -2,7 +2,7 @@
 template:
   # Compatibility needs to be explicitly declared in all sample apps.
 
-  # All supported boards
+  # All series 2 supported boards
   board_whitelist: &board_whitelist
     - brd4111a             # efr32bg27
     - brd4117a             # efr32mg26
@@ -15,6 +15,10 @@ template:
     - brd4400c             # efr32zg28
     - brd4412a             # efr32mg29
     - brd4420a             # efr32bg29
+
+  # All series 3 supported boards
+  board_whitelist: &board_whitelist_s3
+    - brd4407a             # simg301
 
   # Supported boards with MIC
   # - brd2602a             # efr32bg27
@@ -833,3 +837,23 @@ example:
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4420a # Removing xG29 Boost Radio Board
+
+  # Series 3 examples
+  # WDOG examples
+- path: series3/wdog/wdog_prs_clear/SimplicityStudio/wdog_prs_clear_series3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/wdog/wdog_prs_monitor/SimplicityStudio/wdog_prs_monitor_series3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/wdog/wdog_timeout_interrupt/SimplicityStudio/wdog_timeout_interrupt_series3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/wdog/wdog_timeout_reset/SimplicityStudio/wdog_timeout_reset_series3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/wdog/wdog_warning_interrupt/SimplicityStudio/wdog_warning_interrupt_series3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/wdog/wdog_window_interrupt/SimplicityStudio/wdog_window_interrupt_series3.slcp
+  board_whitelist: *board_whitelist_s3
