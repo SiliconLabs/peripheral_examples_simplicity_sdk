@@ -1,5 +1,5 @@
 # Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
-project_name: wdog_prs_monitor 
+project_name: wdog_prs_monitor_series3
 package: peripheral_examples
 quality: evaluation
 label: Peripheral Examples - WDOG PRS Monitor

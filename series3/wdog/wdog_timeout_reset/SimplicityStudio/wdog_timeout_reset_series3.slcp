@@ -1,5 +1,5 @@
 # Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
-project_name: wdog_timeout_reset
+project_name: wdog_timeout_reset_series3
 package: peripheral_examples
 quality: evaluation
 label: Peripheral Examples - WDOG Timeout Reset

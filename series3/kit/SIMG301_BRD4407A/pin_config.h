@@ -2,6 +2,10 @@
 #define LED_ON  1
 #define LED_OFF 0
 
+// ACMP input Analog Bus allocation
+#define ACMP_INPUT_BUS      BBUSALLOC
+#define ACMP_INPUT_BUSALLOC GPIO_BBUSALLOC_BODD0_ACMP0
+
 // <<< sl:start pin_tool >>>
 
 // <gpio> LED0
