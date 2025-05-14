@@ -46,4 +46,34 @@
 #define WDOG_PRS_PIN  5
 // [GPIO_WDOG_PRS]$
 
+// <gpio> EXP_SPI_COPI
+// $[GPIO_EXP_SPI_COPI]
+#define EXP_SPI_COPI_PORT SL_GPIO_PORT_C
+#define EXP_SPI_COPI_PIN  1
+// [GPIO_EXP_SPI_COPI]$
+
+// <gpio> EXP_SPI_CIPO
+// $[GPIO_EXP_SPI_CIPO]
+#define EXP_SPI_CIPO_PORT SL_GPIO_PORT_C
+#define EXP_SPI_CIPO_PIN  2
+// [GPIO_EXP_SPI_CIPO]$
+
+// <gpio> EXP_SPI_SCK
+// $[GPIO_EXP_SPI_SCK]
+#define EXP_SPI_SCK_PORT SL_GPIO_PORT_C
+#define EXP_SPI_SCK_PIN  3
+// [GPIO_EXP_SPI_SCK]$
+
+// <gpio> EXP_SPI_CS
+// $[GPIO_EXP_SPI_CS]
+#define EXP_SPI_CS_PORT SL_GPIO_PORT_C
+#define EXP_SPI_CS_PIN  0
+// [GPIO_EXP_SPI_CS]$
+
+// <gpio> SPI_TIME
+// $[GPIO_SPI_TIME]
+#define SPI_TIME_PORT SL_GPIO_PORT_D
+#define SPI_TIME_PIN  2
+// [GPIO_EXP_SPI_CS]$
+
 // <<< sl:end pin_tool >>>

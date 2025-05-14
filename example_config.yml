@@ -23,6 +23,56 @@ example:
 #    board_blacklist:                         # Define boards that should NOT be used for this example
 #      - brd4111a                             # Exclude a specific board
 
+  # USART examples
+- path: series2/usart/async_interrupt/SimplicityStudio/usart_async_interrupt.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a
+    - brd4270b
+    
+- path: series2/usart/async_polled/SimplicityStudio/usart_async_polled.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a
+    - brd4270b
+      
+- path: series2/usart/spi_main_dma/SimplicityStudio/usart_spi_main_dma.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a
+    - brd4270b
+      
+- path: series2/usart/spi_main_interrupt/SimplicityStudio/usart_spi_main_interrupt.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a
+    - brd4270b
+      
+- path: series2/usart/spi_main_polled/SimplicityStudio/usart_spi_main_polled.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a
+    - brd4270b
+      
+- path: series2/usart/spi_secondary_dma/SimplicityStudio/usart_spi_secondary_dma.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a
+    - brd4270b
+      
+- path: series2/usart/spi_secondary_interrupt/SimplicityStudio/usart_spi_secondary_interrupt.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a
+    - brd4270b
+      
+- path: series2/usart/spi_secondary_polled/SimplicityStudio/usart_spi_secondary_polled.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a
+    - brd4270b
+      
+
   # WDOG examples
 - path: series2/wdog/wdog_prs_clear/SimplicityStudio/wdog_prs_clear.slcp
   board_whitelist: *board_whitelist
@@ -53,3 +103,4 @@ example:
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+
