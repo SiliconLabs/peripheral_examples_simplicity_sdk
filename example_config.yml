@@ -22,56 +22,81 @@ example:
 #    board_whitelist: *board_whitelist        # Reference the supported boards
 #    board_blacklist:                         # Define boards that should NOT be used for this example
 #      - brd4111a                             # Exclude a specific board
+   
+  # GPIO examples
+- path: series2/gpio/switch_led_interrupt/SimplicityStudio/switch_led_interrupt.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/gpio/switch_led_polled/SimplicityStudio/switch_led_polled.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/gpio/gpio_slew_rate/SimplicityStudio/gpio_slew_rate.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/gpio/gpio_periph/SimplicityStudio/gpio_periph.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/gpio/gpio_em4_wakeup/SimplicityStudio/gpio_em4_wakeup.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
 
   # USART examples
 - path: series2/usart/async_interrupt/SimplicityStudio/usart_async_interrupt.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
-    - brd4111a
-    - brd4270b
-    
+    - brd4111a # Removing xG27 Boost Radio Board
+    - brd4270b # Removing xG25 Radio Board due to lack of USART peripheral
+
 - path: series2/usart/async_polled/SimplicityStudio/usart_async_polled.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
-    - brd4111a
-    - brd4270b
-      
+    - brd4111a # Removing xG27 Boost Radio Board
+    - brd4270b # Removing xG25 Radio Board due to lack of USART peripheral
+
 - path: series2/usart/spi_main_dma/SimplicityStudio/usart_spi_main_dma.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
-    - brd4111a
-    - brd4270b
-      
+    - brd4111a # Removing xG27 Boost Radio Board
+    - brd4270b # Removing xG25 Radio Board due to lack of USART peripheral
+
 - path: series2/usart/spi_main_interrupt/SimplicityStudio/usart_spi_main_interrupt.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
-    - brd4111a
-    - brd4270b
-      
+    - brd4111a # Removing xG27 Boost Radio Board
+    - brd4270b # Removing xG25 Radio Board due to lack of USART peripheral
+
 - path: series2/usart/spi_main_polled/SimplicityStudio/usart_spi_main_polled.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
-    - brd4111a
-    - brd4270b
-      
+    - brd4111a # Removing xG27 Boost Radio Board
+    - brd4270b # Removing xG25 Radio Board due to lack of USART peripheral
+
 - path: series2/usart/spi_secondary_dma/SimplicityStudio/usart_spi_secondary_dma.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
-    - brd4111a
-    - brd4270b
-      
+    - brd4111a # Removing xG27 Boost Radio Board
+    - brd4270b # Removing xG25 Radio Board due to lack of USART peripheral
+
 - path: series2/usart/spi_secondary_interrupt/SimplicityStudio/usart_spi_secondary_interrupt.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
-    - brd4111a
-    - brd4270b
-      
+    - brd4111a # Removing xG27 Boost Radio Board
+    - brd4270b # Removing xG25 Radio Board due to lack of USART peripheral
+
 - path: series2/usart/spi_secondary_polled/SimplicityStudio/usart_spi_secondary_polled.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
-    - brd4111a
-    - brd4270b
-      
+    - brd4111a # Removing xG27 Boost Radio Board
+    - brd4270b # Removing xG25 Radio Board due to lack of USART peripheral
 
   # WDOG examples
 - path: series2/wdog/wdog_prs_clear/SimplicityStudio/wdog_prs_clear.slcp
@@ -103,4 +128,3 @@ example:
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
-
