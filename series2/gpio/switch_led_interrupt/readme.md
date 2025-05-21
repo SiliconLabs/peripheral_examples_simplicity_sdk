@@ -11,7 +11,7 @@ Note:
   ports A or B, or through EM4WU pins. Since the push buttons on the WSTK are 
   connected to port D, they must be re-routed to an interrupt-capable port.
   For this example, jump pins 7 to pins 14 on the Expansion Header of the WSTK.
-- On the EFR32xG27, PB0 and LED0 share the same pin.
+- On the EFR32xG27 and EFR32xG29, PB0 and LED0 share the same pin.
 
 ## Peripherals used ##
 
@@ -72,3 +72,8 @@ Note:
     * Device: EFR32ZG28B312F1024IM68
         * PB01 -  Push Button PB0
         * PD03 -  LED1
+		
+* Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PB00 - Push Button PB0
+        * PB01 - LED1

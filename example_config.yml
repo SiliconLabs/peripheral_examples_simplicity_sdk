@@ -230,26 +230,31 @@ example:
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/gpio/switch_led_polled/SimplicityStudio/switch_led_polled.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/gpio/gpio_slew_rate/SimplicityStudio/gpio_slew_rate.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/gpio/gpio_periph/SimplicityStudio/gpio_periph.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/gpio/gpio_em4_wakeup/SimplicityStudio/gpio_em4_wakeup.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
   # I2C examples
 - path: series2/i2c/i2c_follower/SimplicityStudio/i2c_follower.slcp

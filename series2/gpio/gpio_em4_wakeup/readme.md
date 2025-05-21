@@ -87,3 +87,8 @@ consumption to be higher than what is specified in the EFR32ZG28 datasheet.
         * PB01 -  Push Button PB0 (Escape Hatch)
         * PB03 -  Push Button PB1
         * PB02 -  LED0
+		
+* Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PB01 -  Push Button PB1
+        * PB00 -  LED0, Push Button PB0 (Escape Hatch)

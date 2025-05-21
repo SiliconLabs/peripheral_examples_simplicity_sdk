@@ -52,3 +52,7 @@ enables the selected oscillator.
 * Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm Radio Board (BRD4400C) + Wireless Starter Kit Mainboard
     * Device: EFR32ZG28B312F1024IM68
         * PD09 -  LFRCO output (Expansion Header Pin 8)
+		
+* Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PC03 -  LFRCO output (Expansion Header Pin 10)

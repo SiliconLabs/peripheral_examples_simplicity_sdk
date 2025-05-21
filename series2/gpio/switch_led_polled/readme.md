@@ -6,7 +6,7 @@ This project demonstrates how to set up simple digital inputs and
 outputs. Button PB0 on the WSTK is the input; LED1 is the output.
 While PB0 is pressed, LED1 is on.
 
-Note: On the EFR32xG27, PB0 and LED0 share the same pin. so LED0 will 
+Note: On the EFR32xG27 and EFR32xG29, PB0 and LED0 share the same pin. so LED0 will 
 also be on while PB0 is pressed. Additionally, the polarity is reversed, 
 pressing PB0 turns LED1 off, and releasing it turns LED1 on.
 
@@ -18,8 +18,8 @@ pressing PB0 turns LED1 off, and releasing it turns LED1 on.
 
 1. Build the project and download to the Starter Kit
 2. Click the Play/Resume (F8) button in the debugger to run the program
-3. Press PB0 to turn the LED1 on (except on xG27 devices, where LED1 will turn off)
-4. Release PB0 to turn the LED1 off (except on xG27 devices, where LED1 will turn on)
+3. Press PB0 to turn the LED1 on (except on xG27/xG29 devices, where LED1 will turn off)
+4. Release PB0 to turn the LED1 off (except on xG27/xG29 devices, where LED1 will turn on)
 
 ## Hardware & Connections ##
 
@@ -62,3 +62,8 @@ pressing PB0 turns LED1 off, and releasing it turns LED1 on.
     * Device: EFR32ZG28B312F1024IM68
         * PB01 -  Push Button PB0
         * PD03 -  LED1
+		
+* Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PB00 - Push Button PB0
+        * PB01 - LED1

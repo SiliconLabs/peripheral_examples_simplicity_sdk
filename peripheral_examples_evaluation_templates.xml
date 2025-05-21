@@ -533,8 +533,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.gpio.gpio_em4_wakeup.SimplicityStudio.gpio_em4_wakeup.slcp"/>
     <properties key="projectFilePaths" value="series2/gpio/gpio_em4_wakeup/SimplicityStudio/gpio_em4_wakeup.slcp"/>
     <properties key="readmeFiles" value="series2/gpio/gpio_em4_wakeup/readme.md"/>
-    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -550,8 +550,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.gpio.gpio_periph.SimplicityStudio.gpio_periph.slcp"/>
     <properties key="projectFilePaths" value="series2/gpio/gpio_periph/SimplicityStudio/gpio_periph.slcp"/>
     <properties key="readmeFiles" value="series2/gpio/gpio_periph/readme.md"/>
-    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -567,8 +567,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.gpio.gpio_slew_rate.SimplicityStudio.gpio_slew_rate.slcp"/>
     <properties key="projectFilePaths" value="series2/gpio/gpio_slew_rate/SimplicityStudio/gpio_slew_rate.slcp"/>
     <properties key="readmeFiles" value="series2/gpio/gpio_slew_rate/readme.md"/>
-    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -584,8 +584,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.gpio.switch_led_interrupt.SimplicityStudio.switch_led_interrupt.slcp"/>
     <properties key="projectFilePaths" value="series2/gpio/switch_led_interrupt/SimplicityStudio/switch_led_interrupt.slcp"/>
     <properties key="readmeFiles" value="series2/gpio/switch_led_interrupt/readme.md"/>
-    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -601,8 +601,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.gpio.switch_led_polled.SimplicityStudio.switch_led_polled.slcp"/>
     <properties key="projectFilePaths" value="series2/gpio/switch_led_polled/SimplicityStudio/switch_led_polled.slcp"/>
     <properties key="readmeFiles" value="series2/gpio/switch_led_polled/readme.md"/>
-    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>

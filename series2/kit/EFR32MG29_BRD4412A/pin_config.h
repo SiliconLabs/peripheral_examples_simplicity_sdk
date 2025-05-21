@@ -2,6 +2,12 @@
 #define LED_ON  0
 #define LED_OFF 1
 
+// EM4 Wake-up enable
+#define EM4WUENx 3
+
+// Clock output select
+#define CLKOUT_SEL  0
+
 // <<< sl:start pin_tool >>>
 
 // <gpio> LED0_BUTTON0
@@ -33,5 +39,17 @@
 #define WDOG_PRS_PORT SL_GPIO_PORT_A
 #define WDOG_PRS_PIN  5
 // [GPIO_WDOG_PRS]$
+
+// <gpio> SQUARE_WAVE
+// $[GPIO_SQUARE_WAVE]
+#define SQUARE_WAVE_PORT SL_GPIO_PORT_C
+#define SQUARE_WAVE_PIN  0
+// [GPIO_SQUARE_WAVE]$
+
+// <gpio> CLKOUT
+// $[GPIO_CLKOUT]
+#define CLKOUT_PORT SL_GPIO_PORT_C
+#define CLKOUT_PIN  3
+// [GPIO_CLKOUT]$
 
 // <<< sl:end pin_tool >>>

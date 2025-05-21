@@ -70,3 +70,8 @@ one pin per port.
     * Device: EFR32ZG28B312F1024IM68
         * PB01 -  Push Button PB0
         * PD10 -  1 MHz output (Expansion Header Pin 10)
+
+* Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PB00 -  Push Button PB0
+        * PC00 -  1 MHz output (Expansion Header Pin 4)
