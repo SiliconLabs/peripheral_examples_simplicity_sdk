@@ -60,3 +60,6 @@ benchmarking data) is available here - https://github.com/SiliconLabs/platform_a
 
 * Board:  Silicon Labs EFR32xG28 Radio Board (BRD4400C) + Wireless Starter Kit Mainboard
 	* Device: EFR32ZG28B312F1024IM68
+
+* Board:  Silicon Labs EFR32xG29 Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+	* Device: EFR32MG29B140F1024IM40

@@ -219,11 +219,13 @@ example:
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/gpcrc/gpcrc_software/SimplicityStudio/gpcrc_software.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
   # GPIO examples
 - path: series2/gpio/switch_led_interrupt/SimplicityStudio/switch_led_interrupt.slcp
