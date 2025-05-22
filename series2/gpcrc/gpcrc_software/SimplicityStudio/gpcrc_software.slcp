@@ -1,0 +1,35 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: gpcrc_software
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - GPCRC Software
+description: >
+  This project demonstrates the GPCRC used to check an array of 32-bit data using the IEEE 802.3 polynomial standard. The GPCRC conversions are initiated by software.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: emlib_gpcrc
+  - id: power_manager_no_deepsleep
+  - id: silabs_bsp
+    from: peripheral_examples
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0

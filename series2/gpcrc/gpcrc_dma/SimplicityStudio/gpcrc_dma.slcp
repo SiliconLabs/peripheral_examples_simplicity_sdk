@@ -1,0 +1,36 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: gpcrc_dma
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - GPCRC DMA
+description: >
+  This project demonstrates the GPCRC used to check 32-bit data using the IEEE 802.3 polynomial standard in EM1. Data is fed into the GPCRC via the LDMA.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: emlib_ldma
+  - id: emlib_gpcrc
+  - id: power_manager_no_deepsleep
+  - id: silabs_bsp
+    from: peripheral_examples
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0

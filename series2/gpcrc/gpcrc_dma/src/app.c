@@ -1,45 +1,23 @@
 /***************************************************************************//**
- * @file main.c
- * @brief Use the GPCRC to check data
+ * @file
+ * @brief Top level application functions
  *******************************************************************************
  * # License
- * <b>Copyright 2022 Silicon Laboratories Inc. www.silabs.com</b>
+ * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
  *******************************************************************************
  *
- * SPDX-License-Identifier: Zlib
+ * The licensor of this software is Silicon Laboratories Inc. Your use of this
+ * software is governed by the terms of Silicon Labs Master Software License
+ * Agreement (MSLA) available at
+ * www.silabs.com/about-us/legal/master-software-license-agreement. This
+ * software is distributed to you in Source Code format and is governed by the
+ * sections of the MSLA applicable to Source Code.
  *
- * The licensor of this software is Silicon Laboratories Inc.
- *
- * This software is provided 'as-is', without any express or implied
- * warranty. In no event will the authors be held liable for any damages
- * arising from the use of this software.
- *
- * Permission is granted to anyone to use this software for any purpose,
- * including commercial applications, and to alter it and redistribute it
- * freely, subject to the following restrictions:
- *
- * 1. The origin of this software must not be misrepresented; you must not
- *    claim that you wrote the original software. If you use this software
- *    in a product, an acknowledgment in the product documentation would be
- *    appreciated but is not required.
- * 2. Altered source versions must be plainly marked as such, and must not be
- *    misrepresented as being the original software.
- * 3. This notice may not be removed or altered from any source distribution.
- *
- *******************************************************************************
- * # Evaluation Quality
- * This code has been minimally tested to ensure that it builds and is suitable 
- * as a demonstration for evaluation purposes only. This code will be maintained
- * at the sole discretion of Silicon Labs.
  ******************************************************************************/
 
-#include <stdio.h>
-#include "em_device.h"
-#include "em_chip.h"
-#include "em_cmu.h"
 #include "em_gpcrc.h"
 #include "em_ldma.h"
-#include "em_emu.h"
+#include "sl_clock_manager.h"
 
 #define PRESET      0xFFFFFFFFUL
 /*
@@ -54,14 +32,13 @@
  * reversed so that CRC is calculated for the input shown above instead of
  * 0x01000000, ...., 0xDB030000.
  *
- * As a part of post processing in the crc calculator shown above, the resulting
+ * As a part of post processing in the CRC calculator shown above, the resulting
  * CRC is XOR'd with 0xFFFFFFFF. This is not done by the GPCRC module on the
  * device. Therefore, the CRC of the data is XOR'd with 0xFFFFFFFF before
  * comparing it with the result of the online calculator.
  */
-// IEEE 802.3 CRC for the input fibonacci data
+// IEEE 802.3 CRC for the input Fibonacci data
 #define FIBONACCI_CRC_16WORDS (0x5CBF42AAUL)
-
 
 // DMA channel used
 #define LDMA_CHANNEL        0
@@ -82,16 +59,19 @@ uint32_t data[ARRAY_SIZE];
 // Register bit clear address for LDMA_IEN
 #define LDMA_IEN_CLEAR  (((uint32_t)&(LDMA->IEN)) + 0x04000000)
 
+bool crcCheck;
+
 /**************************************************************************//**
  * @brief  Calculates the n-th Fibonacci number recursively.
  *****************************************************************************/
 uint32_t fib(uint32_t n)
 {
-  if (n < 2)
-  {
-    return 1;
+  if (n < 2) {
+      return 1;
   }
-  return (fib(n-1) + fib(n-2));
+  else {
+      return (fib(n-1) + fib(n-2));
+  }
 }
 
 /***************************************************************************//**
@@ -102,7 +82,6 @@ void LDMA_IRQHandler( void )
 {
   // Shouldn't ever get in here, so take a breakpoint
   __BKPT(0);
-
 }
 
 /***************************************************************************//**
@@ -118,7 +97,7 @@ void initLdma(void)
    * interrupt, if it happens.
    */
   LDMA_Init_t init = LDMA_INIT_DEFAULT;
-  LDMA_Init( &init );
+  LDMA_Init(&init);
 }
 
 /**************************************************************************//**
@@ -126,12 +105,18 @@ void initLdma(void)
  *****************************************************************************/
 void initGpcrc (void)
 {
+  // Enable clocks required
+  sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_GPCRC0);
+
   // GPCRC module initialization for IEEE 802.3 polynomial
   GPCRC_Init_TypeDef init = GPCRC_INIT_DEFAULT;
+
   // Starting value in GPCRC_DATA
   init.initValue = PRESET;
+
   // Reset GPCRC_DATA to 0xFFFF_FFFF after every read
   init.autoInit = true;
+
   // Reverse all bytes of the incoming message
   init.reverseByteOrder = true;
 
@@ -185,7 +170,6 @@ void crcCheckStart (uint32_t *inputData)
   ldmaCrcDesc[1] = (LDMA_Descriptor_t)LDMA_DESCRIPTOR_SINGLE_M2M_WORD(inputData, &(GPCRC->INPUTDATA), ARRAY_SIZE);
   ldmaCrcDesc[1].xfer.dstInc = ldmaCtrlDstIncNone;
 
-
   // This starts the CRC calculation.
   LDMA_StartTransfer(LDMA_CHANNEL, (void*)&transferConfig, (void*)ldmaCrcDesc);
 }
@@ -195,10 +179,12 @@ void crcCheckStart (uint32_t *inputData)
  *****************************************************************************/
 bool crcCheckTransferBusy(void)
 {
-  if (LDMA_TransferDone(LDMA_GPCRC_CHAN) == true)
-    return false;
-  else
-    return true;
+  if (LDMA_TransferDone(LDMA_GPCRC_CHAN) == true) {
+      return false;
+  }
+  else {
+      return true;
+  }
 }
 
 /**************************************************************************//**
@@ -208,24 +194,24 @@ bool crcCheckResult(void)
 {
   // XOR the data register output with 0xFFFFFFFF to get the post-processed
   // IEEE 802.3 result
-  uint32_t crcResult = GPCRC_DataRead(GPCRC)^PRESET;
+  uint32_t crcResult = GPCRC_DataRead(GPCRC) ^ PRESET;
 
-  if (crcResult == FIBONACCI_CRC_16WORDS)
-    return true;
-  else
-    return false;
+  if (crcResult == FIBONACCI_CRC_16WORDS) {
+      return true;
+  }
+  else {
+      return false;
+  }
 }
 
-/**************************************************************************//**
- * @brief  Main function
- *****************************************************************************/
-int main(void)
+/***************************************************************************//**
+ * Initialize application.
+ ******************************************************************************/
+void app_init(void)
 {
-  CHIP_Init();
+  crcCheck = false;
 
-  bool crcCheck = false;
-
-  // Fill data array with fibonacci values
+  // Fill data array with Fibonacci values
   for (uint32_t i = 0; i < ARRAY_SIZE; i++){
       data[i] = (fib(i));
   }
@@ -245,14 +231,16 @@ int main(void)
   // Read the GPCRC output and compare with predetermined CRC
   crcCheck = crcCheckResult();
 
-  if (!crcCheck){
-      // Halt if crcCheck fails
-      __BKPT(2);
+  if (!crcCheck) {
+    // Halt if crcCheck fails
+    __BKPT(2);
   }
+}
 
-  // Infinite loop
-  while(1){
-      // Enter EM1 if CRC check passes
-      EMU_EnterEM1();
-  }
+/***************************************************************************//**
+ * App ticking function.
+ ******************************************************************************/
+void app_process_action(void)
+{
+  // Do nothing, let the main while() loop enter EM1
 }
