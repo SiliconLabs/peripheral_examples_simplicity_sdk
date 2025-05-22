@@ -13,6 +13,8 @@ template:
     - brd4204d             # efr32zg23
     - brd4270b             # efr32fg25
     - brd4400c             # efr32zg28
+    - brd4412a             # efr32mg29
+    - brd4420a             # efr32bg29
 
   # Supported boards with MIC
   # - brd2602a             # efr32bg27
