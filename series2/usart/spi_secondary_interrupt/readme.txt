@@ -192,6 +192,7 @@ PC00  - USART0_TX (MOSI)  - Expansion Header pin 10
 PC01  - USART0_RX (MISO)  - Expansion Header pin 4
 PC02  - USART0_CLK (SCLK) - Expansion Header pin 6
 PC03  - USART0_CS (CSn)   - Expansion Header pin 8
+PD02  - Activity          - Expansion Header pin 9
 
 Board:  Silicon Labs EFR32xG27 Buck Radio Board (BRD4194A) + 
         Wireless Starter Kit Mainboard
