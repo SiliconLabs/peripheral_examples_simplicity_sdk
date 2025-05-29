@@ -126,3 +126,10 @@ Listed below are the port and pin mappings for working with this example.
 		* PD08  - USART0_RX (CIPO)  - Expansion Header pin 6
 		* PD09  - USART0_CLK (SCLK) - Expansion Header pin 8
 		* PD10  - USART0_CS (CSn)   - Expansion Header pin 10
+		
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+	* Device: EFR32MG29B140F1024IM40
+		* PC00  - USART0_TX (COPI)  - Expansion Header pin 4
+		* PC01  - USART0_RX (CIPO)  - Expansion Header pin 6
+		* PC02  - USART0_CLK (SCLK) - Expansion Header pin 8
+		* PC03  - USART0_CS (CSn)   - Expansion Header pin 10

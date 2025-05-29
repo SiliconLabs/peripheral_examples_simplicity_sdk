@@ -70,3 +70,8 @@ Listed below are the port and pin mappings for working with this example.
 	* Device: EFR32ZG28B312F1024IM68
 		* PA08  - USART0_TX (WSTK Breakout Pad J102 P28)
 		* PA09  - USART0_RX (WSTK Breakout Pad J102 P30)
+		
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+	* Device: EFR32MG29B140F1024IM40
+		* PA05  - USART0_TX (Expansion Header Pin 12)
+		* PA06  - USART0_RX (Expansion Header Pin 14)
