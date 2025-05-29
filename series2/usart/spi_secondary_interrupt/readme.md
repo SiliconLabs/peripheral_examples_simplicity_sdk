@@ -191,7 +191,7 @@ Listed below are the port and pin mappings for working with this example.
 		* PC01  - USART0_RX (CIPO)  - Expansion Header pin 6
 		* PC02  - USART0_CLK (SCLK) - Expansion Header pin 8
 		* PC03  - USART0_CS (CSn)   - Expansion Header pin 10
-		* PD02  - Activity          - Pin 14
+		* PA08  - Activity          - Expansion Header pin 13
 
 * Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm Radio Board (BRD4400C) + Wireless Starter Kit Mainboard
 	* Device: EFR32ZG28B312F1024IM68

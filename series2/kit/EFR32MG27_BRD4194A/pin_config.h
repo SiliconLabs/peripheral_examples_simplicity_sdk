@@ -66,8 +66,8 @@
 
 // <gpio> SPI_TIME
 // $[GPIO_SPI_TIME]
-#define SPI_TIME_PORT SL_GPIO_PORT_D
-#define SPI_TIME_PIN  2
+#define SPI_TIME_PORT SL_GPIO_PORT_A
+#define SPI_TIME_PIN  8
 // [GPIO_EXP_SPI_CS]$
 
 // <gpio> SQUARE_WAVE
