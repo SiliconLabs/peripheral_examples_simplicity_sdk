@@ -66,3 +66,8 @@ JLink CDC UART Port for view in a PC terminal program.
     * Device: EFR32ZG28B312F1024IM68
         * PB01 -  Push Button PB0
         * PD03 -  LED1
+
+* Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PB00 -  Push Button PB0
+        * PB01 - LED1

@@ -60,6 +60,7 @@ example:
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
   # EMU examples
 - path: series2/emu/dcdc_vmon/SimplicityStudio/dcdc_vmon.slcp
