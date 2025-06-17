@@ -23,6 +23,12 @@ example:
 #    board_blacklist:                         # Define boards that should NOT be used for this example
 #      - brd4111a                             # Exclude a specific board
 
+  # BURTC examples
+- path: series2/burtc/burtc_em4_buram/SimplicityStudio/burtc_em4_buram.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
   # GPCRC examples
 - path: series2/gpcrc/gpcrc_dma/SimplicityStudio/gpcrc_dma.slcp
   board_whitelist: *board_whitelist

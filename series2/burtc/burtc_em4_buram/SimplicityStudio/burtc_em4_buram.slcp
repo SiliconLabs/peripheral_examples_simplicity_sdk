@@ -1,0 +1,48 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: burtc_em4_buram
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - BURTC EM4 BURAM
+description: >
+ This project demonstrates how to use the BURTC (Backup Real Time Counter) to wake the device from EM4 mode and thus trigger a reset. This project also shows how to use the BURAM retention registers to have data persist between resets.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: power_manager
+  - id: power_manager_no_deepsleep
+  - id: clock_manager
+  - id: emlib_rmu
+  - id: emlib_burtc
+  - id: iostream_stdlib_config
+  - id: iostream_retarget_stdio
+  - id: iostream_recommended_console
+  - id: silabs_bsp
+    from: peripheral_examples
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0
+configuration:
+  - name: "SL_POWER_MANAGER_INIT_EMU_EM4_PIN_RETENTION_MODE"
+    value: "EMU_EM4CTRL_EM4IORETMODE_SWUNLATCH"
+  - name: "SL_CLOCK_MANAGER_EM4GRPACLK_SOURCE"
+    value: "CMU_EM4GRPACLKCTRL_CLKSEL_ULFRCO"
+  - name: SL_BOARD_ENABLE_VCOM
+    value: 1
+  
