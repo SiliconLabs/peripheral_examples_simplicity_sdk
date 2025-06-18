@@ -8,6 +8,12 @@
 // Clock output select
 #define CLKOUT_SEL  0
 
+// ACMP Input
+#define ACMP_INPUT_PORT_PIN  _ACMP_INPUTCTRL_POSSEL_PB1
+
+// ACMP Input bus allocation
+#define ACMP_BUS_ALLOCATION() (GPIO->BBUSALLOC = GPIO_BBUSALLOC_BODD0_ACMP0)
+
 // <<< sl:start pin_tool >>>
 
 // <gpio> LED0
@@ -33,6 +39,18 @@
 #define BUTTON1_PORT SL_GPIO_PORT_B
 #define BUTTON1_PIN  1
 // [GPIO_BUTTON1]$
+
+// <gpio> ACMP_OUTPUT0
+// $[ACMP_OUTPUT0]
+#define ACMP_OUTPUT0_PORT SL_GPIO_PORT_A
+#define ACMP_OUTPUT0_PIN  8
+// [ACMP_OUTPUT0]$
+
+// <gpio> ACMP_OUTPUT1
+// $[ACMP_OUTPUT1]
+#define ACMP_OUTPUT1_PORT SL_GPIO_PORT_A
+#define ACMP_OUTPUT1_PIN  9
+// [ACMP_OUTPUT1]$
 
 // <gpio> EXP_UART_TX
 // $[GPIO_EXP_UART_TX]

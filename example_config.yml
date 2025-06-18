@@ -22,6 +22,31 @@ example:
 #    board_whitelist: *board_whitelist        # Reference the supported boards
 #    board_blacklist:                         # Define boards that should NOT be used for this example
 #      - brd4111a                             # Exclude a specific board
+  
+  # ACMP examples
+- path: series2/acmp/acmp_vmon/SimplicityStudio/acmp_vmon.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+    - brd4182a # Removing xG22 Radio Board due to lack of ACMP peripheral
+
+- path: series2/acmp/acmp_polled/SimplicityStudio/acmp_polled.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+    - brd4182a # Removing xG22 Radio Board due to lack of ACMP peripheral
+
+- path: series2/acmp/acmp_pin_output/SimplicityStudio/acmp_pin_output.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+    - brd4182a # Removing xG22 Radio Board due to lack of ACMP peripheral
+
+- path: series2/acmp/acmp_interrupt/SimplicityStudio/acmp_interrupt.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+    - brd4182a # Removing xG22 Radio Board due to lack of ACMP peripheral
 
   # BURTC examples
 - path: series2/burtc/burtc_em4_buram/SimplicityStudio/burtc_em4_buram.slcp
