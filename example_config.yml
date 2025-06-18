@@ -91,6 +91,22 @@ example:
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
 
+  # LETIMER examples
+- path: series2/letimer/one_shot_output_compare/SimplicityStudio/one_shot_output_compare.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/letimer/pulse_train/SimplicityStudio/pulse_train.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/letimer/pulse_width_modulation/SimplicityStudio/pulse_width_modulation.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
   # USART examples
 - path: series2/usart/async_interrupt/SimplicityStudio/usart_async_interrupt.slcp
   board_whitelist: *board_whitelist

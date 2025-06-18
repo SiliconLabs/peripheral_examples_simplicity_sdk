@@ -14,6 +14,9 @@
 // ACMP Input bus allocation
 #define ACMP_BUS_ALLOCATION() (GPIO->BBUSALLOC = GPIO_BBUSALLOC_BODD0_ACMP0)
 
+// GPIO LETIMER route structure
+#define GPIO_LETIMERROUTE (GPIO->LETIMERROUTE)
+
 // <<< sl:start pin_tool >>>
 
 // <gpio> LED0_BUTTON0
@@ -39,6 +42,12 @@
 #define ACMP_OUTPUT1_PORT LED1_BUTTON1_PORT
 #define ACMP_OUTPUT1_PIN  LED1_BUTTON1_PIN
 // [ACMP_OUTPUT1]$
+
+// <gpio> EXP_LET0_O0
+// $[GPIO_EXP_LET0_O0]
+#define EXP_LET0_O0_PORT SL_GPIO_PORT_A
+#define EXP_LET0_O0_PIN  6
+// [GPIO_EXP_LET0_O0]$
 
 // <gpio> EXP_UART_TX
 // $[GPIO_EXP_UART_TX]

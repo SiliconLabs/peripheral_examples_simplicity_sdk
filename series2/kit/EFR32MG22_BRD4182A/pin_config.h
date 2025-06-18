@@ -8,6 +8,9 @@
 // Clock output select
 #define CLKOUT_SEL  0
 
+// GPIO LETIMER route structure
+#define GPIO_LETIMERROUTE (GPIO->LETIMERROUTE[0])
+
 // <<< sl:start pin_tool >>>
 
 // <gpio> LED0
@@ -33,6 +36,12 @@
 #define BUTTON1_PORT SL_GPIO_PORT_B
 #define BUTTON1_PIN  1
 // [GPIO_BUTTON1]$
+
+// <gpio> EXP_LET0_O0
+// $[GPIO_EXP_LET0_O0]
+#define EXP_LET0_O0_PORT SL_GPIO_PORT_A
+#define EXP_LET0_O0_PIN  6
+// [GPIO_EXP_LET0_O0]$
 
 // <gpio> EXP_UART_TX
 // $[GPIO_EXP_UART_TX]
