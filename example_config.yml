@@ -36,24 +36,28 @@ example:
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4182a # Removing xG22 Radio Board due to lack of ACMP peripheral
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/acmp/acmp_polled/SimplicityStudio/acmp_polled.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4182a # Removing xG22 Radio Board due to lack of ACMP peripheral
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/acmp/acmp_pin_output/SimplicityStudio/acmp_pin_output.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4182a # Removing xG22 Radio Board due to lack of ACMP peripheral
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/acmp/acmp_interrupt/SimplicityStudio/acmp_interrupt.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4182a # Removing xG22 Radio Board due to lack of ACMP peripheral
+    - brd4420a # Removing xG29 Boost Radio Board
 
   # BURTC examples
 - path: series2/burtc/burtc_em4_buram/SimplicityStudio/burtc_em4_buram.slcp

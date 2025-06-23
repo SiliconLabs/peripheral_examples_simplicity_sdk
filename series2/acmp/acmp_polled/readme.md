@@ -24,7 +24,7 @@ the GPIO pin connected to LED0 is driven low or high in response.
 
 ## How to Test ##
 
-### EFR32xG27 ###
+### EFR32xG27 and EFR32xG29 ###
 
 1.  Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
 2.  Build the example project and download it to the target system.
@@ -84,7 +84,13 @@ behavior can be observed in the absence of undamped mechanical noise.
 		* PB00 -  LED0, WSTK Pin 4, Expansion Header Pin 7. Note that on this radio board, the buttons and LEDs are connected to the same pin, and the LEDs are ON when the output is 0.
 		* PB01 -  ACMP positive input, push button PB1, WSTK Pin 6, Expansion Header Pin 9
 
-* Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm RadioBoard (BRD4400C) + Wireless Starter Kit Mainboard (BRD4001A)
+* Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm Radio Board (BRD4400C) + Wireless Starter Kit Mainboard (BRD4001A)
 	* Device: EFR32ZG28B312F1024IM68
 		* PB03 -  ACMP positive input, push button PB1, WSTK Pin 21
 		* PB02 -  LED0, WSTK Pin 19
+
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
+	* Device: EFR32MG29B140F1024IM40
+		* PB00 - LED0, WSTK Pin 4, Expansion Header Pin 7. Note that on this radio board, the buttons and LEDs are connected to the same pin, and the LEDs are ON when the output is 0.
+		* PB01 - ACMP positive input, push button PB1, WSTK Pin 6, Expansion Header Pin 9
+

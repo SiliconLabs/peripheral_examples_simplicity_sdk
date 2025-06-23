@@ -119,9 +119,17 @@ Experiment accordingly to determine production system suitability.
 		* GND  - Expansion Header Pin 1 
 	* Note that on this radio board, the buttons and LEDs are connected to the same pin, and the LEDs are ON when the output is 0.
 
-* Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm RadioBoard (BRD4400C) + Wireless Starter Kit Mainboard
+* Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm Radio Board (BRD4400C) + Wireless Starter Kit Mainboard (BRD4001A)
 	* Device: EFR32ZG28B312F1024IM68
 		* PB02 - GPIO Push/Pull output, WSTK Pin 19, LED0
 		* PD03 - GPIO Push/Pull output, WSTK Pin 23, LED1
 		* VMCU - Expansion Header Pin 2
 		* GND  - Expansion Header Pin 1 
+
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
+	* Device: EFR32MG29B140F1024IM40
+		* PB00 - GPIO Push/Pull output, Expansion Header Pin 7, WSTK Pin 4, LED0 
+		* PB01 - GPIO Push/Pull output, Expansion Header Pin 9, WSTK Pin 6, LED1
+		* VMCU - Expansion Header Pin 2
+		* GND  - Expansion Header Pin 1 
+
