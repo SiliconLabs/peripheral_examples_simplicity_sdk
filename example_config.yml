@@ -408,16 +408,19 @@ example:
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/letimer/pulse_train/SimplicityStudio/pulse_train.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/letimer/pulse_width_modulation/SimplicityStudio/pulse_width_modulation.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
   # MSC examples
 - path: series2/msc/msc_page_lock/SimplicityStudio/msc_page_lock.slcp

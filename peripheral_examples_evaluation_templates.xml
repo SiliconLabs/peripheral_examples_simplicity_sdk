@@ -1077,8 +1077,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.letimer.one_shot_output_compare.SimplicityStudio.one_shot_output_compare.slcp"/>
     <properties key="projectFilePaths" value="series2/letimer/one_shot_output_compare/SimplicityStudio/one_shot_output_compare.slcp"/>
     <properties key="readmeFiles" value="series2/letimer/one_shot_output_compare/readme.md"/>
-    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a brd4420a com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32bg29.* .*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -1094,8 +1094,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.letimer.pulse_train.SimplicityStudio.pulse_train.slcp"/>
     <properties key="projectFilePaths" value="series2/letimer/pulse_train/SimplicityStudio/pulse_train.slcp"/>
     <properties key="readmeFiles" value="series2/letimer/pulse_train/readme.md"/>
-    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a brd4420a com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32bg29.* .*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -1111,8 +1111,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.letimer.pulse_width_modulation.SimplicityStudio.pulse_width_modulation.slcp"/>
     <properties key="projectFilePaths" value="series2/letimer/pulse_width_modulation/SimplicityStudio/pulse_width_modulation.slcp"/>
     <properties key="readmeFiles" value="series2/letimer/pulse_width_modulation/readme.md"/>
-    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a brd4420a com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32bg29.* .*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
