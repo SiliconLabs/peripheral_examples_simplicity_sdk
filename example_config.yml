@@ -107,6 +107,17 @@ example:
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
 
+  # MSC examples
+- path: series2/msc/msc_page_lock/SimplicityStudio/msc_page_lock.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/msc/msc_rw/SimplicityStudio/msc_rw.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
   # USART examples
 - path: series2/usart/async_interrupt/SimplicityStudio/usart_async_interrupt.slcp
   board_whitelist: *board_whitelist

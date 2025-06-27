@@ -255,6 +255,40 @@
     <properties key="sltPackagePath" value="series2/letimer/pulse_width_modulation/SimplicityStudio/pulse_width_modulation.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="msc_page_lock" label="Peripheral Examples - MSC Page Lock" description="This project demonstrates how to lock flash pages using the MSC_PAGELOCKn and MSC_MISCLOCKWORD registers.  While the locking process is a simple matter of writing 1s to the relevant register bits, positioning of these writes in user program code is somewhat more complicated.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.msc.msc_page_lock.SimplicityStudio.msc_page_lock.slcp"/>
+    <properties key="projectFilePaths" value="series2/msc/msc_page_lock/SimplicityStudio/msc_page_lock.slcp"/>
+    <properties key="readmeFiles" value="series2/msc/msc_page_lock/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/msc/msc_page_lock/SimplicityStudio/msc_page_lock.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="msc_rw" label="Peripheral Examples - MSC RW" description="This project demonstrates the use of the userdata page of the flash memory. The value 32 is stored in the 4th word of the page. A variable is set to the value stored at this location, which can then be read in the debugger.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.msc.msc_rw.SimplicityStudio.msc_rw.slcp"/>
+    <properties key="projectFilePaths" value="series2/msc/msc_rw/SimplicityStudio/msc_rw.slcp"/>
+    <properties key="readmeFiles" value="series2/msc/msc_rw/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/msc/msc_rw/SimplicityStudio/msc_rw.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="usart_async_interrupt" label="Peripheral Examples - USART Async Interrupt" description="This project demonstrates interrupt-driven operation of the USART in asynchronous mode.  USART0 is configured for asynchronous operation at 115200 baud with 8 data bits, no parity, and one stop bit (115200N81). The main loop waits until 80 characters or a carriage return are received and then echos these back to the user.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>

@@ -17,6 +17,12 @@
 // GPIO LETIMER route structure
 #define GPIO_LETIMERROUTE (GPIO->LETIMERROUTE)
 
+// Lock word for the last flash memory page
+#define PAGELOCKn PAGELOCK1
+
+// Bit mask to lock the last page of main flash
+#define LASTLOCK  0x80000000
+
 // <<< sl:start pin_tool >>>
 
 // <gpio> LED0

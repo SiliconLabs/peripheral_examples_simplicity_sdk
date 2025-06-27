@@ -1,0 +1,40 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: msc_rw
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - MSC Read-Write
+description: >
+  This project demonstrates the use of the userdata page of the flash memory. The value 32 is stored in the 4th word of the page. A variable is set to the value stored at this location, which can then be read in the debugger.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app_xg21.c
+    condition: [brd4181a]
+  - path: ../src/app.c
+    unless: [brd4181a]
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: power_manager
+  - id: silabs_bsp
+    from: peripheral_examples
+  - id: security_manager
+    condition: [brd4181a]
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0
+  
