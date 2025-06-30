@@ -74,3 +74,7 @@ sequence.
 * Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm Radio Board (BRD4400C) + Wireless Starter Kit Mainboard
     * Device: EFR32ZG28B312F1024IM68
         * PB02 - LED0 (WSTK Breakout Header P19)
+
+* Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PB00 - LED1 (WSTK Breakout Header P4, Expansion Header Pin 7)

@@ -427,11 +427,13 @@ example:
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/msc/msc_rw/SimplicityStudio/msc_rw.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
   # PDM examples
 - path: series2/pdm/pdm_stereo_interrupt/SimplicityStudio/pdm_stereo_interrupt.slcp
