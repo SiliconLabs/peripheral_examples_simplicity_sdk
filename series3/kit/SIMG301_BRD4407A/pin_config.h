@@ -6,6 +6,49 @@
 #define ACMP_INPUT_BUS      BBUSALLOC
 #define ACMP_INPUT_BUSALLOC GPIO_BBUSALLOC_BODD0_ACMP0
 
+/*
+ * Specify the ADC positive input and negative input port and pin. These
+ * macros must be paired with a corresponding macro definition that allocates
+ * the associated ABUS to the ADC. These are...
+ *
+ * GPIO->ABUSALLOC |= GPIO_ABUSALLOC_AEVEN0_ADC0
+ * GPIO->ABUSALLOC |= GPIO_ABUSALLOC_AODD0_ADC0
+ * GPIO->BBUSALLOC |= GPIO_BBUSALLOC_BEVEN0_ADC0
+ * GPIO->BBUSALLOC |= GPIO_BBUSALLOC_BODD0_ADC0
+ * GPIO->CDBUSALLOC |= GPIO_CDBUSALLOC_CDEVEN0_ADC0
+ * GPIO->CDBUSALLOC |= GPIO_CDBUSALLOC_CDODD0_ADC0
+ *
+ * ...for port A, port B, and port C/D pins, even and odd, respectively.
+ */
+
+// ADC Input GPIO configuration
+#define ADC_INPUT0_PORT      SL_GPIO_PORT_A
+#define ADC_INPUT0_PIN       6
+
+// ADC Input GPIO configuration
+#define ADC_INPUT1_PORT      SL_GPIO_PORT_A
+#define ADC_INPUT1_PIN       7
+
+// ADC Input Analog Bus allocation
+#define ADC_INPUT0_BUS       ABUSALLOC
+#define ADC_INPUT0_BUSALLOC  GPIO_ABUSALLOC_AEVEN0_ADC0
+#define ADC_INPUT1_BUS       ABUSALLOC
+#define ADC_INPUT1_BUSALLOC  GPIO_ABUSALLOC_AODD0_ADC0
+
+// ADC Input HAL driver configuration
+#define ADC_INPUT0_HAL_PORT  SL_HAL_ADC_PORT_POS_PORTA
+#define ADC_INPUT1_HAL_PORT  SL_HAL_ADC_PORT_POS_PORTA
+#define ADC_CHANNEL          SL_HAL_ADC_CHANNEL_ID_0
+
+// ADC Output GPIO configuration
+#define ADC_OUTPUT0_PORT     SL_GPIO_PORT_A
+#define ADC_OUTPUT0_PIN      0
+#define ADC_ASYNC_PRS_CH     0 // PRS channels 0-5 can be used with port A; see data sheet Digital Peripheral Connectivity for details
+
+// LETIMER Output GPIO configuration
+#define LETIMER_OUTPUT0_PORT SL_GPIO_PORT_A
+#define LETIMER_OUTPUT0_PIN  5
+
 // <<< sl:start pin_tool >>>
 
 // <gpio> LED0

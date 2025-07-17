@@ -870,3 +870,26 @@ example:
 
 - path: series3/wdog/wdog_window_interrupt/SimplicityStudio/wdog_window_interrupt_series3.slcp
   board_whitelist: *board_whitelist_s3
+  
+  # ADC examples
+- path: series3/adc/adc_single_differential_polled/SimplicityStudio/adc_single_differential_polled_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/adc/adc_single_gpio_prs_ldma/SimplicityStudio/adc_single_gpio_prs_ldma_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/adc/adc_single_interrupt/SimplicityStudio/adc_single_interrupt_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/adc/adc_single_letimer_interrupt/SimplicityStudio/adc_single_letimer_interrupt_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/adc/adc_single_letimer_prs_ldma/SimplicityStudio/adc_single_letimer_prs_ldma_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/adc/adc_single_oversampling/SimplicityStudio/adc_single_oversampling_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/adc/adc_single_window_compare/SimplicityStudio/adc_single_window_compare_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
