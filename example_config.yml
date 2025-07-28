@@ -852,6 +852,10 @@ example:
 - path: series3/acmp/acmp_vmon/SimplicityStudio/acmp_vmon_series3.slcp
   board_whitelist: *board_whitelist_s3
   
+  # PIXELRZ examples
+- path: series3/pixelrz/pixelrz_ldma_letimer_prs_gpio/SimplicityStudio/pixelrz_ldma_letimer_prs_gpio_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
   # WDOG examples
 - path: series3/wdog/wdog_prs_clear/SimplicityStudio/wdog_prs_clear_series3.slcp
   board_whitelist: *board_whitelist_s3
