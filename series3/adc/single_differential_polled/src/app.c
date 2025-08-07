@@ -24,12 +24,12 @@
 #include "pin_config.h"
 
 const sl_gpio_t GPIO_ADC_INPUT0 = { .port = ADC_INPUT0_PORT,
-                                    .pin = ADC_INPUT0_PIN };
+                                    .pin  = ADC_INPUT0_PIN };
 const sl_gpio_t GPIO_ADC_INPUT1 = { .port = ADC_INPUT1_PORT,
-                                    .pin = ADC_INPUT1_PIN };
+                                    .pin  = ADC_INPUT1_PIN };
 
 static volatile sl_hal_adc_result_t sample;
-static volatile double singleResult;
+static volatile float singleResult;
 
 /***************************************************************************//**
  * Initialize GPIO.
@@ -76,23 +76,24 @@ void adc_init(void)
 
   // Configure scan table
   initScanEntry.pos_port = ADC_INPUT0_HAL_PORT;
-  initScanEntry.pos_pin = ADC_INPUT0_PIN;
+  initScanEntry.pos_pin  = ADC_INPUT0_PIN;
   initScanEntry.neg_port = ADC_INPUT1_HAL_PORT;
-  initScanEntry.neg_pin = ADC_INPUT1_PIN;
+  initScanEntry.neg_pin  = ADC_INPUT1_PIN;
 
   // Configure gain to adjust full-scale to 3.84 V (from internal reference)
   initConfig.gain = SL_HAL_ADC_ANALOG_GAIN_0_3125;
 
   // Configure and enable ADC
+  init.debug_halt = true;
   init.scan_trigger_action = SL_HAL_ADC_TRIGGER_ACTION_ONCE;
-  init.config[initScanEntry.config_id] = initConfig;
-  init.entries[ADC_CHANNEL] = initScanEntry;
+  init.config[SL_HAL_ADC_CONFIG_ID_0] = initConfig;
+  init.entries[SL_HAL_ADC_CHANNEL_ID_0] = initScanEntry;
 
   sl_hal_adc_init(ADC0, &init, adcclk_clock_freq);
   sl_hal_adc_enable(ADC0);
 
   // Configure scan channels
-  sl_hal_adc_set_scan_mask(ADC0, (1 << ADC_CHANNEL));
+  sl_hal_adc_set_scan_mask(ADC0, (1 << SL_HAL_ADC_CHANNEL_ID_0));
 }
 
 /***************************************************************************//**
@@ -110,7 +111,7 @@ void app_init(void)
  ******************************************************************************/
 void app_process_action(void)
 {
-  // Start ADC continuous scan
+  // Start ADC scan
   sl_hal_adc_start(ADC0);
 
   /*
@@ -128,8 +129,7 @@ void app_process_action(void)
   /*
    * For differential inputs, the range is from -Vref to + Vref, i.e.,
    * for Vref = VBGR = 1.2 V, and with analog gain = 0.3125, 12 bits represents
-   * (-Vref / 0.3125) to (+Vref / 0.3125) = -3.84 V to +3.84 V => 7.68 V full
-   * scale.
+   * (-Vref / 0.3125) to (+Vref / 0.3125) = -3.84 V to +3.84 V.
    */
   singleResult = (int16_t)sample.data * 2.0f * 1.2f / 0.3125f / 0xFFF;
 }

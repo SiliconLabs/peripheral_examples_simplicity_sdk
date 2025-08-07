@@ -2023,6 +2023,125 @@
     <properties key="sltPackagePath" value="series3/acmp/acmp_vmon/SimplicityStudio/acmp_vmon_series3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="adc_scan_adc_timer_s3" label="Peripheral Examples - ADC Scan with ADC Timer" description="This project demonstrates use of the ADC to take single-ended analog measurements of two input channels, with conversions triggered by the local ADC peripheral timer.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.scan_adc_timer.SimplicityStudio.adc_scan_adc_timer_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/adc/scan_adc_timer/SimplicityStudio/adc_scan_adc_timer_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/adc/scan_adc_timer/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/adc/scan_adc_timer/SimplicityStudio/adc_scan_adc_timer_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="adc_scan_continuous_ldma_s3" label="Peripheral Examples - ADC Scan Continuous" description="This project demonstrates use of the ADC to continuously sample two single-ended input channels, using LDMA to transfer conversion results to a buffer in RAM.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.scan_continuous_ldma.SimplicityStudio.adc_scan_continuous_ldma_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/adc/scan_continuous_ldma/SimplicityStudio/adc_scan_continuous_ldma_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/adc/scan_continuous_ldma/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/adc/scan_continuous_ldma/SimplicityStudio/adc_scan_continuous_ldma_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="adc_scan_gpio_prs_ldma_s3" label="Peripheral Examples - ADC Scan GPIO PRS LDMA" description="This project demonstrates using the ADC peripheral to take single-ended analog measurements of two input channels. Conversions are triggered by rising edge of a GPIO input via PRS.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.scan_gpio_prs_ldma.SimplicityStudio.adc_scan_gpio_prs_ldma_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/adc/scan_gpio_prs_ldma/SimplicityStudio/adc_scan_gpio_prs_ldma_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/adc/scan_gpio_prs_ldma/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/adc/scan_gpio_prs_ldma/SimplicityStudio/adc_scan_gpio_prs_ldma_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="adc_scan_interrupt_s3" label="Peripheral Examples - ADC Scan Interrupt" description="This project demonstrates using the ADC peripheral to take single-ended analog measurements of two input channels, with interrupt upon conversion completion of the two channel scan.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.scan_interrupt.SimplicityStudio.adc_scan_interrupt_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/adc/scan_interrupt/SimplicityStudio/adc_scan_interrupt_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/adc/scan_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/adc/scan_interrupt/SimplicityStudio/adc_scan_interrupt_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="adc_scan_letimer_interrupt_s3" label="Peripheral Examples - ADC Scan LETIMER Interrupt" description="This project demonstrates using the ADC peripheral to take single-ended analog measurements of two input channels, with conversion scans triggered periodically by LETIMER underflow interrupt.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.scan_letimer_interrupt.SimplicityStudio.adc_scan_letimer_interrupt_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/adc/scan_letimer_interrupt/SimplicityStudio/adc_scan_letimer_interrupt_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/adc/scan_letimer_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/adc/scan_letimer_interrupt/SimplicityStudio/adc_scan_letimer_interrupt_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="adc_scan_letimer_prs_ldma_s3" label="Peripheral Examples - ADC Scan LETIMER PRS LDMA" description="This project demonstrates use of the ADC to take single-ended analog measurements of two input channels, triggered periodically through PRS underflow of LETIMER.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.scan_letimer_prs_ldma.SimplicityStudio.adc_scan_letimer_prs_ldma_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/adc/scan_letimer_prs_ldma/SimplicityStudio/adc_scan_letimer_prs_ldma_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/adc/scan_letimer_prs_ldma/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/adc/scan_letimer_prs_ldma/SimplicityStudio/adc_scan_letimer_prs_ldma_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="adc_scan_window_compare_vmon_s3" label="Peripheral Examples - ADC Scan Window Compare Voltage Monitor" description="This project demonstrates using the ADC peripheral's window comparison feature with the four dedicated internal supply inputs, acting as a voltage monitor for early detection of drop in supply voltage prior to reaching levels that would cause a brown-out reset.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.scan_window_compare_vmon.SimplicityStudio.adc_scan_window_compare_vmon_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/adc/scan_window_compare_vmon/SimplicityStudio/adc_scan_window_compare_vmon_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/adc/scan_window_compare_vmon/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/adc/scan_window_compare_vmon/SimplicityStudio/adc_scan_window_compare_vmon_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="adc_single_differential_polled_s3" label="Peripheral Examples - ADC Single Differential Polled" description="This project demonstrates using the ADC peripheral to take a single, differential measurement of analog voltage across two inputs.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>

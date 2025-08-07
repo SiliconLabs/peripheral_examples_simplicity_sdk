@@ -1,12 +1,12 @@
-# Peripheral Examples - ADC Single LETIMER PRS LDMA #
+# Peripheral Examples - ADC Scan LETIMER PRS LDMA #
 
 ## Summary ##
 
-This project demonstrates use of the ADC to take single-ended analog measurements of a single channel, triggered periodically through PRS underflow of LETIMER.
+This project demonstrates use of the ADC to take single-ended analog measurements of two external input channels, triggered periodically through PRS underflow of LETIMER.
 
-After initialization, underflows of the LETIMER triggers an ADC conversion of a single external input via PRS. After NUM_SAMPLES of ADC conversions, an LDMA data transfer occurs, storing the raw data to a memory buffer using the DMADRV software component. The LDMA interrupts upon transfer completion, and DMADRV callback is used to toggle a GPIO before returning to the main application loop and starting a new data transfer. The LETIMER overflow events are observable via GPIO toggle at defined LETIMER_FREQ toggle rate.
+After initialization, underflows of the LETIMER triggers an ADC scan conversion of a two external inputs via PRS. After NUM_SAMPLES of ADC conversions, an LDMA data transfer occurs, storing the raw data from the ADC FIFO to a memory buffer using the DMADRV software component. The LDMA interrupts upon transfer completion, and DMADRV callback is used to toggle a GPIO before returning to the main application loop and starting a new data transfer. The LETIMER overflow events are observable via GPIO toggle at defined LETIMER_FREQ toggle rate.
 
-NOTE: To modify this example to take a differential external measurement, the negative port and pin for scan table entries must change. To take a differential measurement, the analog multiplexer selection must consist of one EVEN ABUS channel and one ODD ABUS channel.
+NOTE: To modify this example to take a differential external measurement, the negative port and pin for scan table entries must be changed. To take a differential measurement, the analog multiplexer selection must consist of one EVEN ABUS channel and one ODD ABUS channel.
 
 ## Peripherals used ##
 
@@ -42,6 +42,7 @@ NOTE: To modify this example to take a differential external measurement, the ne
 6. At the breakpoint, observe the raw data stored in the buffer within the Expressions window:
    * LDMA callback is called when transfer completes after NUM_SAMPLES of LETIMER underflow events.
    * Observe how these values respond to different voltage inputs on the corresponding pin.
+   * Both channel conversions are present in the buffer, meaning every other conversion result corresponds to each of the two channels. Channel ID is stored in the raw data's 8 MSBs. 
 7. Repeat steps 5-6
    * Vary voltage between debug breaks to observe change in conversion results once LDMA transfer completes
    * Observe LED0 toggle on/off with each LDMA transfer cycle
@@ -51,5 +52,6 @@ NOTE: To modify this example to take a differential external measurement, the ne
 * Board: Silicon Labs SixG301 Radio Board (BRD4407A) + Wireless Pro Kit Mainboard
     * Device: SIMG301M104LIL
         * PA05 - LETIMER output, Expansion Header 9
-        * PA06 - ADC positive input, Expansion Header 11
+        * PA06 - ADC positive input 0, Expansion Header 11
+        * PA07 - ADC positive input 1, Expansion Header 13 
         * PD03 - LED0 output, Lower Breakout Header P31

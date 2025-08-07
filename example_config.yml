@@ -853,6 +853,27 @@ example:
   board_whitelist: *board_whitelist_s3
   
   # ADC examples
+- path: series3/adc/scan_adc_timer/SimplicityStudio/adc_scan_adc_timer_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/adc/scan_continuous_ldma/SimplicityStudio/adc_scan_continuous_ldma_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/adc/scan_gpio_prs_ldma/SimplicityStudio/adc_scan_gpio_prs_ldma_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/adc/scan_interrupt/SimplicityStudio/adc_scan_interrupt_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/adc/scan_letimer_interrupt/SimplicityStudio/adc_scan_letimer_interrupt_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/adc/scan_letimer_prs_ldma/SimplicityStudio/adc_scan_letimer_prs_ldma_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/adc/scan_window_compare_vmon/SimplicityStudio/adc_scan_window_compare_vmon_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
 - path: series3/adc/adc_single_differential_polled/SimplicityStudio/adc_single_differential_polled_s3.slcp
   board_whitelist: *board_whitelist_s3
   

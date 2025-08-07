@@ -29,18 +29,16 @@
  * 16-bit left-justified format; 12-bit conversion result compared to upper
  * 12-bits of window comparator
  */
-#define WINDOW_UPPER_BOUND      0xC000   // 1.80V
-#define WINDOW_LOWER_BOUND      0x4000   // 0.60V
+#define WINDOW_UPPER_BOUND      0x2D50 // 1.70V for config_0; 0.85V for config_1
+#define WINDOW_LOWER_BOUND      0x0000 // 0.00V
 
-const sl_gpio_t GPIO_ADC_INPUT0  = { .port = ADC_INPUT0_PORT,
-                                     .pin  = ADC_INPUT0_PIN };
 const sl_gpio_t GPIO_ADC_OUTPUT0 = { .port = ADC_OUTPUT0_PORT,
                                      .pin  = ADC_OUTPUT0_PIN };
 const sl_gpio_t GPIO_LED0        = { .port = LED0_PORT,
                                      .pin  = LED0_PIN };
 
 static volatile sl_hal_adc_result_t sample;
-static volatile float singleResult;
+static volatile float scanResults[4];
 
 static void ADC0_Handler(void);
 
@@ -52,23 +50,11 @@ void gpio_init(void)
   // Initialize GPIO driver
   sl_gpio_init();
 
-  /*
-   * Configure ADC input as disabled; this is the default configuration out
-   * of reset, so API call is not required for this example
-   */
-  sl_gpio_set_pin_mode(&GPIO_ADC_INPUT0, SL_GPIO_MODE_DISABLED, false);
-
   // Configure LED0 output
   sl_gpio_set_pin_mode(&GPIO_LED0, SL_GPIO_MODE_PUSH_PULL, false);
 
   // Configure ADC conversion complete via GPIO toggle in interrupt callback
   sl_gpio_set_pin_mode(&GPIO_ADC_OUTPUT0, SL_GPIO_MODE_PUSH_PULL, false);
-
-  // Enable optional low noise mode for ADC input
-  GPIO->P_SET[ADC_INPUT0_PORT].AMUXMODE = 1 << ADC_INPUT0_PIN;
-
-  // Allocate the analog bus for ADC0 inputs
-  GPIO->ADC_INPUT0_BUS |= ADC_INPUT0_BUSALLOC;
 }
 
 /***************************************************************************//**
@@ -79,8 +65,12 @@ void adc_init(void)
   // Declare initialization structures
   uint32_t adcclk_clock_freq;
   sl_hal_adc_init_t init = SL_HAL_ADC_INIT_DEFAULT;
-  sl_hal_adc_config_t initConfig = SL_HAL_ADC_CONFIG_DEFAULT;
-  sl_hal_adc_scan_entry_t initScanEntry = SL_HAL_ADC_SCAN_ENTRY_DEFAULT;
+  sl_hal_adc_config_t initConfig[2] = { SL_HAL_ADC_CONFIG_DEFAULT,
+                                        SL_HAL_ADC_CONFIG_DEFAULT };
+  sl_hal_adc_scan_entry_t initScanEntry[4] = { SL_HAL_ADC_SCAN_ENTRY_DEFAULT,
+                                               SL_HAL_ADC_SCAN_ENTRY_DEFAULT,
+                                               SL_HAL_ADC_SCAN_ENTRY_DEFAULT,
+                                               SL_HAL_ADC_SCAN_ENTRY_DEFAULT };
 
   // Enable ADC peripheral bus clock
   sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_ADC0);
@@ -90,12 +80,23 @@ void adc_init(void)
                                               &adcclk_clock_freq);
 
   // Configure scan table
-  initScanEntry.compare  = true;
-  initScanEntry.pos_port = ADC_INPUT0_HAL_PORT;
-  initScanEntry.pos_pin  = ADC_INPUT0_PIN;
+  initScanEntry[0].compare  = true;
+  initScanEntry[0].pos_port = SL_HAL_ADC_PORT_POS_SUPPLY;
+  initScanEntry[0].pos_pin = 0; // AVDD divided by 4
+  initScanEntry[1].compare  = true;
+  initScanEntry[1].pos_port = SL_HAL_ADC_PORT_POS_SUPPLY;
+  initScanEntry[1].pos_pin = 1; // IOVDD divided by 4
+  initScanEntry[2].compare  = true;
+  initScanEntry[2].pos_port = SL_HAL_ADC_PORT_POS_SUPPLY;
+  initScanEntry[2].pos_pin = 2; // DVDD divided by 4
+  initScanEntry[3].compare  = true;
+  initScanEntry[3].pos_port = SL_HAL_ADC_PORT_POS_SUPPLY;
+  initScanEntry[3].pos_pin = 3; // DECOUPLE divided by 4
+  initScanEntry[3].config_id = SL_HAL_ADC_CONFIG_ID_1;
 
   // Configure gain to adjust full-scale to 2.4 V (from internal reference)
-  initConfig.gain = SL_HAL_ADC_ANALOG_GAIN_0_5;
+  initConfig[0].gain = SL_HAL_ADC_ANALOG_GAIN_0_5;
+  initConfig[1].gain = SL_HAL_ADC_ANALOG_GAIN_1;
 
   /*
    * Configure the comparison window
@@ -108,17 +109,25 @@ void adc_init(void)
   init.less_than = WINDOW_UPPER_BOUND;
 
   // Configure and enable ADC
+  init.show_id = true;    // enable channel ID to differentiate in ADC callback
   init.debug_halt = true;
   init.voltage_reference = SL_HAL_ADC_REFERENCE_VREFINT;
   init.scan_trigger_action = SL_HAL_ADC_TRIGGER_ACTION_CONTINUOUS;
-  init.config[SL_HAL_ADC_CONFIG_ID_0] = initConfig;
-  init.entries[SL_HAL_ADC_CHANNEL_ID_0] = initScanEntry;
+  init.config[SL_HAL_ADC_CONFIG_ID_0] = initConfig[0];
+  init.config[SL_HAL_ADC_CONFIG_ID_1] = initConfig[1]; // gain adjust for DECOUPLE
+  init.entries[SL_HAL_ADC_CHANNEL_ID_0] = initScanEntry[0];
+  init.entries[SL_HAL_ADC_CHANNEL_ID_1] = initScanEntry[1];
+  init.entries[SL_HAL_ADC_CHANNEL_ID_2] = initScanEntry[2];
+  init.entries[SL_HAL_ADC_CHANNEL_ID_3] = initScanEntry[3];
 
   sl_hal_adc_init(ADC0, &init, adcclk_clock_freq);
   sl_hal_adc_enable(ADC0);
 
   // Configure scan channels
-  sl_hal_adc_set_scan_mask(ADC0, (1 << SL_HAL_ADC_CHANNEL_ID_0));
+  sl_hal_adc_set_scan_mask(ADC0, ((1 << SL_HAL_ADC_CHANNEL_ID_0)
+                           | (1 << SL_HAL_ADC_CHANNEL_ID_1)
+                           | (1 << SL_HAL_ADC_CHANNEL_ID_2)
+                           | (1 << SL_HAL_ADC_CHANNEL_ID_3)));
 
   // Set the ADC interrupt handler
   sl_interrupt_manager_set_irq_handler(ADC0_IRQn, ADC0_Handler);
@@ -147,8 +156,8 @@ void app_init(void)
  ******************************************************************************/
 void app_process_action(void)
 {
-  // Clear LED0 (off) when supply voltages are no longer below threshold.
-  GPIO->P_CLR[LED0_PORT].DOUT = 1UL << LED0_PIN;
+  // Set LED0 (on) when supply voltages are no longer below threshold.
+  GPIO->P_SET[LED0_PORT].DOUT = 1UL << LED0_PIN;
 }
 
 /***************************************************************************//**
@@ -160,11 +169,11 @@ static void ADC0_Handler(void)
   uint32_t rawData, fifoCnt;
 
   /*
-   * Set LED0 (on) to indicate when supplies are below threshold. IOVDD is also
+   * Clear LED0 (off) to indicate when supplies are below threshold. IOVDD is also
    * lower than typical and LED0 will be dim if visible. Direct register writes
    * are used to optimize execution time.
    */
-  GPIO->P_SET[LED0_PORT].DOUT = 1UL << LED0_PIN;
+  GPIO->P_CLR[LED0_PORT].DOUT = 1UL << LED0_PIN;
 
   // Also toggle ADC output to observe callback execution time.
   GPIO->P_SET[ADC_OUTPUT0_PORT].DOUT = 1UL << ADC_OUTPUT0_PIN;
@@ -194,11 +203,21 @@ static void ADC0_Handler(void)
     sample.data = (rawData & (uint32_t)0x0000FFFF) >> 0;
     sample.id = (rawData & (uint32_t)0xFF000000) >> 24;
 
-    /*
-     * For single-ended input, the range is 0 V to (+Vref / 0.5) = 2.4 V with
-     * 12 bits for the conversion value.
-     */
-    singleResult = sample.data * 1.2f / 0.5f / 0xFFF;
+    if (sample.id > 2) { // DECOUPLE supply
+      /*
+       * For single-ended input, the range is 0 V to +Vref = 1.2 V with
+       * 12 bits for the conversion value. Conversion must be multiplied by 4
+       * to compensate for internal attenuation factor for supply inputs.
+       */
+      scanResults[sample.id] = sample.data * 4 * 1.2f / 0xFFF;
+    } else {
+      /*
+       * For single-ended input, the range is 0 V to (+Vref / 0.5) = 2.4 V with
+       * 12 bits for the conversion value. Conversion must be multiplied by 4
+       * to compensate for internal attenuation factor for supply inputs.
+       */
+      scanResults[sample.id] = sample.data * 4 * 1.2f / 0.5f / 0xFFF;
+    }
 
     // Decrement while-loop counter.
     fifoCnt--;

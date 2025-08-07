@@ -36,6 +36,8 @@
 
 const sl_gpio_t GPIO_ADC_INPUT0 = { .port = ADC_INPUT0_PORT,
                                     .pin  = ADC_INPUT0_PIN };
+const sl_gpio_t GPIO_ADC_INPUT1 = { .port = ADC_INPUT1_PORT,
+                                    .pin  = ADC_INPUT1_PIN };
 const sl_gpio_t GPIO_LED0       = { .port = LED0_PORT,
                                     .pin  = LED0_PIN };
 const sl_gpio_t GPIO_LETIMER0   = { .port = LETIMER_OUTPUT0_PORT,
@@ -49,7 +51,7 @@ const sl_gpio_t GPIO_LETIMER0   = { .port = LETIMER_OUTPUT0_PORT,
 unsigned int channelId;
 
 // Buffer for ADC samples
-uint32_t singleBuffer[NUM_SAMPLES];
+uint32_t scanBuffer[NUM_SAMPLES];
 
 /***************************************************************************//**
  * Initialize GPIO.
@@ -65,6 +67,7 @@ void gpio_init(void)
    * GPIO mode recommendation.
    */
   sl_gpio_set_pin_mode(&GPIO_ADC_INPUT0, SL_GPIO_MODE_DISABLED, false);
+  sl_gpio_set_pin_mode(&GPIO_ADC_INPUT1, SL_GPIO_MODE_DISABLED, false);
 
   // Configure LED0 output
   sl_gpio_set_pin_mode(&GPIO_LED0, SL_GPIO_MODE_PUSH_PULL, false);
@@ -74,17 +77,22 @@ void gpio_init(void)
 
   // Enable optional low noise mode for ADC input
   GPIO->P_SET[ADC_INPUT0_PORT].AMUXMODE = 1 << ADC_INPUT0_PIN;
+  GPIO->P_SET[ADC_INPUT1_PORT].AMUXMODE = 1 << ADC_INPUT1_PIN;
 
   // Allocate the analog bus for ADC0 inputs
   GPIO->ADC_INPUT0_BUS |= ADC_INPUT0_BUSALLOC;
+  GPIO->ADC_INPUT1_BUS |= ADC_INPUT1_BUSALLOC;
 }
 
 void prs_init(void)
-{
+
+/***************************************************************************//**
+ * Initialize PRS.
+ ******************************************************************************/
   // Enable PRS peripheral bus clock
   sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_PRS);
 
-  // Configure LETIMER0 as PRS producer to initiate single ADC conversion
+  // Configure LETIMER0 as PRS producer to initiate scan ADC conversion
   sl_hal_prs_async_connect_channel_producer(ADC_ASYNC_PRS_CH,
                                             SL_HAL_PRS_ASYNC_LETIMER0_CH1);
   sl_hal_prs_connect_channel_consumer(ADC_ASYNC_PRS_CH, SL_HAL_PRS_TYPE_ASYNC,
@@ -94,7 +102,7 @@ void prs_init(void)
 /***************************************************************************//**
  * @brief LETIMER initialization
  ******************************************************************************/
-void letimer_init(void)
+ * Initialize LETIMER.
 {
   // Declare initialization structures
   uint32_t branch_clock_freq;
@@ -134,20 +142,20 @@ void letimer_init(void)
   sl_hal_letimer_set_top(LETIMER0, topValue);
 }
 
+void ldma_callback(void)
+
 /***************************************************************************//**
  * LDMA callback function toggles LED0.
  ******************************************************************************/
-void ldma_callback(void)
-{
   // Toggle LED0 to notify that transfers are complete
   sl_gpio_toggle_pin(&GPIO_LED0);
 }
 
+void ldma_init(void)
+
 /***************************************************************************//**
  * Initialize LDMA.
  ******************************************************************************/
-void ldma_init(void)
-{
   // Initialize DMADRV
   DMADRV_Init();
 
@@ -166,7 +174,8 @@ void adc_init(void)
   uint32_t branch_clock_freq;
   sl_hal_adc_init_t init = SL_HAL_ADC_INIT_DEFAULT;
   sl_hal_adc_config_t initConfig = SL_HAL_ADC_CONFIG_DEFAULT;
-  sl_hal_adc_scan_entry_t initScanEntry = SL_HAL_ADC_SCAN_ENTRY_DEFAULT;
+  sl_hal_adc_scan_entry_t initScanEntry[2] = {SL_HAL_ADC_SCAN_ENTRY_DEFAULT,
+                                              SL_HAL_ADC_SCAN_ENTRY_DEFAULT};
 
   // Enable ADC peripheral bus clock
   sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_ADC0);
@@ -176,26 +185,31 @@ void adc_init(void)
                                               &branch_clock_freq);
 
   // Configure scan table
-  initScanEntry.pos_port = ADC_INPUT0_HAL_PORT;
-  initScanEntry.pos_pin  = ADC_INPUT0_PIN;
+  initScanEntry[0].pos_port = ADC_INPUT0_HAL_PORT;
+  initScanEntry[0].pos_pin  = ADC_INPUT0_PIN;
+  initScanEntry[1].pos_port = ADC_INPUT1_HAL_PORT;
+  initScanEntry[1].pos_pin  = ADC_INPUT1_PIN;
 
   // Configure gain to adjust full-scale to 3.84 V (from internal reference)
   initConfig.gain = SL_HAL_ADC_ANALOG_GAIN_0_3125;
 
   // Configure and enable ADC
+  init.show_id = true;  // enable channel ID to differentiate in raw data buffer
   init.debug_halt = true;
   init.warmup_mode = SL_HAL_ADC_WARMUP_NORMAL;
   init.scan_trigger = SL_HAL_ADC_TRIGGER_PRSPOS;
   init.scan_trigger_action = SL_HAL_ADC_TRIGGER_ACTION_ONCE;
   init.data_valid = (sl_hal_adc_data_valid_t)(NUM_SAMPLES - 1);
-  init.config[SL_HAL_ADC_CONFIG_ID_0] = initConfig;
-  init.entries[SL_HAL_ADC_CHANNEL_ID_0] = initScanEntry;
+  init.config[initScanEntry[0].config_id] = initConfig;
+  init.entries[SL_HAL_ADC_CHANNEL_ID_0] = initScanEntry[0];
+  init.entries[SL_HAL_ADC_CHANNEL_ID_1] = initScanEntry[1];
 
   sl_hal_adc_init(ADC0, &init, branch_clock_freq);
   sl_hal_adc_enable(ADC0);
 
   // Configure scan channels
-  sl_hal_adc_set_scan_mask(ADC0, (1 << SL_HAL_ADC_CHANNEL_ID_0));
+  sl_hal_adc_set_scan_mask(ADC0, ((1 << SL_HAL_ADC_CHANNEL_ID_0)
+                           | (1 << SL_HAL_ADC_CHANNEL_ID_1)));
 }
 
 /***************************************************************************//**
@@ -233,7 +247,7 @@ void app_process_action(void)
     // Start next data transfer from ADC peripheral to data buffer
     DMADRV_PeripheralMemory(channelId,
                             SL_HAL_LDMA_PERIPHERAL_SIGNAL_ADC0_SCAN,
-                            singleBuffer, (void*)&(ADC0->SCANFIFODATA), true,
+                            scanBuffer, (void*)&(ADC0->SCANFIFODATA), true,
                             NUM_SAMPLES, dmadrvDataSize4,
                             (DMADRV_Callback_t)&ldma_callback, NULL);
   }

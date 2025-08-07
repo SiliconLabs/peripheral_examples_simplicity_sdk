@@ -1,0 +1,37 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: adc_scan_continuous_ldma_s3
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - ADC Scan Continuous LDMA
+description: >
+  This project demonstrates use of the ADC to continuously sample two single-ended external inputs, with the LDMA saving conversion results to RAM and LDMA interrupt toggling a GPIO upon transfer completion.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: silabs_bsp
+    from: peripheral_examples
+  - id: hal_adc
+  - id: hal_ldma
+  - id: dmadrv
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0
+  

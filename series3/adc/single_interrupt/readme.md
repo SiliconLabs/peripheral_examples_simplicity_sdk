@@ -28,12 +28,12 @@ NOTE: To modify this example to take a differential external measurement, the ne
 1. Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
 2. Build the example project and download it to the target system.
 3. Open the Simplicity Debugger perspective and add "sample" and "singleResult" to the Expressions Window.
-4. Set a breakpoint at the end of the ADC0_IRQHandler.
+4. Set a breakpoint at the end of the ADC0_Handler().
 5. Run the example project.
 6. At the breakpoint, observe the raw data and calculated voltage in the Expressions window:
    * Observe how these values respond to different voltage inputs on the corresponding pin.
 
-NOTE: By setting a breakpoint with the ADC continuously converting, the ADC conversion result FIFO will fill and overflow, requiring multiple cycles through the breakpoint to observe voltage changes on the analog input.
+NOTE: ADC peripheral has been configured to allow halting the ADC while debugging. With the ADC continuously converting, the ADC conversion result FIFO can fill and overflow while processing data or while debugging.
 
 ## Hardware & Connections ##
 

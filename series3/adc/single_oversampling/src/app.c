@@ -25,13 +25,13 @@
 
 #include "pin_config.h"
 
-const sl_gpio_t GPIO_ADC_INPUT0 = { .port = ADC_INPUT0_PORT,
-                                    .pin = ADC_INPUT0_PIN };
+const sl_gpio_t GPIO_ADC_INPUT0  = { .port = ADC_INPUT0_PORT,
+                                     .pin  = ADC_INPUT0_PIN };
 const sl_gpio_t GPIO_ADC_OUTPUT0 = { .port = ADC_OUTPUT0_PORT,
-                                     .pin = ADC_OUTPUT0_PIN };
+                                     .pin  = ADC_OUTPUT0_PIN };
 
 static volatile sl_hal_adc_result_t sample;
-static volatile double singleResult;
+static volatile float singleResult;
 
 static void ADC0_Handler(void);
 
@@ -95,7 +95,7 @@ void adc_init(void)
 
   // Configure scan table
   initScanEntry.pos_port = ADC_INPUT0_HAL_PORT;
-  initScanEntry.pos_pin = ADC_INPUT0_PIN;
+  initScanEntry.pos_pin  = ADC_INPUT0_PIN;
 
   /*
    * Configure oversampling rate and gain to adjust full-scale to 3.84 V (from
@@ -105,15 +105,16 @@ void adc_init(void)
   initConfig.gain = SL_HAL_ADC_ANALOG_GAIN_0_3125;
 
   // Configure and enable ADC
+  init.debug_halt = true;
   init.scan_trigger_action = SL_HAL_ADC_TRIGGER_ACTION_CONTINUOUS;
-  init.config[initScanEntry.config_id] = initConfig;
-  init.entries[ADC_CHANNEL] = initScanEntry;
+  init.config[SL_HAL_ADC_CONFIG_ID_0] = initConfig;
+  init.entries[SL_HAL_ADC_CHANNEL_ID_0] = initScanEntry;
 
   sl_hal_adc_init(ADC0, &init, branch_clock_freq);
   sl_hal_adc_enable(ADC0);
 
   // Configure scan channels
-  sl_hal_adc_set_scan_mask(ADC0, (1 << ADC_CHANNEL));
+  sl_hal_adc_set_scan_mask(ADC0, (1 << SL_HAL_ADC_CHANNEL_ID_0));
 
   // Set the ADC interrupt handler
   sl_interrupt_manager_set_irq_handler(ADC0_IRQn, ADC0_Handler);
@@ -148,16 +149,27 @@ void app_process_action(void)
 /***************************************************************************//**
  * ADC interrupt handler.
  ******************************************************************************/
-void ADC0_Handler(void)
+__attribute__((section("text_application_ram")))
+static void ADC0_Handler(void)
 {
-  // Pull the single conversion result from the FIFO
-  sample = sl_hal_adc_pull(ADC0);
+  uint32_t rawData;
+
+  /*
+   * Clear the scan table done interrupt. This is done early in the interrupt
+   * handler so the clear command can propagate while data is being processed.
+   * Reading FIFO results does not automatically clear the interrupt flag.
+   */
+  ADC0->IF_CLR = ADC_IF_SCANTABLEDONE;
+
+  // Pull a scan conversion result from the FIFO
+  rawData = ADC0->SCANFIFODATA;
+  sample.data = (rawData & (uint32_t)0x0000FFFF) >> 0;
+  sample.id = (rawData & (uint32_t)0xFF000000) >> 24;
 
   /*
    * For single-ended input, the range is 0 V to (+Vref / 0.3125) = 3.84 V with
    * 16 bits for the conversion value.
    */
   singleResult = sample.data * 1.2f / 0.3125f / 0xFFFF;
-
-  sl_hal_adc_clear_interrupts(ADC0, ADC_IF_SCANTABLEDONE);
 }
+

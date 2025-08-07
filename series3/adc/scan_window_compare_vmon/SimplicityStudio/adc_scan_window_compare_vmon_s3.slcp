@@ -1,0 +1,35 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: adc_scan_window_compare_vmon_s3
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - ADC Scan Window Compare Voltage Monitor
+description: >
+  This project demonstrates using the ADC peripheral's window comparison feature with the four internal supply inputs to function as an early warning voltage monitor.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: silabs_bsp
+    from: peripheral_examples
+  - id: hal_adc
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0
+  

@@ -30,16 +30,18 @@
 // How many samples to capture
 #define NUM_SAMPLES   10
 
-const sl_gpio_t GPIO_LED0 = { .port = LED0_PORT, .pin = LED0_PIN };
-const sl_gpio_t GPIO_BUTTON0 = { .port = BUTTON0_PORT, .pin = BUTTON0_PIN };
-
 const sl_gpio_t GPIO_ADC_INPUT0 = { .port = ADC_INPUT0_PORT,
                                     .pin = ADC_INPUT0_PIN };
+const sl_gpio_t GPIO_BUTTON0    = { .port = BUTTON0_PORT,
+                                    .pin  = BUTTON0_PIN };
+const sl_gpio_t GPIO_LED0       = { .port = LED0_PORT,
+                                    .pin  = LED0_PIN };
 
 /*******************************************************************************
  ***************************   GLOBAL VARIABLES   ******************************
  ******************************************************************************/
 
+// Allocated DMADRV Channel ID
 unsigned int channelId;
 
 // Buffer for ADC samples
@@ -93,6 +95,9 @@ void ldma_callback(void)
   sl_gpio_toggle_pin(&GPIO_LED0);
 }
 
+/***************************************************************************//**
+ * Initialize LDMA.
+ ******************************************************************************/
 void ldma_init(void)
 {
   // Initialize DMADRV
@@ -130,18 +135,19 @@ void adc_init(void)
   initConfig.gain = SL_HAL_ADC_ANALOG_GAIN_0_3125;
 
   // Configure and enable ADC
+  init.debug_halt = true;
   init.warmup_mode = SL_HAL_ADC_WARMUP_NORMAL;
   init.scan_trigger = SL_HAL_ADC_TRIGGER_PRSPOS;
   init.scan_trigger_action = SL_HAL_ADC_TRIGGER_ACTION_ONCE;
-  init.config[initScanEntry.config_id] = initConfig;
-  init.entries[ADC_CHANNEL] = initScanEntry;
   init.data_valid = (sl_hal_adc_data_valid_t)(NUM_SAMPLES - 1);
+  init.config[SL_HAL_ADC_CONFIG_ID_0] = initConfig;
+  init.entries[SL_HAL_ADC_CHANNEL_ID_0] = initScanEntry;
 
   sl_hal_adc_init(ADC0, &init, branch_clock_freq);
   sl_hal_adc_enable(ADC0);
 
   // Configure scan channels
-  sl_hal_adc_set_scan_mask(ADC0, (1 << ADC_CHANNEL));
+  sl_hal_adc_set_scan_mask(ADC0, (1 << SL_HAL_ADC_CHANNEL_ID_0));
 }
 
 /***************************************************************************//**

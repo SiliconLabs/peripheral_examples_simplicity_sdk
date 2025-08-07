@@ -38,7 +38,6 @@
 // ADC Input HAL driver configuration
 #define ADC_INPUT0_HAL_PORT  SL_HAL_ADC_PORT_POS_PORTA
 #define ADC_INPUT1_HAL_PORT  SL_HAL_ADC_PORT_POS_PORTA
-#define ADC_CHANNEL          SL_HAL_ADC_CHANNEL_ID_0
 
 // ADC Output GPIO configuration
 #define ADC_OUTPUT0_PORT     SL_GPIO_PORT_A

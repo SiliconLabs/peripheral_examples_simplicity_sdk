@@ -1,12 +1,12 @@
-# Peripheral Examples - ADC Single LETIMER Interrupt #
+# Peripheral Examples - ADC Scan LETIMER Interrupt #
 
 ## Summary ##
 
-This project demonstrates using the ADC peripheral to take single-ended analog measurements using a single, external input, with conversions triggered periodically by LETIMER underflow interrupt. 
+This project demonstrates using the ADC peripheral to take single-ended analog measurements of two external inputs, with conversions triggered periodically by LETIMER underflow interrupt. 
 
-After the ADC and LETIMER peripherals are initialized, the LETIMER is started. When an LETIMER underflow event occurs, the LETIMER interrupt service routine is triggered, kicking off a one-shot ADC conversion. The ADC interrupt handler triggers once the conversion completes, stores the raw conversion value and calculated voltage to global variables, then finally clears the interrupt flag before returning execution to the main application loop.
+After the ADC and LETIMER peripherals are initialized, the LETIMER is started. When an LETIMER underflow event occurs, the LETIMER interrupt service routine is triggered, kicking off an ADC converion of the scan table. The ADC interrupt handler triggers once the conversion completes, stores the calculated voltage to global buffer, then finally clears the interrupt flag before returning execution to the main application loop.
 
-NOTE: To modify this example to take a differential external measurement, the negative port and pin for scan table entries must change. To take a differential measurement, the analog multiplexer selection must consist of one EVEN ABUS channel and one ODD ABUS channel.
+NOTE: To modify this example to take a differential external measurement, the negative port and pin for scan table entries must be changed. To take a differential measurement, the analog multiplexer selection must consist of one EVEN ABUS channel and one ODD ABUS channel.
 
 ## Peripherals used ##
 
@@ -31,10 +31,10 @@ NOTE: To modify this example to take a differential external measurement, the ne
 
 1. Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
 2. Build the example project and download it to the target system.
-3. Open the Simplicity Debugger perspective and add "sample" and "singleResult" to the Expressions Window.
+3. Open the Simplicity Debugger perspective and add "sample" and "scanResults" to the Expressions Window.
 4. Set a breakpoint at the end of the ADC0_Handler().
 5. Run the example project.
-6. At the breakpoint, observe the raw data and calculated voltage in the Expressions window:
+6. At the breakpoint, observe the raw data sample and calculated voltages in the Expressions window:
    * Observe how these values respond to different voltage inputs on the corresponding pin.
 7. Using oscilloscope, observe the LETIMER GPIO output toggle with each underflow / ADC conversion trigger.
 
@@ -43,4 +43,5 @@ NOTE: To modify this example to take a differential external measurement, the ne
 * Board: Silicon Labs SixG301 Radio Board (BRD4407A) + Wireless Pro Kit Mainboard
     * Device: SIMG301M104LIL
         * PA05 - LETIMER output, Expansion Header 9
-        * PA06 - ADC positive input, Expansion Header 11
+        * PA06 - ADC positive input 0, Expansion Header 11
+        * PA07 - ADC positive input 1, Expansion Header 13
