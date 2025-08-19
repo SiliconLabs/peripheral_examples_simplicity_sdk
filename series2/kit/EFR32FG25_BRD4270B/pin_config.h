@@ -98,3 +98,11 @@
 // [GPIO_CLKOUT]$
 
 // <<< sl:end pin_tool >>>
+
+// PRS input
+#define PRS_INPUT_CH_PB0 5
+#define PRS_INPUT_CH_PB1 6
+
+// PRS output
+#define PRS_OUTPUT_PORT LED1_PORT
+#define PRS_OUTPUT_PIN LED1_PIN
