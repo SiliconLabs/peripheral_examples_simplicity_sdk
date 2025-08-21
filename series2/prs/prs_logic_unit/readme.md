@@ -123,3 +123,12 @@ Listed below are the port and pin mappings for working with this example.
 		* PB01 - push button PB0
 		* PB03 - push button PB1
 		* PD03  - PRS Channel 6
+		
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
+	* Device: EFR32MG29B140F1024IM40
+		*PRS 
+			* Channel 5, PB0
+			* Channel 6, PB1 routed to PC03 (Output)
+		* PB00  - push button PB0
+		* PB01  - push button PB1
+		* PC03  - PRS Channel 6 (Expansion Header 10)

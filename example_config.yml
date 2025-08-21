@@ -453,6 +453,7 @@ example:
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
     
   # RTCC examples
 - path: series2/rtcc/rtcc_interrupt/SimplicityStudio/rtcc_interrupt.slcp
