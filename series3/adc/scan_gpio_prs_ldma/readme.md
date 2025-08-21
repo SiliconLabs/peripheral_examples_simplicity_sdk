@@ -47,7 +47,6 @@ NOTE: To modify this example to take a differential external measurement, the ne
 
 * Board: Silicon Labs SixG301 Radio Board (BRD4407A) + Wireless Pro Kit Mainboard
     * Device: SIMG301M104LIL
-    * Device: SIMG301M104LIL
         * PA06 - ADC positive input 0, Expansion Header 11
         * PA07 - ADC positive input 1, Expansion Header 13
         * PB01 - Push button BTN0 input, Lower Breakout Header P16
