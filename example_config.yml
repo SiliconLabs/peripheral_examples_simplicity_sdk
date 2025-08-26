@@ -284,11 +284,13 @@ example:
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/iadc/iadc_scan_letimer_interrupt/SimplicityStudio/iadc_scan_letimer_interrupt.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/iadc/iadc_scan_letimer_prs_ldma/SimplicityStudio/iadc_scan_letimer_prs_ldma.slcp
   board_whitelist: *board_whitelist
@@ -304,36 +306,43 @@ example:
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/iadc/iadc_scan_gpio_prs_ldma/SimplicityStudio/iadc_scan_gpio_prs_ldma.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/iadc/iadc_scan_continuous_ldma/SimplicityStudio/iadc_scan_continuous_ldma.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/iadc/iadc_scan_iadc_timer/SimplicityStudio/iadc_scan_iadc_timer.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/iadc/iadc_single_interrupt/SimplicityStudio/iadc_single_interrupt.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/iadc/iadc_single_letimer_interrupt/SimplicityStudio/iadc_single_letimer_interrupt.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/iadc/iadc_single_letimer_prs_ldma/SimplicityStudio/iadc_single_letimer_prs_ldma.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/iadc/iadc_single_calibration/SimplicityStudio/iadc_single_calibration.slcp
   board_whitelist: *board_whitelist

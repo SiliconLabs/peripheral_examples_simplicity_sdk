@@ -112,3 +112,10 @@ conversion is stored in global variable "singleResult".
     * PB04 - IADC input, single-ended, Expansion Header Pin 11, WSTK P8
     * PB02 - GPIO Push/Pull output, WSTK P19, LED0
     * PA11 - GPIO Push/Pull output, Expansion Header Pin 3, WSTK P0, LETIMER0
+
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board 
+          (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
+  * Device: EFR32MG29B140F1024IM40
+    * PB02 - IADC input, single-ended, Expansion Header Pin 15, WSTK P12
+    * PB00 - GPIO Push/Pull output, Expansion Header Pin 7, WSTK P4, LED0
+    * PA06 - GPIO Push/Pull output, Expansion Header Pin 14, WSTK P11, LETIMER0

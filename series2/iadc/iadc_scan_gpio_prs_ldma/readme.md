@@ -130,3 +130,11 @@ needed. See the reference manual for more details.
     * PB05 - IADC input, single-ended, Expansion Header Pin 13, WSTK P10
     * PB01 - GPIO input, pull-up, filtered, WSTK P17, Push Button 0
     * PD03 - GPIO Push/Pull output, WSTK P23, LED1
+
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board 
+          (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
+  * Device: EFR32MG29B140F1024IM40
+    * PB02 - IADC input, single-ended, Expansion Header Pin 15, WSTK P12
+    * PB03 - IADC input, single-ended, Expansion Header Pin 16, WSTK P13
+    * PB00 - GPIO input, pull-up, filtered, WSTK P4, Push Button 0
+    * PB01 - GPIO Push/Pull output, Expansion Header Pin 9, WSTK P10, LED1

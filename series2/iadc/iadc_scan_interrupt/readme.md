@@ -114,3 +114,9 @@ update with all eight channels' results.
   * Device: EFR32ZG28B312F1024IM68
     * PB04 - IADC input, single-ended, Expansion Header Pin 11, WSTK P8
     * PB05 - IADC input, single-ended, Expansion Header Pin 13, WSTK P10
+
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board 
+          (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
+  * Device: EFR32MG29B140F1024IM40
+    * PB02 - IADC input, single-ended, Expansion Header Pin 15, WSTK P12
+    * PB03 - IADC input, single-ended, Expansion Header Pin 16, WSTK P13
