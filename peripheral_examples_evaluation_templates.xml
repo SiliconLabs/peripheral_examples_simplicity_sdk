@@ -357,6 +357,40 @@
     <properties key="sltPackagePath" value="series2/iadc/iadc_single_letimer_prs_ldma/SimplicityStudio/iadc_single_letimer_prs_ldma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="iadc_single_window_compare" label="Peripheral Examples - IADC Single Window Compare" description="This project demonstrates using the IADC peripheral as a window comparator on a single-ended input. The window comparator is configured to trigger on output results which are inside the specified window.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.iadc.iadc_single_window_compare.SimplicityStudio.iadc_single_window_compare.slcp"/>
+    <properties key="projectFilePaths" value="series2/iadc/iadc_single_window_compare/SimplicityStudio/iadc_single_window_compare.slcp"/>
+    <properties key="readmeFiles" value="series2/iadc/iadc_single_window_compare/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/iadc/iadc_single_window_compare/SimplicityStudio/iadc_single_window_compare.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="iadc_vmon" label="Peripheral Examples - IADC Voltage Monitor" description="This project demonstrates how to use the window comparator feature in the IADC as a voltage monitor peripheral. &#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.iadc.iadc_vmon.SimplicityStudio.iadc_vmon.slcp"/>
+    <properties key="projectFilePaths" value="series2/iadc/iadc_vmon/SimplicityStudio/iadc_vmon.slcp"/>
+    <properties key="readmeFiles" value="series2/iadc/iadc_vmon/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/iadc/iadc_vmon/SimplicityStudio/iadc_vmon.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="one_shot_output_compare" label="Peripheral Examples - LETIMER one shout output compare" description="This project demonstrates output compare in EM2 using the LETIMER.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>

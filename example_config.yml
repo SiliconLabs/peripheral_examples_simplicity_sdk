@@ -97,7 +97,17 @@ example:
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
 
+- path: series2/iadc/iadc_single_window_compare/SimplicityStudio/iadc_single_window_compare.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
 - path: series2/iadc/iadc_scan_letimer_interrupt/SimplicityStudio/iadc_scan_letimer_interrupt.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/iadc/iadc_vmon/SimplicityStudio/iadc_vmon.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
