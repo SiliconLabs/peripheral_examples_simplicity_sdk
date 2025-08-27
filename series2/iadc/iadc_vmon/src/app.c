@@ -18,16 +18,10 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "em_emu.h"
 #include "em_iadc.h"
-
 #include "sl_clock_manager.h"
 #include "sl_gpio.h"
 #include "sl_interrupt_manager.h"
-#include "sl_iostream.h"
-#include "sl_iostream_init_instances.h"
-#include "sl_iostream_handles.h"
-
 #include "pin_config.h"
 
 /******************************************************************************

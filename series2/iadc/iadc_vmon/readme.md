@@ -69,13 +69,13 @@ To test the IADC voltage monitoring example on BRD4270B, make the following modi
     * Device: EFR32MG21A010F1024IM32
         * VMCU - Expansion Header Pin 2
         * GND  - Expansion Header Pin 1
-        * PB01 - LED1, WSTK EXP Header Pin 13
+        * PB01 - LED1, WSTK Expansion Header Pin 13
 
 * Board:  Silicon Labs EFR32xG22 Radio Board (BRD4182A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG22A224F512IM40
         * VMCU - Expansion Header Pin 2
         * GND  - Expansion Header Pin 1
-        * PD03 - LED1, WSTK EXP Header Pin 13
+        * PD03 - LED1, WSTK Expansion Header Pin 13
 
 * Board:  Silicon Labs EFR32xG23 Radio Board (BRD4204D) + Wireless Starter Kit Mainboard
     * Device: EFR32ZG23B010F512IM48
@@ -105,10 +105,16 @@ To test the IADC voltage monitoring example on BRD4270B, make the following modi
     * Device: EFR32MG27C140F768IM40
         * VMCU - Expansion Header Pin 2
         * GND  - Expansion Header Pin 1
-        * PB01 - LED1, WSTK EXP Header Pin 9
+        * PB01 - LED1, WSTK Expansion Header Pin 9
 
 * Board:  Silicon Labs EFR32xG28 Radio Board (BRD4400C) + Wireless Starter Kit Mainboard
     * Device: EFR32ZG28B312F1024IM68
         * VMCU - Expansion Header Pin 2
         * GND  - Expansion Header Pin 1
         * PD03 - LED1, WSTK P23
+        
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+		* VMCU - Expansion Header Pin 2
+        * GND  - Expansion Header Pin 1
+		* PB01 - LED1, WSTK Expansion Header Pin 9

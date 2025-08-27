@@ -78,3 +78,8 @@ How To Test:
     * Device: EFR32ZG28B312F1024IM68
 		* PB04 - IADC positive differential input, WSTK EXP Header Pin 11
         * PD03 - LED1, WSTK P23
+        
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+		* PB02 - IADC input, single-ended, WSTK EXP Header Pin 15
+		* PB01 - LED1, WSTK EXP Header Pin 9
