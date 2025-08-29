@@ -391,6 +391,91 @@
     <properties key="sltPackagePath" value="series2/iadc/iadc_vmon/SimplicityStudio/iadc_vmon.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="iadc_single_calibration" label="Peripheral Examples - IADC Single Calibration" description="This project demonstrates how to use the IADC and an external supply to calibrate gain and offset. It also shows how to perform repeated blocking differential measurements on a single set of differential inputs and store both raw results and voltage values in global variables.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.iadc.iadc_single_calibration.SimplicityStudio.iadc_single_calibration.slcp"/>
+    <properties key="projectFilePaths" value="series2/iadc/iadc_single_calibration/SimplicityStudio/iadc_single_calibration.slcp"/>
+    <properties key="readmeFiles" value="series2/iadc/iadc_single_calibration/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/iadc/iadc_single_calibration/SimplicityStudio/iadc_single_calibration.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="iadc_single_differential_polled" label="Peripheral Examples - IADC Single Differential Polled" description="This project demonstrates how to use the IADC to perform differential analog measurements. This project continuously polls for conversion results, storing both the raw IADC value and its corresponding voltage in two global variables.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.iadc.iadc_single_differential_polled.SimplicityStudio.iadc_single_differential_polled.slcp"/>
+    <properties key="projectFilePaths" value="series2/iadc/iadc_single_differential_polled/SimplicityStudio/iadc_single_differential_polled.slcp"/>
+    <properties key="readmeFiles" value="series2/iadc/iadc_single_differential_polled/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/iadc/iadc_single_differential_polled/SimplicityStudio/iadc_single_differential_polled.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="iadc_single_gpio_prs_ldma" label="Peripheral Examples - IADC Single GPIO PRS LDMA" description="This project demonstrates how to use the IADC to take single-ended analog measurements using a single external input, triggered by rising edge of GPIO via PRS. Upon completion, an LDMA data transfer occurs storing the raw data to memory. &#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.iadc.iadc_single_gpio_prs_ldma.SimplicityStudio.iadc_single_gpio_prs_ldma.slcp"/>
+    <properties key="projectFilePaths" value="series2/iadc/iadc_single_gpio_prs_ldma/SimplicityStudio/iadc_single_gpio_prs_ldma.slcp"/>
+    <properties key="readmeFiles" value="series2/iadc/iadc_single_gpio_prs_ldma/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/iadc/iadc_single_gpio_prs_ldma/SimplicityStudio/iadc_single_gpio_prs_ldma.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="iadc_single_oversampling_16bit" label="Peripheral Examples - IADC Single 16-Bit Oversampling" description="This project demonstrates how to use the the IADC peripheral's oversampling feature to acquire a 16-bit resolution conversion results while operating in EM2.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.iadc.iadc_single_oversampling.SimplicityStudio.iadc_single_oversampling_16bit.slcp"/>
+    <properties key="projectFilePaths" value="series2/iadc/iadc_single_oversampling/SimplicityStudio/iadc_single_oversampling_16bit.slcp"/>
+    <properties key="readmeFiles" value="series2/iadc/iadc_single_oversampling/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/iadc/iadc_single_oversampling/SimplicityStudio/iadc_single_oversampling_16bit.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="iadc_single_oversampling_20bit" label="Peripheral Examples - IADC Single 20-Bit Oversampling" description="This project demonstrates how to use the the IADC peripheral's oversampling feature to acquire a 20-bit resolution conversion results while operating in EM2.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.iadc.iadc_single_oversampling.SimplicityStudio.iadc_single_oversampling_20bit.slcp"/>
+    <properties key="projectFilePaths" value="series2/iadc/iadc_single_oversampling/SimplicityStudio/iadc_single_oversampling_20bit.slcp"/>
+    <properties key="readmeFiles" value="series2/iadc/iadc_single_oversampling/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/iadc/iadc_single_oversampling/SimplicityStudio/iadc_single_oversampling_20bit.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="one_shot_output_compare" label="Peripheral Examples - LETIMER one shout output compare" description="This project demonstrates output compare in EM2 using the LETIMER.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>

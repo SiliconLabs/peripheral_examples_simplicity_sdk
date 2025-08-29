@@ -1,0 +1,39 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: iadc_single_oversampling_16bit
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - IADC Single 16-Bit Oversampling
+description: >
+ This project demonstrates how to use the the IADC peripheral's oversampling feature to acquire a 16-bit resolution conversion results while operating in EM2.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app_oversampling_16bit.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: power_manager
+  - id: clock_manager
+  - id: emlib_iadc
+  - id: emlib_prs
+  - id: silabs_bsp
+    from: peripheral_examples
+configuration:
+  - name: "SL_CLOCK_MANAGER_IADCCLK_SOURCE"
+    value: "CMU_IADCCLKCTRL_CLKSEL_FSRCO"
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0

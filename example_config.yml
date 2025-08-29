@@ -97,22 +97,22 @@ example:
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
 
-- path: series2/iadc/iadc_single_window_compare/SimplicityStudio/iadc_single_window_compare.slcp
-  board_whitelist: *board_whitelist
-  board_blacklist:
-    - brd4111a # Removing xG27 Boost Radio Board
-
 - path: series2/iadc/iadc_scan_letimer_interrupt/SimplicityStudio/iadc_scan_letimer_interrupt.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
 
-- path: series2/iadc/iadc_vmon/SimplicityStudio/iadc_vmon.slcp
+- path: series2/iadc/iadc_scan_letimer_prs_ldma/SimplicityStudio/iadc_scan_letimer_prs_ldma.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
 
-- path: series2/iadc/iadc_scan_letimer_prs_ldma/SimplicityStudio/iadc_scan_letimer_prs_ldma.slcp
+- path: series2/iadc/iadc_single_window_compare/SimplicityStudio/iadc_single_window_compare.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/iadc/iadc_vmon/SimplicityStudio/iadc_vmon.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
@@ -145,6 +145,33 @@ example:
 - path: series2/iadc/iadc_single_letimer_prs_ldma/SimplicityStudio/iadc_single_letimer_prs_ldma.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/iadc/iadc_single_calibration/SimplicityStudio/iadc_single_calibration.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/iadc/iadc_single_differential_polled/SimplicityStudio/iadc_single_differential_polled.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/iadc/iadc_single_gpio_prs_ldma/SimplicityStudio/iadc_single_gpio_prs_ldma.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/iadc/iadc_single_oversampling/SimplicityStudio/iadc_single_oversampling_16bit.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4181a # Removing xG21 Radio Board due to lack of 16-bit alignment setting
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/iadc/iadc_single_oversampling/SimplicityStudio/iadc_single_oversampling_20bit.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4181a # Removing xG21 Radio Board due to lack of 20-bit alignment setting
     - brd4111a # Removing xG27 Boost Radio Board
 
   # LETIMER examples
