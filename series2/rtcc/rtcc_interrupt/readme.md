@@ -36,3 +36,7 @@ an LED.
 * Board:  Silicon Labs EFR32xG27 Radio Board (BRD4194A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG27C140F768IM40
         * PB00 - WSTK LED0 and EXP Header Pin 7
+        
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PB00 - WSTK LED0 and EXP Header Pin 7

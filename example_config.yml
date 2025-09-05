@@ -470,12 +470,13 @@ example:
 - path: series2/rtcc/rtcc_interrupt/SimplicityStudio/rtcc_interrupt.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
-    - brd4111a # Removing xG27 Boost Radio Board
     - brd4204d # Removing xG23 Radio Board due to lack of RTCC peripheral
     - brd4186c # Removing xG24 Radio Board due to lack of RTCC peripheral
     - brd4270b # Removing xG25 Radio Board due to lack of RTCC peripheral
     - brd4117a # Removing xG26 Radio Board due to lack of RTCC peripheral
+    - brd4111a # Removing xG27 Boost Radio Board
     - brd4400c # Removing xG28 Radio Board due to lack of RTCC peripheral
+    - brd4420a # Removing xG29 Boost Radio Board
 
   # TIMER examples
 - path: series2/timer/timer_dma_edge_capture/SimplicityStudio/timer_dma_edge_capture.slcp
