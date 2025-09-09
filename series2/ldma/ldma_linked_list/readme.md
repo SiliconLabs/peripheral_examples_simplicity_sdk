@@ -63,3 +63,7 @@ There are interrupts triggered after the second and fourth descriptors.
 * Board: Silicon Labs EFR32xG28 Radio Board (BRD4400C) + Wireless Starter Kit Mainboard
     * Device: EFR32ZG28B312F1024IM68
         * PB02 - LED0, WSTK P19
+        
+* Board: Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PB00 - LED0, WSTK EXP Header 7

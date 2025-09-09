@@ -383,41 +383,49 @@ example:
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
     
 - path: series2/ldma/ldma_interchannel_synchronization/SimplicityStudio/ldma_interchannel_synchronization.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
     
 - path: series2/ldma/ldma_linked_list/SimplicityStudio/ldma_linked_list.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
     
 - path: series2/ldma/ldma_linked_list_looped/SimplicityStudio/ldma_linked_list_looped.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
     
 - path: series2/ldma/ldma_ping_pong/SimplicityStudio/ldma_ping_pong.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
     
 - path: series2/ldma/ldma_scatter_gather/SimplicityStudio/ldma_scatter_gather.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
     
 - path: series2/ldma/ldma_single_button/SimplicityStudio/ldma_single_button.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
     
 - path: series2/ldma/ldma_single_looped/SimplicityStudio/ldma_single_looped.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
   # LETIMER examples
 - path: series2/letimer/one_shot_output_compare/SimplicityStudio/one_shot_output_compare.slcp

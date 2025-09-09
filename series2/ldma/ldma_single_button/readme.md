@@ -69,10 +69,15 @@ or a button press on Push Button 1 (#define USE_GPIO_PRS 1).
 		
 * Board: Silicon Labs EFR32xG27 Buck Radio Board (BRD4194A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG27C140F768IM40
-        * PB01 - Push Button PB1, WSTK Pin 6, Expansion Header Pin 9
+        * PB01 - Push Button PB1, WSTK Pin 6, EXP Header 9
         * PB00 - LED0, WSTK EXP Header 7
 		
 * Board: Silicon Labs EFR32xG28 Radio Board (BRD4400C) + Wireless Starter Kit Mainboard
     * Device: EFR32ZG28B312F1024IM68
         * PB03 - Push Button PB1, WSTK Pin 21
         * PB02 - LED0, WSTK P19
+        
+* Board: Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PB01 - Push Button PB1, WSTK EXP Pin 9
+        * PB00 - LED0, WSTK EXP Header 7
