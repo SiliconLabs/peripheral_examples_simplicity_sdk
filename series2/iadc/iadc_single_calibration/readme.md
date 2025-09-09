@@ -113,3 +113,11 @@ show the previous conversion loop results.
     * PB04 - IADC positive differential input, WSTK EXP Header Pin 11
     * PB05 - IADC negative differential input, WSTK EXP Header Pin 13
     * PD03 - LED1, WSTK P19
+
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board 
+          (BRD4412A) + Wireless Starter Kit Mainboard
+  * Device: EFR32MG29B140F1024IM40
+    * PB00 - Push Button PB0
+    * PB02 - IADC positive differential input, WSTK EXP Header Pin 15
+    * PB03 - IADC negative differential input, WSTK EXP Header Pin 16
+    * PB01 - LED1, WSTK EXP Header Pin 9

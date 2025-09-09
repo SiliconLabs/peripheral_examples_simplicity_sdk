@@ -33,7 +33,7 @@ GPIO pin whenever the IADC finishes one single conversion.
 2. Build the project and download it to the Starter Kit.
 3. Open the Simplicity Debugger and add `sample` and `singleResult` to the 
    Expressions Window.
-4. Apply a voltage to the IADC input pin (PA05).
+4. Apply a voltage to the IADC input pin.
 5. Observe the `sample` field:  
   - 16-bit result: `singleResult = sample * VREF / (2^16)`  
   - 20-bit result: `singleResult = sample * VREF / (2^20)`  
@@ -79,3 +79,9 @@ GPIO pin whenever the IADC finishes one single conversion.
   * Device: EFR32ZG28B312F1024IM68
     * PB04 - IADC positive differential input, WSTK EXP Header Pin 11
     * PB01 - GPIO Push/Pull output, WSTK P17
+
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board 
+          (BRD4412A) + Wireless Starter Kit Mainboard
+  * Device: EFR32MG29B140F1024IM40
+    * PB02 - IADC positive differential input, WSTK EXP Header Pin 15
+    * PB01 - GPIO Push/Pull output, WSTK EXP Header Pin 9, WSTK P6

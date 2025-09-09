@@ -47,7 +47,7 @@ clocks has no effect on xG21 devices.
 2. Build the project and download it to the Starter Kit.
 3. Open the Simplicity Debugger and add `singleBuffer` to the Expressions 
    Window.
-4. Set a breakpoint at the end of the `LDMA_IRQHandler`.  
+4. Set a breakpoint at the end of the `ldma_callback`.  
    * For EFR32MG21 Radio Board BRD4181A, jumper PA06 to PD02 to use the 
      pushbutton or toggle `IADC input` to trigger IADC conversion. (Port A/B required 
      for PRS in EM2.)
@@ -106,3 +106,10 @@ clocks has no effect on xG21 devices.
     * PD03 - LED1, WSTK P19
     * PB04 - IADC positive differential input, WSTK EXP Header Pin 11
     * PB01 - Push Button PB0
+
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board 
+          (BRD4412A) + Wireless Starter Kit Mainboard
+  * Device: EFR32MG29B140F1024IM40
+    * PB01 - LED1, WSTK EXP Header Pin 9
+    * PB02 - IADC positive differential input, WSTK EXP Header Pin 15
+    * PB00 - Push Button PB0
