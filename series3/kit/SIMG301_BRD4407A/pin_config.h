@@ -48,6 +48,10 @@
 #define LETIMER_OUTPUT0_PORT SL_GPIO_PORT_A
 #define LETIMER_OUTPUT0_PIN  5
 
+// Timer output for slew rate demo
+#define SLEW_RATE_OUTPUT_PORT SL_GPIO_PORT_C
+#define SLEW_RATE_OUTPUT_PIN  0
+
 // <<< sl:start pin_tool >>>
 
 // <gpio> LED0

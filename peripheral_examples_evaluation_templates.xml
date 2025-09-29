@@ -2278,6 +2278,91 @@
     <properties key="sltPackagePath" value="series3/burtc/burtc_em4_buram/SimplicityStudio/burtc_em4_buram_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="gpio_switch_led_polled_s3" label="Peripheral Examples - GPIO Switch LED Polled" description="This project demonstrates how to set up simple digital inputs and outputs.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpio.gpio_switch_led_polled.SimplicityStudio.gpio_switch_led_polled_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/gpio/gpio_switch_led_polled/SimplicityStudio/gpio_switch_led_polled_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/gpio/gpio_switch_led_polled/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/gpio/gpio_switch_led_polled/SimplicityStudio/gpio_switch_led_polled_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="gpio_switch_led_interrupt_s3" label="Peripheral Examples - GPIO Switch LED Interrupt" description="This project demonstrates how to use GPIO pins to trigger external interrupts.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpio.gpio_switch_led_interrupt.SimplicityStudio.gpio_switch_led_interrupt_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/gpio/gpio_switch_led_interrupt/SimplicityStudio/gpio_switch_led_interrupt_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/gpio/gpio_switch_led_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/gpio/gpio_switch_led_interrupt/SimplicityStudio/gpio_switch_led_interrupt_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="gpio_slew_rate_s3" label="Peripheral Examples - GPIO Slew Rate" description="This project demonstrates how to set the slew rate for GPIO pins.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpio.gpio_slew_rate.SimplicityStudio.gpio_slew_rate_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/gpio/gpio_slew_rate/SimplicityStudio/gpio_slew_rate_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/gpio/gpio_slew_rate_s3/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/gpio/gpio_slew_rate/SimplicityStudio/gpio_slew_rate_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="gpio_periph_s3" label="Peripheral Examples - GPIO Periph" description="This project demonstrates how to drive a pin from an on-chip oscillator.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpio.gpio_periph.SimplicityStudio.gpio_periph_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/gpio/gpio_periph/SimplicityStudio/gpio_periph_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/gpio/gpio_periph_s3/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/gpio/gpio_periph/SimplicityStudio/gpio_periph_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="gpio_em4_wakeup_s3" label="Peripheral Examples - GPIO EM4 Wakeup" description="This project uses a GPIO pin to wake the device from EM4.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpio.gpio_em4_wakeup.SimplicityStudio.gpio_em4_wakeup_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/gpio/gpio_em4_wakeup/SimplicityStudio/gpio_em4_wakeup_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/gpio/gpio_em4_wakeup_s3/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/gpio/gpio_em4_wakeup/SimplicityStudio/gpio_em4_wakeup_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="pixelrz_ldma_letimer_prs_gpio_s3" label="Peripheral Examples - PIXELRZ Sequential" description="This project demonstrates how to configure the PIXELRZ in sequential mode to drive a WS2812B LED strip.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>

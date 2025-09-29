@@ -855,7 +855,7 @@ example:
   # ADC examples
 - path: series3/adc/scan_adc_timer/SimplicityStudio/adc_scan_adc_timer_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/adc/scan_continuous_ldma/SimplicityStudio/adc_scan_continuous_ldma_s3.slcp
   board_whitelist: *board_whitelist_s3
 
@@ -864,19 +864,19 @@ example:
 
 - path: series3/adc/scan_interrupt/SimplicityStudio/adc_scan_interrupt_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/adc/scan_letimer_interrupt/SimplicityStudio/adc_scan_letimer_interrupt_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/adc/scan_letimer_prs_ldma/SimplicityStudio/adc_scan_letimer_prs_ldma_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/adc/scan_window_compare_vmon/SimplicityStudio/adc_scan_window_compare_vmon_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/adc/adc_single_differential_polled/SimplicityStudio/adc_single_differential_polled_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/adc/adc_single_gpio_prs_ldma/SimplicityStudio/adc_single_gpio_prs_ldma_s3.slcp
   board_whitelist: *board_whitelist_s3
 
@@ -885,20 +885,36 @@ example:
 
 - path: series3/adc/adc_single_letimer_interrupt/SimplicityStudio/adc_single_letimer_interrupt_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/adc/adc_single_letimer_prs_ldma/SimplicityStudio/adc_single_letimer_prs_ldma_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/adc/adc_single_oversampling/SimplicityStudio/adc_single_oversampling_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/adc/adc_single_window_compare/SimplicityStudio/adc_single_window_compare_s3.slcp
   board_whitelist: *board_whitelist_s3
 
   # BURTC examples
 - path: series3/burtc/burtc_em4_buram/SimplicityStudio/burtc_em4_buram_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
+  # GPIO examples
+- path: series3/gpio/gpio_switch_led_polled/SimplicityStudio/gpio_switch_led_polled_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/gpio/gpio_switch_led_interrupt/SimplicityStudio/gpio_switch_led_interrupt_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/gpio/gpio_slew_rate/SimplicityStudio/gpio_slew_rate_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/gpio/gpio_slew_rate/SimplicityStudio/gpio_periph_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/gpio/gpio_slew_rate/SimplicityStudio/gpio_em4_wakeup_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
   # PIXELRZ examples
 - path: series3/pixelrz/pixelrz_ldma_letimer_prs_gpio/SimplicityStudio/pixelrz_ldma_letimer_prs_gpio_s3.slcp
   board_whitelist: *board_whitelist_s3
@@ -921,4 +937,3 @@ example:
 
 - path: series3/wdog/wdog_window_interrupt/SimplicityStudio/wdog_window_interrupt_series3.slcp
   board_whitelist: *board_whitelist_s3
-  
