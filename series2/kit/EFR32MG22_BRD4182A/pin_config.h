@@ -5,6 +5,9 @@
 // EM4 Wake-up enable
 #define EM4WUENx 3
 
+// RAM power down end for EM2 and EM3
+#define RAM_POWER_DOWN_END (0)
+
 // Clock output select
 #define CLKOUT_SEL  0
 

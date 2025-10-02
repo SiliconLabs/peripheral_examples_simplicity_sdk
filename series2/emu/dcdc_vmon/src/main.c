@@ -1,12 +1,9 @@
 /***************************************************************************//**
  * @file main.c
- * @brief This project demonstrates the DCDC VREGVDD Threshold Comparator.
- * The device will be switching between DCDC regulator on and DCDC bypass mode
- * depending on the input voltage to VREGVDD. The LCD will display the DCDC
- * modes.
+ * @brief main() function.
  *******************************************************************************
  * # License
- * <b>Copyright 2023 Silicon Laboratories Inc. www.silabs.com</b>
+ * <b>Copyright 2025 Silicon Laboratories Inc. www.silabs.com</b>
  *******************************************************************************
  *
  * SPDX-License-Identifier: Zlib
@@ -29,197 +26,46 @@
  *    misrepresented as being the original software.
  * 3. This notice may not be removed or altered from any source distribution.
  *
- *******************************************************************************
- * # Evaluation Quality
- * This code has been minimally tested to ensure that it builds and is suitable 
- * as a demonstration for evaluation purposes only. This code will be maintained
- * at the sole discretion of Silicon Labs.
  ******************************************************************************/
- 
-#include "stdio.h"
-#include "em_device.h"
-#include "em_chip.h"
-#include "em_cmu.h"
-#include "em_emu.h"
-#include "em_iadc.h"
-#include "em_gpio.h"
-#include "bsp.h"
-#include "retargetserial.h"
-#include "mx25flash_spi.h"
-
-/******************************************************************************
- ***************************   GLOBAL VARIABLES   *****************************
- *****************************************************************************/
-
-// test mode control signals
-volatile bool low_voltage = false;
-
-/******************************************************************************
- * @brief Interrupt handler for push button BTN1.
- *****************************************************************************/
-void GPIO_EVEN_IRQHandler(void)
-{
-  GPIO->IF_CLR = GPIO->IF;
-}
-
-/**************************************************************************//**
- * @brief  GPIO Initializer
- *****************************************************************************/
-void initGPIO(void)
-{
-  // Configure push button 0 as input, enable edge detection interrupt
-  GPIO_PinModeSet(BSP_GPIO_PB0_PORT, BSP_GPIO_PB0_PIN,
-      gpioModeInputPullFilter, 1);
-  GPIO_ExtIntConfig(BSP_GPIO_PB0_PORT, BSP_GPIO_PB0_PIN,
-      BSP_GPIO_PB0_PIN, false, true, true);
-
-  NVIC_ClearPendingIRQ(GPIO_EVEN_IRQn);
-  NVIC_EnableIRQ(GPIO_EVEN_IRQn);
-}
-
-/*****************************************************************************/
-/*@brief: enable clock branches
- *****************************************************************************/
-void initCMU(void){
-  // Disable all low frequency clock except LFXO to save power
-  CMU_OscillatorEnable(cmuOsc_ULFRCO,false,true);
-  CMU_OscillatorEnable(cmuOsc_LFXO, true, true);
-  CMU_OscillatorEnable(cmuOsc_LFRCO,false,true);
-  CMU_OscillatorEnable(cmuOsc_FSRCO,false,true);
-
-  // Select all low frequency clock to LFXO
-  CMU_ClockSelectSet(cmuClock_EM23GRPACLK, cmuSelect_LFXO);
-  CMU_ClockSelectSet(cmuClock_WDOG0CLK, cmuSelect_LFXO);
-#if defined(RTCC_PRESENT)
-  CMU_ClockSelectSet(cmuClock_RTCCCLK, cmuSelect_LFXO);
-#elif defined(SYSRTC_PRESENT)
-  CMU_ClockSelectSet(cmuClock_SYSRTCCLK, cmuSelect_LFXO);
+#include "sl_component_catalog.h"
+#include "sl_main_init.h"
+#if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+#include "sl_power_manager.h"
 #endif
+#if defined(SL_CATALOG_KERNEL_PRESENT)
+#include "sl_main_kernel.h"
+#else // SL_CATALOG_KERNEL_PRESENT
+#include "sl_main_process_action.h"
+#endif // SL_CATALOG_KERNEL_PRESENT
 
-  // Enable GPIO clock
-  CMU_ClockEnable(cmuClock_GPIO, true);
-}
-
-/*****************************************************************************/
-/*@brief: DCDC interrupt handler
- *****************************************************************************/
-void DCDC_IRQHandler(void)
-{
-  volatile uint32_t flag = DCDC -> IF;
-
-  // Clear all interrupt flag
-  DCDC -> IF_CLR = flag;
-
-  // Check for interrupt flag
-  if (flag & DCDC_IEN_VREGINLOW) {
-    low_voltage = true;
-    DCDC -> IEN_CLR |= DCDC_IEN_VREGINLOW;
-  }
-  if (flag & DCDC_IEN_VREGINHIGH) {
-    low_voltage = false;
-    DCDC -> IEN_CLR |= DCDC_IEN_VREGINHIGH;
-  }
-}
-
-/*****************************************************************************/
-/*@brief DCDC Initialization
- *****************************************************************************/
-void initDCDC(void)
-{
-  EMU_DCDCInit_TypeDef dcdcInit = EMU_DCDCINIT_DEFAULT;
-
-  // Change dcdc threshold voltage level to 2.2V
-  dcdcInit.cmpThreshold = emuVreginCmpThreshold_2v2;
-
-  printf("DCDC Initializing\n");
-  printf("Raise VREGVDD above 2.2V to start DCDC\n");
-  RETARGET_SerialFlush(); // delay for printf to finish
-
-  // Initializing DCDC with regulator on
-  EMU_DCDCInit(&dcdcInit);
-
-  // Initialization success message
-  printf("DCDC initialization successful, running with regulator enabled\n");
-  printf("Decrease VREGVDD supply to below 2.2V to enter bypass mode\n");
-  RETARGET_SerialFlush(); // delay for printf to finish
-
-  // Clear all DCDC interrupt
-  DCDC->IF_CLR |= _DCDC_IF_MASK;
-
-  // Enable VREGIN low detection interrupt
-  DCDC->IEN_SET |= DCDC_IEN_VREGINLOW;
-
-  // Enable DCDC interrupt vector.
-  NVIC_ClearPendingIRQ(DCDC_IRQn);
-  NVIC_EnableIRQ(DCDC_IRQn);
-}
-
-/*****************************************************************************/
-/*@brief: EMU Init routine, initialize EM23 with default settings
- *****************************************************************************/
-void initEMU(void)
-{
-  EMU_EM23Init_TypeDef em23Init = EMU_EM23INIT_DEFAULT;
-  EMU_EM23Init(&em23Init);
-}
-
-/**************************************************************************//**
- * @brief  Main function
- *****************************************************************************/
 int main(void)
 {
-  CHIP_Init();
+  // Initialize Silicon Labs device, system, service(s) and protocol stack(s).
+  // Note that if the kernel is present, the start task will be started and software
+  // component initialization will take place there.
+  sl_main_init();
 
-  // initialize peripheral clocks
-  initCMU();
+#if defined(SL_CATALOG_KERNEL_PRESENT)
+  // Start the kernel. The start task will be executed (Highest priority) to complete
+  // the Simplicity SDK components initialization and the user app_init() hook function will be called.
+  sl_main_kernel_start();
+#else // SL_CATALOG_KERNEL_PRESENT
 
-  // Init and power-down MX25 SPI flash
-  FlashStatus status;
-  MX25_init();
-  MX25_RSTEN();
-  MX25_RST(&status);
-  MX25_DP();
-  MX25_deinit();
+  // User provided code.
+  app_init();
 
-  // Init
-  RETARGET_SerialInit();
-  RETARGET_SerialCrLf(1);
-
-  // Initialize GPIO
-  initGPIO();
-
-  // Initialize EM2/3 with default settings
-  initEMU();
-
-  // Initialize DCDC
-  initDCDC();
-
-  // Disable GPIO interrupt
-  GPIO_ExtIntConfig(BSP_GPIO_PB0_PORT, BSP_GPIO_PB0_PIN, BSP_GPIO_PB0_PIN,
-      false, true, false);
-
-  // Infinite loop
   while (1) {
+    // Silicon Labs components process action routine
+    // must be called from the super loop.
+    sl_main_process_action();
 
-    // Enter EM1 while waiting for threshold detection
-    EMU_EnterEM1();
+    // User provided code. Application process.
+    app_process_action();
 
-    // If below threshold, switch to bypass mode
-    // Enable interrupt flags to detect VREGIN > VTHRESHOLD
-    if (low_voltage) {
-      printf("VREGVDD below threshold voltage switching to bypass mode\n");
-      RETARGET_SerialFlush(); // delay for printf to finish
-      EMU_DCDCModeSet(emuDcdcMode_Bypass);
-      printf("Bypass mode enabled. Raise VREGVDD to 2.2V to enable DCDC\n");
-      RETARGET_SerialFlush(); // delay for printf to finish
-      DCDC -> IEN_SET |= DCDC_IEN_VREGINHIGH;
-    } else {
-    // If above threshold, switch to regulator on mode
-    // Enable interrupt flags to detect VREGIN < VTHRESHOLD
-      EMU_DCDCModeSet(emuDcdcMode_Regulation);
-      printf("DCDC enabled; Decrease VREGVDD supply to below 2.2V to enter bypass mode\n");
-      RETARGET_SerialFlush(); // delay for printf to finish
-      DCDC -> IEN_SET |= DCDC_IEN_VREGINLOW;
-    }
+#if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+    // Let the CPU go to sleep if the system allows it.
+    sl_power_manager_sleep();
+#endif
   }
+#endif // SL_CATALOG_KERNEL_PRESENT
 }

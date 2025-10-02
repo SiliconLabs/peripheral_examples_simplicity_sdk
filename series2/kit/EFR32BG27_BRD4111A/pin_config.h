@@ -2,6 +2,14 @@
 #define LED_ON  0
 #define LED_OFF 1
 
+/* RAM power down end for EM2 and EM3
+ * NOTE: The top 8 KB of RAM (BLK1) **MUST** remain powered in EM2/3
+ * (SYSCFG_DMEM0RETNCTRL_RAMRETNCTRL != 2) or the device is liable to
+ * hard fault on wake-up depending on what data may have been saved
+ * on the stack, e.g. the return address from the EM3
+ */
+#define RAM_POWER_DOWN_END (SRAM_BASE + SRAM_SIZE - 0x2000)
+
 // <<< sl:start pin_tool >>>
 
 // <gpio> LED0_BUTTON0

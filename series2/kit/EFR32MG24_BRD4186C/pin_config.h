@@ -14,6 +14,9 @@
 // ACMP Input bus allocation
 #define ACMP_BUS_ALLOCATION() (GPIO->BBUSALLOC = GPIO_BBUSALLOC_BODD0_ACMP0)
 
+// RAM power down end for EM2 and EM3
+#define RAM_POWER_DOWN_END (0)
+
 // GPIO LETIMER route structure
 #define GPIO_LETIMERROUTE (GPIO->LETIMERROUTE)
 

@@ -85,6 +85,142 @@
     <properties key="sltPackagePath" value="series2/burtc/burtc_em4_buram/SimplicityStudio/burtc_em4_buram.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="dcdc_vmon" label="Peripheral Examples - EMU DCDC VMON" description="This project demonstrates the DCDC VREGVDD Threshold Comparator.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.emu.dcdc_vmon.SimplicityStudio.dcdc_vmon.slcp"/>
+    <properties key="projectFilePaths" value="series2/emu/dcdc_vmon/SimplicityStudio/dcdc_vmon.slcp"/>
+    <properties key="readmeFiles" value="series2/emu/dcdc_vmon/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/emu/dcdc_vmon/SimplicityStudio/dcdc_vmon.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="em01_voltage_scaling" label="Peripheral Examples - EMU EM0/1 voltage scaling" description="This project demonstrates the use of EM0/1 voltage scaling on Series 2 EFR32 devices.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.emu.em01_voltage_scaling.SimplicityStudio.em01_voltage_scaling.slcp"/>
+    <properties key="projectFilePaths" value="series2/emu/em01_voltage_scaling/SimplicityStudio/em01_voltage_scaling.slcp"/>
+    <properties key="readmeFiles" value="series2/emu/em01_voltage_scaling/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4182a brd4186c brd4194a brd4204d brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/emu/em01_voltage_scaling/SimplicityStudio/em01_voltage_scaling.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="em0_dcdc" label="Peripheral Examples - EMU EM0 DCDC" description="This project demonstrates the datasheet current consumption configuration and current consumption numbers in EM0 Energy Mode.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.emu.em0_dcdc.SimplicityStudio.em0_dcdc.slcp"/>
+    <properties key="projectFilePaths" value="series2/emu/em0_dcdc/SimplicityStudio/em0_dcdc.slcp"/>
+    <properties key="readmeFiles" value="series2/emu/em0_dcdc/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/emu/em0_dcdc/SimplicityStudio/em0_dcdc.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="em1_dcdc" label="Peripheral Examples - EMU EM1 DCDC" description="This project demonstrates the datasheet current consumption configuration and current consumption numbers in EM1 Energy Mode.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.emu.em1_dcdc.SimplicityStudio.em1_dcdc.slcp"/>
+    <properties key="projectFilePaths" value="series2/emu/em1_dcdc/SimplicityStudio/em1_dcdc.slcp"/>
+    <properties key="readmeFiles" value="series2/emu/em1_dcdc/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/emu/em1_dcdc/SimplicityStudio/em1_dcdc.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="em23_voltage_scaling" label="Peripheral Examples - EMU EM2/3 voltage scaling" description="This project demonstrates the use of EM2/3 voltage scaling on Series 2 EFR32 devices.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.emu.em23_voltage_scaling.SimplicityStudio.em23_voltage_scaling.slcp"/>
+    <properties key="projectFilePaths" value="series2/emu/em23_voltage_scaling/SimplicityStudio/em23_voltage_scaling.slcp"/>
+    <properties key="readmeFiles" value="series2/emu/em23_voltage_scaling/readme.md"/>
+    <properties key="boardCompatibility" value="brd4111a brd4117a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32bg27.* .*efr32fg25.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/emu/em23_voltage_scaling/SimplicityStudio/em23_voltage_scaling.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="em2_dcdc" label="Peripheral Examples - EMU EM2 DCDC" description="This project demonstrates the datasheet current consumption configuration and current consumption numbers in EM2 Energy Mode.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.emu.em2_dcdc.SimplicityStudio.em2_dcdc.slcp"/>
+    <properties key="projectFilePaths" value="series2/emu/em2_dcdc/SimplicityStudio/em2_dcdc.slcp"/>
+    <properties key="readmeFiles" value="series2/emu/em2_dcdc/readme.md"/>
+    <properties key="boardCompatibility" value="brd4111a brd4117a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32bg27.* .*efr32fg25.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/emu/em2_dcdc/SimplicityStudio/em2_dcdc.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="em3_dcdc" label="Peripheral Examples - EMU EM3 DCDC" description="This project demonstrates the datasheet current consumption configuration and current consumption numbers in EM3 Energy Mode.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.emu.em3_dcdc.SimplicityStudio.em3_dcdc.slcp"/>
+    <properties key="projectFilePaths" value="series2/emu/em3_dcdc/SimplicityStudio/em3_dcdc.slcp"/>
+    <properties key="readmeFiles" value="series2/emu/em3_dcdc/readme.md"/>
+    <properties key="boardCompatibility" value="brd4111a brd4117a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32bg27.* .*efr32fg25.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/emu/em3_dcdc/SimplicityStudio/em3_dcdc.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="em4_no_dcdc" label="Peripheral Examples - EMU EM4 no DCDC" description="This project demonstrates the datasheet current consumption configuration and current consumption numbers in EM4 Energy Mode.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.emu.em4_no_dcdc.SimplicityStudio.em4_no_dcdc.slcp"/>
+    <properties key="projectFilePaths" value="series2/emu/em4_no_dcdc/SimplicityStudio/em4_no_dcdc.slcp"/>
+    <properties key="readmeFiles" value="series2/emu/em4_no_dcdc/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/emu/em4_no_dcdc/SimplicityStudio/em4_no_dcdc.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="gpcrc_dma" label="Peripheral Examples - GPCRC DMA" description="This project demonstrates the GPCRC used to check 32-bit data using the IEEE 802.3 polynomial standard in EM1. Data is fed into the GPCRC via the LDMA.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>

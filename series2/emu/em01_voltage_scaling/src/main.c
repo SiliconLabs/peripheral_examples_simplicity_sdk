@@ -1,12 +1,9 @@
 /***************************************************************************//**
  * @file main.c
- * @brief This example toggles between the VS2 and VS1 voltage scaling levels in
- * EM0. When observed using Simplicity Studio's Energy Profiler, the power
- * savings achieved by running at a DECOUPLE voltage of 1.1V (VS2) vs. 1.0V 
- * (VS1) can be observed.
+ * @brief main() function.
  *******************************************************************************
  * # License
- * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+ * <b>Copyright 2025 Silicon Laboratories Inc. www.silabs.com</b>
  *******************************************************************************
  *
  * SPDX-License-Identifier: Zlib
@@ -29,147 +26,46 @@
  *    misrepresented as being the original software.
  * 3. This notice may not be removed or altered from any source distribution.
  *
- *******************************************************************************
- * # Evaluation Quality
- * This code has been minimally tested to ensure that it builds and is suitable 
- * as a demonstration for evaluation purposes only. This code will be maintained
- * at the sole discretion of Silicon Labs.
  ******************************************************************************/
-
-#include <stdio.h>
-#include "em_device.h"
-#include "em_chip.h"
-#include "em_cmu.h"
-#include "em_emu.h"
-#include "em_gpio.h"
-#include "bsp.h"
-
-/*
- * Used to run the Fibonacci code from RAM, which makes the power
- * savings from voltage scaling more obvious in Energy Profiler.
- */
-#include "em_ramfunc.h"
-
-/**************************************************************************//**
- * For portability among radio boards, use GPIO_ODD_IRQn if
- * BSP_GPIO_PB0_PIN is odd, otherwise use GPIO_EVEN_IRQn.
- *****************************************************************************/
-#if (BSP_GPIO_PB0_PIN & 1)
-#define BUTTON_GPIO_IRQ GPIO_ODD_IRQn
-#else
-#define BUTTON_GPIO_IRQ GPIO_EVEN_IRQn
+#include "sl_component_catalog.h"
+#include "sl_main_init.h"
+#if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+#include "sl_power_manager.h"
 #endif
+#if defined(SL_CATALOG_KERNEL_PRESENT)
+#include "sl_main_kernel.h"
+#else // SL_CATALOG_KERNEL_PRESENT
+#include "sl_main_process_action.h"
+#endif // SL_CATALOG_KERNEL_PRESENT
 
-/**************************************************************************//**
- * @brief GPIO initialization
- *****************************************************************************/
-void initGpio(void)
-{
-  CMU_ClockEnable(cmuClock_GPIO, true);
-
-  // Configure PB0 as input
-  GPIO_PinModeSet(BSP_GPIO_PB0_PORT, BSP_GPIO_PB0_PIN, gpioModeInputPullFilter, 1);
-
-  // Enable rising-edge interrupts on the PB0 pin
-  GPIO_ExtIntConfig(BSP_GPIO_PB0_PORT, BSP_GPIO_PB0_PIN, BSP_GPIO_PB0_PIN, 1, 0, true);
-  NVIC_ClearPendingIRQ(BUTTON_GPIO_IRQ );
-  NVIC_EnableIRQ(BUTTON_GPIO_IRQ );
-}
-
-/**************************************************************************//**
- * @brief GPIO IRQ handler
- *
- * For portability among radio boards, compile GPIO_ODD_IRQHandler if
- * BSP_GPIO_PB0_PIN is odd, otherwise use GPIO_EVEN_IRQHandler.
- *****************************************************************************/
-#if (BSP_GPIO_PB0_PIN & 1)
-void GPIO_ODD_IRQHandler(void)
-#else
-void GPIO_EVEN_IRQHandler(void)
-#endif
-{
-  EMU_EM01Init_TypeDef vsInit = EMU_EM01INIT_DEFAULT;
-  EMU_VScaleEM01_TypeDef vscale;
-
-  // Get the current voltage scaling
-  vscale = EMU_VScaleGet();
-
-  if (vscale == emuVScaleEM01_HighPerformance)
-  {
-    // Currently running at VS2 (high performance), so scale down
-    vsInit.vScaleEM01LowPowerVoltageEnable = true;
-  }
-  else
-  {
-    // Currently running at VS1 (low power), so scale up
-    vsInit.vScaleEM01LowPowerVoltageEnable = false;
-  }
-
-  /*
-   * Perform voltage scaling and set the appropriate number of flash
-   * wait states.
-   */
-  EMU_EM01Init(&vsInit);
-
-  // Clear the PB0 pin interrupt flag
-  GPIO_IntClear(1 << BSP_GPIO_PB0_PIN);
-}
-
-/**************************************************************************//**
- * @brief  Calculates the n-th Fibonacci number recursively.
- *****************************************************************************/
-SL_RAMFUNC_DEFINITION_BEGIN
-uint32_t fib(uint32_t n)
-{
-  if (n < 2)
-  {
-    return 1;
-  }
-  return (fib(n-1) + fib(n-2));
-}
-SL_RAMFUNC_DEFINITION_END
-
-/**************************************************************************//**
- * @brief  Exercise the CPU and RAM in order to observe the difference
- * in current draw when core VDD is (not) scaled.
- *****************************************************************************/
-SL_RAMFUNC_DEFINITION_BEGIN
-int fibLoop(void)
-{
-  // Infinite loop
-  while(1)
-  {
-    volatile uint32_t temp;
-    for(uint32_t i = 0; i < 0x3FF; i++)
-    {
-      temp = fib(i);
-    }
-    (void)temp;
-  }
-}
-SL_RAMFUNC_DEFINITION_END
-
-/**************************************************************************//**
- * @brief  Main function
- *****************************************************************************/
 int main(void)
 {
-  CHIP_Init();
+  // Initialize Silicon Labs device, system, service(s) and protocol stack(s).
+  // Note that if the kernel is present, the start task will be started and software
+  // component initialization will take place there.
+  sl_main_init();
 
-  // Turn on DCDC regulator
-  EMU_DCDCInit_TypeDef dcdcInit = EMU_DCDCINIT_WSTK_DEFAULT;
-  EMU_DCDCInit(&dcdcInit);
+#if defined(SL_CATALOG_KERNEL_PRESENT)
+  // Start the kernel. The start task will be executed (Highest priority) to complete
+  // the Simplicity SDK components initialization and the user app_init() hook function will be called.
+  sl_main_kernel_start();
+#else // SL_CATALOG_KERNEL_PRESENT
 
-  /*
-   * Run at 38 MHz, the highest preset frequency band common to both
-   * VS2 and VS1,  in order to see the difference in current draw
-   * when not scaled vs. scaled.
-   */
-  // Set HFRCODPLL as system clock
-  CMU_ClockSelectSet(cmuClock_SYSCLK, cmuSelect_HFRCODPLL);
-  CMU_HFRCODPLLBandSet(cmuHFRCODPLLFreq_38M0Hz);
-  initGpio();
+  // User provided code.
+  app_init();
 
-  // Run the Fibonacci code to exercise the CPU and RAM subsystems.
-  fibLoop();
+  while (1) {
+    // Silicon Labs components process action routine
+    // must be called from the super loop.
+    sl_main_process_action();
+
+    // User provided code. Application process.
+    app_process_action();
+
+#if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+    // Let the CPU go to sleep if the system allows it.
+    sl_power_manager_sleep();
+#endif
+  }
+#endif // SL_CATALOG_KERNEL_PRESENT
 }
