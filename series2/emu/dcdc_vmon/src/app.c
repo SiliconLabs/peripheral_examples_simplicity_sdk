@@ -105,14 +105,22 @@ void app_process_action(void)
   // Enable interrupt flags to detect VREGIN > VTHRESHOLD
   if (low_voltage) {
     EMU_DCDCModeSet(emuDcdcMode_Bypass);
+#if (LED_ON == 1)
     sl_gpio_set_pin(&LED1);
+#else 
+    sl_gpio_clear_pin(&LED1);
+#endif
     DCDC -> IEN_SET |= DCDC_IEN_VREGINHIGH;
   }
   else {
   // If above threshold, switch to regulator on mode, turn off LED
   // Enable interrupt flags to detect VREGIN < VTHRESHOLD
     EMU_DCDCModeSet(emuDcdcMode_Regulation);
+#if (LED_ON == 1)
     sl_gpio_clear_pin(&LED1);
+#else 
+    sl_gpio_set_pin(&LED1);
+#endif
     DCDC -> IEN_SET |= DCDC_IEN_VREGINLOW;
   }
 }

@@ -27,7 +27,16 @@ BURTC  - 32.768 kHz LFXO clock source
    from the Profiler menu and restart the wireless starter kit using Reset Pin.
 4. Zoom in on the Y-axis (current) and observe the change in current draw.
 
-### Note for Testing on xG25 ###
+### Note for Testing ###
+On BRD4182A, BRD4204D, BRD4270B, BRD4117A, BRD4194A
+and BRD4400C VMCU is a 3.3V supply that powers AVDD and IOVDD. In the 
+datasheet, current consumption test conditions have AVDD and IOVDD powered by 
+either the DC-DC at 1.8V, an external 1.8V supply, or an external 3.0V supply. 
+Due to the design of the radio board, these boards do not replicate the 
+datasheet test conditions for current consumption, and the measured value may 
+differ from the datasheet value.
+
+### Additional note for Testing on xG25 ###
 Simplicity Studio's Energy Profiler tool only measures the VMCU current. VMCU 
 only powers IOVDD0-1 and the serial flash on BRD4270B. The 3.6 V LDO powers the
 rest of the rails on the radio board. In the datasheet, the current 
@@ -51,15 +60,7 @@ following extra steps must be taken.
    Connect these leads to a multimeter to measure the current consumption of the 
    device. 
 
-### Note for Testing on xG26 and xG27 ###
-On BRD4117A/BRD4194A, VMCU is a 3.3V supply that powers AVDD and IOVDD. In the 
-datasheet, current consumption test conditions have AVDD and IOVDD powered by 
-either the DC-DC at 1.8V, an external 1.8V supply, or an external 3.0V supply. 
-Due to the design of the radio board, this board does not replicate the datasheet 
-test conditions for current consumption, and the measured value may differ from 
-the datasheet value. 
-   
-### Note for Testing on xG28 ###
+### Additional note for Testing on xG28 ###
 On BRD4400C, there is a diversity SPDT switch on the 2.4 GHz radio output that
 will consume ~63 uA of additional current when supplied power via logic high on
 GPIO PD02. The pin is configured in disabled mode (high-Z) by default, thus SPDT
