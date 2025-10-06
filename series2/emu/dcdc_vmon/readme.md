@@ -89,3 +89,9 @@ To test the DC-DC voltage monitoring example on BRD4270B, make the following mod
 		* VMCU - Expansion Header Pin 2
 		* GND  - Expansion Header Pin 1 
 		* PD03  - LED1
+
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
+	* Device: EFR32MG29B140F1024IM40
+		* VMCU - Expansion Header Pin 2
+		* GND  - Expansion Header Pin 1 
+		* PB01 - LED1

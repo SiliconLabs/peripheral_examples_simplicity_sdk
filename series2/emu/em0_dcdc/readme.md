@@ -21,8 +21,8 @@ CMU    - HFRCODPLL @ 38 MHz
 4. Zoom in on the Y-axis (current) and observe the change in current draw.
 
 ### Note for Testing ###
-On BRD4182A, BRD4204D, BRD4270B, BRD4117A, BRD4194A
-and BRD4400C VMCU is a 3.3V supply that powers AVDD and IOVDD. In the 
+On BRD4182A, BRD4204D, BRD4270B, BRD4117A, BRD4194A, BRD4400C and BRD4412A
+VMCU is a 3.3V supply that powers AVDD and IOVDD. In the 
 datasheet, current consumption test conditions have AVDD and IOVDD powered by 
 either the DC-DC at 1.8V, an external 1.8V supply, or an external 3.0V supply. 
 Due to the design of the radio board, these boards do not replicate the 
@@ -82,3 +82,6 @@ EFR32ZG28 device datasheet due to this additional integrated circuit.
 
 * Board:  Silicon Labs EFR32xG28 Radio Board (BRD4400C) +   Wireless Starter Kit Mainboard (BRD4001A)
 	* Device: EFR32ZG28B312F1024IM68
+	
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
+	* Device: EFR32MG29B140F1024IM40

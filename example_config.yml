@@ -72,12 +72,14 @@ example:
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4181a # Removing xG21 board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/emu/em0_dcdc/SimplicityStudio/em0_dcdc.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4181a # Removing xG21 board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/emu/em01_voltage_scaling/SimplicityStudio/em01_voltage_scaling.slcp
   board_whitelist: *board_whitelist
@@ -85,32 +87,38 @@ example:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4181a # Removing xG21 board
     - brd4270b # Removing xG25 Radio Board 
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/emu/em1_dcdc/SimplicityStudio/em1_dcdc.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4181a # Removing xG21 board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/emu/em2_dcdc/SimplicityStudio/em2_dcdc.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4181a # Removing xG21 board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/emu/em23_voltage_scaling/SimplicityStudio/em23_voltage_scaling.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4181a # Removing xG21 board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/emu/em3_dcdc/SimplicityStudio/em3_dcdc.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4181a # Removing xG21 board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/emu/em4_no_dcdc/SimplicityStudio/em4_no_dcdc.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
   # ETAMPDET examples
 - path: series2/etampdet/etampdet_em2/SimplicityStudio/etampdet_em2.slcp
