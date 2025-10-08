@@ -48,3 +48,11 @@ config_file:
       component: "%extension-peripheral_examples%silabs_bsp"
   - path: series2/kit/EFR32ZG28_BRD4400C/pin_config.h
     condition: [brd4400c]
+  - override:
+      component: "%extension-peripheral_examples%silabs_bsp"
+  - path: series2/kit/EFR32BG22_BRD4184B/pin_config.h
+    condition: [brd4184b]
+  - override:
+      component: "%extension-peripheral_examples%silabs_bsp"
+  - path: series2/kit/EFR32BG27_BRD2602A/pin_config.h
+    condition: [brd2602a]

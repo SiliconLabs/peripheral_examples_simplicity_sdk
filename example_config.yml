@@ -14,6 +14,10 @@ template:
     - brd4270b             # efr32fg25
     - brd4400c             # efr32zg28
 
+  # Supported boards with MIC
+  # - brd2602a             # efr32bg27
+  # - brd4184b             # efr32bg22
+
 # Example-specific settings
 example:
 ## Template 
@@ -288,6 +292,19 @@ example:
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
 
+  # PDM examples
+- path: series2/pdm/pdm_stereo_interrupt/SimplicityStudio/pdm_stereo_interrupt.slcp
+  board_whitelist:
+    - brd2602a # xG27 board with mic
+    - brd4184b # xG22 board with mic
+  board_blacklist:
+
+- path: series2/pdm/pdm_stereo_ldma/SimplicityStudio/pdm_stereo_ldma.slcp
+  board_whitelist:
+    - brd2602a # xG27 board with mic
+    - brd4184b # xG22 board with mic
+  board_blacklist:
+
   # PRS examples
 - path: series2/prs/prs_logic_unit/SimplicityStudio/prs_logic_unit.slcp
   board_whitelist: *board_whitelist
@@ -295,9 +312,9 @@ example:
     - brd4111a # Removing xG27 Boost Radio Board
     
   # RTCC examples
-  path: series2/rtcc/rtcc_interrupt/SimplicityStudio/rtcc_interrupt.slcp
-  board_whitelist: *board_whitelist
-  board_blacklist:
+-  path: series2/rtcc/rtcc_interrupt/SimplicityStudio/rtcc_interrupt.slcp
+   board_whitelist: *board_whitelist
+   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4204d # Removing xG23 Radio Board due to lack of RTCC peripheral
     - brd4186c # Removing xG24 Radio Board due to lack of RTCC peripheral

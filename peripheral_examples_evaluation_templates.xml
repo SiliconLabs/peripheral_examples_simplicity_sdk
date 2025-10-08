@@ -833,6 +833,40 @@
     <properties key="sltPackagePath" value="series2/msc/msc_rw/SimplicityStudio/msc_rw.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="pdm_stereo_interrupt" label="Peripheral Examples - PDM Stereo Interrupt" description="This project demonstrates how to get stereo PCM data from a MEMS microphone using the PDM interface.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.pdm.pdm_stereo_interrupt.SimplicityStudio.pdm_stereo_interrupt.slcp"/>
+    <properties key="projectFilePaths" value="series2/pdm/pdm_stereo_interrupt/SimplicityStudio/pdm_stereo_interrupt.slcp"/>
+    <properties key="readmeFiles" value="series2/pdm/pdm_stereo_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd2602a brd4184b com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32bg22.* .*efr32bg27.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/pdm/pdm_stereo_interrupt/SimplicityStudio/pdm_stereo_interrupt.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="pdm_stereo_ldma" label="Peripheral Examples - PDM Stereo LDMA" description="This project demonstrates how to get stereo PCM data from a MEMS microphone using the PDM interface.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.pdm.pdm_stereo_ldma.SimplicityStudio.pdm_stereo_ldma.slcp"/>
+    <properties key="projectFilePaths" value="series2/pdm/pdm_stereo_ldma/SimplicityStudio/pdm_stereo_ldma.slcp"/>
+    <properties key="readmeFiles" value="series2/pdm/pdm_stereo_ldma/readme.md"/>
+    <properties key="boardCompatibility" value="brd2602a brd4184b com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32bg22.* .*efr32bg27.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/pdm/pdm_stereo_ldma/SimplicityStudio/pdm_stereo_ldma.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="prs_logic_unit" label="Peripheral Examples - PRS Logic Unit" description="This project demonstrates the built-in PRS logic functions between channels. Onboard push-buttons (PB0 and PB1) are set as PRS source. Onboard LED (LED1) is set as PRS output.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
