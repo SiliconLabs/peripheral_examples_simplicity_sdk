@@ -20,6 +20,21 @@
 // GPIO LETIMER route structure
 #define GPIO_LETIMERROUTE (GPIO->LETIMERROUTE)
 
+// I2C Follower SCL and SDA pins
+#define I2C_FOLLOWER_SCL_PORT  gpioPortA
+#define I2C_FOLLOWER_SCL_PIN   6
+#define I2C_FOLLOWER_SDA_PORT  gpioPortA
+#define I2C_FOLLOWER_SDA_PIN   5
+
+// I2C Leader SCL and SDA pins
+#define I2C_LEADER_SCL_PORT  gpioPortB
+#define I2C_LEADER_SCL_PIN   2
+#define I2C_LEADER_SDA_PORT  gpioPortB
+#define I2C_LEADER_SDA_PIN   3
+
+// No pull-up resistors on the WSTK/WPK
+#define I2C_DISABLED_PULLUPS
+
 // LETIMER output
 #define LETIMER_OUTPUT_0_PORT     gpioPortA
 #define LETIMER_OUTPUT_0_PIN      7

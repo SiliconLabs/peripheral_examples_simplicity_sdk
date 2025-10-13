@@ -20,6 +20,22 @@
 // GPIO LETIMER route structure
 #define GPIO_LETIMERROUTE (GPIO->LETIMERROUTE)
 
+// I2C Follower SCL and SDA pins
+#define I2C_FOLLOWER_SCL_PORT  gpioPortA
+#define I2C_FOLLOWER_SCL_PIN   6
+#define I2C_FOLLOWER_SDA_PORT  gpioPortA
+#define I2C_FOLLOWER_SDA_PIN   5
+
+// I2C Leader SCL and SDA pins
+#define I2C_LEADER_SCL_PORT  gpioPortC
+#define I2C_LEADER_SCL_PIN   5
+#define I2C_LEADER_SDA_PORT  gpioPortC
+#define I2C_LEADER_SDA_PIN   7
+
+// I2C power domain control
+#define I2C_DOMAIN_POWER_PORT  gpioPortD
+#define I2C_DOMAIN_POWER_PIN   3
+
 // LETIMER output
 #define LETIMER_OUTPUT_0_PORT     gpioPortA
 #define LETIMER_OUTPUT_0_PIN      7

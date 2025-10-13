@@ -340,6 +340,57 @@
     <properties key="sltPackagePath" value="series2/gpio/switch_led_polled/SimplicityStudio/switch_led_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="i2c_follower" label="Peripheral Examples - I2C Follower" description="This project demonstrates the follower configuration of the EFx32xG2x I2C peripheral.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.i2c.i2c_follower.SimplicityStudio.i2c_follower.slcp"/>
+    <properties key="projectFilePaths" value="series2/i2c/i2c_follower/SimplicityStudio/i2c_follower.slcp"/>
+    <properties key="readmeFiles" value="series2/i2c/i2c_follower/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/i2c/i2c_follower/SimplicityStudio/i2c_follower.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="i2c_leader_dma" label="Peripheral Examples - I2C Leader DMA" description="This project demonstrates I2C leader operation in conjunction with LDMA so that the host CPU can be freed to perform other tasks while data is being moved to and from the follower device.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.i2c.i2c_leader_dma.SimplicityStudio.i2c_leader_dma.slcp"/>
+    <properties key="projectFilePaths" value="series2/i2c/i2c_leader_dma/SimplicityStudio/i2c_leader_dma.slcp"/>
+    <properties key="readmeFiles" value="series2/i2c/i2c_leader_dma/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/i2c/i2c_leader_dma/SimplicityStudio/i2c_leader_dma.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="i2c_leader_polled" label="Peripheral Examples - I2C Leader Polled" description="This project demonstrates the leader configuration of the EFx32xG2x I2C peripheral.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.i2c.i2c_leader_polled.SimplicityStudio.i2c_leader_polled.slcp"/>
+    <properties key="projectFilePaths" value="series2/i2c/i2c_leader_polled/SimplicityStudio/i2c_leader_polled.slcp"/>
+    <properties key="readmeFiles" value="series2/i2c/i2c_leader_polled/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/i2c/i2c_leader_polled/SimplicityStudio/i2c_leader_polled.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="iadc_scan_continuous_ldma" label="Peripheral Examples - IADC Scan Continuous LDMA" description="This project demonstrates use of the IADC to continuously sample two single-ended input channels.  The CPU starts the scan while in EM0, and operation continues in EM2 with the LDMA saving the results to RAM and waking the system with an interrupt request to toggle a GPIO pin.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
