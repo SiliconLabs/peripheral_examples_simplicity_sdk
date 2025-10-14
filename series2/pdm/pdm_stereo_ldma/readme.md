@@ -1,4 +1,4 @@
-# Peripheral Examples - PDM Stereo LDMA#
+# Peripheral Examples - PDM Stereo LDMA #
 
 ## Summary ##
 
@@ -11,7 +11,7 @@ the CPU isn't busy.
 
 ## Peripherals used ##
 
-* CMU    - HFRCODPLL
+* CMU    - HFRCODPLL @ 19 MHz
 
 ## How to Test ##
 

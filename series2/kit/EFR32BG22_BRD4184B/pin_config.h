@@ -12,3 +12,6 @@
 
 #define PDM_DAT0_PORT   gpioPortB
 #define PDM_DAT0_PIN    1
+
+#define PDM_DAT1_PORT   gpioPortB
+#define PDM_DAT1_PIN    1

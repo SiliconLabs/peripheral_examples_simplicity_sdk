@@ -101,12 +101,12 @@ void pdm_init(void)
 
   // Route PDM to GPIO
   GPIO->PDMROUTE.ROUTEEN = GPIO_PDM_ROUTEEN_CLKPEN;
-  GPIO->PDMROUTE.CLKROUTE = (gpioPortB << _GPIO_PDM_CLKROUTE_PORT_SHIFT)
-                            | (0 << _GPIO_PDM_CLKROUTE_PIN_SHIFT);
-  GPIO->PDMROUTE.DAT0ROUTE = (gpioPortB << _GPIO_PDM_DAT0ROUTE_PORT_SHIFT)
-                            | (1 << _GPIO_PDM_DAT0ROUTE_PIN_SHIFT);
-  GPIO->PDMROUTE.DAT1ROUTE = (gpioPortB << _GPIO_PDM_DAT1ROUTE_PORT_SHIFT)
-                            | (1 << _GPIO_PDM_DAT1ROUTE_PIN_SHIFT);
+  GPIO->PDMROUTE.CLKROUTE = (PDM_CLOCK_PORT << _GPIO_PDM_CLKROUTE_PORT_SHIFT)
+                            | (PDM_CLOCK_PIN << _GPIO_PDM_CLKROUTE_PIN_SHIFT);
+  GPIO->PDMROUTE.DAT0ROUTE = (PDM_DAT0_PORT << _GPIO_PDM_DAT0ROUTE_PORT_SHIFT)
+                            | (PDM_DAT0_PIN << _GPIO_PDM_DAT0ROUTE_PIN_SHIFT);
+  GPIO->PDMROUTE.DAT1ROUTE = (PDM_DAT1_PORT << _GPIO_PDM_DAT1ROUTE_PORT_SHIFT)
+                            | (PDM_DAT1_PIN << _GPIO_PDM_DAT1ROUTE_PIN_SHIFT);
 
   // Initialize PDM registers with reset values
   PDM_Reset(PDM);
@@ -143,9 +143,6 @@ void ldma_callback(void)
  ******************************************************************************/
 void dma_init(void)
 {
-  // Enable clock for LDMA
-  sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_LDMA0);
-
   // LDMA transfers trigger on PDM Rx Data Valid
   LDMA_TransferCfg_t peri_transfer_tx =
     LDMA_TRANSFER_CFG_PERIPHERAL(ldmaPeripheralSignal_PDM_RXDATAV);

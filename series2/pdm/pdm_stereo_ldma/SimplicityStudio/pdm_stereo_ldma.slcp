@@ -37,6 +37,8 @@ component:
 configuration:
   - name: "SL_CLOCK_MANAGER_EM01GRPACLK_SOURCE"
     value: "CMU_EM01GRPACLKCTRL_CLKSEL_FSRCO"
+  - name: "SL_CLOCK_MANAGER_HFRCO_BAND"
+    value: "cmuHFRCODPLLFreq_19M0Hz"
 sdk_extension:
   - id: peripheral_examples
     version: 1.0.0

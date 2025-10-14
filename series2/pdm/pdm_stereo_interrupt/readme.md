@@ -10,7 +10,7 @@ EM1 when the CPU isn't busy.
 
 ## Peripherals used ##
 
-* CMU - HFRCODPLL
+* CMU - HFRCODPLL @ 19 MHz
 
 ## How to Test ##
 
