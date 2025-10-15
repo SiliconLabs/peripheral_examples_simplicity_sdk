@@ -148,7 +148,12 @@ void I2C0_IRQHandler(void)
 
       I2C0->CMD = I2C_CMD_ACK;
 
+      // Turn on LED0
+#if (LED_ON == 1)
       sl_gpio_set_pin(&GPIO_LED0);
+#else 
+      sl_gpio_clear_pin(&GPIO_LED0);
+#endif
     } else if (pending & I2C_IF_RXDATAV) {
       rxData = I2C0->RXDATA;
       I2C_IntClear(I2C0, I2C_IF_RXDATAV);
@@ -199,7 +204,13 @@ void I2C0_IRQHandler(void)
     if (pending & I2C_IF_SSTOP) {
       // RX complete
       i2c_rxInProgress = false;
+
+      // Turn off LED0
+#if (LED_ON == 1)
       sl_gpio_clear_pin(&GPIO_LED0);
+#else 
+      sl_gpio_set_pin(&GPIO_LED0);
+#endif
       I2C_IntClear(I2C0, I2C_IF_SSTOP);
     }
   }
