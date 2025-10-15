@@ -55,6 +55,8 @@ uint8_t i2c_BufferIndex;
 
 // Transmission flags
 volatile bool i2c_gotTargetAddress;
+volatile bool i2c_rxInProgress;
+volatile bool em1_req_set;
 
 /***************************************************************************//**
  * @brief GPIO initialization
@@ -121,12 +123,13 @@ void I2C0_IRQHandler(void)
 
   // If some sort of fault, abort transfer.
   if (pending & (I2C_IF_BUSERR | I2C_IF_ARBLOST)) {
+    i2c_rxInProgress = false;
     sl_gpio_set_pin(&GPIO_LED1);
   } else {
     if (pending & I2C_IF_ADDR) {
       // Address Match, indicating that reception is started
       // Stay in EM1 until RX completes
-      sl_power_manager_add_em_requirement(SL_POWER_MANAGER_EM1);
+      i2c_rxInProgress = true;
 
       rxData = I2C0->RXDATA;
       I2C_IntClear(I2C0, I2C_IF_ADDR | I2C_IF_RXDATAV);
@@ -194,8 +197,8 @@ void I2C0_IRQHandler(void)
     }
 
     if (pending & I2C_IF_SSTOP) {
-      // RX complete, let power manager enter EM2
-      sl_power_manager_remove_em_requirement(SL_POWER_MANAGER_EM1);
+      // RX complete
+      i2c_rxInProgress = false;
       sl_gpio_clear_pin(&GPIO_LED0);
       I2C_IntClear(I2C0, I2C_IF_SSTOP);
     }
@@ -225,4 +228,16 @@ void app_init(void)
  ******************************************************************************/
 void app_process_action(void)
 {
+  if (i2c_rxInProgress) {
+    // Check if the requirement is already added
+    if (!em1_req_set){
+      sl_power_manager_add_em_requirement(SL_POWER_MANAGER_EM1);
+      em1_req_set = true;
+    }
+  }
+  if (!i2c_rxInProgress && em1_req_set) {
+    // Remove EM1 requirement to let Power Manager enter EM2
+    sl_power_manager_remove_em_requirement(SL_POWER_MANAGER_EM1);
+    em1_req_set = false;
+  }
 }

@@ -29,6 +29,13 @@ component:
   - id: emlib_i2c
   - id: silabs_bsp
     from: peripheral_examples
+configuration:
+  - name: "SL_CLOCK_MANAGER_HFRCO_BAND"
+    value: "cmuHFRCODPLLFreq_19M0Hz"
+  - name: "SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE"
+    value: "SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE_HFRCODPLL"
+  - name: "SL_CLOCK_MANAGER_HFXO_EN"
+    value: "SL_CLOCK_MANAGER_HFXO_EN_DISABLE"
 sdk_extension:
   - id: peripheral_examples
     version: 1.0.0
