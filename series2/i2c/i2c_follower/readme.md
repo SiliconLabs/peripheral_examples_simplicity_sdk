@@ -122,3 +122,11 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
     * PD03 -  LED1, WSTK Pin 23
     * PA11 -  I2C_SDA, Expansion Header Pin 3, WSTK Pin 0
     * PA12 -  I2C_SCL, Expansion Header Pin 5, WSTK Pin 2
+
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board 
+          (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
+  * Device: EFR32MG29B140F1024IM40
+    * PB00 -  LED0, Expansion Header Pin 7, WSTK Pin 4
+    * PB01 -  LED1, Expansion Header Pin 9, WSTK Pin 6
+    * PA05 -  I2C_SDA, Expansion Header Pin 12, WSTK Pin 9
+    * PA06 -  I2C_SCL, Expansion Header Pin 14, WSTK Pin 11

@@ -276,16 +276,19 @@ example:
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/i2c/i2c_leader_dma/SimplicityStudio/i2c_leader_dma.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/i2c/i2c_leader_polled/SimplicityStudio/i2c_leader_polled.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
   # IADC examples
 - path: series2/iadc/iadc_scan_interrupt/SimplicityStudio/iadc_scan_interrupt.slcp

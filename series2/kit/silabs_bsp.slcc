@@ -57,7 +57,7 @@ config_file:
   - path: series2/kit/EFR32BG27_BRD2602A/pin_config.h
     condition: [brd2602a]
   - override:
-      component: "%extension-peripheral_examples%silabs_bsp"	
+      component: "%extension-peripheral_examples%silabs_bsp"
   - path: series2/kit/EFR32MG29_BRD4412A/pin_config.h
     condition: [brd4412a]
   - override:
