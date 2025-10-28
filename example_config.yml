@@ -338,6 +338,67 @@ example:
     - brd4117a # Removing xG26 Radio Board due to lack of RTCC peripheral
     - brd4400c # Removing xG28 Radio Board due to lack of RTCC peripheral
 
+  # TIMER examples
+- path: series2/timer/timer_dma_edge_capture/SimplicityStudio/timer_dma_edge_capture.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/timer/timer_frequency_generation/SimplicityStudio/timer_frequency_generation.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/timer/timer_input_capture_interrupt/SimplicityStudio/timer_input_capture_interrupt.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/timer/timer_period_measurement_interrupt/SimplicityStudio/timer_period_measurement_interrupt.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/timer/timer_period_measurement_polled/SimplicityStudio/timer_period_measurement_polled.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/timer/timer_pulse_capture/SimplicityStudio/timer_pulse_capture.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/timer/timer_pwm_dma/SimplicityStudio/timer_pwm_dma.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/timer/timer_pwm_interrupt/SimplicityStudio/timer_pwm_interrupt.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/timer/timer_single_edge_output_compare/SimplicityStudio/timer_single_edge_output_compare.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/timer/timer_single_pulse_generation_dma/SimplicityStudio/timer_single_pulse_generation_dma.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/timer/timer_single_pulse_generation_interrupt/SimplicityStudio/timer_single_pulse_generation_interrupt.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+
+- path: series2/timer/timer_single_pulse_generation_polled/SimplicityStudio/timer_single_pulse_generation_polled.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4111a # Removing xG27 Boost Radio Board
+    
   # USART examples
 - path: series2/usart/async_interrupt/SimplicityStudio/usart_async_interrupt.slcp
   board_whitelist: *board_whitelist

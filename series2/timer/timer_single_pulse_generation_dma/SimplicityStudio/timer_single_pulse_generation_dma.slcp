@@ -1,0 +1,44 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: timer_single_pulse_generation_dma
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - TIMER Single Pulse Generation with DMA
+description: >
+  This project demonstrates the generation of a single pulse using the TIMER peripheral output compare and the LDMA.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: power_manager
+  - id: power_manager_no_deepsleep
+  - id: emlib_timer
+  - id: emlib_ldma
+  - id: dmadrv
+  - id: silabs_bsp
+    from: peripheral_examples
+configuration:
+  - name: "SL_CLOCK_MANAGER_EM01GRPACLK_SOURCE"
+    value: "CMU_EM01GRPACLKCTRL_CLKSEL_HFRCODPLL"
+  - name: "SL_CLOCK_MANAGER_HFRCO_BAND"
+    value: "cmuHFRCODPLLFreq_19M0Hz"
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0
+  

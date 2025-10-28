@@ -79,6 +79,10 @@
 #define IADC_SCAN_NUM_INPUTS      8
 #define IADC_SCANFIFO_DVL         iadcFifoCfgDvl8
 
+// TIMER external input/output
+#define TIMER_EXTIO_PORT     SL_GPIO_PORT_B
+#define TIMER_EXTIO_PIN      4
+
 // Lock word for the last flash memory page
 #define PAGELOCKn PAGELOCK3
 

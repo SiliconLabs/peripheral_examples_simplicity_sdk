@@ -799,7 +799,7 @@
     <properties key="sltPackagePath" value="series2/ldma/ldma_single_looped/SimplicityStudio/ldma_single_looped.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="one_shot_output_compare" label="Peripheral Examples - LETIMER one shout output compare" description="This project demonstrates output compare in EM2 using the LETIMER.&#xA;">
+  <descriptors name="one_shot_output_compare" label="Peripheral Examples - LETIMER One Shot Output Compare" description="This project demonstrates output compare in EM2 using the LETIMER.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.letimer.one_shot_output_compare.SimplicityStudio.one_shot_output_compare.slcp"/>
@@ -950,6 +950,210 @@
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
     <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/rtcc/rtcc_interrupt/SimplicityStudio/rtcc_interrupt.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="timer_dma_edge_capture" label="Peripheral Examples - TIMER DMA Edge Capture" description="This project demonstrates DMA driven edge capture from a TIMER Compare/Capture channel.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_dma_edge_capture.SimplicityStudio.timer_dma_edge_capture.slcp"/>
+    <properties key="projectFilePaths" value="series2/timer/timer_dma_edge_capture/SimplicityStudio/timer_dma_edge_capture.slcp"/>
+    <properties key="readmeFiles" value="series2/timer/timer_dma_edge_capture/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/timer/timer_dma_edge_capture/SimplicityStudio/timer_dma_edge_capture.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="timer_frequency_generation" label="Peripheral Examples - TIMER Frequency Generation" description="This project demonstrates frequency generation using the TIMER peripheral.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_frequency_generation.SimplicityStudio.timer_frequency_generation.slcp"/>
+    <properties key="projectFilePaths" value="series2/timer/timer_frequency_generation/SimplicityStudio/timer_frequency_generation.slcp"/>
+    <properties key="readmeFiles" value="series2/timer/timer_frequency_generation/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/timer/timer_frequency_generation/SimplicityStudio/timer_frequency_generation.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="timer_input_capture_interrupt" label="Peripheral Examples - TIMER Input Capture Interrupt" description="This project demonstrates use of the TIMER peripheral for interrupt-driven input capture.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_input_capture_interrupt.SimplicityStudio.timer_input_capture_interrupt.slcp"/>
+    <properties key="projectFilePaths" value="series2/timer/timer_input_capture_interrupt/SimplicityStudio/timer_input_capture_interrupt.slcp"/>
+    <properties key="readmeFiles" value="series2/timer/timer_input_capture_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/timer/timer_input_capture_interrupt/SimplicityStudio/timer_input_capture_interrupt.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="timer_period_measurement_interrupt" label="Peripheral Examples - TIMER Period Measurement Interrupt" description="This project demonstrates period measurement using the TIMER peripheral. The module is configured to request an interrupt after capturing a pair of falling edges.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_period_measurement_interrupt.SimplicityStudio.timer_period_measurement_interrupt.slcp"/>
+    <properties key="projectFilePaths" value="series2/timer/timer_period_measurement_interrupt/SimplicityStudio/timer_period_measurement_interrupt.slcp"/>
+    <properties key="readmeFiles" value="series2/timer/timer_period_measurement_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/timer/timer_period_measurement_interrupt/SimplicityStudio/timer_period_measurement_interrupt.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="timer_period_measurement_polled" label="Peripheral Examples - TIMER Period Measurement Polled" description="This project demonstrates period measurement using the TIMER peripheral.  The main loop polls the Capture/Compare flag, which is set after capturing a pair of falling edges.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_period_measurement_polled.SimplicityStudio.timer_period_measurement_polled.slcp"/>
+    <properties key="projectFilePaths" value="series2/timer/timer_period_measurement_polled/SimplicityStudio/timer_period_measurement_polled.slcp"/>
+    <properties key="readmeFiles" value="series2/timer/timer_period_measurement_polled/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/timer/timer_period_measurement_polled/SimplicityStudio/timer_period_measurement_polled.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+    <descriptors name="timer_pulse_capture" label="Peripheral Examples - TIMER Pulse Capture" description="This project demonstrates single pulse capture using the TIMER peripheral.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_pulse_capture.SimplicityStudio.timer_pulse_capture.slcp"/>
+    <properties key="projectFilePaths" value="series2/timer/timer_pulse_capture/SimplicityStudio/timer_pulse_capture.slcp"/>
+    <properties key="readmeFiles" value="series2/timer/timer_pulse_capture/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/timer/timer_pulse_capture/SimplicityStudio/timer_pulse_capture.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="timer_pwm_dma" label="Peripheral Examples - TIMER Pulse Width Modulation (PWM) with DMA" description="This project demonstrates DMA-driven pulse width modulation using the TIMER peripheral.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_pwm_dma.SimplicityStudio.timer_pwm_dma.slcp"/>
+    <properties key="projectFilePaths" value="series2/timer/timer_pwm_dma/SimplicityStudio/timer_pwm_dma.slcp"/>
+    <properties key="readmeFiles" value="series2/timer/timer_pwm_dma/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/timer/timer_pwm_dma/SimplicityStudio/timer_pwm_dma.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="timer_pwm_interrupt" label="Peripheral Examples - TIMER Pulse Width Modulation (PWM) with Interrupts" description="This project demonstrates pulse width modulation using the TIMER peripheral.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_pwm_interrupt.SimplicityStudio.timer_pwm_interrupt.slcp"/>
+    <properties key="projectFilePaths" value="series2/timer/timer_pwm_interrupt/SimplicityStudio/timer_pwm_interrupt.slcp"/>
+    <properties key="readmeFiles" value="series2/timer/timer_pwm_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/timer/timer_pwm_interrupt/SimplicityStudio/timer_pwm_interrupt.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="timer_single_edge_output_compare" label="Peripheral Examples - TIMER Single Output Compare" description="This project demonstrates single output compare using the TIMER peripheral.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_single_edge_output_compare.SimplicityStudio.timer_single_edge_output_compare.slcp"/>
+    <properties key="projectFilePaths" value="series2/timer/timer_single_edge_output_compare/SimplicityStudio/timer_single_edge_output_compare.slcp"/>
+    <properties key="readmeFiles" value="series2/timer/timer_single_edge_output_compare/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/timer/timer_single_edge_output_compare/SimplicityStudio/timer_single_edge_output_compare.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="timer_single_pulse_generation_dma" label="Peripheral Examples - TIMER Single Pulse Generation with DMA" description="This project demonstrates the generation of a single pulse using the TIMER peripheral output compare and the LDMA.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_single_pulse_generation_dma.SimplicityStudio.timer_single_pulse_generation_dma.slcp"/>
+    <properties key="projectFilePaths" value="series2/timer/timer_single_pulse_generation_dma/SimplicityStudio/timer_single_pulse_generation_dma.slcp"/>
+    <properties key="readmeFiles" value="series2/timer/timer_single_pulse_generation_dma/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/timer/timer_single_pulse_generation_dma/SimplicityStudio/timer_single_pulse_generation_dma.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="timer_single_pulse_generation_interrupt" label="Peripheral Examples - TIMER Single Pulse Generation with Interrupt" description="This project demonstrates interrupt-driven generation of a single pulse using TIMER output compare.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_single_pulse_generation_interrupt.SimplicityStudio.timer_single_pulse_generation_interrupt.slcp"/>
+    <properties key="projectFilePaths" value="series2/timer/timer_single_pulse_generation_interrupt/SimplicityStudio/timer_single_pulse_generation_interrupt.slcp"/>
+    <properties key="readmeFiles" value="series2/timer/timer_single_pulse_generation_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/timer/timer_single_pulse_generation_interrupt/SimplicityStudio/timer_single_pulse_generation_interrupt.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="timer_single_pulse_generation_polled" label="Peripheral Examples - TIMER Single Pulse Generation Polled" description="This project demonstrates polled single pulse generation using TIMER output compare.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_single_pulse_generation_polled.SimplicityStudio.timer_single_pulse_generation_polled.slcp"/>
+    <properties key="projectFilePaths" value="series2/timer/timer_single_pulse_generation_polled/SimplicityStudio/timer_single_pulse_generation_polled.slcp"/>
+    <properties key="readmeFiles" value="series2/timer/timer_single_pulse_generation_polled/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/timer/timer_single_pulse_generation_polled/SimplicityStudio/timer_single_pulse_generation_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
   <descriptors name="usart_async_interrupt" label="Peripheral Examples - USART Async Interrupt" description="This project demonstrates interrupt-driven operation of the USART in asynchronous mode.  USART0 is configured for asynchronous operation at 115200 baud with 8 data bits, no parity, and one stop bit (115200N81). The main loop waits until 80 characters or a carriage return are received and then echos these back to the user.&#xA;">

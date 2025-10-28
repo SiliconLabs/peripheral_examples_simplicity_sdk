@@ -1,12 +1,9 @@
 /***************************************************************************//**
  * @file main.c
- *
- * @brief This project demonstrates one-shot edge output compare using
- * the TIMER module. GPIO pin PA5 is configured for output compare and
- * after 3 seconds, capture/compare channel 0 (CC0) drives the pin high.
+ * @brief main() function.
  *******************************************************************************
  * # License
- * <b>Copyright 2022 Silicon Laboratories Inc. www.silabs.com</b>
+ * <b>Copyright 2025 Silicon Laboratories Inc. www.silabs.com</b>
  *******************************************************************************
  *
  * SPDX-License-Identifier: Zlib
@@ -29,98 +26,46 @@
  *    misrepresented as being the original software.
  * 3. This notice may not be removed or altered from any source distribution.
  *
- *******************************************************************************
- * # Evaluation Quality
- * This code has been minimally tested to ensure that it builds and is suitable 
- * as a demonstration for evaluation purposes only. This code will be maintained
- * at the sole discretion of Silicon Labs.
  ******************************************************************************/
+#include "sl_component_catalog.h"
+#include "sl_main_init.h"
+#if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+#include "sl_power_manager.h"
+#endif
+#if defined(SL_CATALOG_KERNEL_PRESENT)
+#include "sl_main_kernel.h"
+#else // SL_CATALOG_KERNEL_PRESENT
+#include "sl_main_process_action.h"
+#endif // SL_CATALOG_KERNEL_PRESENT
 
-#include "em_device.h"
-#include "em_chip.h"
-#include "em_cmu.h"
-#include "em_emu.h"
-#include "em_gpio.h"
-#include "em_timer.h"
-
-/*
- * Change this to modify the length of the delay from when the TIMER
- * starts counting to when CC0 drives the GPIO pin high.
- */
-#define NUM_SECONDS_DELAY 3
-
-/**************************************************************************//**
- * @brief
- *    CMU initialization
- *****************************************************************************/
-void initCMU(void)
-{
-  /*
-   * Enable the GPIO and TIMER0 bus clocks.
-   *
-   * Note: On EFR32xG21 devices, calls to CMU_ClockEnable() have no
-   * effect as clocks are automatically turned on/off in response to
-   * on-demand requests from the peripherals.  CMU_ClockEnable() is
-   * a dummy function on EFR32xG21 present for software compatibility.
-   */
-  CMU_ClockEnable(cmuClock_GPIO, true);
-  CMU_ClockEnable(cmuClock_TIMER0, true);
-}
-
-/**************************************************************************//**
- * @brief
- *    TIMER initialization
- *****************************************************************************/
-void initTIMER(void)
-{
-  uint32_t timerFreq, compareValue;
-  TIMER_Init_TypeDef timerInit = TIMER_INIT_DEFAULT;
-  TIMER_InitCC_TypeDef timerCCInit = TIMER_INITCC_DEFAULT;
-
-  // Do not start counter upon initialization
-  timerInit.enable = false;
-  timerInit.prescale = timerPrescale1024;
-
-  // Set drive output pin high upon compare match
-  timerCCInit.mode = timerCCModeCompare;
-  timerCCInit.cmoa = timerOutputActionSet;
-
-  TIMER_Init(TIMER0, &timerInit);
-
-  // Route CC0 output to PA6
-  GPIO->TIMERROUTE[0].ROUTEEN  = GPIO_TIMER_ROUTEEN_CC0PEN;
-  GPIO->TIMERROUTE[0].CC0ROUTE = (gpioPortA << _GPIO_TIMER_CC0ROUTE_PORT_SHIFT)
-                    | (6 << _GPIO_TIMER_CC0ROUTE_PIN_SHIFT);
-
-  TIMER_InitCC(TIMER0, 0, &timerCCInit);
-
-  // Set the output compare to match at NUM_SECONDS_DELAY counts
-  timerFreq = CMU_ClockFreqGet(cmuClock_TIMER0) / (timerInit.prescale + 1);
-  compareValue = timerFreq * NUM_SECONDS_DELAY;
-
-  TIMER_CompareSet(TIMER0, 0, compareValue);
-
-  // Now start the TIMER
-  TIMER_Enable(TIMER0, true);
-}
-
-/**************************************************************************//**
- * @brief
- *    Main function
- *****************************************************************************/
 int main(void)
 {
-  // Chip errata
-  CHIP_Init();
+  // Initialize Silicon Labs device, system, service(s) and protocol stack(s).
+  // Note that if the kernel is present, the start task will be started and software
+  // component initialization will take place there.
+  sl_main_init();
 
-  initCMU();
+#if defined(SL_CATALOG_KERNEL_PRESENT)
+  // Start the kernel. The start task will be executed (Highest priority) to complete
+  // the Simplicity SDK components initialization and the user app_init() hook function will be called.
+  sl_main_kernel_start();
+#else // SL_CATALOG_KERNEL_PRESENT
 
-  // Configure PA6 as an output
-  GPIO_PinModeSet(gpioPortA, 6, gpioModePushPull, 0);
-
-  initTIMER();
+  // User provided code.
+  app_init();
 
   while (1) {
-    EMU_EnterEM1(); // Enter EM1 (won't exit)
+    // Silicon Labs components process action routine
+    // must be called from the super loop.
+    sl_main_process_action();
+
+    // User provided code. Application process.
+    app_process_action();
+
+#if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+    // Let the CPU go to sleep if the system allows it.
+    sl_power_manager_sleep();
+#endif
   }
+#endif // SL_CATALOG_KERNEL_PRESENT
 }
