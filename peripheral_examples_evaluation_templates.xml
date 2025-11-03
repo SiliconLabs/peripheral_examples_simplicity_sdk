@@ -221,6 +221,108 @@
     <properties key="sltPackagePath" value="series2/emu/em4_no_dcdc/SimplicityStudio/em4_no_dcdc.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="eusart_spi_main_dma" label="Peripheral Examples - EUSART SPI Main DMA" description="This project demonstrates DMA-driven operation of the EUSART in synchronous main (formerly master) mode.  EUSART0/1 is configured for SPI-compatible operation at 1 Mbps.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_spi_main_dma.SimplicityStudio.eusart_spi_main_dma.slcp"/>
+    <properties key="projectFilePaths" value="series2/eusart/eusart_spi_main_dma/SimplicityStudio/eusart_spi_main_dma.slcp"/>
+    <properties key="readmeFiles" value="series2/eusart/eusart_spi_main_dma/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/eusart/eusart_spi_main_dma/SimplicityStudio/eusart_spi_main_dma.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_spi_main_interrupt" label="Peripheral Examples - EUSART SPI Main Interrupt" description="This project demonstrates interrupt-driven operation of the EUSART in synchronous main (formerly master) mode. EUSART0/1 is configured for SPI-compatible operation at 1 Mbps.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_spi_main_interrupt.SimplicityStudio.eusart_spi_main_interrupt.slcp"/>
+    <properties key="projectFilePaths" value="series2/eusart/eusart_spi_main_interrupt/SimplicityStudio/eusart_spi_main_interrupt.slcp"/>
+    <properties key="readmeFiles" value="series2/eusart/eusart_spi_main_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/eusart/eusart_spi_main_interrupt/SimplicityStudio/eusart_spi_main_interrupt.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_spi_main_polled" label="Peripheral Examples - EUSART SPI Main Polled" description="This project demonstrates polled operation of the EUSART in synchronous main (formerly master) mode.  EUSART0/1 is configured for SPI-compatible operation at 1 Mbps.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_spi_main_polled.SimplicityStudio.eusart_spi_main_polled.slcp"/>
+    <properties key="projectFilePaths" value="series2/eusart/eusart_spi_main_polled/SimplicityStudio/eusart_spi_main_polled.slcp"/>
+    <properties key="readmeFiles" value="series2/eusart/eusart_spi_main_polled/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/eusart/eusart_spi_main_polled/SimplicityStudio/eusart_spi_main_polled.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_spi_secondary_dma" label="Peripheral Examples - EUSART SPI Secondary DMA" description="This project demonstrates DMA-driven operation of the EUSART in synchronous secondary (formerly slave) mode. EUSART0/1 is configured for SPI-compatible operation at 1 Mbps.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_spi_secondary_dma.SimplicityStudio.eusart_spi_secondary_dma.slcp"/>
+    <properties key="projectFilePaths" value="series2/eusart/eusart_spi_secondary_dma/SimplicityStudio/eusart_spi_secondary_dma.slcp"/>
+    <properties key="readmeFiles" value="series2/eusart/eusart_spi_secondary_dma/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/eusart/eusart_spi_secondary_dma/SimplicityStudio/eusart_spi_secondary_dma.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_spi_secondary_interrupt" label="Peripheral Examples - EUSART SPI Secondary Interrupt" description="This project demonstrates interrupt-driven operation of the EUSART in synchronous secondary (formerly slave) mode. EUSART0/1 is configured for SPI-compatible operation at 1 Mbps.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_spi_secondary_interrupt.SimplicityStudio.eusart_spi_secondary_interrupt.slcp"/>
+    <properties key="projectFilePaths" value="series2/eusart/eusart_spi_secondary_interrupt/SimplicityStudio/eusart_spi_secondary_interrupt.slcp"/>
+    <properties key="readmeFiles" value="series2/eusart/eusart_spi_secondary_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/eusart/eusart_spi_secondary_interrupt/SimplicityStudio/eusart_spi_secondary_interrupt.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_spi_secondary_polled" label="Peripheral Examples - EUSART SPI Secondary Polled" description="This project demonstrates polled operation of the EUSART in synchronous secondary (formerly slave) mode. EUSART0/1 is configured for SPI-compatible operation at 1 Mbps.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_spi_secondary_polled.SimplicityStudio.eusart_spi_secondary_polled.slcp"/>
+    <properties key="projectFilePaths" value="series2/eusart/eusart_spi_secondary_polled/SimplicityStudio/eusart_spi_secondary_polled.slcp"/>
+    <properties key="readmeFiles" value="series2/eusart/eusart_spi_secondary_polled/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/eusart/eusart_spi_secondary_polled/SimplicityStudio/eusart_spi_secondary_polled.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="gpcrc_dma" label="Peripheral Examples - GPCRC DMA" description="This project demonstrates the GPCRC used to check 32-bit data using the IEEE 802.3 polynomial standard in EM1. Data is fed into the GPCRC via the LDMA.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
@@ -799,7 +901,7 @@
     <properties key="sltPackagePath" value="series2/ldma/ldma_single_looped/SimplicityStudio/ldma_single_looped.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="one_shot_output_compare" label="Peripheral Examples - LETIMER One Shot Output Compare" description="This project demonstrates output compare in EM2 using the LETIMER.&#xA;">
+  <descriptors name="one_shot_output_compare" label="Peripheral Examples - LETIMER one shout output compare" description="This project demonstrates output compare in EM2 using the LETIMER.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.letimer.one_shot_output_compare.SimplicityStudio.one_shot_output_compare.slcp"/>
@@ -969,7 +1071,7 @@
     <properties key="sltPackagePath" value="series2/timer/timer_dma_edge_capture/SimplicityStudio/timer_dma_edge_capture.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_frequency_generation" label="Peripheral Examples - TIMER Frequency Generation" description="This project demonstrates frequency generation using the TIMER peripheral.&#xA;">
+  <descriptors name="timer_frequency_generation" label="Peripheral Examples - TIMER Frequency Generation" description="This project demonstrates frequency generation using the TIMER module.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_frequency_generation.SimplicityStudio.timer_frequency_generation.slcp"/>
@@ -986,7 +1088,7 @@
     <properties key="sltPackagePath" value="series2/timer/timer_frequency_generation/SimplicityStudio/timer_frequency_generation.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_input_capture_interrupt" label="Peripheral Examples - TIMER Input Capture Interrupt" description="This project demonstrates use of the TIMER peripheral for interrupt-driven input capture.&#xA;">
+  <descriptors name="timer_input_capture_interrupt" label="Peripheral Examples - TIMER Input Capture Interrupt" description="This project demonstrates use of the TIMER module for interrupt-driven input capture.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_input_capture_interrupt.SimplicityStudio.timer_input_capture_interrupt.slcp"/>
@@ -1003,7 +1105,7 @@
     <properties key="sltPackagePath" value="series2/timer/timer_input_capture_interrupt/SimplicityStudio/timer_input_capture_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_period_measurement_interrupt" label="Peripheral Examples - TIMER Period Measurement Interrupt" description="This project demonstrates period measurement using the TIMER peripheral. The module is configured to request an interrupt after capturing a pair of falling edges.&#xA;">
+  <descriptors name="timer_period_measurement_interrupt" label="Peripheral Examples - TIMER Period Measurement Interrupt" description="This project demonstrates period measurement using TIMER0. The module is configured to request an interrupt after capturing a pair of falling edges.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_period_measurement_interrupt.SimplicityStudio.timer_period_measurement_interrupt.slcp"/>
@@ -1020,7 +1122,7 @@
     <properties key="sltPackagePath" value="series2/timer/timer_period_measurement_interrupt/SimplicityStudio/timer_period_measurement_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_period_measurement_polled" label="Peripheral Examples - TIMER Period Measurement Polled" description="This project demonstrates period measurement using the TIMER peripheral.  The main loop polls the Capture/Compare flag, which is set after capturing a pair of falling edges.&#xA;">
+  <descriptors name="timer_period_measurement_polled" label="Peripheral Examples - TIMER Period Measurement Polled" description="This project demonstrates period measurement using TIMER0.  The main loop polls the CC0 flag, which is set after capturing a pair of falling edges.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_period_measurement_polled.SimplicityStudio.timer_period_measurement_polled.slcp"/>
@@ -1037,7 +1139,7 @@
     <properties key="sltPackagePath" value="series2/timer/timer_period_measurement_polled/SimplicityStudio/timer_period_measurement_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-    <descriptors name="timer_pulse_capture" label="Peripheral Examples - TIMER Pulse Capture" description="This project demonstrates single pulse capture using the TIMER peripheral.&#xA;">
+  <descriptors name="timer_pulse_capture" label="Peripheral Examples - TIMER Pulse Capture" description="This project demonstrates single pulse capture using the TIMER peripheral.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_pulse_capture.SimplicityStudio.timer_pulse_capture.slcp"/>

@@ -22,6 +22,16 @@
  */
 #define RAM_POWER_DOWN_END (SRAM_BASE + SRAM_SIZE - 0x2000)
 
+// EUSART SPI ports and pins
+#define EUS0MOSI_PORT   SL_GPIO_PORT_C
+#define EUS0MOSI_PIN    0
+#define EUS0MISO_PORT   SL_GPIO_PORT_C
+#define EUS0MISO_PIN    1
+#define EUS0SCLK_PORT   SL_GPIO_PORT_C
+#define EUS0SCLK_PIN    2
+#define EUS0CS_PORT     SL_GPIO_PORT_C
+#define EUS0CS_PIN      3
+
 // GPIO LETIMER route structure
 #define GPIO_LETIMERROUTE (GPIO->LETIMERROUTE)
 

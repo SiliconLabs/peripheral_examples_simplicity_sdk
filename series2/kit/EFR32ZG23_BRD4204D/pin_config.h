@@ -17,6 +17,16 @@
 // RAM power down end for EM2 and EM3
 #define RAM_POWER_DOWN_END (0)
 
+// EUSART SPI ports and pins
+#define EUS0MOSI_PORT   SL_GPIO_PORT_A
+#define EUS0MOSI_PIN    8
+#define EUS0MISO_PORT   SL_GPIO_PORT_A
+#define EUS0MISO_PIN    9
+#define EUS0SCLK_PORT   SL_GPIO_PORT_A
+#define EUS0SCLK_PIN    10
+#define EUS0CS_PORT     SL_GPIO_PORT_A
+#define EUS0CS_PIN      7
+
 // GPIO LETIMER route structure
 #define GPIO_LETIMERROUTE (GPIO->LETIMERROUTE)
 
