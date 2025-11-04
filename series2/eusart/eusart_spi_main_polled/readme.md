@@ -120,3 +120,11 @@ the divisor necessary to derive the desired bit rate.
     * PA12 -  EUSART0_RX (MISO)  - Expansion Header Pin 5, WSTK Pin 2
     * PA13 -  EUSART0_CLK (SCLK) - Expansion Header Pin 7, WSTK Pin 4
     * PA14 -  EUSART0_CS (CSn)   - Expansion Header Pin 9, WSTK Pin 6
+
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board 
+          (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
+  * Device: EFR32MG29B140F1024IM40
+    * PA05 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
+    * PA06 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
+    * PB02 -  EUSART0_CLK (SCLK) - Expansion Header Pin 15, WSTK Pin 12
+    * PB03 -  EUSART0_CS (CSn)   - Expansion Header Pin 16, WSTK Pin 13

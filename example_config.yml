@@ -191,6 +191,7 @@ example:
     - brd4181a # Removing xG21 Radio Board due to lack of EUSART peripheral
     - brd4182a # Removing xG22 Radio Board due to lack of EUSART peripheral
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/eusart/eusart_spi_main_interrupt/SimplicityStudio/eusart_spi_main_interrupt.slcp
   board_whitelist: *board_whitelist
@@ -198,6 +199,7 @@ example:
     - brd4181a # Removing xG21 Radio Board due to lack of EUSART peripheral
     - brd4182a # Removing xG22 Radio Board due to lack of EUSART peripheral
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/eusart/eusart_spi_main_polled/SimplicityStudio/eusart_spi_main_polled.slcp
   board_whitelist: *board_whitelist
@@ -205,6 +207,7 @@ example:
     - brd4181a # Removing xG21 Radio Board due to lack of EUSART peripheral
     - brd4182a # Removing xG22 Radio Board due to lack of EUSART peripheral
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/eusart/eusart_spi_secondary_dma/SimplicityStudio/eusart_spi_secondary_dma.slcp
   board_whitelist: *board_whitelist
@@ -212,6 +215,7 @@ example:
     - brd4181a # Removing xG21 Radio Board due to lack of EUSART peripheral
     - brd4182a # Removing xG22 Radio Board due to lack of EUSART peripheral
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/eusart/eusart_spi_secondary_interrupt/SimplicityStudio/eusart_spi_secondary_interrupt.slcp
   board_whitelist: *board_whitelist
@@ -219,6 +223,7 @@ example:
     - brd4181a # Removing xG21 Radio Board due to lack of EUSART peripheral
     - brd4182a # Removing xG22 Radio Board due to lack of EUSART peripheral
     - brd4111a # Removing xG27 Boost Radio Board
+    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/eusart/eusart_spi_secondary_polled/SimplicityStudio/eusart_spi_secondary_polled.slcp
   board_whitelist: *board_whitelist
@@ -226,7 +231,8 @@ example:
     - brd4181a # Removing xG21 Radio Board due to lack of EUSART peripheral
     - brd4182a # Removing xG22 Radio Board due to lack of EUSART peripheral
     - brd4111a # Removing xG27 Boost Radio Board
-  
+    - brd4420a # Removing xG29 Boost Radio Board
+
   # GPCRC examples
 - path: series2/gpcrc/gpcrc_dma/SimplicityStudio/gpcrc_dma.slcp
   board_whitelist: *board_whitelist
