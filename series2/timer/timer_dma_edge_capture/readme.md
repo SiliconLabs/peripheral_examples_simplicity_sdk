@@ -58,3 +58,8 @@ This project demonstrates DMA driven edge capture from a TIMER Compare/Capture c
 	* Device: EFR32ZG28B312F1024IM68
 		* PB04  - TIM0_CC0 (WSTK P8, Expansion Header Pin 11)
 		* PB02  - LED0 (WSTK P19)
+		
+* Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PA06  - TIM0_CC0 (WSTK P11, Expansion Header Pin 14)
+        * PB00  - LED0 (WSTK P4, Expansion Header Pin 7)

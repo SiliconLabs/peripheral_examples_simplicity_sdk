@@ -53,3 +53,7 @@ Comments are provided in the example that explain how to convert the code from i
 * Board: Silicon Labs EFR32xG28 Radio Board (BRD4400C) + Wireless Starter Kit Mainboard
 	* Device: EFR32ZG28B312F1024IM68
 		* PB01 -  Push Button PB0 (WSTK P17)
+		
+* Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PB00  - Push Button PB0 (WSTK P4, Expansion Header Pin 7)
