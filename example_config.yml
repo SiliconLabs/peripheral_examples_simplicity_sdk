@@ -874,29 +874,36 @@ example:
 - path: series3/adc/scan_window_compare_vmon/SimplicityStudio/adc_scan_window_compare_vmon_s3.slcp
   board_whitelist: *board_whitelist_s3
 
-- path: series3/adc/adc_single_differential_polled/SimplicityStudio/adc_single_differential_polled_s3.slcp
+- path: series3/adc/single_differential_polled/SimplicityStudio/adc_single_differential_polled_s3.slcp
   board_whitelist: *board_whitelist_s3
 
-- path: series3/adc/adc_single_gpio_prs_ldma/SimplicityStudio/adc_single_gpio_prs_ldma_s3.slcp
+- path: series3/adc/single_gpio_prs_ldma/SimplicityStudio/adc_single_gpio_prs_ldma_s3.slcp
   board_whitelist: *board_whitelist_s3
 
-- path: series3/adc/adc_single_interrupt/SimplicityStudio/adc_single_interrupt_s3.slcp
+- path: series3/adc/single_interrupt/SimplicityStudio/adc_single_interrupt_s3.slcp
   board_whitelist: *board_whitelist_s3
 
-- path: series3/adc/adc_single_letimer_interrupt/SimplicityStudio/adc_single_letimer_interrupt_s3.slcp
+- path: series3/adc/single_letimer_interrupt/SimplicityStudio/adc_single_letimer_interrupt_s3.slcp
   board_whitelist: *board_whitelist_s3
 
-- path: series3/adc/adc_single_letimer_prs_ldma/SimplicityStudio/adc_single_letimer_prs_ldma_s3.slcp
+- path: series3/adc/single_letimer_prs_ldma/SimplicityStudio/adc_single_letimer_prs_ldma_s3.slcp
   board_whitelist: *board_whitelist_s3
 
-- path: series3/adc/adc_single_oversampling/SimplicityStudio/adc_single_oversampling_s3.slcp
+- path: series3/adc/single_oversampling/SimplicityStudio/adc_single_oversampling_s3.slcp
   board_whitelist: *board_whitelist_s3
 
-- path: series3/adc/adc_single_window_compare/SimplicityStudio/adc_single_window_compare_s3.slcp
+- path: series3/adc/single_window_compare/SimplicityStudio/adc_single_window_compare_s3.slcp
   board_whitelist: *board_whitelist_s3
 
   # BURTC examples
 - path: series3/burtc/burtc_em4_buram/SimplicityStudio/burtc_em4_buram_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+  # GPCRC examples
+- path: series3/gpcrc/gpcrc_dma/SimplicityStudio/gpcrc_dma_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/gpcrc/gpcrc_software/SimplicityStudio/gpcrc_software_s3.slcp
   board_whitelist: *board_whitelist_s3
 
   # GPIO examples
@@ -909,10 +916,10 @@ example:
 - path: series3/gpio/gpio_slew_rate/SimplicityStudio/gpio_slew_rate_s3.slcp
   board_whitelist: *board_whitelist_s3
 
-- path: series3/gpio/gpio_slew_rate/SimplicityStudio/gpio_periph_s3.slcp
+- path: series3/gpio/gpio_periph/SimplicityStudio/gpio_periph_s3.slcp
   board_whitelist: *board_whitelist_s3
 
-- path: series3/gpio/gpio_slew_rate/SimplicityStudio/gpio_em4_wakeup_s3.slcp
+- path: series3/gpio/gpio_em4_wakeup/SimplicityStudio/gpio_em4_wakeup_s3.slcp
   board_whitelist: *board_whitelist_s3
 
   # PIXELRZ examples

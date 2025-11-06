@@ -1,4 +1,4 @@
-# Peripheral Examples - GPIO EM4 Wakeup
+# Peripheral Examples - GPIO EM4 Wakeup #
 
 ## Summary ##
 
@@ -15,7 +15,6 @@ connect to the device.
 
 ## How to Test ##
 
-How To Test:
 1. Build the project and download it to the Starter Kit.
 2. Terminate the debug session and return to the IDE or Launcher in
    Simplicity Studio.

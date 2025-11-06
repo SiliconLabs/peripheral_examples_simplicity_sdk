@@ -1,10 +1,10 @@
 # Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
-project_name: gpio_slew_rate_s3
+project_name: gpcrc_dma_s3
 package: peripheral_examples
 quality: evaluation
-label: Peripheral Examples - GPIO Slew rate
+label: Peripheral Examples - GPCRC DMA
 description: >
-  This project demonstrates how to set the slew rate for GPIO pins.
+  This project demonstrates the GPCRC used to check 32-bit data using the IEEE 802.3 polynomial standard in EM1. Data is fed into the GPCRC via the LDMA.
 category: Example|Peripheral Examples
 filter:
   - name: "Device Type"
@@ -26,9 +26,13 @@ component:
   - id: sl_main
   - id: device_init
   - id: clock_manager
-  - id: hal_timer
+  - id: hal_ldma
+  - id: hal_gpcrc
+  - id: dmadrv
+  - id: power_manager_no_deepsleep
   - id: silabs_bsp
     from: peripheral_examples
 sdk_extension:
   - id: peripheral_examples
     version: 1.0.0
+  

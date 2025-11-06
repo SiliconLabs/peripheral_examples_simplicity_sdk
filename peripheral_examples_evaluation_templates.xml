@@ -2023,7 +2023,7 @@
     <properties key="sltPackagePath" value="series3/acmp/acmp_vmon/SimplicityStudio/acmp_vmon_series3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="adc_scan_adc_timer_s3" label="Peripheral Examples - ADC Scan with ADC Timer" description="This project demonstrates use of the ADC to take single-ended analog measurements of two input channels, with conversions triggered by the local ADC peripheral timer.&#xA;">
+  <descriptors name="adc_scan_adc_timer_s3" label="Peripheral Examples - ADC Scan ADC Timer" description="This project demonstrates using the ADC peripheral to take single-ended analog measurements of two external inputs using the ADC local timer to trigger scan sequence. An interrupt is requested when the specified FIFO data valid level is reached, and the conversion results are converted to volts and stored in a global array. A GPIO is toggled during the IADC interrupt handler to signal the end of the most recent scan.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.scan_adc_timer.SimplicityStudio.adc_scan_adc_timer_s3.slcp"/>
@@ -2032,7 +2032,7 @@
     <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
     <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
-    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
@@ -2040,7 +2040,7 @@
     <properties key="sltPackagePath" value="series3/adc/scan_adc_timer/SimplicityStudio/adc_scan_adc_timer_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="adc_scan_continuous_ldma_s3" label="Peripheral Examples - ADC Scan Continuous" description="This project demonstrates use of the ADC to continuously sample two single-ended input channels, using LDMA to transfer conversion results to a buffer in RAM.&#xA;">
+  <descriptors name="adc_scan_continuous_ldma_s3" label="Peripheral Examples - ADC Scan Continuous LDMA" description="This project demonstrates use of the ADC to continuously sample two single-ended external inputs, with the LDMA saving conversion results to RAM and LDMA interrupt toggling a GPIO upon transfer completion.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.scan_continuous_ldma.SimplicityStudio.adc_scan_continuous_ldma_s3.slcp"/>
@@ -2049,7 +2049,7 @@
     <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
     <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
-    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
@@ -2057,7 +2057,7 @@
     <properties key="sltPackagePath" value="series3/adc/scan_continuous_ldma/SimplicityStudio/adc_scan_continuous_ldma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="adc_scan_gpio_prs_ldma_s3" label="Peripheral Examples - ADC Scan GPIO PRS LDMA" description="This project demonstrates using the ADC peripheral to take single-ended analog measurements of two input channels. Conversions are triggered by rising edge of a GPIO input via PRS.&#xA;">
+  <descriptors name="adc_scan_gpio_prs_ldma_s3" label="Peripheral Examples - ADC Scan GPIO PRS LDMA" description="This project demonstrates using the ADC peripheral to take single-ended analog measurements using two external inputs. Conversions are triggered by rising edge of a GPIO input via PRS.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.scan_gpio_prs_ldma.SimplicityStudio.adc_scan_gpio_prs_ldma_s3.slcp"/>
@@ -2066,7 +2066,7 @@
     <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
     <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
-    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
@@ -2074,7 +2074,7 @@
     <properties key="sltPackagePath" value="series3/adc/scan_gpio_prs_ldma/SimplicityStudio/adc_scan_gpio_prs_ldma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="adc_scan_interrupt_s3" label="Peripheral Examples - ADC Scan Interrupt" description="This project demonstrates using the ADC peripheral to take single-ended analog measurements of two input channels, with interrupt upon conversion completion of the two channel scan.&#xA;">
+  <descriptors name="adc_scan_interrupt_s3" label="Peripheral Examples - ADC Scan Interrupt" description="This project demonstrates using the ADC peripheral to take single-ended analog measurements of two external inputs and four internal voltage supply channels.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.scan_interrupt.SimplicityStudio.adc_scan_interrupt_s3.slcp"/>
@@ -2083,7 +2083,7 @@
     <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
     <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
-    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
@@ -2091,7 +2091,7 @@
     <properties key="sltPackagePath" value="series3/adc/scan_interrupt/SimplicityStudio/adc_scan_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="adc_scan_letimer_interrupt_s3" label="Peripheral Examples - ADC Scan LETIMER Interrupt" description="This project demonstrates using the ADC peripheral to take single-ended analog measurements of two input channels, with conversion scans triggered periodically by LETIMER underflow interrupt.&#xA;">
+  <descriptors name="adc_scan_letimer_interrupt_s3" label="Peripheral Examples - ADC Scan LETIMER Interrupt" description="This project demonstrates using the ADC peripheral to take single-ended analog measurements of two external inputs and four internal supply voltage channels, with conversions triggered periodically by LETIMER underflow interrupt.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.scan_letimer_interrupt.SimplicityStudio.adc_scan_letimer_interrupt_s3.slcp"/>
@@ -2100,7 +2100,7 @@
     <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
     <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
-    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
@@ -2108,7 +2108,7 @@
     <properties key="sltPackagePath" value="series3/adc/scan_letimer_interrupt/SimplicityStudio/adc_scan_letimer_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="adc_scan_letimer_prs_ldma_s3" label="Peripheral Examples - ADC Scan LETIMER PRS LDMA" description="This project demonstrates use of the ADC to take single-ended analog measurements of two input channels, triggered periodically through PRS underflow of LETIMER.&#xA;">
+  <descriptors name="adc_scan_letimer_prs_ldma_s3" label="Peripheral Examples - ADC Scan LETIMER PRS LDMA" description="This project demonstrates use of the ADC to take single-ended analog measurements of two external inputs, triggered periodically through PRS underflow of LETIMER.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.scan_letimer_prs_ldma.SimplicityStudio.adc_scan_letimer_prs_ldma_s3.slcp"/>
@@ -2117,7 +2117,7 @@
     <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
     <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
-    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
@@ -2125,7 +2125,7 @@
     <properties key="sltPackagePath" value="series3/adc/scan_letimer_prs_ldma/SimplicityStudio/adc_scan_letimer_prs_ldma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="adc_scan_window_compare_vmon_s3" label="Peripheral Examples - ADC Scan Window Compare Voltage Monitor" description="This project demonstrates using the ADC peripheral's window comparison feature with the four dedicated internal supply inputs, acting as a voltage monitor for early detection of drop in supply voltage prior to reaching levels that would cause a brown-out reset.&#xA;">
+  <descriptors name="adc_scan_window_compare_vmon_s3" label="Peripheral Examples - ADC Scan Window Compare Voltage Monitor" description="This project demonstrates using the ADC peripheral's window comparison feature with the four internal supply inputs to function as an early warning voltage monitor.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.scan_window_compare_vmon.SimplicityStudio.adc_scan_window_compare_vmon_s3.slcp"/>
@@ -2134,7 +2134,7 @@
     <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
     <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
-    <properties key="toolchainCompatibility" value="gcc iar"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
@@ -2148,8 +2148,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.single_differential_polled.SimplicityStudio.adc_single_differential_polled_s3.slcp"/>
     <properties key="projectFilePaths" value="series3/adc/single_differential_polled/SimplicityStudio/adc_single_differential_polled_s3.slcp"/>
     <properties key="readmeFiles" value="series3/adc/single_differential_polled/readme.md"/>
-    <properties key="boardCompatibility" value="brd1021a brd2503a brd2503b brd2504a brd2505a brd2506a brd2600a brd2601a brd2601b brd2602a brd2603a brd2606a brd2608a brd2703a brd2704a brd2705a brd2709a brd2710a brd2711a brd2713a brd2719a brd2900a brd2901a brd2902a brd2903a brd2904a brd2905a brd4108a brd4109a brd4110a brd4110b brd4111a brd4111b brd4113a brd4115a brd4115b brd4116a brd4117a brd4118a brd4120a brd4121a brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4183c brd4184a brd4184b brd4185a brd4186a brd4186b brd4186c brd4187a brd4187b brd4187c brd4188a brd4188b brd4191a brd4194a brd4195a brd4195b brd4196a brd4196b brd4197a brd4198a brd4198b brd4199b brd4204a brd4204b brd4204c brd4204d brd4205a brd4205b brd4210a brd4263a brd4263b brd4263c brd4264a brd4264b brd4264c brd4265a brd4265b brd4270a brd4270b brd4271a brd4272a brd4276a brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a brd4316a brd4317a brd4318a brd4319a brd4328a brd4328b brd4329a brd4330a brd4331a brd4332a brd4335a brd4337a brd4350a brd4351a brd4356a brd4400a brd4400b brd4400c brd4401a brd4401b brd4401c brd4402a brd4402b brd4402c brd4403a brd4403b brd4403c brd4406a brd4407a brd4408a brd4411a brd4412a brd4413a brd4414a brd4415a brd4420a com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*bgm22.* .*bgm24.* .*efm32pg22.* .*efm32pg23.* .*efm32pg26.* .*efm32pg28.* .*efr32bg21.* .*efr32bg22.* .*efr32bg24.* .*efr32bg27.* .*efr32bg29.* .*efr32fg23.* .*efr32fg25.* .*efr32fg28.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.* .*fgm23.* .*mgm21.* .*mgm22.* .*mgm24.* .*mgm26.* .*mgm27.* .*simg301.* .*zgm23.*"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -2165,8 +2165,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.single_gpio_prs_ldma.SimplicityStudio.adc_single_gpio_prs_ldma_s3.slcp"/>
     <properties key="projectFilePaths" value="series3/adc/single_gpio_prs_ldma/SimplicityStudio/adc_single_gpio_prs_ldma_s3.slcp"/>
     <properties key="readmeFiles" value="series3/adc/single_gpio_prs_ldma/readme.md"/>
-    <properties key="boardCompatibility" value="brd1021a brd2503a brd2503b brd2504a brd2505a brd2506a brd2600a brd2601a brd2601b brd2602a brd2603a brd2606a brd2608a brd2703a brd2704a brd2705a brd2709a brd2710a brd2711a brd2713a brd2719a brd2900a brd2901a brd2902a brd2903a brd2904a brd2905a brd4108a brd4109a brd4110a brd4110b brd4111a brd4111b brd4113a brd4115a brd4115b brd4116a brd4117a brd4118a brd4120a brd4121a brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4183c brd4184a brd4184b brd4185a brd4186a brd4186b brd4186c brd4187a brd4187b brd4187c brd4188a brd4188b brd4191a brd4194a brd4195a brd4195b brd4196a brd4196b brd4197a brd4198a brd4198b brd4199b brd4204a brd4204b brd4204c brd4204d brd4205a brd4205b brd4210a brd4263a brd4263b brd4263c brd4264a brd4264b brd4264c brd4265a brd4265b brd4270a brd4270b brd4271a brd4272a brd4276a brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a brd4316a brd4317a brd4318a brd4319a brd4328a brd4328b brd4329a brd4330a brd4331a brd4332a brd4335a brd4337a brd4350a brd4351a brd4356a brd4400a brd4400b brd4400c brd4401a brd4401b brd4401c brd4402a brd4402b brd4402c brd4403a brd4403b brd4403c brd4406a brd4407a brd4408a brd4411a brd4412a brd4413a brd4414a brd4415a brd4420a com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*bgm22.* .*bgm24.* .*efm32pg22.* .*efm32pg23.* .*efm32pg26.* .*efm32pg28.* .*efr32bg21.* .*efr32bg22.* .*efr32bg24.* .*efr32bg27.* .*efr32bg29.* .*efr32fg23.* .*efr32fg25.* .*efr32fg28.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.* .*fgm23.* .*mgm21.* .*mgm22.* .*mgm24.* .*mgm26.* .*mgm27.* .*simg301.* .*zgm23.*"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -2182,8 +2182,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.single_interrupt.SimplicityStudio.adc_single_interrupt_s3.slcp"/>
     <properties key="projectFilePaths" value="series3/adc/single_interrupt/SimplicityStudio/adc_single_interrupt_s3.slcp"/>
     <properties key="readmeFiles" value="series3/adc/single_interrupt/readme.md"/>
-    <properties key="boardCompatibility" value="brd1021a brd2503a brd2503b brd2504a brd2505a brd2506a brd2600a brd2601a brd2601b brd2602a brd2603a brd2606a brd2608a brd2703a brd2704a brd2705a brd2709a brd2710a brd2711a brd2713a brd2719a brd2900a brd2901a brd2902a brd2903a brd2904a brd2905a brd4108a brd4109a brd4110a brd4110b brd4111a brd4111b brd4113a brd4115a brd4115b brd4116a brd4117a brd4118a brd4120a brd4121a brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4183c brd4184a brd4184b brd4185a brd4186a brd4186b brd4186c brd4187a brd4187b brd4187c brd4188a brd4188b brd4191a brd4194a brd4195a brd4195b brd4196a brd4196b brd4197a brd4198a brd4198b brd4199b brd4204a brd4204b brd4204c brd4204d brd4205a brd4205b brd4210a brd4263a brd4263b brd4263c brd4264a brd4264b brd4264c brd4265a brd4265b brd4270a brd4270b brd4271a brd4272a brd4276a brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a brd4316a brd4317a brd4318a brd4319a brd4328a brd4328b brd4329a brd4330a brd4331a brd4332a brd4335a brd4337a brd4350a brd4351a brd4356a brd4400a brd4400b brd4400c brd4401a brd4401b brd4401c brd4402a brd4402b brd4402c brd4403a brd4403b brd4403c brd4406a brd4407a brd4408a brd4411a brd4412a brd4413a brd4414a brd4415a brd4420a com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*bgm22.* .*bgm24.* .*efm32pg22.* .*efm32pg23.* .*efm32pg26.* .*efm32pg28.* .*efr32bg21.* .*efr32bg22.* .*efr32bg24.* .*efr32bg27.* .*efr32bg29.* .*efr32fg23.* .*efr32fg25.* .*efr32fg28.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.* .*fgm23.* .*mgm21.* .*mgm22.* .*mgm24.* .*mgm26.* .*mgm27.* .*simg301.* .*zgm23.*"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -2199,8 +2199,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.single_letimer_interrupt.SimplicityStudio.adc_single_letimer_interrupt_s3.slcp"/>
     <properties key="projectFilePaths" value="series3/adc/single_letimer_interrupt/SimplicityStudio/adc_single_letimer_interrupt_s3.slcp"/>
     <properties key="readmeFiles" value="series3/adc/single_letimer_interrupt/readme.md"/>
-    <properties key="boardCompatibility" value="brd1021a brd2503a brd2503b brd2504a brd2505a brd2506a brd2600a brd2601a brd2601b brd2602a brd2603a brd2606a brd2608a brd2703a brd2704a brd2705a brd2709a brd2710a brd2711a brd2713a brd2719a brd2900a brd2901a brd2902a brd2903a brd2904a brd2905a brd4108a brd4109a brd4110a brd4110b brd4111a brd4111b brd4113a brd4115a brd4115b brd4116a brd4117a brd4118a brd4120a brd4121a brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4183c brd4184a brd4184b brd4185a brd4186a brd4186b brd4186c brd4187a brd4187b brd4187c brd4188a brd4188b brd4191a brd4194a brd4195a brd4195b brd4196a brd4196b brd4197a brd4198a brd4198b brd4199b brd4204a brd4204b brd4204c brd4204d brd4205a brd4205b brd4210a brd4263a brd4263b brd4263c brd4264a brd4264b brd4264c brd4265a brd4265b brd4270a brd4270b brd4271a brd4272a brd4276a brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a brd4316a brd4317a brd4318a brd4319a brd4328a brd4328b brd4329a brd4330a brd4331a brd4332a brd4335a brd4337a brd4350a brd4351a brd4356a brd4400a brd4400b brd4400c brd4401a brd4401b brd4401c brd4402a brd4402b brd4402c brd4403a brd4403b brd4403c brd4406a brd4407a brd4408a brd4411a brd4412a brd4413a brd4414a brd4415a brd4420a com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*bgm22.* .*bgm24.* .*efm32pg22.* .*efm32pg23.* .*efm32pg26.* .*efm32pg28.* .*efr32bg21.* .*efr32bg22.* .*efr32bg24.* .*efr32bg27.* .*efr32bg29.* .*efr32fg23.* .*efr32fg25.* .*efr32fg28.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.* .*fgm23.* .*mgm21.* .*mgm22.* .*mgm24.* .*mgm26.* .*mgm27.* .*simg301.* .*zgm23.*"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -2216,8 +2216,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.single_letimer_prs_ldma.SimplicityStudio.adc_single_letimer_prs_ldma_s3.slcp"/>
     <properties key="projectFilePaths" value="series3/adc/single_letimer_prs_ldma/SimplicityStudio/adc_single_letimer_prs_ldma_s3.slcp"/>
     <properties key="readmeFiles" value="series3/adc/single_letimer_prs_ldma/readme.md"/>
-    <properties key="boardCompatibility" value="brd1021a brd2503a brd2503b brd2504a brd2505a brd2506a brd2600a brd2601a brd2601b brd2602a brd2603a brd2606a brd2608a brd2703a brd2704a brd2705a brd2709a brd2710a brd2711a brd2713a brd2719a brd2900a brd2901a brd2902a brd2903a brd2904a brd2905a brd4108a brd4109a brd4110a brd4110b brd4111a brd4111b brd4113a brd4115a brd4115b brd4116a brd4117a brd4118a brd4120a brd4121a brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4183c brd4184a brd4184b brd4185a brd4186a brd4186b brd4186c brd4187a brd4187b brd4187c brd4188a brd4188b brd4191a brd4194a brd4195a brd4195b brd4196a brd4196b brd4197a brd4198a brd4198b brd4199b brd4204a brd4204b brd4204c brd4204d brd4205a brd4205b brd4210a brd4263a brd4263b brd4263c brd4264a brd4264b brd4264c brd4265a brd4265b brd4270a brd4270b brd4271a brd4272a brd4276a brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a brd4316a brd4317a brd4318a brd4319a brd4328a brd4328b brd4329a brd4330a brd4331a brd4332a brd4335a brd4337a brd4350a brd4351a brd4356a brd4400a brd4400b brd4400c brd4401a brd4401b brd4401c brd4402a brd4402b brd4402c brd4403a brd4403b brd4403c brd4406a brd4407a brd4408a brd4411a brd4412a brd4413a brd4414a brd4415a brd4420a com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*bgm22.* .*bgm24.* .*efm32pg22.* .*efm32pg23.* .*efm32pg26.* .*efm32pg28.* .*efr32bg21.* .*efr32bg22.* .*efr32bg24.* .*efr32bg27.* .*efr32bg29.* .*efr32fg23.* .*efr32fg25.* .*efr32fg28.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.* .*fgm23.* .*mgm21.* .*mgm22.* .*mgm24.* .*mgm26.* .*mgm27.* .*simg301.* .*zgm23.*"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -2233,8 +2233,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.single_oversampling.SimplicityStudio.adc_single_oversampling_s3.slcp"/>
     <properties key="projectFilePaths" value="series3/adc/single_oversampling/SimplicityStudio/adc_single_oversampling_s3.slcp"/>
     <properties key="readmeFiles" value="series3/adc/single_oversampling/readme.md"/>
-    <properties key="boardCompatibility" value="brd1021a brd2503a brd2503b brd2504a brd2505a brd2506a brd2600a brd2601a brd2601b brd2602a brd2603a brd2606a brd2608a brd2703a brd2704a brd2705a brd2709a brd2710a brd2711a brd2713a brd2719a brd2900a brd2901a brd2902a brd2903a brd2904a brd2905a brd4108a brd4109a brd4110a brd4110b brd4111a brd4111b brd4113a brd4115a brd4115b brd4116a brd4117a brd4118a brd4120a brd4121a brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4183c brd4184a brd4184b brd4185a brd4186a brd4186b brd4186c brd4187a brd4187b brd4187c brd4188a brd4188b brd4191a brd4194a brd4195a brd4195b brd4196a brd4196b brd4197a brd4198a brd4198b brd4199b brd4204a brd4204b brd4204c brd4204d brd4205a brd4205b brd4210a brd4263a brd4263b brd4263c brd4264a brd4264b brd4264c brd4265a brd4265b brd4270a brd4270b brd4271a brd4272a brd4276a brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a brd4316a brd4317a brd4318a brd4319a brd4328a brd4328b brd4329a brd4330a brd4331a brd4332a brd4335a brd4337a brd4350a brd4351a brd4356a brd4400a brd4400b brd4400c brd4401a brd4401b brd4401c brd4402a brd4402b brd4402c brd4403a brd4403b brd4403c brd4406a brd4407a brd4408a brd4411a brd4412a brd4413a brd4414a brd4415a brd4420a com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*bgm22.* .*bgm24.* .*efm32pg22.* .*efm32pg23.* .*efm32pg26.* .*efm32pg28.* .*efr32bg21.* .*efr32bg22.* .*efr32bg24.* .*efr32bg27.* .*efr32bg29.* .*efr32fg23.* .*efr32fg25.* .*efr32fg28.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.* .*fgm23.* .*mgm21.* .*mgm22.* .*mgm24.* .*mgm26.* .*mgm27.* .*simg301.* .*zgm23.*"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -2250,8 +2250,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.adc.single_window_compare.SimplicityStudio.adc_single_window_compare_s3.slcp"/>
     <properties key="projectFilePaths" value="series3/adc/single_window_compare/SimplicityStudio/adc_single_window_compare_s3.slcp"/>
     <properties key="readmeFiles" value="series3/adc/single_window_compare/readme.md"/>
-    <properties key="boardCompatibility" value="brd1021a brd2503a brd2503b brd2504a brd2505a brd2506a brd2600a brd2601a brd2601b brd2602a brd2603a brd2606a brd2608a brd2703a brd2704a brd2705a brd2709a brd2710a brd2711a brd2713a brd2719a brd2900a brd2901a brd2902a brd2903a brd2904a brd2905a brd4108a brd4109a brd4110a brd4110b brd4111a brd4111b brd4113a brd4115a brd4115b brd4116a brd4117a brd4118a brd4120a brd4121a brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4183c brd4184a brd4184b brd4185a brd4186a brd4186b brd4186c brd4187a brd4187b brd4187c brd4188a brd4188b brd4191a brd4194a brd4195a brd4195b brd4196a brd4196b brd4197a brd4198a brd4198b brd4199b brd4204a brd4204b brd4204c brd4204d brd4205a brd4205b brd4210a brd4263a brd4263b brd4263c brd4264a brd4264b brd4264c brd4265a brd4265b brd4270a brd4270b brd4271a brd4272a brd4276a brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a brd4316a brd4317a brd4318a brd4319a brd4328a brd4328b brd4329a brd4330a brd4331a brd4332a brd4335a brd4337a brd4350a brd4351a brd4356a brd4400a brd4400b brd4400c brd4401a brd4401b brd4401c brd4402a brd4402b brd4402c brd4403a brd4403b brd4403c brd4406a brd4407a brd4408a brd4411a brd4412a brd4413a brd4414a brd4415a brd4420a com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*bgm22.* .*bgm24.* .*efm32pg22.* .*efm32pg23.* .*efm32pg26.* .*efm32pg28.* .*efr32bg21.* .*efr32bg22.* .*efr32bg24.* .*efr32bg27.* .*efr32bg29.* .*efr32fg23.* .*efr32fg25.* .*efr32fg28.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.* .*fgm23.* .*mgm21.* .*mgm22.* .*mgm24.* .*mgm26.* .*mgm27.* .*simg301.* .*zgm23.*"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -2278,12 +2278,12 @@
     <properties key="sltPackagePath" value="series3/burtc/burtc_em4_buram/SimplicityStudio/burtc_em4_buram_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="gpio_switch_led_polled_s3" label="Peripheral Examples - GPIO Switch LED Polled" description="This project demonstrates how to set up simple digital inputs and outputs.&#xA;">
+  <descriptors name="gpcrc_dma_s3" label="Peripheral Examples - GPCRC DMA" description="This project demonstrates the GPCRC used to check 32-bit data using the IEEE 802.3 polynomial standard in EM1. Data is fed into the GPCRC via the LDMA.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
-    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpio.gpio_switch_led_polled.SimplicityStudio.gpio_switch_led_polled_s3.slcp"/>
-    <properties key="projectFilePaths" value="series3/gpio/gpio_switch_led_polled/SimplicityStudio/gpio_switch_led_polled_s3.slcp"/>
-    <properties key="readmeFiles" value="series3/gpio/gpio_switch_led_polled/readme.md"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpcrc.gpcrc_dma.SimplicityStudio.gpcrc_dma_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/gpcrc/gpcrc_dma/SimplicityStudio/gpcrc_dma_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/gpcrc/gpcrc_dma/readme.md"/>
     <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
     <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
@@ -2292,10 +2292,78 @@
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
     <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
-    <properties key="sltPackagePath" value="series3/gpio/gpio_switch_led_polled/SimplicityStudio/gpio_switch_led_polled_s3.slcp"/>
+    <properties key="sltPackagePath" value="series3/gpcrc/gpcrc_dma/SimplicityStudio/gpcrc_dma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="gpio_switch_led_interrupt_s3" label="Peripheral Examples - GPIO Switch LED Interrupt" description="This project demonstrates how to use GPIO pins to trigger external interrupts.&#xA;">
+  <descriptors name="gpcrc_software_s3" label="Peripheral Examples - GPCRC Software" description="This project demonstrates the GPCRC used to check an array of 32-bit data using the IEEE 802.3 polynomial standard. The GPCRC conversions are initiated by software.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpcrc.gpcrc_software.SimplicityStudio.gpcrc_software_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/gpcrc/gpcrc_software/SimplicityStudio/gpcrc_software_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/gpcrc/gpcrc_software/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/gpcrc/gpcrc_software/SimplicityStudio/gpcrc_software_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="gpio_em4_wakeup_s3" label="Peripheral Examples - GPIO EM4 Wakeup" description="This project uses a GPIO pin to wake the device from EM4.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpio.gpio_em4_wakeup.SimplicityStudio.gpio_em4_wakeup_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/gpio/gpio_em4_wakeup/SimplicityStudio/gpio_em4_wakeup_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/gpio/gpio_em4_wakeup/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/gpio/gpio_em4_wakeup/SimplicityStudio/gpio_em4_wakeup_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="gpio_periph_s3" label="Peripheral Examples - GPIO Periph" description="This project demonstrates how to drive a pin from an on-chip oscillator.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpio.gpio_periph.SimplicityStudio.gpio_periph_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/gpio/gpio_periph/SimplicityStudio/gpio_periph_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/gpio/gpio_periph/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/gpio/gpio_periph/SimplicityStudio/gpio_periph_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="gpio_slew_rate_s3" label="Peripheral Examples - GPIO Slew rate" description="This project demonstrates how to set the slew rate for GPIO pins.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpio.gpio_slew_rate.SimplicityStudio.gpio_slew_rate_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/gpio/gpio_slew_rate/SimplicityStudio/gpio_slew_rate_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/gpio/gpio_slew_rate/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/gpio/gpio_slew_rate/SimplicityStudio/gpio_slew_rate_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="gpio_switch_led_interrupt_s3" label="Peripheral Examples - GPIO Switch LED interrupt" description="This project demonstrates how to use GPIO pins to trigger external interrupts.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpio.gpio_switch_led_interrupt.SimplicityStudio.gpio_switch_led_interrupt_s3.slcp"/>
@@ -2312,12 +2380,12 @@
     <properties key="sltPackagePath" value="series3/gpio/gpio_switch_led_interrupt/SimplicityStudio/gpio_switch_led_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="gpio_slew_rate_s3" label="Peripheral Examples - GPIO Slew Rate" description="This project demonstrates how to set the slew rate for GPIO pins.&#xA;">
+  <descriptors name="gpio_switch_led_polled_s3" label="Peripheral Examples - GPIO Switch LED Polled" description="This project demonstrates how to set up simple digital inputs and outputs.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
-    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpio.gpio_slew_rate.SimplicityStudio.gpio_slew_rate_s3.slcp"/>
-    <properties key="projectFilePaths" value="series3/gpio/gpio_slew_rate/SimplicityStudio/gpio_slew_rate_s3.slcp"/>
-    <properties key="readmeFiles" value="series3/gpio/gpio_slew_rate_s3/readme.md"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpio.gpio_switch_led_polled.SimplicityStudio.gpio_switch_led_polled_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/gpio/gpio_switch_led_polled/SimplicityStudio/gpio_switch_led_polled_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/gpio/gpio_switch_led_polled/readme.md"/>
     <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
     <properties key="partCompatibility" value=".*simg301.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
@@ -2326,41 +2394,7 @@
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
     <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
-    <properties key="sltPackagePath" value="series3/gpio/gpio_slew_rate/SimplicityStudio/gpio_slew_rate_s3.slcp"/>
-    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
-  </descriptors>
-  <descriptors name="gpio_periph_s3" label="Peripheral Examples - GPIO Periph" description="This project demonstrates how to drive a pin from an on-chip oscillator.&#xA;">
-    <properties key="namespace" value="template.uc"/>
-    <properties key="keywords" value="universal\ configurator"/>
-    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpio.gpio_periph.SimplicityStudio.gpio_periph_s3.slcp"/>
-    <properties key="projectFilePaths" value="series3/gpio/gpio_periph/SimplicityStudio/gpio_periph_s3.slcp"/>
-    <properties key="readmeFiles" value="series3/gpio/gpio_periph_s3/readme.md"/>
-    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*simg301.*"/>
-    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
-    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
-    <properties key="category" value="Example|Peripheral Examples"/>
-    <properties key="quality" value="EVALUATION"/>
-    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
-    <properties key="sltPackagePath" value="series3/gpio/gpio_periph/SimplicityStudio/gpio_periph_s3.slcp"/>
-    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
-  </descriptors>
-  <descriptors name="gpio_em4_wakeup_s3" label="Peripheral Examples - GPIO EM4 Wakeup" description="This project uses a GPIO pin to wake the device from EM4.&#xA;">
-    <properties key="namespace" value="template.uc"/>
-    <properties key="keywords" value="universal\ configurator"/>
-    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.gpio.gpio_em4_wakeup.SimplicityStudio.gpio_em4_wakeup_s3.slcp"/>
-    <properties key="projectFilePaths" value="series3/gpio/gpio_em4_wakeup/SimplicityStudio/gpio_em4_wakeup_s3.slcp"/>
-    <properties key="readmeFiles" value="series3/gpio/gpio_em4_wakeup_s3/readme.md"/>
-    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*simg301.*"/>
-    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
-    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
-    <properties key="category" value="Example|Peripheral Examples"/>
-    <properties key="quality" value="EVALUATION"/>
-    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
-    <properties key="sltPackagePath" value="series3/gpio/gpio_em4_wakeup/SimplicityStudio/gpio_em4_wakeup_s3.slcp"/>
+    <properties key="sltPackagePath" value="series3/gpio/gpio_switch_led_polled/SimplicityStudio/gpio_switch_led_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
   <descriptors name="pixelrz_ldma_letimer_prs_gpio_s3" label="Peripheral Examples - PIXELRZ Sequential" description="This project demonstrates how to configure the PIXELRZ in sequential mode to drive a WS2812B LED strip.&#xA;">

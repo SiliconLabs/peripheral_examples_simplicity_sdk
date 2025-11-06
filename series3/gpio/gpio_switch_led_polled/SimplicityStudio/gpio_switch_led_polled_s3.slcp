@@ -1,5 +1,5 @@
 # Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
-project_name: gpio_switch_led_polled
+project_name: gpio_switch_led_polled_s3
 package: peripheral_examples
 quality: evaluation
 label: Peripheral Examples - GPIO Switch LED Polled
