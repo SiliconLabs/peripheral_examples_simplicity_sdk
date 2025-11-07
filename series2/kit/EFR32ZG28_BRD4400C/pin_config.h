@@ -17,6 +17,18 @@
 // RAM power down end for EM2 and EM3
 #define RAM_POWER_DOWN_END (0)
 
+// EUSART0 Transmit
+#define EUSART0_TX_PORT   gpioPortA
+#define EUSART0_TX_PIN    8
+
+// EUSART0 Receive
+#define EUSART0_RX_PORT   gpioPortA
+#define EUSART0_RX_PIN    9
+
+// VCOM_ENABLE
+#define VCOM_ENABLE_PORT  gpioPortB
+#define VCOM_ENABLE_PIN   0
+
 // EUSART SPI ports and pins
 #define EUS0MOSI_PORT   SL_GPIO_PORT_A
 #define EUS0MOSI_PIN    11
@@ -98,7 +110,6 @@
 
 // Bit mask to lock the last page of main flash
 #define LASTLOCK  0x80000000
-
 // <<< sl:start pin_tool >>>
 
 // <gpio> LED0

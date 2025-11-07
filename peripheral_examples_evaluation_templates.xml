@@ -221,6 +221,91 @@
     <properties key="sltPackagePath" value="series2/emu/em4_no_dcdc/SimplicityStudio/em4_no_dcdc.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="eusart_async_autobaud" label="Peripheral Examples - EUSART Async Automatic Baudrate Detection" description="This project demonstrates interrupt-driven EUSART operation in asynchronous mode with automatic baud rate detection.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_async_autobaud.SimplicityStudio.eusart_async_autobaud.slcp"/>
+    <properties key="projectFilePaths" value="series2/eusart/eusart_async_autobaud/SimplicityStudio/eusart_async_autobaud.slcp"/>
+    <properties key="readmeFiles" value="series2/eusart/eusart_async_autobaud/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/eusart/eusart_async_autobaud/SimplicityStudio/eusart_async_autobaud.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_async_dma_em2" label="Peripheral Examples - EUSART Async DMA EM2" description="This project demonstrates low-frequency operation of EUSART0 using LDMA to receive inbound data and transmit outbound data while remaining in EM2.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_async_dma_em2.SimplicityStudio.eusart_async_dma_em2.slcp"/>
+    <properties key="projectFilePaths" value="series2/eusart/eusart_async_dma_em2/SimplicityStudio/eusart_async_dma_em2.slcp"/>
+    <properties key="readmeFiles" value="series2/eusart/eusart_async_dma_em2/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/eusart/eusart_async_dma_em2/SimplicityStudio/eusart_async_dma_em2.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_async_half_duplex" label="Peripheral Examples - EUSART Async Half Duplex" description="This project demonstrates operation of the EUSART in a half-duplex, single link configuration.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_async_half_duplex.SimplicityStudio.eusart_async_half_duplex.slcp"/>
+    <properties key="projectFilePaths" value="series2/eusart/eusart_async_half_duplex/SimplicityStudio/eusart_async_half_duplex.slcp"/>
+    <properties key="readmeFiles" value="series2/eusart/eusart_async_half_duplex/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/eusart/eusart_async_half_duplex/SimplicityStudio/eusart_async_half_duplex.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_async_interrupt" label="Peripheral Examples - EUSART Async Interrupt" description="This project demonstrates interrupt-driven operation of the EUSART in asynchronous mode.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_async_interrupt.SimplicityStudio.eusart_async_interrupt.slcp"/>
+    <properties key="projectFilePaths" value="series2/eusart/eusart_async_interrupt/SimplicityStudio/eusart_async_interrupt.slcp"/>
+    <properties key="readmeFiles" value="series2/eusart/eusart_async_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/eusart/eusart_async_interrupt/SimplicityStudio/eusart_async_interrupt.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_async_polled" label="Peripheral Examples - EUSART Async Polled" description="This project demonstrates polled operation of the EUSART in asynchronous mode.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_async_polled.SimplicityStudio.eusart_async_polled.slcp"/>
+    <properties key="projectFilePaths" value="series2/eusart/eusart_async_polled/SimplicityStudio/eusart_async_polled.slcp"/>
+    <properties key="readmeFiles" value="series2/eusart/eusart_async_polled/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/eusart/eusart_async_polled/SimplicityStudio/eusart_async_polled.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="eusart_spi_main_dma" label="Peripheral Examples - EUSART SPI Main DMA" description="This project demonstrates DMA-driven operation of the EUSART in synchronous main (formerly master) mode.  EUSART0/1 is configured for SPI-compatible operation at 1 Mbps.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
@@ -1026,8 +1111,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.prs.prs_logic_unit.SimplicityStudio.prs_logic_unit.slcp"/>
     <properties key="projectFilePaths" value="series2/prs/prs_logic_unit/SimplicityStudio/prs_logic_unit.slcp"/>
     <properties key="readmeFiles" value="series2/prs/prs_logic_unit/readme.md"/>
-    <properties key="boardCompatibility" value="brd4117a brd4181a brd4182a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd1021a brd2503a brd2503b brd2504a brd2505a brd2506a brd2600a brd2601a brd2601b brd2602a brd2603a brd2606a brd2608a brd2703a brd2704a brd2705a brd2709a brd2710a brd2711a brd2713a brd2715a brd2719a brd2900a brd2901a brd2902a brd2903a brd2904a brd2905a brd4108a brd4109a brd4110a brd4110b brd4111a brd4111b brd4113a brd4115a brd4115b brd4116a brd4117a brd4118a brd4120a brd4121a brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4183c brd4184a brd4184b brd4185a brd4186a brd4186b brd4186c brd4187a brd4187b brd4187c brd4188a brd4188b brd4191a brd4194a brd4195a brd4195b brd4196a brd4196b brd4197a brd4198a brd4198b brd4199b brd4204a brd4204b brd4204c brd4204d brd4205a brd4205b brd4210a brd4263a brd4263b brd4263c brd4264a brd4264b brd4264c brd4265a brd4265b brd4270a brd4270b brd4271a brd4272a brd4276a brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a brd4316a brd4317a brd4318a brd4319a brd4328a brd4328b brd4329a brd4330a brd4331a brd4332a brd4335a brd4337a brd4350a brd4351a brd4356a brd4400a brd4400b brd4400c brd4401a brd4401b brd4401c brd4402a brd4402b brd4402c brd4403a brd4403b brd4403c brd4406a brd4407a brd4408a brd4411a brd4412a brd4413a brd4414a brd4415a brd4420a brd4421a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*bgm24.* .*efm32pg22.* .*efm32pg23.* .*efm32pg26.* .*efm32pg28.* .*efr32bg21.* .*efr32bg22.* .*efr32bg24.* .*efr32bg27.* .*efr32bg29.* .*efr32fg23.* .*efr32fg25.* .*efr32fg28.* .*efr32mg21.* .*efr32mg22.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.* .*fgm23.* .*mgm21.* .*mgm22.* .*mgm24.* .*mgm26.* .*mgm27.* .*simg301.* .*zgm23.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>

@@ -22,6 +22,18 @@
  */
 #define RAM_POWER_DOWN_END (SRAM_BASE + SRAM_SIZE - 0x2000)
 
+// EUSART0 Transmit
+#define EUSART0_TX_PORT   gpioPortA
+#define EUSART0_TX_PIN    5
+
+// EUSART0 Receive
+#define EUSART0_RX_PORT   gpioPortA
+#define EUSART0_RX_PIN    6
+
+// VCOM_ENABLE
+#define VCOM_ENABLE_PORT   gpioPortB
+#define VCOM_ENABLE_PIN    4
+
 // EUSART SPI ports and pins
 #define EUS0MOSI_PORT   SL_GPIO_PORT_C
 #define EUS0MOSI_PIN    0
@@ -103,7 +115,6 @@
 
 // Bit mask to lock the last page of main flash
 #define LASTLOCK  0x80000000
-
 // <<< sl:start pin_tool >>>
 
 // <gpio> LED0_BUTTON0

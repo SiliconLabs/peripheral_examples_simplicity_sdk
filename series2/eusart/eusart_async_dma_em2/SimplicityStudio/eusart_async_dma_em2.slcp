@@ -1,0 +1,52 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: eusart_async_dma_em2
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - EUSART Async DMA EM2
+description: >
+  This project demonstrates low-frequency operation of EUSART0 using LDMA to receive inbound data and transmit outbound data while remaining in EM2.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: emlib_eusart
+  - id: emlib_ldma
+  - id: power_manager
+  - id: power_manager_deepsleep
+  - id: interrupt_manager
+  - id: dmadrv
+  - id: silabs_bsp
+    from: peripheral_examples
+configuration:
+  - name: "SL_CLOCK_MANAGER_EUSART0CLK_SOURCE"
+    value: "CMU_EUSART0CLKCTRL_CLKSEL_LFXO"
+    unless: [brd4194a]
+  - name: "SL_CLOCK_MANAGER_EUSART0CLK_SOURCE"
+    value: "CMU_EUSART0CLKCTRL_CLKSEL_EM23GRPACLK"
+    condition: [brd4194a]
+  - name: "SL_CLOCK_MANAGER_EM23GRPACLK_SOURCE"
+    value: "CMU_EM23GRPACLKCTRL_CLKSEL_LFXO"
+    condition: [brd4194a]
+  - name: "SL_BOARD_ENABLE_VCOM"
+    value: "1"
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0
+  
