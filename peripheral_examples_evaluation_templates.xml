@@ -2414,6 +2414,23 @@
     <properties key="sltPackagePath" value="series3/pixelrz/pixelrz_ldma_letimer_prs_gpio/SimplicityStudio/pixelrz_ldma_letimer_prs_gpio_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="prs_logic_unit_s3" label="Peripheral Examples - PRS Logic Unit" description="This project demonstrates the built-in PRS logic functions between channels.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.prs.prs_logic_unit.SimplicityStudio.prs_logic_unit_series3.slcp"/>
+    <properties key="projectFilePaths" value="series3/prs/prs_logic_unit/SimplicityStudio/prs_logic_unit_series3.slcp"/>
+    <properties key="readmeFiles" value="series3/prs/prs_logic_unit/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/prs/prs_logic_unit/SimplicityStudio/prs_logic_unit_series3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="wdog_prs_clear_series3" label="Peripheral Examples - WDOG PRS Clear" description="This project demonstrates the prs clear functionality of the watchdog timer.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
