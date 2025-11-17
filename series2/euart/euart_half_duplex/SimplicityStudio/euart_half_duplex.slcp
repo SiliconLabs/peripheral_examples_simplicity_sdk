@@ -1,0 +1,42 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: euart_half_duplex
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - EUART Half Duplex
+description: >
+  This example uses the EUART0 module to do half-duplex communication with the 
+  EUART0 module on another board using the single data-link configuration 
+  described in the reference manual.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: power_manager
+  - id: power_manager_no_deepsleep
+  - id: emlib_eusart
+  - id: silabs_bsp
+    from: peripheral_examples
+configuration:
+  - name: SL_BOARD_ENABLE_VCOM
+    value: '1'  
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0
+  

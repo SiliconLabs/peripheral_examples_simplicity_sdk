@@ -221,6 +221,57 @@
     <properties key="sltPackagePath" value="series2/emu/em4_no_dcdc/SimplicityStudio/em4_no_dcdc.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="euart_echo" label="Peripheral Examples - EUART Echo" description="This project demonstrates interrupt-drive operation of the EUART.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.euart.euart_echo.SimplicityStudio.euart_echo.slcp"/>
+    <properties key="projectFilePaths" value="series2/euart/euart_echo/SimplicityStudio/euart_echo.slcp"/>
+    <properties key="readmeFiles" value="series2/euart/euart_echo/readme.md"/>
+    <properties key="boardCompatibility" value="brd4182a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32mg22.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/euart/euart_echo/SimplicityStudio/euart_echo.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="euart_half_duplex" label="Peripheral Examples - EUART Half Duplex" description="This example uses the EUART0 module to do half-duplex communication with the  EUART0 module on another board using the single data-link configuration  described in the reference manual.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.euart.euart_half_duplex.SimplicityStudio.euart_half_duplex.slcp"/>
+    <properties key="projectFilePaths" value="series2/euart/euart_half_duplex/SimplicityStudio/euart_half_duplex.slcp"/>
+    <properties key="readmeFiles" value="series2/euart/euart_half_duplex/readme.md"/>
+    <properties key="boardCompatibility" value="brd4182a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32mg22.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/euart/euart_half_duplex/SimplicityStudio/euart_half_duplex.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="euart_ldma_em2" label="Peripheral Examples - EUART LDMA EM2" description="This project demonstrates low-frequency operation of the EUART using LDMA  to receive inbound data and transmit outbound data while remaining in EM2.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.euart.euart_ldma_em2.SimplicityStudio.euart_ldma_em2.slcp"/>
+    <properties key="projectFilePaths" value="series2/euart/euart_ldma_em2/SimplicityStudio/euart_ldma_em2.slcp"/>
+    <properties key="readmeFiles" value="series2/euart/euart_ldma_em2/readme.md"/>
+    <properties key="boardCompatibility" value="brd4182a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32mg22.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/euart/euart_ldma_em2/SimplicityStudio/euart_ldma_em2.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="eusart_async_autobaud" label="Peripheral Examples - EUSART Async Automatic Baudrate Detection" description="This project demonstrates interrupt-driven EUSART operation in asynchronous mode with automatic baud rate detection.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>

@@ -11,6 +11,12 @@
 // Clock output select
 #define CLKOUT_SEL  0
 
+// EUART Transmit/Receive pins
+#define EUART0_TX_PORT  SL_GPIO_PORT_A
+#define EUART0_TX_PIN   5
+#define EUART0_RX_PORT  SL_GPIO_PORT_A
+#define EUART0_RX_PIN   6
+
 // GPIO LETIMER route structure
 #define GPIO_LETIMERROUTE (GPIO->LETIMERROUTE[0])
 

@@ -1,4 +1,6 @@
-euart_async_dma_em2
+# Peripheral Examples - EUART LDMA EM2
+
+## Summary
 
 This project demonstrates low-frequency operation of the EUART using LDMA
 to receive inbound data and transmit outbound data while remaining in EM2.
@@ -27,28 +29,30 @@ the device runs code that sees that PB0 is depressed, turns on LED0, and
 issues a breakpoint instruction to halt the CPU.  At this point, a
 the debugger connection can be resumed to erase flash, etc.
 
-NOTE: Throughout this example, EUSART API calls are used to configure and
+> Note: Throughout this example, EUSART API calls are used to configure and
 access EUART functionality.  This is because the EUART is a proper subset
 of the EUSART in that it excludes support for synchronous (SPI) operation.
 
-================================================================================
+## Peripherals used
 
-Peripherals Used:
-LFXO
-EUART0 - 9600 baud, 8-N-1 (8 data bits, no parity, one stop bit)
-LDMA
+* LFXO
+* EUART0 - 9600 baud, 8-N-1 (8 data bits, no parity, one stop bit)
+* LDMA
 
-The CMU is used indirectly via the EUSART_InitLf() function to calculate the
+The CMU is used indirectly via the `EUSART_InitLf()` function to calculate the
 divisor necessary to derive the desired baud rate.
 
-================================================================================
+## How To Test
 
-How To Test:
 1. Build the project and download to the Starter Kit.
-2. Configure the JLink CDC to use 9600 baud by issuing the command
-   "serial vcom config speed 9600" in the Admin console.  See this link
-   for more information:
-   https://community.silabs.com/s/article/wstk-virtual-com-port-baudrate-setting
+2. Configure the JLink CDC to use 9600 baud by issuing the next command
+   in the Admin console:
+   ```
+   serial vcom config speed 9600
+   ```
+
+   See the link for more information about
+   [WSTK Virtual COM Port Baudrate Setting](https://community.silabs.com/s/article/wstk-virtual-com-port-baudrate-setting).
 3. Open a terminal program and configure it for 9600N81 operation on the
    "JLink CDC UART Port" that is provided by the board controller on the
    Starter Kit mainboard.
@@ -59,12 +63,10 @@ Alternatively, the example may be tested with a USB-to-serial converter,
 such as the Silicon Labs CP2102N-EK.  Refer to the list below for the
 mapping of EUSART signals to Expansion (EXP) Header pins.
 
-================================================================================
+## Hardware & Connections
 
-Listed below are the port and pin mappings for working with this example.
-
-Board:  Silicon Labs EFR32xG22 Radio Board (BRD4182A) + 
+* Board:  Silicon Labs EFR32xG22 Radio Board (BRD4182A) + 
         Wireless Starter Kit Mainboard
-Device: EFR32MG22A224F512IM40
-PA6 - EUART0_RX (Expansion Header Pin 14)
-PA5 - EUART0_TX (Expansion Header Pin 12)
+  * Device: EFR32MG22A224F512IM40
+    * PA05 - EUART0_TX - Expansion Header Pin 12 - WSTK P9
+    * PA06 - EUART0_RX - Expansion Header Pin 14 - WSTK P11

@@ -104,6 +104,22 @@ example:
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
 
+  # EUART examples
+- path: series2/euart/euart_echo/SimplicityStudio/euart_echo.slcp
+  board_whitelist:
+    - brd4182a # xG22 Radio Board
+  board_blacklist:
+
+- path: series2/euart/euart_half_duplex/SimplicityStudio/euart_half_duplex.slcp
+  board_whitelist:
+    - brd4182a # xG22 Radio Board
+  board_blacklist:
+
+- path: series2/euart/euart_ldma_em2/SimplicityStudio/euart_ldma_em2.slcp
+  board_whitelist:
+    - brd4182a # xG22 Radio Board
+  board_blacklist:
+
   # EUSART examples
 - path: series2/eusart/eusart_async_autobaud/SimplicityStudio/eusart_async_autobaud.slcp
   board_whitelist: *board_whitelist
