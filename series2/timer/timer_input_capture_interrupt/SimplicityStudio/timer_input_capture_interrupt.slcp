@@ -4,7 +4,7 @@ package: peripheral_examples
 quality: evaluation
 label: Peripheral Examples - TIMER Input Capture Interrupt
 description: >
-  This project demonstrates use of the TIMER module for interrupt-driven input capture.
+  This project demonstrates use of the TIMER peripheral for interrupt-driven input capture.
 category: Example|Peripheral Examples
 filter:
   - name: "Device Type"

@@ -1037,7 +1037,7 @@
     <properties key="sltPackagePath" value="series2/ldma/ldma_single_looped/SimplicityStudio/ldma_single_looped.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="one_shot_output_compare" label="Peripheral Examples - LETIMER one shout output compare" description="This project demonstrates output compare in EM2 using the LETIMER.&#xA;">
+  <descriptors name="one_shot_output_compare" label="Peripheral Examples - LETIMER One Shot Output Compare" description="This project demonstrates output compare in EM2 using the LETIMER.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.letimer.one_shot_output_compare.SimplicityStudio.one_shot_output_compare.slcp"/>
@@ -1207,7 +1207,7 @@
     <properties key="sltPackagePath" value="series2/timer/timer_dma_edge_capture/SimplicityStudio/timer_dma_edge_capture.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_frequency_generation" label="Peripheral Examples - TIMER Frequency Generation" description="This project demonstrates frequency generation using the TIMER module.&#xA;">
+  <descriptors name="timer_frequency_generation" label="Peripheral Examples - TIMER Frequency Generation" description="This project demonstrates frequency generation using the TIMER peripheral.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_frequency_generation.SimplicityStudio.timer_frequency_generation.slcp"/>
@@ -1224,7 +1224,7 @@
     <properties key="sltPackagePath" value="series2/timer/timer_frequency_generation/SimplicityStudio/timer_frequency_generation.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_input_capture_interrupt" label="Peripheral Examples - TIMER Input Capture Interrupt" description="This project demonstrates use of the TIMER module for interrupt-driven input capture.&#xA;">
+  <descriptors name="timer_input_capture_interrupt" label="Peripheral Examples - TIMER Input Capture Interrupt" description="This project demonstrates use of the TIMER peripheral for interrupt-driven input capture.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_input_capture_interrupt.SimplicityStudio.timer_input_capture_interrupt.slcp"/>
@@ -1241,7 +1241,7 @@
     <properties key="sltPackagePath" value="series2/timer/timer_input_capture_interrupt/SimplicityStudio/timer_input_capture_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_period_measurement_interrupt" label="Peripheral Examples - TIMER Period Measurement Interrupt" description="This project demonstrates period measurement using TIMER0. The module is configured to request an interrupt after capturing a pair of falling edges.&#xA;">
+  <descriptors name="timer_period_measurement_interrupt" label="Peripheral Examples - TIMER Period Measurement Interrupt" description="This project demonstrates period measurement using the TIMER peripheral. The module is configured to request an interrupt after capturing a pair of falling edges.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_period_measurement_interrupt.SimplicityStudio.timer_period_measurement_interrupt.slcp"/>
@@ -1258,7 +1258,7 @@
     <properties key="sltPackagePath" value="series2/timer/timer_period_measurement_interrupt/SimplicityStudio/timer_period_measurement_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_period_measurement_polled" label="Peripheral Examples - TIMER Period Measurement Polled" description="This project demonstrates period measurement using TIMER0.  The main loop polls the CC0 flag, which is set after capturing a pair of falling edges.&#xA;">
+  <descriptors name="timer_period_measurement_polled" label="Peripheral Examples - TIMER Period Measurement Polled" description="This project demonstrates period measurement using the TIMER peripheral.  The main loop polls the Capture/Compare flag, which is set after capturing a pair of falling edges.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.timer.timer_period_measurement_polled.SimplicityStudio.timer_period_measurement_polled.slcp"/>

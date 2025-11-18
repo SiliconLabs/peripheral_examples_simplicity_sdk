@@ -4,7 +4,7 @@ package: peripheral_examples
 quality: evaluation
 label: Peripheral Examples - TIMER Period Measurement Interrupt
 description: >
-  This project demonstrates period measurement using TIMER0. The module is configured to request an interrupt after capturing a pair of falling edges.
+  This project demonstrates period measurement using the TIMER peripheral. The module is configured to request an interrupt after capturing a pair of falling edges.
 category: Example|Peripheral Examples
 filter:
   - name: "Device Type"

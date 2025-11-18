@@ -2,7 +2,7 @@
 project_name: one_shot_output_compare
 package: peripheral_examples
 quality: evaluation
-label: Peripheral Examples - LETIMER one shout output compare
+label: Peripheral Examples - LETIMER One Shot Output Compare
 description: >
   This project demonstrates output compare in EM2 using the LETIMER.
 category: Example|Peripheral Examples

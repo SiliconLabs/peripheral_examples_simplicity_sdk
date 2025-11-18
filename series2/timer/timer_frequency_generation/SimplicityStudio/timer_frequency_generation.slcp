@@ -4,7 +4,7 @@ package: peripheral_examples
 quality: evaluation
 label: Peripheral Examples - TIMER Frequency Generation
 description: >
-  This project demonstrates frequency generation using the TIMER module.
+  This project demonstrates frequency generation using the TIMER peripheral.
 category: Example|Peripheral Examples
 filter:
   - name: "Device Type"

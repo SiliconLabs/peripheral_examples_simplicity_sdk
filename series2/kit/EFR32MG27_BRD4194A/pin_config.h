@@ -30,10 +30,6 @@
 #define EUSART0_RX_PORT   gpioPortA
 #define EUSART0_RX_PIN    6
 
-// VCOM_ENABLE
-#define VCOM_ENABLE_PORT   gpioPortB
-#define VCOM_ENABLE_PIN    4
-
 // EUSART SPI ports and pins
 #define EUS0MOSI_PORT   SL_GPIO_PORT_C
 #define EUS0MOSI_PIN    0

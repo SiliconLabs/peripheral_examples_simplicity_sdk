@@ -37,9 +37,6 @@ uint32_t buffer_pos;
 const sl_gpio_t EUSART0_TX = { .port = EUSART0_TX_PORT,
                                . pin = EUSART0_TX_PIN };
 
-const sl_gpio_t VCOM_ENABLE = { .port = VCOM_ENABLE_PORT,
-                                . pin = VCOM_ENABLE_PIN };
-
 typedef enum {
   WAIT,
   RX_COMPLETE,

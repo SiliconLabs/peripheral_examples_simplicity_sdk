@@ -4,7 +4,7 @@ package: peripheral_examples
 quality: evaluation
 label: Peripheral Examples - TIMER Period Measurement Polled
 description: >
-  This project demonstrates period measurement using TIMER0.  The main loop polls the CC0 flag, which is set after capturing a pair of falling edges.
+  This project demonstrates period measurement using the TIMER peripheral.  The main loop polls the Capture/Compare flag, which is set after capturing a pair of falling edges.
 category: Example|Peripheral Examples
 filter:
   - name: "Device Type"
