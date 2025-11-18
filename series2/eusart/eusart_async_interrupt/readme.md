@@ -51,9 +51,14 @@ mapping of EUSART signals to Expansion (EXP) Header pins.
 * Board:  Silicon Labs EFR32xG27 2.4 GHz 8 dBm Buck DCDC Radio Board (BRD4194A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG27C140F768IM40
         * PA05 -  EUSART0 transmit, Expansion Header Pin 12, WSTK P1
-        * PA06 -  EUSART0 receive, Expansion Header Pin 14, WSTK P3
+        * PA06 -  EUSART0 receive,  Expansion Header Pin 14, WSTK P3
 
 * Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm Radio Board (BRD4400C) + Wireless Starter Kit Mainboard
     * Device: EFR32ZG28B312F1024IM68
         * PA08 -  EUSART0 transmit, WSTK P28
         * PA09 -  EUSART0 receive,  WSTK P30
+
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
+    * Device: EFR32MG29B140F1024IM40
+        * PA05 -  EUSART0 transmit, Expansion Header Pin 12, WSTK P9
+        * PA06 -  EUSART0 receive,  Expansion Header Pin 14, WSTK P11

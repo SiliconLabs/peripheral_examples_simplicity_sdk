@@ -17,6 +17,14 @@
 // RAM power down end for EM2 and EM3
 #define RAM_POWER_DOWN_END (0)
 
+// EUSART0 Transmit
+#define EUSART0_TX_PORT   gpioPortA
+#define EUSART0_TX_PIN    5
+
+// EUSART0 Receive
+#define EUSART0_RX_PORT   gpioPortA
+#define EUSART0_RX_PIN    6
+
 // EUSART SPI ports and pins
 #define EUS0MOSI_PORT   SL_GPIO_PORT_A
 #define EUS0MOSI_PIN    5

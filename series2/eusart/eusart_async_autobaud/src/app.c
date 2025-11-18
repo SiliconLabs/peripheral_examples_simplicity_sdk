@@ -38,9 +38,6 @@ uint8_t buffer[BUFLEN];
 uint32_t in_pos = 0;
 uint32_t out_pos = 0;
 
-// True while receiving data (waiting for CR or BUFLEN characters)
-bool receive = true;
-
 const sl_gpio_t EUSART0_TX = { .port = EUSART0_TX_PORT,
                                . pin = EUSART0_TX_PIN };
 

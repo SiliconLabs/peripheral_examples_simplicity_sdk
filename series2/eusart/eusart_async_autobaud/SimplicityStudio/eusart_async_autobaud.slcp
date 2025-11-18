@@ -37,10 +37,10 @@ configuration:
     value: "1"
   - name: "SL_CLOCK_MANAGER_EUSART0CLK_SOURCE"
     value: "CMU_EUSART0CLKCTRL_CLKSEL_EM01GRPCCLK"
-    unless: [brd4194a]
+    unless: [brd4194a, brd4412a]
   - name: "SL_CLOCK_MANAGER_EUSART0CLK_SOURCE"
     value: "CMU_EUSART0CLKCTRL_CLKSEL_EM01GRPACLK"
-    condition: [brd4194a]
+    condition: [brd4194a, brd4412a]
 sdk_extension:
   - id: peripheral_examples
     version: 1.0.0

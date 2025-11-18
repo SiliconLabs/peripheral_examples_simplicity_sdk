@@ -312,8 +312,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_async_autobaud.SimplicityStudio.eusart_async_autobaud.slcp"/>
     <properties key="projectFilePaths" value="series2/eusart/eusart_async_autobaud/SimplicityStudio/eusart_async_autobaud.slcp"/>
     <properties key="readmeFiles" value="series2/eusart/eusart_async_autobaud/readme.md"/>
-    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -329,8 +329,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_async_dma_em2.SimplicityStudio.eusart_async_dma_em2.slcp"/>
     <properties key="projectFilePaths" value="series2/eusart/eusart_async_dma_em2/SimplicityStudio/eusart_async_dma_em2.slcp"/>
     <properties key="readmeFiles" value="series2/eusart/eusart_async_dma_em2/readme.md"/>
-    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -346,8 +346,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_async_half_duplex.SimplicityStudio.eusart_async_half_duplex.slcp"/>
     <properties key="projectFilePaths" value="series2/eusart/eusart_async_half_duplex/SimplicityStudio/eusart_async_half_duplex.slcp"/>
     <properties key="readmeFiles" value="series2/eusart/eusart_async_half_duplex/readme.md"/>
-    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -363,8 +363,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_async_interrupt.SimplicityStudio.eusart_async_interrupt.slcp"/>
     <properties key="projectFilePaths" value="series2/eusart/eusart_async_interrupt/SimplicityStudio/eusart_async_interrupt.slcp"/>
     <properties key="readmeFiles" value="series2/eusart/eusart_async_interrupt/readme.md"/>
-    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -380,8 +380,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.eusart.eusart_async_polled.SimplicityStudio.eusart_async_polled.slcp"/>
     <properties key="projectFilePaths" value="series2/eusart/eusart_async_polled/SimplicityStudio/eusart_async_polled.slcp"/>
     <properties key="readmeFiles" value="series2/eusart/eusart_async_polled/readme.md"/>
-    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4194a brd4204d brd4270b brd4400c brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32mg27.* .*efr32mg29.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
