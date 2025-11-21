@@ -34,8 +34,8 @@ microphone, apply the following changes:
         * PC6 - PDM clock
         * PC7 - PDM data
 
-* Board:  Silicon Labs EFR32BG2 Thunderboard (BRD2602A)
-    * Device: EFR32BG22C224F512IM40
+* Board:  Silicon Labs EFR32BG27 Thunderboard (BRD2602A)
+    * Device: EFR32BG27C140F768IM40
         * PC7 - MIC enable
         * PB0 - PDM clock
         * PB1 - PDM data
