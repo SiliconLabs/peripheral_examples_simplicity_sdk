@@ -75,26 +75,23 @@ On xG27 devices, the top 8 KB of RAM (BLK1) **MUST** remain powered in EM2/3
 hard fault on wake-up depending on what data may have been saved
 on the stack, e.g. the return address from the EM3
 
-On BRD4111A, the VMCU is the input to an on-board voltage regulator that outputs
-1.5V, which is then connected to the boost DC-DC input, VBAT. This additional
-voltage regulator consumes an extra 10 to 12 uA of current and will make the
-energy profiler current measurement higher than the datasheet specification. 
-Running this example on an out-of-box BRD4111A + BRD4001A WSTK will result in
-a current reading of ~16uA when using the energy profiler. 
-To get a more accurate EM2 current consumption reading of the device,
-the following extra steps must be taken:
-1. Flash the hex image onto the device by following the "How to Test" section
-2. On the BRD4111A board, make the following modification:
-  a. Unmount 0 ohm resistor R222, mount 0 ohm resistor R223
-  b. unmount 0 ohm resistor R211, mount 0 ohm resistor R210
-  c. In Board Control component settings, turn off the *Disable SPI Flash* option
-3. Steps a and b are required to use the boost DC-DC output to supply all rails
-   Step c is needed to eliminate current leakage caused by the unpowered
-   MX25_POWER_DOWN SPI flash.
+On the BRD4111A, VMCU serves as the input to an onboard voltage regulator that
+generates 1.5 V. This output is then routed to the boost DC-DC input. Because 
+the extra voltage regulator draws an additional 10–12 µA, the energy profiler 
+may report a higher current consumption than what is specified in the datasheet. 
+Running this example on an out‑of‑box BRD4111A + BRD4001A WSTK typically results 
+in a current reading of about 16 µA when measured with the energy profiler.
+Optional: For a more accurate EM2 current consumption measurement with a multimeter, 
+perform the following steps:
+1. Flash the hex image onto the device by following the “How to Test” section.
+2. On the BRD4111A board, make the following modifications:  
+   a. Unmount 0 Ω resistor R222, mount 0 Ω resistor R223  
+   b. Unmount 0 Ω resistor R211, mount 0 Ω resistor R210
+3. Steps a and b are required to use the boost DC-DC output to supply all rails.
 4. Place a header on ST1 (bottom left of the front of the radio board).
-5. Using an external power supply to supply 1.5V via the headers.
-6. Measure the current using a bench meter from the 1.5V supply to
-   the pre-programmed, standalone BRD4111A radio board.
+5. Use an external power supply to provide 1.5 V via the headers.
+6. Measure the current using a bench meter from the 1.5 V supply to the 
+   pre‑programmed, standalone BRD4111A radio board.
    
 ### Additional note for Testing on xG28 ###
 On BRD4400C, there is a diversity SPDT switch on the 2.4 GHz radio output that
@@ -103,6 +100,25 @@ GPIO PD02. The pin is configured in disabled mode (high-Z) by default, thus SPDT
 switch is powered down by default. Be advised that when PD02 is driven to logic
 high, observed current consumption will be higher than what is specified in the 
 EFR32ZG28 device datasheet due to this additional integrated circuit.
+
+### Additional note for Testing on xG29 ###
+On the BRD4420A, VMCU serves as the input to an onboard voltage regulator that 
+generates 1.5 V. This output is then routed to the boost DC-DC input. Because 
+the extra voltage regulator draws a small amount of additional current, the 
+energy profiler might report a higher current consumption than what is specified 
+in the datasheet.
+Optional: For a more accurate current consumption measurement with a multimeter, 
+perform the following steps:
+1. Flash the hex image onto the device by following the "How to Test" section
+2. On the BRD4420A board, make the following modification:  
+   a. Unmount 0 ohm resistor R228, mount 0 ohm resistor R227  
+   b. unmount 0 ohm resistor R221, mount 0 ohm resistor R220  
+   c. unmount 0 ohm resistor R225, mount 0 ohm resistor R224
+3. Steps b and c are required to use the boost DC-DC output to supply all rails
+4. Place a header on P100 (bottom left of the front of the radio board).
+5. Using an external power supply to supply 1.5V via the headers.
+6. Measure the current using a bench meter from the 1.5V supply to
+   the pre-programmed, standalone BRD4420A radio board.
 
 ## Hardware & Connections ##
 * Board:  Silicon Labs EFR32xG22 Radio Board (BRD4182A) + Wireless Starter Kit Mainboard (BRD4001A)
@@ -148,4 +164,9 @@ EFR32ZG28 device datasheet due to this additional integrated circuit.
 * Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
 	* Device: EFR32MG29B140F1024IM40
 		* PB00 - push button PB0
+		* PB01 - LED1
+
+* Board:  Silicon Labs EFR32xG29 Boost Radio Board (BRD4420A) + Wireless Starter Kit Mainboard (BRD4001A)
+	* Device: EFR32BG29B220F1024CJ45
+		* PB02 - push button PB0
 		* PB01 - LED1

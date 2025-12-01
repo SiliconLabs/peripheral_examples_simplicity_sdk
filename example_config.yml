@@ -100,19 +100,16 @@ example:
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4181a # Removing xG21 board
-    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/emu/em23_voltage_scaling/SimplicityStudio/em23_voltage_scaling.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4181a # Removing xG21 board
-    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/emu/em3_dcdc/SimplicityStudio/em3_dcdc.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4181a # Removing xG21 board
-    - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/emu/em4_no_dcdc/SimplicityStudio/em4_no_dcdc.slcp
   board_whitelist: *board_whitelist
