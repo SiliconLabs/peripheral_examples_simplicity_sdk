@@ -78,6 +78,12 @@
 #define BUTTON1_PIN  2
 // [GPIO_BUTTON1]$
 
+// <gpio> EXP_LET0_O0
+// $[GPIO_EXP_LET0_O0]
+#define EXP_LET0_O0_PORT SL_GPIO_PORT_A
+#define EXP_LET0_O0_PIN  6
+// [GPIO_EXP_LET0_O0]$
+
 // <gpio> EXP_UART_TX
 // $[GPIO_EXP_UART_TX]
 #define EXP_UART_TX_PORT SL_GPIO_PORT_B

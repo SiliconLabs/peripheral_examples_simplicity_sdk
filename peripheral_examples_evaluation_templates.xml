@@ -2397,6 +2397,57 @@
     <properties key="sltPackagePath" value="series3/gpio/gpio_switch_led_polled/SimplicityStudio/gpio_switch_led_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="letimer_one_shot_output_compare" label="Peripheral Examples - LETIMER One Shot Output Compare" description="This project demonstrates output compare using the LETIMER&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.letimer.one_shot_output_compare.SimplicityStudio.one_shot_output_compare_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/letimer/one_shot_output_compare/SimplicityStudio/one_shot_output_compare_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/letimer/one_shot_output_compare/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/letimer/one_shot_output_compare/SimplicityStudio/one_shot_output_compare_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="letimer_pulse_train_s3" label="Peripheral Examples - LETIMER Pulse Train" description="This project demonstrates pulse train operation using the LETIMER&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.letimer.pulse_train.SimplicityStudio.pulse_train_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/letimer/pulse_train/SimplicityStudio/pulse_train_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/letimer/pulse_train/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/letimer/pulse_train/SimplicityStudio/pulse_train_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="letimer_pulse_width_modulation" label="Peripheral Examples - LETIMER Pulse Width Modulation" description="This project demonstrates pulse width modulation using the LETIMER.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.letimer.pulse_width_modulation.SimplicityStudio.pulse_width_modulation_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/letimer/pulse_width_modulation/SimplicityStudio/pulse_width_modulation_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/letimer/pulse_width_modulation/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/letimer/pulse_width_modulation/SimplicityStudio/pulse_width_modulation_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="pixelrz_ldma_letimer_prs_gpio_s3" label="Peripheral Examples - PIXELRZ Sequential" description="This project demonstrates how to configure the PIXELRZ in sequential mode to drive a WS2812B LED strip.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
