@@ -68,6 +68,14 @@ const sl_gpio_t I2C_SDA          = { .port = I2C_LEADER_SDA_PORT, .pin = I2C_LEA
                                       .pin = I2C_DOMAIN_POWER_PIN};
 #endif
 
+typedef enum {
+  I2C_IDLE,
+  I2C_TEST_START,
+  I2C_READ,
+  I2C_WRITE,
+  I2C_READ_AND_VERIFY
+} I2CTestState_t;
+
 /*******************************************************************************
  ***************************   GLOBAL VARIABLES   ******************************
  ******************************************************************************/
@@ -83,16 +91,22 @@ unsigned int rxChannelId;
 unsigned int txChannelId;
 
 // Transmission status
-volatile bool i2c_startTx;
+volatile bool i2c_txInProgress = false;
 volatile I2C_TransferReturn_TypeDef i2c_xferStatus;
+volatile I2CTestState_t i2c_testState;
 
 /**************************************************************************//**
  * @brief GPIO interrupt handler
  *****************************************************************************/
 static void button_0_change(void)
 {
-  // Button 0 pressed; start the read/write/verify test
-  i2c_startTx = true;
+  if (i2c_txInProgress == false){
+    // Button 0 pressed; start the read/write/verify test
+    i2c_txInProgress = true;
+
+    // Update I2C test current state
+    i2c_testState = I2C_TEST_START;
+  }
 }
 
 /***************************************************************************//**
@@ -149,7 +163,7 @@ void i2c_init(void)
   I2C_Init(I2C0, &i2cInit);
 
   // Set the status flags and index
-  i2c_startTx = false;
+  i2c_testState = I2C_IDLE;
 }
 
 /***************************************************************************//**
@@ -170,7 +184,7 @@ void I2C_LeaderRead()
   I2C0->TXDATA = 0;
 
   // Setup the receive DMA to trigger on data valid
-  LDMA_TransferCfg_t i2c_rxReq =
+  LDMA_TransferCfg_t i2c_rxReqConfig =
     LDMA_TRANSFER_CFG_PERIPHERAL(ldmaPeripheralSignal_I2C0_RXDATAV);
 
   /*
@@ -178,7 +192,11 @@ void I2C_LeaderRead()
    * START condition to transmit the data already in the FIFO.
    */
   i2c_xferStatus = i2cTransferInProgress;
-  DMADRV_LdmaStartTransfer(rxChannelId, &i2c_rxReq, &i2c_rxDesc[0], NULL, NULL);
+  DMADRV_LdmaStartTransfer(rxChannelId,
+                           &i2c_rxReqConfig,
+                           &i2c_rxDesc[0],
+                           NULL,
+                           NULL);
   I2C0->CMD = I2C_CMD_START;
 
   /*
@@ -399,72 +417,6 @@ void ldma_init(void)
 }
 
 /***************************************************************************//**
- * @brief Wait in EM1 during transfer; check status when done
- *
- * @note In a real application, other code could execute while the LDMA
- *       manages the I2C activity.  Transfer completion would be
- * processed in the I2C interrupt handler and signaled through the use
- * of a state variable (as is done here) or, better still, with a
- * user designated callback function or RTOS semaphore.
- ******************************************************************************/
-void dma_wait_and_check(void)
-{
-  // Wait in EM1 while the transfer is in progress
-  while (i2c_xferStatus == i2cTransferInProgress) {
-    sl_power_manager_sleep();
-  }
-
-  // Did the read complete successfully; if not, breakpoint here
-  if (i2c_xferStatus != i2cTransferDone) {
-    __BKPT(1);
-  }
-}
-
-/***************************************************************************//**
- * @brief I2C read/increment/write/verify test sequence
- ******************************************************************************/
-bool test_i2c(void)
-{
-  int i;
-  bool I2CWriteVerify;
-
-  // Initial read of bytes from follower
-  I2C_LeaderRead();
-
-  // Wait in EM1 while the read progresses
-  dma_wait_and_check();
-
-  // Increment received values for write-back to the follower
-  for (i = 0; i < I2C_BUFFER_SIZE; i++) {
-    i2c_txBuffer[i] = i2c_rxBuffer[i] + 1;
-  }
-
-  // Block write new values to follower
-  I2C_LeaderWrite();
-
-  // Wait in EM1 while the write progresses
-  dma_wait_and_check();
-
-  // Block read from follower
-  I2C_LeaderRead();
-
-  // Wait in EM1 while the read progresses
-  dma_wait_and_check();
-
-  // Verify I2C transmission
-  I2CWriteVerify = true;
-
-  for (i = 0; i < I2C_BUFFER_SIZE; i++) {
-    if (i2c_txBuffer[i] != i2c_rxBuffer[i]) {
-      I2CWriteVerify = false;
-      break;
-    }
-  }
-
-  return I2CWriteVerify;
-}
-
-/***************************************************************************//**
  * Initialize application.
  ******************************************************************************/
 void app_init(void)
@@ -479,22 +431,88 @@ void app_init(void)
  ******************************************************************************/
 void app_process_action(void)
 {
-  if (i2c_startTx)
-  {
-    // Run test and check for success
-    if (!test_i2c())
-    {
-      // Indicate error with LED0 and breakpoint on failure
-      sl_gpio_set_pin(&GPIO_LED0);
-      __BKPT(2);
-    }
-    else
-    {
-      // Toggle LED1 on each pass
-      sl_gpio_toggle_pin(&GPIO_LED1);
+  int i;
+  bool I2CWriteVerify;
 
-      // Transmission complete; set to run test again
-      i2c_startTx = false;
+  if (i2c_txInProgress)
+  {
+    switch (i2c_xferStatus) {
+      case i2cTransferInProgress:
+        // Wait for transfer to complete
+        break;
+
+      case i2cTransferDone:
+        switch (i2c_testState) {
+          case I2C_IDLE:
+            break;
+
+          case I2C_TEST_START:
+            // Initial read of bytes from follower
+            I2C_LeaderRead();
+
+            // Update I2C test current state
+            i2c_testState = I2C_READ;
+            break;
+
+          case I2C_READ:
+            // Increment received values for write-back to the follower
+            for (i = 0; i < I2C_BUFFER_SIZE; i++) {
+              i2c_txBuffer[i] = i2c_rxBuffer[i] + 1;
+            }
+
+            I2C_LeaderWrite();
+            i2c_testState = I2C_WRITE;
+            break;
+
+          case I2C_WRITE:
+            // Block read from follower
+            I2C_LeaderRead();
+
+            // Update current I2C state for next interrupt
+            i2c_testState = I2C_READ_AND_VERIFY;
+            break;
+
+          case I2C_READ_AND_VERIFY:
+            // Verify I2C transmission
+            I2CWriteVerify = true;
+
+            for (i = 0; i < I2C_BUFFER_SIZE; i++) {
+              if (i2c_txBuffer[i] != i2c_rxBuffer[i]) {
+                I2CWriteVerify = false;
+                break;
+              }
+            }
+
+            // Run test and check for success
+            if (I2CWriteVerify == false)
+            {
+              // Indicate error with LED0 and breakpoint on failure
+              sl_gpio_set_pin(&GPIO_LED0);
+              __BKPT(1);
+            }
+            else
+            {
+              // Toggle LED1 on each pass
+              sl_gpio_toggle_pin(&GPIO_LED1);
+
+              // I2C Test Complete
+              i2c_txInProgress = false;
+            }
+
+            // I2C peripheral idles until next button press
+            i2c_testState = I2C_IDLE;
+            break;
+
+          default:
+            break;
+        }
+        break;
+
+      default: // I2C peripheral interrupted with a transmission error
+        // Indicate error with LED0 and breakpoint on failure
+        sl_gpio_set_pin(&GPIO_LED0);
+        __BKPT(2);
+        break;
     }
   }
 }
