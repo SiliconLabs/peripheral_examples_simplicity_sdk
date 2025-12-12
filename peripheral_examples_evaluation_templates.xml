@@ -2278,6 +2278,91 @@
     <properties key="sltPackagePath" value="series3/burtc/burtc_em4_buram/SimplicityStudio/burtc_em4_buram_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="eusart_async_autobaud_s3" label="Peripheral Examples - EUSART Async Auto Baudrate Detection" description="This project demonstrates interrupt-driven EUSART operation in asynchronous mode with auto baud rate detection.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.eusart.eusart_async_autobaud.SimplicityStudio.eusart_async_autobaud_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/eusart/eusart_async_autobaud/SimplicityStudio/eusart_async_autobaud_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/eusart/eusart_async_autobaud/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/eusart/eusart_async_autobaud/SimplicityStudio/eusart_async_autobaud_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_async_dma_s3" label="Peripheral Examples - EUSART Async DMA" description="This project demonstrates low-frequency operation of EUSART0 using LDMA to receive inbound data and transmit outbound data.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.eusart.eusart_async_dma.SimplicityStudio.eusart_async_dma_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/eusart/eusart_async_dma/SimplicityStudio/eusart_async_dma_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/eusart/eusart_async_dma/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/eusart/eusart_async_dma/SimplicityStudio/eusart_async_dma_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_async_half_duplex_s3" label="Peripheral Examples - EUSART Async Half Duplex" description="This project demonstrates operation of the EUSART in a half-duplex, single link configuration.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.eusart.eusart_async_half_duplex.SimplicityStudio.eusart_async_half_duplex_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/eusart/eusart_async_half_duplex/SimplicityStudio/eusart_async_half_duplex_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/eusart/eusart_async_half_duplex/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/eusart/eusart_async_half_duplex/SimplicityStudio/eusart_async_half_duplex_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_async_interrupt_s3" label="Peripheral Examples - EUSART Async Interrupt" description="This project demonstrates interrupt-driven operation of the EUSART in asynchronous mode.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.eusart.eusart_async_interrupt.SimplicityStudio.eusart_async_interrupt_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/eusart/eusart_async_interrupt/SimplicityStudio/eusart_async_interrupt_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/eusart/eusart_async_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/eusart/eusart_async_interrupt/SimplicityStudio/eusart_async_interrupt_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_async_polled_s3" label="Peripheral Examples - EUSART Async Polled" description="This project demonstrates polled operation of the EUSART in asynchronous mode.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.eusart.eusart_async_polled.SimplicityStudio.eusart_async_polled_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/eusart/eusart_async_polled/SimplicityStudio/eusart_async_polled_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/eusart/eusart_async_polled/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/eusart/eusart_async_polled/SimplicityStudio/eusart_async_polled_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="gpcrc_dma_s3" label="Peripheral Examples - GPCRC DMA" description="This project demonstrates the GPCRC used to check 32-bit data using the IEEE 802.3 polynomial standard in EM1. Data is fed into the GPCRC via the LDMA.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>

@@ -922,6 +922,22 @@ example:
 - path: series3/gpio/gpio_em4_wakeup/SimplicityStudio/gpio_em4_wakeup_s3.slcp
   board_whitelist: *board_whitelist_s3
 
+  # EUSART examples
+- path: series3/eusart/eusart_async_autobaud/SimplicityStudio/eusart_async_autobaud_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/eusart/eusart_async_dma/SimplicityStudio/eusart_async_dma_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/eusart/eusart_async_half_duplex/SimplicityStudio/eusart_async_half_duplex_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/eusart/eusart_async_interrupt/SimplicityStudio/eusart_async_interrupt_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/eusart/eusart_async_polled/SimplicityStudio/eusart_async_polled_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
   # LETIMER examples
 - path: series3/letimer/letimer_one_shot_output_compare/SimplicityStudio/one_shot_output_compare_s3.slcp
   board_whitelist: *board_whitelist_s3

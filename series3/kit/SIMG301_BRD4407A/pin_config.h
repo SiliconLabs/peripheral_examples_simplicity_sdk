@@ -44,6 +44,13 @@
 #define ADC_OUTPUT0_PIN      0
 #define ADC_ASYNC_PRS_CH     0 // PRS channels 0-5 can be used with port A; see data sheet Digital Peripheral Connectivity for details
 
+// EUSART TX and RX configuration
+#define EUSART0_TX_PORT SL_GPIO_PORT_B
+#define EUSART0_TX_PIN  2
+#define EUSART0_RX_PORT SL_GPIO_PORT_B
+#define EUSART0_RX_PIN  0
+
+
 // LETIMER Output GPIO configuration
 #define LETIMER_OUTPUT0_PORT SL_GPIO_PORT_A
 #define LETIMER_OUTPUT0_PIN  5
