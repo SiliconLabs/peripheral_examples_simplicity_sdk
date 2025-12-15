@@ -1,7 +1,7 @@
 # Peripheral Examples - ETAMPDET EM4 #
 
-This project demonstrates the tamper detection module available on EFR32xG25 and
-EFR32xG27. The example uses #defines to enable the ETAMPDET peripheral's
+This project demonstrates the tamper detection module available on EFR32xG25, 
+EFR32xG27 and EFR32xG29. The example uses #defines to enable the ETAMPDET peripheral's
 channel 0 and/or channel 1, and requires an external jumper-wire connection
 between the `ETAMPIN0 <-> ETAMPOUT0` and/or `ETAMPIN1 <-> ETAMPOUT1` pins, as
 specified in device datasheet and README. The application is configured
@@ -81,6 +81,18 @@ additional current consumption will be observed in EM4 with channel 0 enabled
 (default setting) and `LED1` will "flicker" with the random generated bit stream
 from the ETAMPDET peripheral.
 
+### Note for Testing on xG29 ###
+On BRD4194A, VMCU is a 3.3V supply that powers AVDD and IOVDD on xG27.
+In the datasheet, current consumption test conditions have AVDD and IOVDD
+powered by either the DC-DC at 1.8V, an external 1.8V supply, 
+or an external 3.0V supply. Due to the design of the radio board, this 
+board does not replicate the datasheet test conditions for current consumption,
+and the measured value may differ from the datasheet value. 
+Additionally, due to the connection of `LED1` to ETAMPDET channel 0 input,
+additional current consumption will be observed in EM4 with channel 0 enabled
+(default setting) and `LED1` will "flicker" with the random generated bit stream
+from the ETAMPDET peripheral.
+
 ## Hardware & Connections ##
 * Board:  Silicon Labs EFR32xG25 Radio Board (BRD4270B) + 
         Wireless Starter Kit Mainboard
@@ -96,6 +108,17 @@ from the ETAMPDET peripheral.
 * Board:  Silicon Labs EFR32xG27 Buck Radio Board (BRD4194A) + 
         Wireless Starter Kit Mainboard
 	* Device: EFR32MG27C140F768IM40
+		* PB00 - Push Button PB0
+		* PB00 - LED0
+		* PB01 - LED1
+      * PB01 - ETAMPDET ETAMPIN0,  Expansion Header Pin 9, WSTK Pin 6
+		* PC00 - ETAMPDET ETAMPIN1,  Expansion Header Pin 4, WSTK Pin 1
+		* PC01 - ETAMPDET ETAMPOUT0, Expansion Header Pin 6, WSTK Pin 3
+		* PC02 - ETAMPDET ETAMPOUT1, Expansion Header Pin 8, WSTK Pin 5
+
+* Board:  Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + 
+        Wireless Starter Kit Mainboard
+	* Device: EFR32MG29B140F1024IM40
 		* PB00 - Push Button PB0
 		* PB00 - LED0
 		* PB01 - LED1

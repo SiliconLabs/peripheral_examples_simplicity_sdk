@@ -227,8 +227,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.etampdet.etampdet_em2.SimplicityStudio.etampdet_em2.slcp"/>
     <properties key="projectFilePaths" value="series2/etampdet/etampdet_em2/SimplicityStudio/etampdet_em2.slcp"/>
     <properties key="readmeFiles" value="series2/etampdet/etampdet_em2/readme.md"/>
-    <properties key="boardCompatibility" value="brd4194a brd4270b com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg27.*"/>
+    <properties key="boardCompatibility" value="brd4194a brd4270b brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg27.* .*efr32mg29.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -244,8 +244,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.etampdet.etampdet_em4.SimplicityStudio.etampdet_em4.slcp"/>
     <properties key="projectFilePaths" value="series2/etampdet/etampdet_em4/SimplicityStudio/etampdet_em4.slcp"/>
     <properties key="readmeFiles" value="series2/etampdet/etampdet_em4/readme.md"/>
-    <properties key="boardCompatibility" value="brd4194a brd4270b com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg27.*"/>
+    <properties key="boardCompatibility" value="brd4194a brd4270b brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg27.* .*efr32mg29.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
