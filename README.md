@@ -13,58 +13,72 @@
 
 This repo contains simple peripheral examples based on emlib in Simplicity SDK for Series 2 devices.
 
-## Supported Series 2 Devices ##
-- EFR32BG21
-- EFR32MG21
-- EFR32BG22
-- EFR32FG22
-- EFR32MG22
-- EFM32PG22
-- EFR32FG23
-- EFR32SG23
-- EFR32ZG23
-- EFM32PG23
-- EFR32BG24
-- EFR32MG24
-- EFR32FG25
-- EFR32BG26
-- EFR32MG26
-- EFM32PG26
-- EFR32BG27
-- EFR32MG27
-- EFR32FG28
-- EFR32SG28
-- EFR32ZG28
-- EFM32PG28
+## Supported Series 2 Radio Boards and Devices ##
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left; padding:8px 40px;">Board ID</th>
+      <th style="text-align:left; padding:8px 40px;">Device</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding:8px 40px;">BRD4181A</td><td style="padding:8px 40px;">EFR32MG21</td></tr>
+    <tr><td style="padding:8px 40px;">BRD4184B</td><td style="padding:8px 40px;">EFR32BG22</td></tr>
+    <tr><td style="padding:8px 40px;">BRD4182A</td><td style="padding:8px 40px;">EFR32MG22</td></tr>
+    <tr><td style="padding:8px 40px;">BRD4204D</td><td style="padding:8px 40px;">EFR32ZG23</td></tr>
+    <tr><td style="padding:8px 40px;">BRD4186C</td><td style="padding:8px 40px;">EFR32MG24</td></tr>
+    <tr><td style="padding:8px 40px;">BRD4270B</td><td style="padding:8px 40px;">EFR32FG25</td></tr>
+    <tr><td style="padding:8px 40px;">BRD4117A</td><td style="padding:8px 40px;">EFR32MG26</td></tr>
+    <tr><td style="padding:8px 40px;">BRD4111A</td><td style="padding:8px 40px;">EFR32BG27</td></tr>
+    <tr><td style="padding:8px 40px;">BRD2602A</td><td style="padding:8px 40px;">EFR32BG27</td></tr>
+    <tr><td style="padding:8px 40px;">BRD4194A</td><td style="padding:8px 40px;">EFR32MG27</td></tr>
+    <tr><td style="padding:8px 40px;">BRD4400C</td><td style="padding:8px 40px;">EFR32ZG28</td></tr>
+  </tbody>
+</table>
 
 ## Requirements ##
-1. Desired Silicon Labs Starter Kit
-2. Simplicity Studio 5 or IAR Workbech IDE
-3. Simplicity SDK available via Simplicity Studio. The supported SDK version is shown by the tag associated with the commit.
+1. A compatible **Silicon Labs Starter Kit**
+2. **Simplicity Studio 5**
+3. **Simplicity SDK** (match the SDK version noted in the commit tag)
+4. Clone this repository into the Simplicity SDK extension directory:`C:\Users\<username>\SimplicityStudio\SDKs\simplicity_sdk\extension` 
 
-## Additional Requirements for Simplicity Studio IDE ##
-4. Clone this repository to `C:\SiliconLabs\SimplicityStudio\v5\developer\repos\` 
+## Importing Examples into Simplicity Studio 5 ##
+1. Launch **Simplicity Studio 5**.
+2. Select your development board using either:
+   - the **My Products** tab, or  
+   - the **Adapter** tab  
+3. In the Launcher perspective, click **Manage SDKs** under **Preferred SDKs** and enable the SDK where the examples are installed as an extension.
+4. To browse available examples:
+   - choose **Create New Project** from the *Overview* tab, or  
+   - open the **Examples and Demos** tab  
+5. Apply the filter: **32-bit MCU**
+6. Select an example and click **Create** to import it into your workspace.
 
-## Additional Requirements for IAR ##
-4. Open Windows Command Prompt and navigate to the Simplicity SDK directory, 
-   which can be found by opening Simplicity Studio and navigating to
-   Preferences -> Simplicity Studio -> SDKs
-5. Clone this repository to the Simplicity SDK directory
-   For example, if the Simplicity SDK is located in `C:\Users\myUserName\SimplicityStudio\SDKs\simplicity_sdk`, then clone the repo to this location
+## Adding Support for a New Board
+These peripheral examples use the `peripheral_examples_evaluation_templates.xml` file along with a custom component that provides dedicated Pin Configuration headers to support multiple development boards. To add support for a new board:
 
-## How to import to Simplicity Studio IDE ##
-1. In Simplicity Studio: 
-	- File -> Import, or 
-	- Project -> Import -> MCU Project
-2. Navigate to the desired .slsproj file
+### 1. Update Compatibility Metadata
+Modify the `partCompatibility` and `boardCompatibility` entries for the example inside: `peripheral_examples_evaluation_templates.xml`
 
-## How to import to IAR Embedded Workbench IDE ##
-1. Navigate to the desired .eww file and double click
+### 2. Add a Pin Configuration File
+Create a new `pin_config.h` file for your board and place it under the appropriate kit directory, following the structure used by existing boards.
+Example: `series2/kit/EFR32MG21_BRD4181A/pin_config.h`
 
-## Porting to Another Board
-Peripheral examples make use of the BSP headers to provide portable support for different development boards. To change the target board, navigate to Project -> Properties -> C/C++ Build -> Board/Part/SDK. Start typing in the Boards search box and locate the desired development board, then click Apply to change the project settings. Ensure that the board specific include paths, found in Project -> Properties -> C/C++ General -> Paths and Symbols, correctly match the target board.
+### 3. Update `silabs_bsp.slcc`
+Append the new pin configuration path:
+```yaml
+- override:
+    component: "%extension-peripheral_examples%silabs_bsp"
+- path: series2/kit/EFR32MG21_BRD4181A/pin_config.h
+  condition: [brd4181a]
+  ```
 
-e.g. ```${StudioSdkPath}/hardware/kit/EFR32MG21_BRD4181B/config``` is the correct include path for the brd4181b radio board.
+### 4. Refresh the SDK
+After installing the extension:
+1. Open **Window → Preferences**
+2. Navigate to **Simplicity Studio → SDKs**
+3. Click **Refresh**
+
 
 ## Reporting Bugs/Issues and Posting Questions and Comments ##
 
