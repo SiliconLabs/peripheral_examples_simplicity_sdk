@@ -33,6 +33,8 @@ This repo contains simple peripheral examples based on emlib in Simplicity SDK f
     <tr><td style="padding:8px 40px;">BRD2602A</td><td style="padding:8px 40px;">EFR32BG27</td></tr>
     <tr><td style="padding:8px 40px;">BRD4194A</td><td style="padding:8px 40px;">EFR32MG27</td></tr>
     <tr><td style="padding:8px 40px;">BRD4400C</td><td style="padding:8px 40px;">EFR32ZG28</td></tr>
+    <tr><td style="padding:8px 40px;">BRD4420A</td><td style="padding:8px 40px;">EFR32BG29</td></tr>
+    <tr><td style="padding:8px 40px;">BRD4412A</td><td style="padding:8px 40px;">EFR32MG29</td></tr>
   </tbody>
 </table>
 
