@@ -17,6 +17,22 @@
 // RAM power down end for EM2 and EM3
 #define RAM_POWER_DOWN_END (0)
 
+// ETAMPDET IN Channel 0
+#define ETAMPDET_IN0_PORT SL_GPIO_PORT_A
+#define ETAMPDET_IN0_PIN  5
+
+// ETAMPDET OUT Channel 0
+#define ETAMPDET_OUT0_PORT  SL_GPIO_PORT_A
+#define ETAMPDET_OUT0_PIN   6
+
+// ETAMPDET IN Channel 1
+#define ETAMPDET_IN1_PORT SL_GPIO_PORT_D
+#define ETAMPDET_IN1_PIN  5
+
+// ETAMPDET Channel 1
+#define ETAMPDET_OUT1_PORT SL_GPIO_PORT_D
+#define ETAMPDET_OUT1_PIN  4
+
 // EUSART0 Transmit
 #define EUSART0_TX_PORT   gpioPortA
 #define EUSART0_TX_PIN    8

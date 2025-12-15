@@ -104,6 +104,19 @@ example:
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
 
+  # ETAMPDET examples
+- path: series2/etampdet/etampdet_em2/SimplicityStudio/etampdet_em2.slcp
+  board_whitelist:
+    - brd4270b # xG25 Board
+    - brd4194a # xG27 Board
+  board_blacklist:
+
+- path: series2/etampdet/etampdet_em4/SimplicityStudio/etampdet_em4.slcp
+  board_whitelist:
+    - brd4270b # xG25 Board
+    - brd4194a # xG27 Board
+  board_blacklist:
+
   # EUART examples
 - path: series2/euart/euart_echo/SimplicityStudio/euart_echo.slcp
   board_whitelist:

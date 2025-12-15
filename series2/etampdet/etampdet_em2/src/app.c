@@ -1,68 +1,45 @@
 /***************************************************************************//**
- * @file main_xg25.c
- * @brief This project demonstrates the tamper detection module for EFR32xG25.
- * The example uses #defines to enable the ETAMPDET peripheral's channel 0
- * and/or channel 1, and requires an external jumper-wire connection between the
- * ETAMPIN0 <-> ETAMPOUT0 and/or ETAMPIN1 <-> ETAMPOUT1 pins, as specified
- * in device datasheet and README. The application is configured similarly to
- * the em2_dcdc peripheral example, with EM2 DCDC enabled (VSCALE0), BURTC
- * running on LFRCO, and RAM retention on block 0 only. When a tamper event is
- * detected, the ETAMPDET peripheral is disabled and BURTC interrupts are
- * enabled. With each BURTC compare match interrupt LED0 or LED1 will toggle to
- * indicate the ETAMPDET tamper event on channel 0 or channel 1, respectively.
- *
+ * @file
+ * @brief Top level application functions
  *******************************************************************************
  * # License
- * <b>Copyright 2022 Silicon Laboratories Inc. www.silabs.com</b>
+ * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
  *******************************************************************************
  *
- * SPDX-License-Identifier: Zlib
+ * The licensor of this software is Silicon Laboratories Inc. Your use of this
+ * software is governed by the terms of Silicon Labs Master Software License
+ * Agreement (MSLA) available at
+ * www.silabs.com/about-us/legal/master-software-license-agreement. This
+ * software is distributed to you in Source Code format and is governed by the
+ * sections of the MSLA applicable to Source Code.
  *
- * The licensor of this software is Silicon Laboratories Inc.
- *
- * This software is provided 'as-is', without any express or implied
- * warranty. In no event will the authors be held liable for any damages
- * arising from the use of this software.
- *
- * Permission is granted to anyone to use this software for any purpose,
- * including commercial applications, and to alter it and redistribute it
- * freely, subject to the following restrictions:
- *
- * 1. The origin of this software must not be misrepresented; you must not
- *    claim that you wrote the original software. If you use this software
- *    in a product, an acknowledgment in the product documentation would be
- *    appreciated but is not required.
- * 2. Altered source versions must be plainly marked as such, and must not be
- *    misrepresented as being the original software.
- * 3. This notice may not be removed or altered from any source distribution.
- *
- *******************************************************************************
- * # Evaluation Quality
- * This code has been minimally tested to ensure that it builds and is suitable 
- * as a demonstration for evaluation purposes only. This code will be maintained
- * at the sole discretion of Silicon Labs.
  ******************************************************************************/
- 
-#include <stdio.h>
-#include "em_device.h"
-#include "em_chip.h"
-#include "em_cmu.h"
+#include "sl_clock_manager.h"
+#include "sl_power_manager.h"
+
 #include "em_emu.h"
-#include "em_gpio.h"
+#include "em_cmu.h"
 #include "em_burtc.h"
-#include "em_core.h"
-#include "em_rmu.h"
-#include "bsp.h"
-#include "mx25flash_spi.h"
+#include "sl_gpio.h"
+
+#include "pin_config.h"
 
 #define POWER_DOWN_RAM  (1)
 
-#ifdef _SILICON_LABS_32B_SERIES_2_CONFIG_7
-#define LED_OUT 0
-#else
-#define LED_OUT 1
+#ifndef BUTTON0_PORT
+  #define BUTTON0_PORT LED0_BUTTON0_PORT
+  #define BUTTON0_PIN LED0_BUTTON0_PIN
 #endif
 
+#ifndef LED0_PORT
+  #define LED0_PORT LED0_BUTTON0_PORT
+  #define LED0_PIN LED0_BUTTON0_PIN
+#endif
+
+#ifndef LED1_PORT
+  #define LED1_PORT LED1_BUTTON1_PORT
+  #define LED1_PIN LED1_BUTTON1_PIN
+#endif
 /*
  * These defines can be used to enable/disable each of ETAMPDET peripherals
  * two tamper detection channels
@@ -76,49 +53,40 @@
 volatile uint8_t tamperDetectedCh0 = 0;
 volatile uint8_t tamperDetectedCh1 = 0;
 
-/***************************************************************************//**
- * @brief
- *    Powers down the SPI flash on the radio board
- *
- * @details
- *    A JEDEC standard SPI flash boots up in standby mode in order to
- *    provide immediate access, such as when used it as a boot memory.
- *
- *    Typical current draw in standby mode for the MX25R8035F device used
- *    on EFR32 radio boards is 5 µA.
- *
- *    JEDEC standard SPI flash memories have a lower current deep power-down
- *    mode, which can be entered after sending the relevant commands. This is on
- *    the order of 0.007 µA for the MX25R8035F.
- ******************************************************************************/
-void powerDownSpiFlash(void)
-{
-  FlashStatus status;
+const sl_gpio_t LED0 = { .port = LED0_PORT,
+                         .pin  = LED0_PIN };
 
-  MX25_init();
-  MX25_RSTEN();
-  MX25_RST(&status);
-  MX25_DP();
-  MX25_deinit();
-}
+const sl_gpio_t LED1 = { .port = LED1_PORT, 
+                         .pin  = LED1_PIN };
 
+const sl_gpio_t ESCAPE_HATCH = { .port = BUTTON0_PORT, 
+                                 .pin  = BUTTON0_PIN };
+
+const sl_gpio_t ETAMPDET_CH0_IN  =  { .port = ETAMPDET_IN0_PORT, 
+                                      .pin  = ETAMPDET_IN0_PIN };
+                                      
+const sl_gpio_t ETAMPDET_CH0_OUT =  { .port = ETAMPDET_OUT0_PORT, 
+                                      .pin  = ETAMPDET_OUT0_PIN };
+
+const sl_gpio_t ETAMPDET_CH1_IN  =  { .port = ETAMPDET_IN1_PORT, 
+                                      .pin  = ETAMPDET_IN1_PIN };
+
+const sl_gpio_t ETAMPDET_CH1_OUT =  { .port = ETAMPDET_OUT1_PORT, 
+                                      .pin  = ETAMPDET_OUT1_PIN, };                                                                    
 /**************************************************************************//**
- * @brief  GPIO Initializer
+ * @brief  Initialize GPIO 
  *****************************************************************************/
-void initGPIO(void)
+void gpio_init(void)
 {
-  // Enable GPIO clock branch
-  CMU_ClockEnable(cmuClock_GPIO, true);
-
   // Configure LEDs as outputs; will toggle for tamper detection
-  GPIO_PinModeSet(BSP_GPIO_LED0_PORT, BSP_GPIO_LED0_PIN, gpioModePushPull, !LED_OUT);
-  GPIO_PinModeSet(BSP_GPIO_LED1_PORT, BSP_GPIO_LED1_PIN, gpioModePushPull, !LED_OUT);
+  sl_gpio_set_pin_mode(&LED0, SL_GPIO_MODE_PUSH_PULL, LED_OFF);
+  sl_gpio_set_pin_mode(&LED1, SL_GPIO_MODE_PUSH_PULL, LED_OFF);
 }
 
 /**************************************************************************//**
  * @brief  Configure BURTC to interrupt every BURTC_IRQ_PERIOD
  *****************************************************************************/
-void initBURTC(void)
+void burtc_init(void)
 {
   // Setup BURTC parameters
   BURTC_Init_TypeDef burtcInit = BURTC_INIT_DEFAULT;
@@ -126,7 +94,7 @@ void initBURTC(void)
   burtcInit.compare0Top = true; // reset counter when counter reaches compare value
 
   // Initialize BURTC
-  CMU_ClockEnable(cmuClock_BURTC, true);
+  sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_BURTC);
   BURTC_Reset();
   BURTC_Init(&burtcInit);
 
@@ -144,17 +112,19 @@ void BURTC_IRQHandler(void)
   BURTC_IntClear(BURTC_IF_COMP); // compare match
 
   // Toggle LED based on first detected tamper event
-  if (tamperDetectedCh0 == 1)
-    GPIO_PinOutToggle(BSP_GPIO_LED0_PORT, BSP_GPIO_LED0_PIN);
+  if (tamperDetectedCh0 == 1){
+    sl_gpio_toggle_pin(&LED0);
+  }
 
-  if (tamperDetectedCh1 == 1)
-    GPIO_PinOutToggle(BSP_GPIO_LED1_PORT, BSP_GPIO_LED1_PIN);
+  if (tamperDetectedCh1 == 1){
+    sl_gpio_toggle_pin(&LED1);
+  }
 }
 
 /***************************************************************************//**
- * @brief ETAMPDET initialization
+ * @brief Initialize ETAMPDET 
  ******************************************************************************/
-void initETAMPDET()
+void etampdet_init()
 {
   uint8_t chnl0_en, chnl1_en;
   chnl0_en = 0;
@@ -177,25 +147,33 @@ void initETAMPDET()
 
   if (chnl0_en == 1) { // Configure GPIO for ETAMPDET channel 0
     // Disable GPIO signals associated with used ETAMPER channel 0
-    GPIO_PinModeSet(gpioPortA, 5, gpioModeDisabled, 0);
-    GPIO_PinModeSet(gpioPortA, 6, gpioModeDisabled, 0);
+    GPIO_PinModeSet(ETAMPDET_IN0_PORT, ETAMPDET_IN0_PIN, gpioModeDisabled, 0);
+    GPIO_PinModeSet(ETAMPDET_OUT0_PORT, ETAMPDET_OUT0_PIN, gpioModeDisabled, 0);
   }
 
   if (chnl1_en == 1) { // Configure GPIO for ETAMPDET channel 1
     // Disable GPIO signals associated with used ETAMPER channel 1
-    GPIO_PinModeSet(gpioPortD, 5, gpioModeDisabled, 0);
-    GPIO_PinModeSet(gpioPortD, 4, gpioModeDisabled, 0);
+    GPIO_PinModeSet(ETAMPDET_IN1_PORT, ETAMPDET_IN1_PIN, gpioModeDisabled, 0);
+    GPIO_PinModeSet(ETAMPDET_OUT1_PORT, ETAMPDET_OUT1_PIN, gpioModeDisabled, 0);
   }
 
   // Make sure module is disabled before configuring
   ETAMPDET->EN_CLR = ETAMPDET_EN_EN;
 
-  /*
-   *  Must wait for peripheral to disable before modifying other registers; if
-   *  register write is attempted before peripheral is disabled, hard fault will
-   *  occur.
-   */
-  while(ETAMPDET->EN && ETAMPDET_EN_DISABLING);
+/*
+ *   Must wait for peripheral to disable before modifying other registers; if
+ *   register write is attempted before peripheral is disabled, hard fault will
+ *   occur.
+ */
+#if defined(ETAMPDET_EN_DISABLING)
+  while ((ETAMPDET->EN & ETAMPDET_EN_DISABLING) || (ETAMPDET->SYNCBUSY != 0U)) {
+    // Wait for disabling to finish
+  }
+#else
+  while (ETAMPDET->SYNCBUSY != 0U) {
+    // Wait for all synchronizations to finish
+  }
+#endif
 
   // Configure upper and lower prescaler values
   ETAMPDET->CLKPRESCVAL = ETAMPDET_CLKPRESCVAL_LOWERPRESC_DivideBy64 |
@@ -263,13 +241,20 @@ void ETAMPDET_IRQHandler(void)
   // Disable ETAMPDET module; no longer needed in typical applications
   ETAMPDET->EN_CLR = ETAMPDET_EN_EN;
 
-  /*
-   *  Conventionally bad practice to have a while loop within an ISR, however
-   *  further register writes to ETAMPDET peripheral cannot occur until disable
-   *  completes; BURTC interrupt is the only task at risk of a delay.
-   */
-  while(ETAMPDET->EN && ETAMPDET_EN_DISABLING);
-
+/*
+ *  Conventionally bad practice to have a while loop within an ISR, however
+ *  further register writes to ETAMPDET peripheral cannot occur until disable
+ *  completes; BURTC interrupt is the only task at risk of a delay.
+ */
+#if defined(ETAMPDET_EN_DISABLING)
+  while ((ETAMPDET->EN & ETAMPDET_EN_DISABLING) || (ETAMPDET->SYNCBUSY != 0U)) {
+    // Wait for disabling to finish
+  }
+#else
+  while (ETAMPDET->SYNCBUSY != 0U) {
+    // Wait for all synchronizations to finish
+  }
+#endif
   ETAMPDET->IEN_CLR = _ETAMPDET_IEN_MASK;
 
   ETAMPDET->IF_CLR = _ETAMPDET_IF_MASK;
@@ -277,6 +262,9 @@ void ETAMPDET_IRQHandler(void)
   // Turn on BURTC interrupts for LED toggle; BURTC already running
   BURTC_IntEnable(BURTC_IEN_COMP);    // BURTC interrupt on compare match
   NVIC_EnableIRQ(BURTC_IRQn);
+
+  // Initialize GPIO for LEDs
+  gpio_init();
 }
 
 /**************************************************************************//**
@@ -291,71 +279,60 @@ void ETAMPDET_IRQHandler(void)
  * instruction to stop the processor in EM0 and allow a debug
  * connection to be made.
  *****************************************************************************/
-void escapeHatch(void)
+void escape_hatch(void)
 {
-  CMU_ClockEnable(cmuClock_GPIO, true);
-  GPIO_PinModeSet(BSP_GPIO_PB0_PORT, BSP_GPIO_PB0_PIN, gpioModeInputPullFilter, 1);
-  if (GPIO_PinInGet(BSP_GPIO_PB0_PORT, BSP_GPIO_PB0_PIN) == 0) {
-    GPIO_PinModeSet(BSP_GPIO_LED0_PORT, BSP_GPIO_LED0_PIN, gpioModePushPull, LED_OUT);
-    __BKPT(0);
+  bool pin_value;
+
+  // Configure Escape Hatch button as an input pulled high
+  sl_gpio_set_pin_mode(&ESCAPE_HATCH, SL_GPIO_MODE_INPUT_PULL_FILTER, true);
+
+  // Check Escape Hatch button state: if pressed, enable LED0 and trigger breakpoint
+  sl_gpio_get_pin_input(&ESCAPE_HATCH, &pin_value);
+  if (pin_value == 0)
+  {
+    sl_gpio_set_pin_mode(&LED0, SL_GPIO_MODE_PUSH_PULL, LED_ON);
+    __BKPT(0);  // Halt execution for debugging
   }
-  // Pin not asserted, so disable input
-  else {
-    GPIO_PinModeSet(BSP_GPIO_PB0_PORT, BSP_GPIO_PB0_PIN, gpioModeDisabled, (!LED_OUT));
-    CMU_ClockEnable(cmuClock_GPIO, false);
+  else
+  {
+    // Disable Escape Hatch button digital input when not in use
+    sl_gpio_set_pin_mode(&ESCAPE_HATCH, SL_GPIO_MODE_DISABLED, false);
   }
 }
 
 /***************************************************************************//**
- * @brief Main function
+ * @brief Setup voltage scaling
  ******************************************************************************/
-int main(void)
+void voltage_scaling(void)
 {
-  // Chip errata
-  CHIP_Init();
-
-  /*
-   *  If PB0 is depressed during MCU reset, prevents EM2 entry allowing
-   *  debug/reprogram of device
-   */
-  escapeHatch();
-
-  // Initialize GPIO for LEDs
-  initGPIO();
-
-  // Turn on DCDC regulator
-  EMU_DCDCInit_TypeDef dcdcInit = EMU_DCDCINIT_WSTK_DEFAULT;
-  EMU_DCDCInit(&dcdcInit);
-
   // Enable voltage downscaling in EM mode 2 (VSCALE0)
   EMU_EM23Init_TypeDef em23Init = EMU_EM23INIT_DEFAULT;
   em23Init.vScaleEM23Voltage = emuVScaleEM23_LowPower;
 
   // Initialize EM23 energy modes
   EMU_EM23Init(&em23Init);
+}
 
-  // Power down the SPI flash
-  powerDownSpiFlash();
+/***************************************************************************//**
+ * Initialize application.
+ ******************************************************************************/
+void app_init(void)
+{
+  escape_hatch();
+  voltage_scaling();
+  burtc_init();
+  etampdet_init();
 
-  // Route desired oscillator to shared BURTC/ETAMPDET clock tree
-  CMU_ClockSelectSet(cmuClock_EM4GRPACLK, cmuSelect_LFRCO);
-
-  /*
-   *  Initialize BURTC (attempt to match EM2 datasheet spec test configuration);
-   *  Interrupt not initially enabled
-   */
-  initBURTC();
-
-  // Initialize ETAMPDET peripheral
-  initETAMPDET();
-
-  // Power down all RAM blocks except block 0
+  // Power down all eligible RAM blocks
   if (POWER_DOWN_RAM) {
-    EMU_RamPowerDown(SRAM_BASE, 0);
+    EMU_RamPowerDown(SRAM_BASE, RAM_POWER_DOWN_END);
   }
+}
 
-  while (1) {
-    // Enter EM2
-    EMU_EnterEM2(false);
-  }
+/***************************************************************************//**
+ * App ticking function.
+ ******************************************************************************/
+void app_process_action(void)
+{
+  // Enter EM2 in power manager
 }
