@@ -46,7 +46,7 @@ void acmp_init(void)
   // Initialize with settings for supply monitoring
   sl_hal_acmp_init_t init = SL_HAL_ACMP_INIT_DEFAULT;
   init.bias_prog = 0x2;                      // Use reduced bias for lower current
-  init.accuracy = AL_HAL_ACMP_ACCURACY_HIGH; // High accuracy mode to minimize wake-ups
+  init.accuracy = SL_HAL_ACMP_ACCURACY_HIGH; // High accuracy mode to minimize wake-ups
   init.vref_div = 0x10;                      // Scaled VREFDIV for comparison against VSENSE
 
   sl_hal_acmp_init(ACMP0, &init);
