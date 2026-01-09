@@ -38,6 +38,19 @@ This repo contains simple peripheral examples based on emlib in Simplicity SDK f
   </tbody>
 </table>
 
+## Supported Series 3 Radio Board and Device ##
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left; padding:8px 40px;">Board ID</th>
+      <th style="text-align:left; padding:8px 40px;">Device</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding:8px 40px;">BRD4407A</td><td style="padding:8px 40px;">SiMG301</td></tr>
+  </tbody>
+</table>
+
 ## Requirements ##
 1. A compatible **Silicon Labs Starter Kit**
 2. **Simplicity Studio 5**
