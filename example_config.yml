@@ -967,7 +967,7 @@ example:
   board_whitelist: *board_whitelist_s3
   
   # LETIMER examples
-- path: series3/letimer/letimer_one_shot_output_compare/SimplicityStudio/one_shot_output_compare_s3.slcp
+- path: series3/letimer/one_shot_output_compare/SimplicityStudio/one_shot_output_compare_s3.slcp
   board_whitelist: *board_whitelist_s3
 
 - path: series3/letimer/pulse_train/SimplicityStudio/pulse_train_s3.slcp

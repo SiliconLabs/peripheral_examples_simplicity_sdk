@@ -2635,7 +2635,7 @@
     <properties key="sltPackagePath" value="series3/i2c/leader_polled/SimplicityStudio/i2c_leader_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="letimer_one_shot_output_compare" label="Peripheral Examples - LETIMER One Shot Output Compare" description="This project demonstrates output compare using the LETIMER.&#xA;">
+  <descriptors name="one_shot_output_compare_s3" label="Peripheral Examples - LETIMER One Shot Output Compare" description="This project demonstrates output compare using the LETIMER.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.letimer.one_shot_output_compare.SimplicityStudio.one_shot_output_compare_s3.slcp"/>
@@ -2652,7 +2652,7 @@
     <properties key="sltPackagePath" value="series3/letimer/one_shot_output_compare/SimplicityStudio/one_shot_output_compare_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="letimer_pulse_train_s3" label="Peripheral Examples - LETIMER Pulse Train" description="This project demonstrates pulse train operation using the LETIMER&#xA;">
+  <descriptors name="pulse_train_s3" label="Peripheral Examples - LETIMER Pulse Train" description="This project demonstrates pulse train generation using the LETIMER.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.letimer.pulse_train.SimplicityStudio.pulse_train_s3.slcp"/>
@@ -2669,7 +2669,7 @@
     <properties key="sltPackagePath" value="series3/letimer/pulse_train/SimplicityStudio/pulse_train_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="letimer_pulse_width_modulation" label="Peripheral Examples - LETIMER Pulse Width Modulation" description="This project demonstrates pulse width modulation using the LETIMER.&#xA;">
+  <descriptors name="pulse_width_modulation_s3" label="Peripheral Examples - LETIMER Pulse Width Modulation" description="This project demonstrates pulse width modulation using the LETIMER.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.letimer.pulse_width_modulation.SimplicityStudio.pulse_width_modulation_s3.slcp"/>
@@ -2703,7 +2703,7 @@
     <properties key="sltPackagePath" value="series3/pixelrz/pixelrz_ldma_letimer_prs_gpio/SimplicityStudio/pixelrz_ldma_letimer_prs_gpio_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="prs_logic_unit_s3" label="Peripheral Examples - PRS Logic Unit" description="This project demonstrates the built-in PRS logic functions between channels.&#xA;">
+  <descriptors name="prs_logic_unit_series3" label="Peripheral Examples - PRS Logic Unit" description="This project demonstrates the built-in PRS logic functions between channels.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.prs.prs_logic_unit.SimplicityStudio.prs_logic_unit_series3.slcp"/>

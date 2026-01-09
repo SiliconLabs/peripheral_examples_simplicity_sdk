@@ -1,5 +1,5 @@
 # Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
-project_name: pulse_width_modulation
+project_name: pulse_width_modulation_s3
 package: peripheral_examples
 quality: evaluation
 label: Peripheral Examples - LETIMER Pulse Width Modulation
