@@ -1,0 +1,40 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: emu_em23_voltage_scaling
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - EMU EM2/3 voltage scaling
+description: >
+  This project demonstrates the use of EM2/3 voltage scaling on Series 2 EFR32 devices.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: power_manager
+  - id: emlib_burtc
+  - id: silabs_bsp
+    from: peripheral_examples
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0
+configuration:
+  - name: "SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE"
+    value: "SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE_ULFRCO"
+  - name: "SL_POWER_MANAGER_INIT_EMU_EM2_DEBUG_ENABLE"
+    value: "0"
