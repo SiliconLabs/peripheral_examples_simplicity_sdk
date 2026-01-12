@@ -2363,6 +2363,108 @@
     <properties key="sltPackagePath" value="series3/eusart/eusart_async_polled/SimplicityStudio/eusart_async_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="eusart_spi_main_dma_s3" label="Peripheral Examples - EUSART SPI Main DMA" description="This project demonstrates polled operation of the EUSART in synchronous main (formerly master) mode.  EUSART0/1 is configured for SPI-compatible operation at 1 Mbps.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.eusart.eusart_spi_main_dma.SimplicityStudio.eusart_spi_main_dma_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/eusart/eusart_spi_main_dma/SimplicityStudio/eusart_spi_main_dma_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/eusart/eusart_spi_main_dma/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/eusart/eusart_spi_main_dma/SimplicityStudio/eusart_spi_main_dma_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_spi_main_interrupt_s3" label="Peripheral Examples - EUSART SPI Main Interrupt" description="This project demonstrates polled operation of the EUSART in synchronous main (formerly master) mode.  EUSART0/1 is configured for SPI-compatible operation at 1 Mbps.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.eusart.eusart_spi_main_interrupt.SimplicityStudio.eusart_spi_main_interrupt_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/eusart/eusart_spi_main_interrupt/SimplicityStudio/eusart_spi_main_interrupt_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/eusart/eusart_spi_main_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/eusart/eusart_spi_main_interrupt/SimplicityStudio/eusart_spi_main_interrupt_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_spi_main_polled_s3" label="Peripheral Examples - EUSART SPI Main Polled" description="This project demonstrates polled operation of the EUSART in synchronous main (formerly master) mode.  EUSART0/1 is configured for SPI-compatible operation at 1 Mbps.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.eusart.eusart_spi_main_polled.SimplicityStudio.eusart_spi_main_polled_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/eusart/eusart_spi_main_polled/SimplicityStudio/eusart_spi_main_polled_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/eusart/eusart_spi_main_polled/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/eusart/eusart_spi_main_polled/SimplicityStudio/eusart_spi_main_polled_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_spi_secondary_dma_s3" label="Peripheral Examples - EUSART SPI Secondary DMA" description="This project demonstrates DMA-driven operation of the EUSART in synchronous secondary (formerly slave) mode. EUSART0/1 is configured for SPI-compatible operation at 1 Mbps.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.eusart.eusart_spi_secondary_dma.SimplicityStudio.eusart_spi_secondary_dma_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/eusart/eusart_spi_secondary_dma/SimplicityStudio/eusart_spi_secondary_dma_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/eusart/eusart_spi_secondary_dma/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/eusart/eusart_spi_secondary_dma/SimplicityStudio/eusart_spi_secondary_dma_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_spi_secondary_interrupt_s3" label="Peripheral Examples - EUSART SPI Secondary Interrupt" description="This project demonstrates interrupt-driven operation of the EUSART in synchronous main (formerly master) mode. EUSART0/1 is configured for SPI-compatible operation at 1 Mbps.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.eusart.eusart_spi_secondary_interrupt.SimplicityStudio.eusart_spi_secondary_interrupt_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/eusart/eusart_spi_secondary_interrupt/SimplicityStudio/eusart_spi_secondary_interrupt_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/eusart/eusart_spi_secondary_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/eusart/eusart_spi_secondary_interrupt/SimplicityStudio/eusart_spi_secondary_interrupt_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="eusart_spi_secondary_polled_s3" label="Peripheral Examples - EUSART SPI Secondary Polled" description="This project demonstrates polled operation of the EUSART in synchronous secondary (formerly slave) mode. EUSART0/1 is configured for SPI-compatible operation at 1 Mbps.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.eusart.eusart_spi_secondary_polled.SimplicityStudio.eusart_spi_secondary_polled_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/eusart/eusart_spi_secondary_polled/SimplicityStudio/eusart_spi_secondary_polled_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/eusart/eusart_spi_secondary_polled/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/eusart/eusart_spi_secondary_polled/SimplicityStudio/eusart_spi_secondary_polled_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="gpcrc_dma_s3" label="Peripheral Examples - GPCRC DMA" description="This project demonstrates the GPCRC used to check 32-bit data using the IEEE 802.3 polynomial standard in EM1. Data is fed into the GPCRC via the LDMA.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
@@ -2533,7 +2635,7 @@
     <properties key="sltPackagePath" value="series3/i2c/leader_polled/SimplicityStudio/i2c_leader_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="letimer_one_shot_output_compare" label="Peripheral Examples - LETIMER One Shot Output Compare" description="This project demonstrates output compare using the LETIMER&#xA;">
+  <descriptors name="letimer_one_shot_output_compare" label="Peripheral Examples - LETIMER One Shot Output Compare" description="This project demonstrates output compare using the LETIMER.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.letimer.one_shot_output_compare.SimplicityStudio.one_shot_output_compare_s3.slcp"/>

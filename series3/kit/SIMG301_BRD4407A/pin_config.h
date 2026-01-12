@@ -50,7 +50,6 @@
 #define EUSART0_RX_PORT SL_GPIO_PORT_B
 #define EUSART0_RX_PIN  0
 
-
 // LETIMER Output GPIO configuration
 #define LETIMER_OUTPUT0_PORT SL_GPIO_PORT_A
 #define LETIMER_OUTPUT0_PIN  5
@@ -58,6 +57,19 @@
 // Timer output for slew rate demo
 #define SLEW_RATE_OUTPUT_PORT SL_GPIO_PORT_C
 #define SLEW_RATE_OUTPUT_PIN  0
+
+// EUSART SPI ports and pins
+#define EUS0MOSI_PORT   SL_GPIO_PORT_B
+#define EUS0MOSI_PIN    2
+#define EUS0MISO_PORT   SL_GPIO_PORT_B
+#define EUS0MISO_PIN    0
+#define EUS0SCLK_PORT   SL_GPIO_PORT_A
+#define EUS0SCLK_PIN    0
+#define EUS0CS_PORT     SL_GPIO_PORT_B
+#define EUS0CS_PIN      3
+
+#define SPI_TIME_PORT   SL_GPIO_PORT_C
+#define SPI_TIME_PIN    3
 
 // <<< sl:start pin_tool >>>
 

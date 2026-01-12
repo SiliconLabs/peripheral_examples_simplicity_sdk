@@ -937,6 +937,24 @@ example:
 
 - path: series3/eusart/eusart_async_polled/SimplicityStudio/eusart_async_polled_s3.slcp
   board_whitelist: *board_whitelist_s3
+
+- path: series3/eusart/eusart_spi_main_dma/SimplicityStudio/eusart_spi_main_dma_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/eusart/eusart_spi_main_interrupt/SimplicityStudio/eusart_spi_main_interrupt_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/eusart/eusart_spi_main_polled/SimplicityStudio/eusart_spi_main_polled_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/eusart/eusart_spi_secondary_dma/SimplicityStudio/eusart_spi_secondary_dma_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/eusart/eusart_spi_secondary_interrupt/SimplicityStudio/eusart_spi_secondary_interrupt_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/eusart/eusart_spi_secondary_polled/SimplicityStudio/eusart_spi_secondary_polled_s3.slcp
+  board_whitelist: *board_whitelist_s3  
   
   # I2C examples
 - path: series3/i2c/follower/SimplicityStudio/i2c_follower_s3.slcp
@@ -984,3 +1002,4 @@ example:
 
 - path: series3/wdog/wdog_window_interrupt/SimplicityStudio/wdog_window_interrupt_series3.slcp
   board_whitelist: *board_whitelist_s3
+  

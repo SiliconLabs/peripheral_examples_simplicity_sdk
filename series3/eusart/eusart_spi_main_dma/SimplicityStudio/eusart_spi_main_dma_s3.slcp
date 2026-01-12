@@ -1,0 +1,49 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: eusart_spi_main_dma_s3
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - EUSART SPI Main DMA
+description: >
+  This project demonstrates polled operation of the EUSART in synchronous main (formerly master) mode. 
+  EUSART0/1 is configured for SPI-compatible operation at 1 Mbps.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: power_manager
+  - id: power_manager_no_deepsleep
+  - id: hal_eusart
+  - id: hal_ldma
+  - id: dmadrv
+  - id: silabs_bsp
+    from: peripheral_examples
+configuration:
+  - name: "SL_CLOCK_MANAGER_HFRCO_BAND"
+    value: "38000000"
+  - name: "SL_CLOCK_MANAGER_HFXO_EN"
+    value: "SL_CLOCK_MANAGER_HFXO_EN_DISABLE"
+  - name: "SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE"
+    value: "SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE_HFRCODPLL"
+  - name: "SL_CLOCK_MANAGER_SYSCLK_SOURCE"
+    value: "CMU_SYSCLKCTRL_CLKSEL_HFRCODPLL"
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0
+  
