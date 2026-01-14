@@ -22,7 +22,8 @@ save each byte that is simultaneously received.  `EUSART_Spi_TxRx()` polls
 the FIFO level flag (EUSART_STATUS_TXFL), and, if space is available,
 writes a byte to the transmit data register to be sent.  It then polls
 the receive FIFO level flag (EUSART_STATUS_RXFL) to determine when all
-bits of the incoming frame have been received, which, in turn.
+bits of the incoming frame have been received, which indicates that a 
+complete byte is available to be read from the receive data register.
 
 After BUFLEN characters have been transmitted and received, the chip
 select is de-asserted (driven high), and the process repeats.  A

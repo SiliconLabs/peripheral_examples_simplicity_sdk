@@ -193,8 +193,7 @@ void EUSART0_RX_IRQHandler(void)
   /*
    * Save the byte received concurrent with the transmission of the
    * last bit of the previous outgoing byte, and increment the buffer
-   * position to the next byte.  Note that this read clears the
-   * EUSART_IF_RXFL interrupt flag.
+   * position to the next byte.
    */
   inbuf[bufpos++] = EUSART0->RXDATA;
 
