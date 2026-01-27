@@ -2618,6 +2618,23 @@
     <properties key="sltPackagePath" value="series3/i2c/leader_dma/SimplicityStudio/i2c_leader_dma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="i2c_leader_interrupt_s3" label="Peripheral Examples - I2C Leader Interrupt" description="This project demonstrates interrupt driven I2C leader operation of an SiMG301 device. Two SiMG301 devices are connected together, one running a leader project, the other running the follower project. The leader reads the follower's current buffer values, increments each value, and writes new values back to the follower device. The leader then reads back the follower values again and verifies that the new values match what was previously written.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.i2c.leader_interrupt.SimplicityStudio.i2c_leader_interrupt_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/i2c/leader_interrupt/SimplicityStudio/i2c_leader_interrupt_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/i2c/leader_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/i2c/leader_interrupt/SimplicityStudio/i2c_leader_interrupt_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="i2c_leader_polled_s3" label="Peripheral Examples - I2C Leader Polled" description="This project demonstrates polled I2C leader operation of an SiMG301 device. Two SiMG301 devices are connected together, one running a leader project, the other running the follower project. The leader reads the follower's current buffer values, increments each value, and writes new values back to the follower device. The leader then reads back the follower values again and verifies that the new values match what was previously written.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>

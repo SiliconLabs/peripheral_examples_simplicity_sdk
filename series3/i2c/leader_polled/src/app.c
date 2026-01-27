@@ -22,12 +22,6 @@
 #include "sl_device_peripheral.h"
 #include "sl_hal_i2c.h"
 
-//#include "sl_gpio.h"
-//#include "sl_device_i2c.h"
-//#include "sl_hal_gpio.h"
-//#include "sl_device_peripheral.h"
-//#include "sl_hal_i2c.h"
-
 #include "pin_config.h"
 
 #include "app.h"

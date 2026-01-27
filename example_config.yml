@@ -960,12 +960,15 @@ example:
 - path: series3/i2c/follower/SimplicityStudio/i2c_follower_s3.slcp
   board_whitelist: *board_whitelist_s3
 
-- path: series3/i2c/leader_polled/SimplicityStudio/i2c_leader_polled_s3.slcp
-  board_whitelist: *board_whitelist_s3
-
 - path: series3/i2c/leader_dma/SimplicityStudio/i2c_leader_dma_s3.slcp
   board_whitelist: *board_whitelist_s3
   
+- path: series3/i2c/leader_polled/SimplicityStudio/i2c_leader_interrupt_s3.slcp
+  board_whitelist: *board_whitelist_s3
+  
+- path: series3/i2c/leader_polled/SimplicityStudio/i2c_leader_polled_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
   # LETIMER examples
 - path: series3/letimer/one_shot_output_compare/SimplicityStudio/letimer_one_shot_output_compare_s3.slcp
   board_whitelist: *board_whitelist_s3

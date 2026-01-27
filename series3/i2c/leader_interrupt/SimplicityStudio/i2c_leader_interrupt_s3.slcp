@@ -1,0 +1,39 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: i2c_leader_interrupt_s3
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - I2C Leader Interrupt
+description: >
+  This project demonstrates interrupt driven I2C leader operation of an SiMG301 device. Two SiMG301 devices are connected together, one running a leader project, the other running the follower project. The leader reads the follower's current buffer values, increments each value, and writes new values back to the follower device. The leader then reads back the follower values again and verifies that the new values match what was previously written.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: power_manager_no_deepsleep
+  - id: hal_i2c
+  - id: silabs_bsp
+    from: peripheral_examples
+configuration:
+  - name: "SL_BOARD_ENABLE_SENSOR_RHT"
+    value: "1"
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0
+  
