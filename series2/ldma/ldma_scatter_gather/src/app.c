@@ -207,7 +207,6 @@ void initLdmaGather(void)
   // Last Descriptor destination is relative
   descLink[LIST_SIZE - 1].xfer.dstAddrMode = ldmaCtrlDstAddrModeRel;
 
-//  LDMA_StartTransfer(LDMA_CHANNEL, (void*)&memTransferTx, (void*)&descLink[0]);
   // Check that IADC->memory LDMA channel is not currently active; halt if error
   if (DMADRV_TransferActive(channelId, &active) != ECODE_EMDRV_DMADRV_OK) {
     __BKPT(0);
