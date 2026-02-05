@@ -1071,6 +1071,57 @@
     <properties key="sltPackagePath" value="series2/ldma/ldma_single_looped/SimplicityStudio/ldma_single_looped.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="lesense_decoder" label="Peripheral Examples - LESENSE Decoder" description="This project demonstrates the usage of LESENSE to sample two channels using ACMP. The dedicated LESENSE decoder is used to read the sensor state and update its internal state machine according to the user configuration. &#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.lesense.decoder.SimplicityStudio.lesense_decoder.slcp"/>
+    <properties key="projectFilePaths" value="series2/lesense/decoder/SimplicityStudio/lesense_decoder.slcp"/>
+    <properties key="readmeFiles" value="series2/lesense/decoder/readme.md"/>
+    <properties key="boardCompatibility" value="brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/lesense/decoder/SimplicityStudio/lesense_decoder.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="lesense_multi_channel" label="Peripheral Examples - LESENSE Multi Channel" description="This project demonstrates the usage of LESENSE to sample multiple channels using IADC. The project defines four LESENSE channels and each of these channels is linked to one of four IADC scan inputs based on IADC configuration. &#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.lesense.multi_channel.SimplicityStudio.lesense_multi_channel.slcp"/>
+    <properties key="projectFilePaths" value="series2/lesense/multi_channel/SimplicityStudio/lesense_multi_channel.slcp"/>
+    <properties key="readmeFiles" value="series2/lesense/multi_channel/readme.md"/>
+    <properties key="boardCompatibility" value="brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/lesense/multi_channel/SimplicityStudio/lesense_multi_channel.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="lesense_single_channel" label="Peripheral Examples - LESENSE Single Channel" description="This project demonstrates the usage of LESENSE to sample a single channel using ACMP. &#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.lesense.single_channel.SimplicityStudio.lesense_single_channel.slcp"/>
+    <properties key="projectFilePaths" value="series2/lesense/single_channel/SimplicityStudio/lesense_single_channel.slcp"/>
+    <properties key="readmeFiles" value="series2/lesense/single_channel/readme.md"/>
+    <properties key="boardCompatibility" value="brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/lesense/single_channel/SimplicityStudio/lesense_single_channel.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="one_shot_output_compare" label="Peripheral Examples - LETIMER One Shot Output Compare" description="This project demonstrates output compare in EM2 using the LETIMER.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>

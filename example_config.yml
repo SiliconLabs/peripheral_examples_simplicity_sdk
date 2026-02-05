@@ -448,6 +448,28 @@ example:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4420a # Removing xG29 Boost Radio Board
 
+  # LESENSE examples
+- path: series2/lesense/decoder/SimplicityStudio/lesense_decoder.slcp
+  board_whitelist: 
+    - brd4204d # xG23 Board
+    - brd4270b # xG25 Board
+    - brd4400c # xG28 Board
+  board_blacklist:
+
+- path: series2/lesense/multi_channel/SimplicityStudio/lesense_multi_channel.slcp
+  board_whitelist:
+    - brd4204d # xG23 Board
+    - brd4270b # xG25 Board
+    - brd4400c # xG28 Board
+  board_blacklist:
+
+- path: series2/lesense/single_channel/SimplicityStudio/lesense_single_channel.slcp
+  board_whitelist: 
+    - brd4204d # xG23 Board
+    - brd4270b # xG25 Board
+    - brd4400c # xG28 Board
+  board_blacklist:
+
   # LETIMER examples
 - path: series2/letimer/one_shot_output_compare/SimplicityStudio/one_shot_output_compare.slcp
   board_whitelist: *board_whitelist
