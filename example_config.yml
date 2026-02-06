@@ -987,6 +987,43 @@ example:
 - path: series3/prs/logic_unit/SimplicityStudio/prs_logic_unit_s3.slcp
   board_whitelist: *board_whitelist_s3
 
+  # TIMER examples
+- path: series3/timer/dma_edge_capture/SimplicityStudio/dma_edge_capture_s3.slcp
+   board_whitelist: *board_whitelist_s3
+
+- path: series3/timer/frequency_generation/SimplicityStudio/frequency_generation_s3.slcp
+   board_whitelist: *board_whitelist_s3
+
+- path: series3/timer/input_capture_interrupt/SimplicityStudio/input_capture_interrupt_s3.slcp
+   board_whitelist: *board_whitelist_s3
+
+- path: series3/timer/period_measurement_interrupt/SimplicityStudio/period_measurement_interrupt_s3.slcp
+   board_whitelist: *board_whitelist_s3
+
+- path: series3/timer/period_measurement_polled/SimplicityStudio/period_measurement_polled_s3.slcp
+   board_whitelist: *board_whitelist_s3
+
+- path: series3/timer/pulse_capture/SimplicityStudio/pulse_capture_s3.slcp
+   board_whitelist: *board_whitelist_s3
+
+- path: series3/timer/pwm_dma/SimplicityStudio/pwm_dma_s3.slcp
+   board_whitelist: *board_whitelist_s3
+
+- path: series3/timer/pwm_interrupt/SimplicityStudio/pwm_interrupt_s3.slcp
+   board_whitelist: *board_whitelist_s3
+
+- path: series3/timer/single_edge_output_compare/SimplicityStudio/single_edge_output_compare_s3.slcp
+   board_whitelist: *board_whitelist_s3
+
+- path: series3/timer/single_pulse_generation_dma/SimplicityStudio/single_pulse_generation_dma_s3.slcp
+   board_whitelist: *board_whitelist_s3
+
+- path: series3/timer/single_pulse_generation_interrupt/SimplicityStudio/single_pulse_generation_interrupt_s3.slcp
+   board_whitelist: *board_whitelist_s3
+
+- path: series3/timer/single_pulse_generation_polled/SimplicityStudio/single_pulse_generation_polled.slcp
+   board_whitelist: *board_whitelist_s3
+
   # WDOG examples
 - path: series3/wdog/prs_clear/SimplicityStudio/wdog_prs_clear_s3.slcp
   board_whitelist: *board_whitelist_s3
