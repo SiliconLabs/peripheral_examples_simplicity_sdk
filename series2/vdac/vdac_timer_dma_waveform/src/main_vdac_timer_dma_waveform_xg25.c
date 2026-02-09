@@ -4,7 +4,7 @@
  * at a particular frequency (10 kHz by default). This project operates in EM1.
  *******************************************************************************
  * # License
- * <b>Copyright 2022 Silicon Laboratories Inc. www.silabs.com</b>
+ * <b>Copyright 2025 Silicon Laboratories Inc. www.silabs.com</b>
  *******************************************************************************
  *
  * SPDX-License-Identifier: Zlib
