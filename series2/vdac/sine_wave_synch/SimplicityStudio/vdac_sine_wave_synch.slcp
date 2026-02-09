@@ -1,0 +1,51 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: vdac_sine_wave_synch
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - VDAC Sine Wave
+description: >
+  This project demonstrates using VDAC and the internal sine wave generator to produce a 16-point sine wave at a frequency of f_sinewave Hz centered at the reference voltage divided by 2.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: power_manager
+  - id: power_manager_no_deepsleep
+  - id: emlib_vdac
+  - id: silabs_bsp
+    from: peripheral_examples
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0
+configuration:
+  - name: "SL_CLOCK_MANAGER_VDAC0CLK_SOURCE"
+    value: "CMU_VDAC0CLKCTRL_CLKSEL_EM01GRPACLK"
+  - name: "SL_CLOCK_MANAGER_HFRCO_BAND"
+    value: "cmuHFRCODPLLFreq_19M0Hz"
+  - name: "SL_CLOCK_MANAGER_HFXO_EN"
+    value: "SL_CLOCK_MANAGER_HFXO_EN_DISABLE"
+  - name: "SL_CLOCK_MANAGER_LFXO_EN"
+    value: "0"
+  - name: "SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE"
+    value: "SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE_HFRCODPLL"
+  - name: "SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE"
+    value: "SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE_LFRCO"
+  - name: "SL_CLOCK_MANAGER_SYSCLK_SOURCE"
+    value: "SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE"

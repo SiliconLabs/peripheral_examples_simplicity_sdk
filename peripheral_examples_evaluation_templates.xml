@@ -1615,6 +1615,108 @@
     <properties key="sltPackagePath" value="series2/usart/spi_secondary_polled/SimplicityStudio/usart_spi_secondary_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="vdac_continuous" label="Peripheral Examples - VDAC Continuous" description="This project demonstrates VDAC in continuous mode with single-ended output to output 0.5V to a pin in EM3.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.vdac.continuous.SimplicityStudio.vdac_continuous.slcp"/>
+    <properties key="projectFilePaths" value="series2/vdac/continuous/SimplicityStudio/vdac_continuous.slcp"/>
+    <properties key="readmeFiles" value="series2/vdac/continuous/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/vdac/continuous/SimplicityStudio/vdac_continuous.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="vdac_differential" label="Peripheral Examples - VDAC Differential" description="This project demonstrates VDAC in continuous mode with differential output to output a difference of 0.5V between two pins in EM3.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.vdac.differential.SimplicityStudio.vdac_differential.slcp"/>
+    <properties key="projectFilePaths" value="series2/vdac/differential/SimplicityStudio/vdac_differential.slcp"/>
+    <properties key="readmeFiles" value="series2/vdac/differential/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/vdac/differential/SimplicityStudio/vdac_differential.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="vdac_sample_off" label="Peripheral Examples - VDAC Sample/off Mode" description="This project demonstrates VDAC in sample/off mode with single-ended output to output 0.5V to a pin in EM3.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.vdac.sample_off.SimplicityStudio.vdac_sample_off.slcp"/>
+    <properties key="projectFilePaths" value="series2/vdac/sample_off/SimplicityStudio/vdac_sample_off.slcp"/>
+    <properties key="readmeFiles" value="series2/vdac/sample_off/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/vdac/sample_off/SimplicityStudio/vdac_sample_off.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="vdac_sine_wave_synch" label="Peripheral Examples - VDAC Sine Wave" description="This project demonstrates using VDAC and the internal sine wave generator to produce a 16-point sine wave at a frequency of f_sinewave Hz centered at the reference voltage divided by 2.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.vdac.sine_wave_synch.SimplicityStudio.vdac_sine_wave_synch.slcp"/>
+    <properties key="projectFilePaths" value="series2/vdac/sine_wave_synch/SimplicityStudio/vdac_sine_wave_synch.slcp"/>
+    <properties key="readmeFiles" value="series2/vdac/sine_wave_synch/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/vdac/sine_wave_synch/SimplicityStudio/vdac_sine_wave_synch.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="vdac_sine_wave_synch_prs" label="Peripheral Examples - VDAC Sine Wave PRS" description="This project demonstrates using VDAC and the internal sine wave generator to produce a 16-point sine wave via PRS at a frequency of f_sinewave Hz centered at the reference voltage divided by 2.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.vdac.sine_wave_synch_prs.SimplicityStudio.vdac_sine_wave_synch_prs.slcp"/>
+    <properties key="projectFilePaths" value="series2/vdac/sine_wave_synch_prs/SimplicityStudio/vdac_sine_wave_synch_prs.slcp"/>
+    <properties key="readmeFiles" value="series2/vdac/sine_wave_synch_prs/readme.md"/>
+    <properties key="boardCompatibility" value="brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/vdac/sine_wave_synch_prs/SimplicityStudio/vdac_sine_wave_synch_prs.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="vdac_timer_dma_waveform" label="Peripheral Examples - VDAC Timer DMA Waveform" description="This project demonstrates VDAC and TIMER0 to output a 32 point sine wave at a particular frequency (10 kHz by default).&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.vdac.timer_dma_waveform.SimplicityStudio.vdac_timer_dma_waveform.slcp"/>
+    <properties key="projectFilePaths" value="series2/vdac/timer_dma_waveform/SimplicityStudio/vdac_timer_dma_waveform.slcp"/>
+    <properties key="readmeFiles" value="series2/vdac/timer_dma_waveform/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/vdac/timer_dma_waveform/SimplicityStudio/vdac_timer_dma_waveform.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="wdog_prs_clear" label="Peripheral Examples - WDOG PRS Clear" description="This project demonstrates the prs clear functionality of the watchdog timer.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>

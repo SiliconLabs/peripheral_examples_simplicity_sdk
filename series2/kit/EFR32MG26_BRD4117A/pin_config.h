@@ -106,6 +106,11 @@
 
 // Bit mask to lock the last page of main flash
 #define LASTLOCK  0x00008000
+
+// VDAC0 CH0 main output 
+#define VDAC0_CH0_MAINOUT_PORT gpioPortB 
+#define VDAC0_CH0_MAINOUT_PIN 0
+
 // <<< sl:start pin_tool >>>
 
 // <gpio> LED0

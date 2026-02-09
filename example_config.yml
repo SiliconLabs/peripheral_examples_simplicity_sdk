@@ -664,6 +664,61 @@ example:
     - brd4270b # Removing xG25 Radio Board due to lack of USART peripheral
     - brd4420a # Removing xG29 Boost Radio Board
 
+  # VDAC examples
+- path: series2/vdac/continuous/SimplicityStudio/vdac_continuous.slcp 
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4181a # Removing xG21 Radio Board due to lack of VDAC peripheral
+    - brd4182a # Removing xG22 Radio Board due to lack of VDAC peripheral
+    - brd4111a # Removing xG27 Radio Board due to lack of VDAC peripheral
+    - brd4194a # Removing xG27 Radio Board due to lack of VDAC peripheral
+    - brd4412a # Removing xG29 Radio Board due to lack of VDAC peripheral
+    - brd4420a # Removing xG29 Radio Board due to lack of VDAC peripheral
+
+- path: series2/vdac/differential/SimplicityStudio/vdac_differential.slcp 
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4181a # Removing xG21 Radio Board due to lack of VDAC peripheral
+    - brd4182a # Removing xG22 Radio Board due to lack of VDAC peripheral
+    - brd4111a # Removing xG27 Radio Board due to lack of VDAC peripheral
+    - brd4194a # Removing xG27 Radio Board due to lack of VDAC peripheral
+    - brd4412a # Removing xG29 Radio Board due to lack of VDAC peripheral
+    - brd4420a # Removing xG29 Radio Board due to lack of VDAC peripheral
+
+- path: series2/vdac/sample_off/SimplicityStudio/vdac_sample_off.slcp 
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4181a # Removing xG21 Radio Board due to lack of VDAC peripheral
+    - brd4182a # Removing xG22 Radio Board due to lack of VDAC peripheral
+    - brd4111a # Removing xG27 Radio Board due to lack of VDAC peripheral
+    - brd4194a # Removing xG27 Radio Board due to lack of VDAC peripheral
+    - brd4412a # Removing xG29 Radio Board due to lack of VDAC peripheral
+    - brd4420a # Removing xG29 Radio Board due to lack of VDAC peripheral
+
+- path: series2/vdac/sine_wave_synch/SimplicityStudio/vdac_sine_wave_synch.slcp 
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4181a # Removing xG21 Radio Board due to lack of VDAC peripheral
+    - brd4182a # Removing xG22 Radio Board due to lack of VDAC peripheral
+    - brd4111a # Removing xG27 Radio Board due to lack of VDAC peripheral
+    - brd4194a # Removing xG27 Radio Board due to lack of VDAC peripheral
+    - brd4412a # Removing xG29 Radio Board due to lack of VDAC peripheral
+    - brd4420a # Removing xG29 Radio Board due to lack of VDAC peripheral
+
+- path: series2/vdac/sine_wave_synch_prs/SimplicityStudio/vdac_sine_wave_synch_prs.slcp 
+  board_whitelist: brd4400c # Only xG28 supports PRS‑controlled sine generation
+  board_blacklist:
+
+- path: series2/vdac/timer_dma_waveform/SimplicityStudio/vdac_timer_dma_waveform.slcp 
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4181a # Removing xG21 Radio Board due to lack of VDAC peripheral
+    - brd4182a # Removing xG22 Radio Board due to lack of VDAC peripheral
+    - brd4111a # Removing xG27 Radio Board due to lack of VDAC peripheral
+    - brd4194a # Removing xG27 Radio Board due to lack of VDAC peripheral
+    - brd4412a # Removing xG29 Radio Board due to lack of VDAC peripheral
+    - brd4420a # Removing xG29 Radio Board due to lack of VDAC peripheral
+
   # WDOG examples
 - path: series2/wdog/wdog_prs_clear/SimplicityStudio/wdog_prs_clear.slcp
   board_whitelist: *board_whitelist
