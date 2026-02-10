@@ -66,6 +66,23 @@ example:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4420a # Removing xG29 Boost Radio Board
 
+  # CMU examples
+- path: series2/cmu/lfrco_cal_interrupt/SimplicityStudio/cmu_lfrco_cal_interrupt.slcp
+  board_whitelist:
+    - brd4270b # xG25 Radio Board
+    - brd4181a # xG21 Radio Board
+    - brd4204d # xG23 Radio Board
+    - brd4400c # xG28 Radio Board
+  board_blacklist:
+
+- path: series2/cmu/lfrco_cal_polled/SimplicityStudio/cmu_lfrco_cal_polled.slcp
+  board_whitelist:
+    - brd4270b # xG25 Radio Board
+    - brd4181a # xG21 Radio Board
+    - brd4204d # xG23 Radio Board
+    - brd4400c # xG28 Radio Board
+  board_blacklist:
+   
   # EMU examples
 - path: series2/emu/dcdc_vmon/SimplicityStudio/dcdc_vmon.slcp
   board_whitelist: *board_whitelist

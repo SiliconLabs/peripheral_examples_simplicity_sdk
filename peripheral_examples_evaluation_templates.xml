@@ -85,6 +85,40 @@
     <properties key="sltPackagePath" value="series2/burtc/burtc_em4_buram/SimplicityStudio/burtc_em4_buram.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="cmu_lfrco_cal_interrupt" label="Peripheral Examples - CMU LFRCO Calibaration Interrupt" description="This project demonstrates interrupt-driven calibration of the LFRCO against the HFXO.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.cmu.lfrco_cal_interrupt.SimplicityStudio.cmu_lfrco_cal_interrupt.slcp"/>
+    <properties key="projectFilePaths" value="series2/cmu/lfrco_cal_interrupt/SimplicityStudio/cmu_lfrco_cal_interrupt.slcp"/>
+    <properties key="readmeFiles" value="series2/cmu/lfrco_cal_interrupt/readme.md"/>
+    <properties key="boardCompatibility" value="brd4181a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/cmu/lfrco_cal_interrupt/SimplicityStudio/cmu_lfrco_cal_interrupt.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="cmu_lfrco_cal_polled" label="Peripheral Examples - CMU LFRCO Calibaration Polled" description="This project demonstrates polled calibration of the LFRCO against the HFXO.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.cmu.lfrco_cal_polled.SimplicityStudio.cmu_lfrco_cal_polled.slcp"/>
+    <properties key="projectFilePaths" value="series2/cmu/lfrco_cal_polled/SimplicityStudio/cmu_lfrco_cal_polled.slcp"/>
+    <properties key="readmeFiles" value="series2/cmu/lfrco_cal_polled/readme.md"/>
+    <properties key="boardCompatibility" value="brd4181a brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/cmu/lfrco_cal_polled/SimplicityStudio/cmu_lfrco_cal_polled.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="dcdc_vmon" label="Peripheral Examples - EMU DCDC VMON" description="This project demonstrates the DCDC VREGVDD Threshold Comparator.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>

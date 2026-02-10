@@ -1,85 +1,28 @@
 /***************************************************************************//**
- * @file main_xg21.c
- * @brief Demonstrates polled calibration of the LFRCO against the HFXO
- * with output to a pin.
+ * @file
+ * @brief Top level application functions
  *******************************************************************************
  * # License
  * <b>Copyright 2025 Silicon Laboratories Inc. www.silabs.com</b>
  *******************************************************************************
  *
- * SPDX-License-Identifier: Zlib
+ * The licensor of this software is Silicon Laboratories Inc. Your use of this
+ * software is governed by the terms of Silicon Labs Master Software License
+ * Agreement (MSLA) available at
+ * www.silabs.com/about-us/legal/master-software-license-agreement. This
+ * software is distributed to you in Source Code format and is governed by the
+ * sections of the MSLA applicable to Source Code.
  *
- * The licensor of this software is Silicon Laboratories Inc.
- *
- * This software is provided 'as-is', without any express or implied
- * warranty. In no event will the authors be held liable for any damages
- * arising from the use of this software.
- *
- * Permission is granted to anyone to use this software for any purpose,
- * including commercial applications, and to alter it and redistribute it
- * freely, subject to the following restrictions:
- *
- * 1. The origin of this software must not be misrepresented; you must not
- *    claim that you wrote the original software. If you use this software
- *    in a product, an acknowledgment in the product documentation would be
- *    appreciated but is not required.
- * 2. Altered source versions must be plainly marked as such, and must not be
- *    misrepresented as being the original software.
- * 3. This notice may not be removed or altered from any source distribution.
- *
- *******************************************************************************
- * # Evaluation Quality
- * This code has been minimally tested to ensure that it builds and is suitable 
- * as a demonstration for evaluation purposes only. This code will be maintained
- * at the sole discretion of Silicon Labs.
  ******************************************************************************/
- 
-#include "em_chip.h"
+
+#include "sl_clock_manager.h"
+#include "sl_power_manager.h"
+
+#include "sl_gpio.h"
+
 #include "em_burtc.h"
-#include "em_cmu.h"
-#include "em_emu.h"
-#include "em_gpio.h"
 
-/*
- * Setup the BURTC to generate interrupts at 16-second intervals.
- * The LFRCO is used as the BURTC clock, but the fact that the
- * clock frequency might change due to calibration isn't really
- * relevant for this example.
- */
-void startBURTC(void)
-{
-  BURTC_Init_TypeDef burtcInit = BURTC_INIT_DEFAULT;
-
-  // Set BURTC clock
-  CMU_ClockSelectSet(cmuClock_EM4GRPACLK, cmuSelect_LFRCO);
-
-  // Set BURTC parameters
-  burtcInit.clkDiv = 32768;
-  burtcInit.compare0Top = true;
-  BURTC_Init(&burtcInit);
-
-  BURTC_CounterReset();
-  BURTC_CompareSet(0, 16);
-
-  // Interrupt setup
-  BURTC_IntClear(BURTC_IF_COMP);
-  BURTC_IntEnable(BURTC_IEN_COMP);
-  NVIC_ClearPendingIRQ(BURTC_IRQn);
-  NVIC_EnableIRQ(BURTC_IRQn);
-}
-
-void BURTC_IRQHandler(void)
-{
-  // Clear the BURTC interrupt
-  BURTC_IntClear(BURTC_IF_COMP);
-
-  /*
-   * Force the write to BURTC_IFC to complete before proceeding to
-   * make sure the interrupt is not re-triggered when upon exiting this
-   * IRQ handler as the BURTC is in an asynchronous clock domain.
-   */
-  __DSB();
-}
+#include "pin_config.h"
 
 /*
  * Top value for the calibration down counter.  Maximum allowed is
@@ -123,24 +66,90 @@ void BURTC_IRQHandler(void)
  */
 #define DOWNCOUNT   0xFFFFF
 
-/*
- * Before calling this function make sure that HFXO and LFRCO are
- * already running.
+const sl_gpio_t CLKOUT = { .port = CLKOUT_PORT, .pin = CLKOUT_PIN };
+
+/**
+ * @brief
+ *    Initialize the BURTC to generate periodic interrupts every 16 seconds.
  *
- * Calibration is an iterative process because the CMU hardware simply
- * returns a count.  It doesn't determine whether or not a specific
- * tuningVal is correct.  To keep things simple, this function implements
- * the search algorithm and not any of the setup that might differ from
- * system to system.
+ * @details
+ *    The BURTC uses the LFRCO as its clock source. Although the LFRCO frequency
+ *    may shift during calibration, the exact timing is not critical for this
+ *    example. The BURTC simply provides periodic wakeups while the CPU remains
+ *    in low power modes.
  */
-void calLFRCO(uint32_t freq)
+static void start_burtc(void)
+{
+  BURTC_Init_TypeDef init = BURTC_INIT_DEFAULT;
+
+  // Enable BURTC peripheral clock
+  sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_BURTC);
+
+  // Configure BURTC for a 1 Hz tick rate (LFRCO / 32768)
+  init.clkDiv      = 32768;
+  init.compare0Top = true;
+
+  BURTC_Init(&init);
+
+  // Reset counter and set COMP0 = 16 seconds
+  BURTC_CounterReset();
+  BURTC_CompareSet(0, 16);
+
+  // Enable BURTC interrupt
+  BURTC_IntClear(BURTC_IF_COMP);
+  BURTC_IntEnable(BURTC_IEN_COMP);
+  sl_interrupt_manager_clear_irq_pending(BURTC_IRQn);
+  sl_interrupt_manager_enable_irq(BURTC_IRQn);
+}
+
+/**
+ * @brief
+ *    BURTC interrupt handler.
+ *
+ * @details
+ *    Clears the interrupt flag and uses a DSB instruction to ensure the write
+ *    completes before exiting the ISR. This prevents retriggering because the
+ *    BURTC is clocked from an asynchronous domain.
+ */
+void BURTC_IRQHandler(void)
+{
+  // Clear the BURTC interrupt
+  BURTC_IntClear(BURTC_IF_COMP);
+
+  /*
+   * Force the write to BURTC_IFC to complete before proceeding to
+   * make sure the interrupt is not re-triggered when upon exiting this
+   * IRQ handler as the BURTC is in an asynchronous clock domain.
+   */
+  __DSB();
+}
+
+/**
+ * @brief
+ *    Calibrate the LFRCO to the desired frequency using a polled CMU
+ *    calibration loop.
+ *
+ * @details
+ *    The CMU calibration hardware measures how many LFRCO cycles occur during a
+ *    fixed number of HFXO cycles (DOWNCOUNT). The firmware compares this
+ *    measured value against the ideal value and adjusts the LFRCO tuning
+ *    register until the two match.
+ *
+ *    This implementation performs calibration in a blocking loop. Each
+ *    iteration:
+ *      - Configures a one shot calibration
+ *      - Waits for the calibration to complete
+ *      - Reads the UP counter
+ *      - Adjusts the tuning value
+ *      - Repeats until the ideal count is reached
+ */
+static void cal_lfrco(uint32_t freq)
 {
   bool tuned, lastUpGT, lastUpLT;
-
   uint32_t idealCount, upCount, prevUp, tuningVal, prevTuning;
 
-  // Get current tuningVal value
-  tuningVal = CMU_OscillatorTuningGet(cmuOsc_LFRCO);
+  // Read the current LFRCO tuning value
+  sl_clock_manager_get_rc_oscillator_calibration(SL_OSCILLATOR_LFRCO, &tuningVal);
 
   /*
    * Determine the ideal up counter value based on the desired
@@ -156,35 +165,31 @@ void calLFRCO(uint32_t freq)
    * --------------- = 895
    *    38400000
    */
-  idealCount = (uint32_t)(((float)freq / (float)SystemHFXOClockGet()) * (float)(DOWNCOUNT + 1));
+  idealCount = (uint32_t)(((float)freq / (float)SystemHFXOClockGet()) *
+                          (float)(DOWNCOUNT + 1));
 
-  /*
-   * Haven't run a calibration cycle yet so not tuned, and the last up
-   * count greater than and less than flags are ALSO false.
-   */
-  tuned = false;
+  // Initialize calibration state
+  tuned    = false;
   lastUpGT = false;
   lastUpLT = false;
 
-  while (!tuned)
-  {
-    // Setup the calibration circuit
-    CMU_CalibrateConfig(DOWNCOUNT, cmuSelect_HFXO, cmuSelect_LFRCO);
+  while (!tuned) {
 
-    // Start the up counter
-    CMU_CalibrateStart();
+    // Configure one shot calibration using HFXO as reference and LFRCO as target
+    sl_clock_manager_configure_rco_calibration(
+        DOWNCOUNT,
+        SL_CLOCK_MANAGER_CLOCK_CALIBRATION_HFXO,
+        SL_CLOCK_MANAGER_CLOCK_CALIBRATION_LFRCO,
+        false   // one shot mode
+    );
 
-    // Wait for down counter to finish
-    while ((CMU->STATUS & CMU_STATUS_CALRDY) == 0);
+    // Run calibration and wait for completion
+    sl_clock_manager_start_rco_calibration();
+    sl_clock_manager_wait_rco_calibration();
+    sl_clock_manager_get_rco_calibration_count(&upCount);
+    sl_clock_manager_stop_rco_calibration();
 
-    // Get the up counter value
-    upCount = CMU_CalibrateCountGet();
-
-    /*
-     * If the up counter result is less than the tuned value, the LFRCO
-     * is running at a lower frequency, so the tuning value has to be
-     * incremented.
-     */
+    // LFRCO too slow → increase tuning value
     if (upCount < idealCount)
     {
       // Was the up counter greater than the tuned value on the last run?
@@ -231,11 +236,7 @@ void calLFRCO(uint32_t freq)
       }
     }
 
-    /*
-     * If the up counter result is greater than the tuned value, the
-     * LFRCO is running at a higher frequency, so the tuning value has
-     * to be decremented.
-     */
+    // LFRCO too fast → decrease tuning value
     if (upCount > idealCount)
     {
       // Was the up counter less than the tuned value on the last run?
@@ -282,41 +283,51 @@ void calLFRCO(uint32_t freq)
       }
     }
 
-    // Up counter result is equal to the desired value, end of calibration
-    if (upCount == idealCount)
-    {
+    // Exact match → calibration complete
+    if (upCount == idealCount) {
       tuned = true;
+    } else {
+      // Apply updated tuning value
+      sl_clock_manager_set_rc_oscillator_calibration(
+          SL_OSCILLATOR_LFRCO,
+          tuningVal
+      );
     }
-    // Otherwise set new tuning value
-    else
-      CMU_OscillatorTuningSet(cmuOsc_LFRCO, tuningVal);
   }
 }
 
-int main(void)
+/***************************************************************************//**
+ * Initialize application.
+ ******************************************************************************/
+void app_init(void)
 {
-  CHIP_Init();
+  /*
+   * Enable the LFRCO register clock.  The register clock needs to be
+   * enabled so that the LFRCO_CAL register is accessible to the
+   * processor.  This allows an out-of-range tuning value to be set in
+   * the debugger so that the calibration adjustments are more readily
+   * visible on an oscilloscope.
+   */
+  sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_LFRCO);
 
-  // Start the HFXO with safe default parameters
-  CMU_HFXOInit_TypeDef hfxoInit = CMU_HFXOINIT_DEFAULT;
-  CMU_HFXOInit(&hfxoInit);
-  CMU_OscillatorEnable(cmuOsc_HFXO, true, true);
-
-  // Switch the SYSCLK to the HFXO.
-  CMU_ClockSelectSet(cmuClock_SYSCLK, cmuSelect_HFXO);
-
-  // Drive LFRCO onto PC0 to observe calibration
-  CMU_ClkOutPinConfig(0, cmuSelect_LFRCO, 1, gpioPortC, 0);
+  // Export LFRCO to CLKOUT for measurement or debugging
+  sl_clock_manager_set_gpio_clock_output(
+      SL_CLOCK_MANAGER_EXPORT_CLOCK_SOURCE_LFRCO,
+      SL_CLOCK_MANAGER_EXPORT_CLOCK_OUTPUT_SELECT_0,
+      1,
+      CLKOUT_PORT,
+      CLKOUT_PIN
+  );
 
   // Start the 16-second BURTC interrupts
-  startBURTC();
+  start_burtc();
+}
 
-  while(1)
-  {
-    // Wait for the BURTC interrupt
-    EMU_EnterEM1();
-
-    // Run calibration
-    calLFRCO(32768);
-  }
+/***************************************************************************//**
+ * App ticking function.
+ ******************************************************************************/
+void app_process_action(void)
+{
+  // Run calibration
+  cal_lfrco(32768);
 }
