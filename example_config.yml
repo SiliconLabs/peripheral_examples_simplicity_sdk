@@ -969,6 +969,31 @@ example:
 - path: series3/i2c/leader_polled/SimplicityStudio/i2c_leader_polled_s3.slcp
   board_whitelist: *board_whitelist_s3
 
+  # LDMA examples
+- path: series3/ldma/2d_copy/SimplicityStudio/ldma_2d_copy_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/ldma/interchannel_synchronization/SimplicityStudio/ldma_interchannel_synchronization_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/ldma/linked_list/SimplicityStudio/ldma_linked_list_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/ldma/linked_list_looped/SimplicityStudio/ldma_linked_list_looped_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/ldma/ping_pong/SimplicityStudio/ldma_ping_pong_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/ldma/scatter_gather/SimplicityStudio/ldma_scatter_gather_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/ldma/single_button/SimplicityStudio/ldma_single_button_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/ldma/single_looped/SimplicityStudio/ldma_single_looped_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
   # LETIMER examples
 - path: series3/letimer/one_shot_output_compare/SimplicityStudio/letimer_one_shot_output_compare_s3.slcp
   board_whitelist: *board_whitelist_s3
@@ -1042,4 +1067,3 @@ example:
 
 - path: series3/wdog/window_interrupt/SimplicityStudio/wdog_window_interrupt_s3.slcp
   board_whitelist: *board_whitelist_s3
-  

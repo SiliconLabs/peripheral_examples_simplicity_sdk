@@ -2652,6 +2652,142 @@
     <properties key="sltPackagePath" value="series3/i2c/leader_polled/SimplicityStudio/i2c_leader_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="ldma_2d_copy_s3" label="Peripheral Examples - LDMA 2D Copy" description="In this example, the LDMA transfers a submatrix from one software matrix to another. The source buffer is numbered from 0 to (BUFFER_2D_WIDTH * BUFFER_2D_HEIGHT - 1) in row major order.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.ldma.2d_copy.SimplicityStudio.ldma_2d_copy_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/ldma/2d_copy/SimplicityStudio/ldma_2d_copy_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/ldma/2d_copy/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/ldma/2d_copy/SimplicityStudio/ldma_2d_copy_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="ldma_interchannel_synchronization_s3" label="Peripheral Examples - LDMA Interchannel Synchronization" description="The LDMA synchronizes across 2 Channels, with both channels starting off a different button press to transfer 4-character strings from one software array to another.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.ldma.interchannel_synchronization.SimplicityStudio.ldma_interchannel_synchronization_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/ldma/interchannel_synchronization/SimplicityStudio/ldma_interchannel_synchronization_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/ldma/interchannel_synchronization/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/ldma/interchannel_synchronization/SimplicityStudio/ldma_interchannel_synchronization_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="ldma_linked_list_s3" label="Peripheral Examples - LDMA Linked List" description="Software requests a LDMA transfer on a linked list of 4 descriptors, which each move 32 halfwords of memory into a destination buffer. There are interrupts triggered after the second and fourth descriptors.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.ldma.linked_list.SimplicityStudio.ldma_linked_list_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/ldma/linked_list/SimplicityStudio/ldma_linked_list_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/ldma/linked_list/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/ldma/linked_list/SimplicityStudio/ldma_linked_list_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="ldma_linked_list_looped_s3" label="Peripheral Examples - LDMA Linked List Looped" description="In this example, the LDMA transfers 4 character strings from one software array to another. It switches between A and B four times, then transfers C. The transfer is requested by software at the end of the LDMA initialization.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.ldma.linked_list_looped.SimplicityStudio.ldma_linked_list_looped_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/ldma/linked_list_looped/SimplicityStudio/ldma_linked_list_looped_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/ldma/linked_list_looped/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/ldma/linked_list_looped/SimplicityStudio/ldma_linked_list_looped_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="ldma_ping_pong_s3" label="Peripheral Examples - LDMA Ping Pong" description="Software requests LDMA ping-pong transfers. A universal source array is transfered first to the &quot;pingBuffer&quot; array, then to the &quot;pongBuffer&quot;, then back to ping, etc. After each transfer, there is an interrupt that increments the elements of the source buffer, then requests the next transfer.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.ldma.ping_pong.SimplicityStudio.ldma_ping_pong_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/ldma/ping_pong/SimplicityStudio/ldma_ping_pong_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/ldma/ping_pong/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/ldma/ping_pong/SimplicityStudio/ldma_ping_pong_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="ldma_scatter_gather_s3" label="Peripheral Examples - LDMA Scatter Gather" description="Software requests a LDMA transfer on a linked list of 4 descriptors to &quot;scatter&quot; one large array into 4 smaller arrays. Each descriptor moves 8 halfwords of memory into a destination buffer. An interrupt triggers after the completion of the &quot;scatter&quot;.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.ldma.scatter_gather.SimplicityStudio.ldma_scatter_gather_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/ldma/scatter_gather/SimplicityStudio/ldma_scatter_gather_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/ldma/scatter_gather/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/ldma/scatter_gather/SimplicityStudio/ldma_scatter_gather_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="ldma_single_button_s3" label="Peripheral Examples - LDMA Single Button" description="In this example, the LDMA transfers 128 halfwords (256 bytes) from one software array to another. The transfer is requested by software or a button press on Push Button 1.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.ldma.single_button.SimplicityStudio.ldma_single_button_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/ldma/single_button/SimplicityStudio/ldma_single_button_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/ldma/single_button/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/ldma/single_button/SimplicityStudio/ldma_single_button_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="ldma_single_looped_s3" label="Peripheral Examples - LDMA Single Looped" description="In this example, the LDMA transfers 16 words from one software array to another in 4 sets of 4 words. The transfer is requested by software at the end of the LDMA initialization.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.ldma.single_looped.SimplicityStudio.ldma_single_looped_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/ldma/single_looped/SimplicityStudio/ldma_single_looped_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/ldma/single_looped/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/ldma/single_looped/SimplicityStudio/ldma_single_looped_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="letimer_one_shot_output_compare_s3" label="Peripheral Examples - LETIMER One Shot Output Compare" description="This project demonstrates output compare using the LETIMER.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
