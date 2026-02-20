@@ -532,6 +532,67 @@ example:
     - brd4184b # xG22 board with mic
   board_blacklist:
 
+  # PCNT examples
+- path: series2/pcnt/extclk_quadrature/SimplicityStudio/pcnt_extclk_quadrature.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4181a # Removing xG21 Radio Board due to lack of PCNT peripheral
+    - brd4182a # Removing xG22 Radio Board due to lack of PCNT peripheral
+    - brd4194a # Removing xG27 Radio Board due to lack of PCNT peripheral
+    - brd4412a # Removing xG29 Radio Board due to lack of PCNT peripheral
+    - brd4111a # Removing xG27 Radio Board due to lack of PCNT peripheral
+    - brd4420a # Removing xG29 Radio Board due to lack of PCNT peripheral
+
+- path: series2/pcnt/extclk_single_overflow/SimplicityStudio/pcnt_extclk_single_overflow.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4181a # Removing xG21 Radio Board due to lack of PCNT peripheral
+    - brd4182a # Removing xG22 Radio Board due to lack of PCNT peripheral
+    - brd4194a # Removing xG27 Radio Board due to lack of PCNT peripheral
+    - brd4412a # Removing xG29 Radio Board due to lack of PCNT peripheral
+    - brd4111a # Removing xG27 Radio Board due to lack of PCNT peripheral
+    - brd4420a # Removing xG29 Radio Board due to lack of PCNT peripheral
+
+- path: series2/pcnt/extclk_single_underflow/SimplicityStudio/pcnt_extclk_single_underflow.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4181a # Removing xG21 Radio Board due to lack of PCNT peripheral
+    - brd4182a # Removing xG22 Radio Board due to lack of PCNT peripheral
+    - brd4194a # Removing xG27 Radio Board due to lack of PCNT peripheral
+    - brd4412a # Removing xG29 Radio Board due to lack of PCNT peripheral
+    - brd4111a # Removing xG27 Radio Board due to lack of PCNT peripheral
+    - brd4420a # Removing xG29 Radio Board due to lack of PCNT peripheral
+    
+- path: series2/pcnt/oversampling_overflow/SimplicityStudio/pcnt_oversampling_overflow.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4181a # Removing xG21 Radio Board due to lack of PCNT peripheral
+    - brd4182a # Removing xG22 Radio Board due to lack of PCNT peripheral
+    - brd4194a # Removing xG27 Radio Board due to lack of PCNT peripheral
+    - brd4412a # Removing xG29 Radio Board due to lack of PCNT peripheral
+    - brd4111a # Removing xG27 Radio Board due to lack of PCNT peripheral
+    - brd4420a # Removing xG29 Radio Board due to lack of PCNT peripheral
+
+- path: series2/pcnt/oversampling_quadrature/SimplicityStudio/pcnt_oversampling_quadrature.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4181a # Removing xG21 Radio Board due to lack of PCNT peripheral
+    - brd4182a # Removing xG22 Radio Board due to lack of PCNT peripheral
+    - brd4194a # Removing xG27 Radio Board due to lack of PCNT peripheral
+    - brd4412a # Removing xG29 Radio Board due to lack of PCNT peripheral
+    - brd4111a # Removing xG27 Radio Board due to lack of PCNT peripheral
+    - brd4420a # Removing xG29 Radio Board due to lack of PCNT peripheral
+
+- path: series2/pcnt/oversampling_underflow/SimplicityStudio/pcnt_oversampling_underflow.slcp
+  board_whitelist: *board_whitelist
+  board_blacklist:
+    - brd4181a # Removing xG21 Radio Board due to lack of PCNT peripheral
+    - brd4182a # Removing xG22 Radio Board due to lack of PCNT peripheral
+    - brd4194a # Removing xG27 Radio Board due to lack of PCNT peripheral
+    - brd4412a # Removing xG29 Radio Board due to lack of PCNT peripheral
+    - brd4111a # Removing xG27 Radio Board due to lack of PCNT peripheral
+    - brd4420a # Removing xG29 Radio Board due to lack of PCNT peripheral
+
   # PRS examples
 - path: series2/prs/prs_logic_unit/SimplicityStudio/prs_logic_unit.slcp
   board_whitelist: *board_whitelist

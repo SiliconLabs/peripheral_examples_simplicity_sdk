@@ -1241,6 +1241,108 @@
     <properties key="sltPackagePath" value="series2/msc/msc_rw/SimplicityStudio/msc_rw.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="pcnt_extclk_quadrature" label="Peripheral Examples - PCNT EXTCLK Quadrature" description="This project demonstrates the external quadrature mode of the pulse counter peripheral.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.pcnt.extclk_quadrature.SimplicityStudio.pcnt_extclk_quadrature.slcp"/>
+    <properties key="projectFilePaths" value="series2/pcnt/extclk_quadrature/SimplicityStudio/pcnt_extclk_quadrature.slcp"/>
+    <properties key="readmeFiles" value="series2/pcnt/extclk_quadrature/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/pcnt/extclk_quadrature/SimplicityStudio/pcnt_extclk_quadrature.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="pcnt_extclk_single_overflow" label="Peripheral Examples - PCNT EXTCLK Single Overflow" description="This project demonstrates the externally clocked single input counter mode of the pulse counter with interrupts.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.pcnt.extclk_single_overflow.SimplicityStudio.pcnt_extclk_single_overflow.slcp"/>
+    <properties key="projectFilePaths" value="series2/pcnt/extclk_single_overflow/SimplicityStudio/pcnt_extclk_single_overflow.slcp"/>
+    <properties key="readmeFiles" value="series2/pcnt/extclk_single_overflow/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/pcnt/extclk_single_overflow/SimplicityStudio/pcnt_extclk_single_overflow.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="pcnt_extclk_single_underflow" label="Peripheral Examples - PCNT EXTCLK Single Underflow" description="This project demonstrates the externally clocked single input down-counter mode of the pulse counter with interrupts.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.pcnt.extclk_single_underflow.SimplicityStudio.pcnt_extclk_single_underflow.slcp"/>
+    <properties key="projectFilePaths" value="series2/pcnt/extclk_single_underflow/SimplicityStudio/pcnt_extclk_single_underflow.slcp"/>
+    <properties key="readmeFiles" value="series2/pcnt/extclk_single_underflow/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/pcnt/extclk_single_underflow/SimplicityStudio/pcnt_extclk_single_underflow.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="pcnt_oversampling_overflow" label="Peripheral Examples - PCNT Single Oversampling Overflow" description="This project demonstrates the single input oversampling mode of the pulse counter with interrupts.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.pcnt.oversampling_overflow.SimplicityStudio.pcnt_oversampling_overflow.slcp"/>
+    <properties key="projectFilePaths" value="series2/pcnt/oversampling_overflow/SimplicityStudio/pcnt_oversampling_overflow.slcp"/>
+    <properties key="readmeFiles" value="series2/pcnt/oversampling_overflow/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/pcnt/oversampling_overflow/SimplicityStudio/pcnt_oversampling_overflow.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="pcnt_oversampling_quadrature" label="Peripheral Examples - PCNT Oversampling Quadrature" description="This project demonstrates the oversampling quadrature decoder mode of the pulse counter peripheral.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.pcnt.oversampling_quadrature.SimplicityStudio.pcnt_oversampling_quadrature.slcp"/>
+    <properties key="projectFilePaths" value="series2/pcnt/oversampling_quadrature/SimplicityStudio/pcnt_oversampling_quadrature.slcp"/>
+    <properties key="readmeFiles" value="series2/pcnt/oversampling_quadrature/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/pcnt/oversampling_quadrature/SimplicityStudio/pcnt_oversampling_quadrature.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="pcnt_oversampling_underflow" label="Peripheral Examples - PCNT Oversampling Underflow" description="This project demonstrates the single input oversampling mode of the pulse down-counter with interrupts.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.pcnt.oversampling_underflow.SimplicityStudio.pcnt_oversampling_underflow.slcp"/>
+    <properties key="projectFilePaths" value="series2/pcnt/oversampling_underflow/SimplicityStudio/pcnt_oversampling_underflow.slcp"/>
+    <properties key="readmeFiles" value="series2/pcnt/oversampling_underflow/readme.md"/>
+    <properties key="boardCompatibility" value="brd4117a brd4186c brd4204d brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg24.* .*efr32mg26.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series2/pcnt/oversampling_underflow/SimplicityStudio/pcnt_oversampling_underflow.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="pdm_stereo_interrupt" label="Peripheral Examples - PDM Stereo Interrupt" description="This project demonstrates how to get stereo PCM data from a MEMS microphone using the PDM interface.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
