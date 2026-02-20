@@ -2873,7 +2873,7 @@
     <properties key="sltPackagePath" value="series3/prs/logic_unit/SimplicityStudio/prs_logic_unit_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_dma_edge_capture_s3" label="Peripheral Examples - Timer DMA Edge Capture" description="This project demonstrates DMA driven edge capture from a TIMER Compare/Capture channel.&#xA;">
+  <descriptors name="timer_dma_edge_capture_s3" label="Peripheral Examples - TIMER DMA Edge Capture" description="This project demonstrates DMA driven edge capture from a TIMER Compare/Capture channel.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.timer.dma_edge_capture.SimplicityStudio.timer_dma_edge_capture_s3.slcp"/>
@@ -2890,7 +2890,7 @@
     <properties key="sltPackagePath" value="series3/timer/dma_edge_capture/SimplicityStudio/timer_dma_edge_capture_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_frequency_generation_s3" label="Peripheral Examples - Timer Frequency Generation" description="This project demonstrates the frequency generation using the TIMER peripheral.&#xA;">
+  <descriptors name="timer_frequency_generation_s3" label="Peripheral Examples - TIMER Frequency Generation" description="This project demonstrates frequency generation using the TIMER peripheral.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.timer.frequency_generation.SimplicityStudio.timer_frequency_generation_s3.slcp"/>
@@ -2907,7 +2907,7 @@
     <properties key="sltPackagePath" value="series3/timer/frequency_generation/SimplicityStudio/timer_frequency_generation_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_input_capture_interrupt_s3" label="Peripheral Examples - Timer Input Capture Interrupt" description="This project demonstrates the use of the TIMER peripheral for interrupt-driven input capture.&#xA;">
+  <descriptors name="timer_input_capture_interrupt_s3" label="Peripheral Examples - TIMER Input Capture Interrupt" description="This project demonstrates use of the TIMER peripheral for interrupt-driven input capture.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.timer.input_capture_interrupt.SimplicityStudio.timer_input_capture_interrupt_s3.slcp"/>
@@ -2924,7 +2924,7 @@
     <properties key="sltPackagePath" value="series3/timer/input_capture_interrupt/SimplicityStudio/timer_input_capture_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_period_measurement_interrupt_s3" label="Peripheral Examples - Timer Period Measurement Interrupt" description="This project demonstrates the use of the TIMER peripheral. The module is configured to request an interrupt after capturing a pair of falling edges.&#xA;">
+  <descriptors name="timer_period_measurement_interrupt_s3" label="Peripheral Examples - TIMER Period Measurement Interrupt" description="This project demonstrates period measurement using the TIMER peripheral. The module is configured to request an interrupt after capturing a pair of falling edges.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.timer.period_measurement_interrupt.SimplicityStudio.timer_period_measurement_interrupt_s3.slcp"/>
@@ -2941,7 +2941,7 @@
     <properties key="sltPackagePath" value="series3/timer/period_measurement_interrupt/SimplicityStudio/timer_period_measurement_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_period_measurement_polled_s3" label="Peripheral Examples - Timer Period Measurement Polled" description="This project demonstrates the use of the TIMER peripheral. The main loop polls the Capture/Compare flag, which is set after captuing a pair of falling edges.&#xA;">
+  <descriptors name="timer_period_measurement_polled_s3" label="Peripheral Examples - TIMER Period Measurement Polled" description="This project demonstrates period measurement using the TIMER peripheral.  The main loop polls the Capture/Compare flag, which is set after capturing a pair of falling edges.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.timer.period_measurement_polled.SimplicityStudio.timer_period_measurement_polled_s3.slcp"/>
@@ -2958,7 +2958,7 @@
     <properties key="sltPackagePath" value="series3/timer/period_measurement_polled/SimplicityStudio/timer_period_measurement_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_pulse_capture_s3" label="Peripheral Examples - Timer Pulse Capture" description="This project demonstrates single pulse capture using the TIMER peripheral.&#xA;">
+  <descriptors name="timer_pulse_capture_s3" label="Peripheral Examples - TIMER Pulse Capture" description="This project demonstrates single pulse capture using the TIMER peripheral.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.timer.pulse_capture.SimplicityStudio.timer_pulse_capture_s3.slcp"/>
@@ -2975,7 +2975,7 @@
     <properties key="sltPackagePath" value="series3/timer/pulse_capture/SimplicityStudio/timer_pulse_capture_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_pwm_dma_s3" label="Peripheral Examples - Timer PWM DMA" description="This project demonstrates DMA-driven pulse width modulation using the TIMER peripheral.&#xA;">
+  <descriptors name="timer_pwm_dma_s3" label="Peripheral Examples - TIMER Pulse Width Modulation (PWM) with DMA" description="This project demonstrates DMA-driven pulse width modulation using the TIMER peripheral.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.timer.pwm_dma.SimplicityStudio.timer_pwm_dma_s3.slcp"/>
@@ -2992,7 +2992,7 @@
     <properties key="sltPackagePath" value="series3/timer/pwm_dma/SimplicityStudio/timer_pwm_dma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_pwm_interrupt_s3" label="Peripheral Examples - Timer PWM Interrupt" description="This project demonstrates interrupt-driven pulse width modulation using the TIMER peripheral.&#xA;">
+  <descriptors name="timer_pwm_interrupt_s3" label="Peripheral Examples - TIMER Pulse Width Modulation (PWM) with Interrupts" description="This project demonstrates pulse width modulation using the TIMER peripheral.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.timer.pwm_interrupt.SimplicityStudio.timer_pwm_interrupt_s3.slcp"/>
@@ -3006,10 +3006,10 @@
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
     <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
-    <properties key="sltPackagePath" value="series3/timer/pwm_interrupt/SimplicityStudio/timer_pwm_dma_s3.slcp"/>
+    <properties key="sltPackagePath" value="series3/timer/pwm_interrupt/SimplicityStudio/timer_pwm_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_single_edge_output_compare_s3" label="Peripheral Examples - Timer Single Output Compare" description="This project demonstrates single output compare using the TIMER peripheral.&#xA;">
+  <descriptors name="timer_single_edge_output_compare_s3" label="Peripheral Examples - TIMER Single Output Compare" description="This project demonstrates single output compare using the TIMER peripheral.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.timer.single_edge_output_compare.SimplicityStudio.timer_single_edge_output_compare_s3.slcp"/>
@@ -3026,7 +3026,7 @@
     <properties key="sltPackagePath" value="series3/timer/single_edge_output_compare/SimplicityStudio/timer_single_edge_output_compare_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_single_pulse_generation_dma_s3" label="Peripheral Examples - Timer Single Pulse Generation with DMA" description="This project demonstrates the generation of a single pulse using the TIMER peripheral output compare and the LDMA.&#xA;">
+  <descriptors name="timer_single_pulse_generation_dma_s3" label="Peripheral Examples - TIMER Single Pulse Generation with DMA" description="This project demonstrates the generation of a single pulse using the TIMER peripheral output compare and the LDMA.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.timer.single_pulse_generation_dma.SimplicityStudio.timer_single_pulse_generation_dma_s3.slcp"/>
@@ -3043,7 +3043,7 @@
     <properties key="sltPackagePath" value="series3/timer/single_pulse_generation_dma/SimplicityStudio/timer_single_pulse_generation_dma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_single_pulse_generation_interrupt_s3" label="Peripheral Examples - Timer Single Pulse Generation with Interrupt" description="This project demonstrates the generation of a single pulse using the TIMER peripheral output compare and Interrupts.&#xA;">
+  <descriptors name="timer_single_pulse_generation_interrupt_s3" label="Peripheral Examples - TIMER Single Pulse Generation with Interrupt" description="This project demonstrates interrupt-driven generation of a single pulse using TIMER output compare.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.timer.single_pulse_generation_interrupt.SimplicityStudio.timer_single_pulse_generation_interrupt_s3.slcp"/>
@@ -3060,7 +3060,7 @@
     <properties key="sltPackagePath" value="series3/timer/single_pulse_generation_interrupt/SimplicityStudio/timer_single_pulse_generation_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="timer_single_pulse_generation_polled_s3" label="Peripheral Examples - Timer Single Pulse Generation Polled" description="This project demonstrates the generation of a single pulse using the TIMER peripheral output compare and Polling.&#xA;">
+  <descriptors name="timer_single_pulse_generation_polled_s3" label="Peripheral Examples - TIMER Single Pulse Generation Polled" description="This project demonstrates polled single pulse generation using TIMER output compare.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.timer.single_pulse_generation_polled.SimplicityStudio.timer_single_pulse_generation_polled_s3.slcp"/>
