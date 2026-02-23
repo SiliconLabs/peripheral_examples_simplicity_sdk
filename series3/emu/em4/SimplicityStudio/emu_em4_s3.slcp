@@ -1,0 +1,36 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: emu_em4_s3
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - EMU EM4
+description: >
+  This project demonstrates the datasheet current consumption configuration and current consumption numbers in EM4 Energy Mode.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: hal_burtc
+  - id: power_manager
+  - id: power_manager_no_deepsleep
+  - id: silabs_bsp
+    from: peripheral_examples
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0

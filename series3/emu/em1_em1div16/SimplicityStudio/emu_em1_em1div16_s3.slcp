@@ -1,0 +1,52 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: emu_em1_em1div16_s3
+package: peripheral_examples
+quality: evaluation
+label: Peripheral Examples - EMU EM1 and EM1DIV16 
+description: >
+  This project demonstrates the datasheet current consumption configuration and current consumption numbers in EM1 and EM1DIV16 Energy Modes.
+category: Example|Peripheral Examples
+filter:
+  - name: "Device Type"
+    value: ["SoC"]
+  - name: "MCU"
+    value: ["32-bit MCU"]
+  - name: "Project Difficulty"
+    value: ["Beginner"]
+source:
+  - path: ../src/app.c
+  - path: ../src/main.c
+include:
+  - path: "../src"
+    file_list:
+    - path: app.h
+readme:
+  - path: ../readme.md
+component:
+  - id: sl_main
+  - id: device_init
+  - id: clock_manager
+  - id: power_manager
+  - id: power_manager_no_deepsleep
+  - id: silabs_bsp
+    from: peripheral_examples
+sdk_extension:
+  - id: peripheral_examples
+    version: 1.0.0
+configuration:
+  - name: "SL_CLOCK_MANAGER_HFXO_EN"
+    value: "SL_CLOCK_MANAGER_HFXO_EN_ENABLE"
+  - name: "SL_CLOCK_MANAGER_SOCPLL_EN"
+    value: "1"
+  - name: "SL_CLOCK_MANAGER_SOCPLL_FREQ"
+    value: "150000000"
+  - name: "SL_CLOCK_MANAGER_SOCPLL_ADVANCED_SETTINGS"
+    value: "1"
+  - name: "SL_CLOCK_MANAGER_SOCPLL_REFCLK"
+    value: "SOCPLL_CTRL_REFCLKSEL_REF_HFXO"
+  - name: "SL_CLOCK_MANAGER_SYSCLK_SOURCE"
+    value: "CMU_SYSCLKCTRL_CLKSEL_SOCPLL"
+  - name: "SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE"
+    value: "SL_CLOCK_MANAGER_DEFAULT_HF_CLOCK_SOURCE_HFRCODPLL"
+  - name: "SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE"
+    value: "SL_CLOCK_MANAGER_DEFAULT_LF_CLOCK_SOURCE_LFRCO"

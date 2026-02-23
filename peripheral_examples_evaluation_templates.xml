@@ -2278,6 +2278,57 @@
     <properties key="sltPackagePath" value="series3/burtc/em4_buram/SimplicityStudio/burtc_em4_buram_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="emu_em0_s3" label="Peripheral Examples - EMU EM0" description="This project demonstrates the datasheet current consumption configuration and current consumption numbers in EM0 Energy Mode.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.emu.em0.SimplicityStudio.emu_em0_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/emu/em0/SimplicityStudio/emu_em0_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/emu/em0/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/emu/em0/SimplicityStudio/emu_em0_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="emu_em1_em1div16_s3" label="Peripheral Examples - EMU EM1 and EM1DIV16" description="This project demonstrates the datasheet current consumption configuration and current consumption numbers in EM1 and EM1DIV16 Energy Modes.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.emu.em1_em1div16.SimplicityStudio.emu_em1_em1div16_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/emu/em1_em1div16/SimplicityStudio/emu_em1_em1div16_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/emu/em1_em1div16/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/emu/em1_em1div16/SimplicityStudio/emu_em1_em1div16_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="emu_em4_s3" label="Peripheral Examples - EMU EM4" description="This project demonstrates the datasheet current consumption configuration and current consumption numbers in EM4 Energy Mode.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.emu.em4.SimplicityStudio.emu_em4_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/emu/em4/SimplicityStudio/emu_em4_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/emu/em4/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/emu/em4/SimplicityStudio/emu_em4_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="eusart_async_autobaud_s3" label="Peripheral Examples - EUSART Async Auto Baudrate Detection" description="This project demonstrates interrupt-driven EUSART operation in asynchronous mode with auto baud rate detection.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>

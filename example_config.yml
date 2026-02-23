@@ -899,6 +899,16 @@ example:
 - path: series3/burtc/em4_buram/SimplicityStudio/burtc_em4_buram_s3.slcp
   board_whitelist: *board_whitelist_s3
 
+  # EMU examples
+- path: series3/emu/em0/SimplicityStudio/emu_em0_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/emu/em1_em1div16/SimplicityStudio/emu_em1_em1div16_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/emu/em4/SimplicityStudio/emu_em4_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
   # GPCRC examples
 - path: series3/gpcrc/dma/SimplicityStudio/gpcrc_dma_s3.slcp
   board_whitelist: *board_whitelist_s3
