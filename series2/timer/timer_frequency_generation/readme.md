@@ -1,4 +1,4 @@
-# Peripheral Examples - TIMER DMA Edge Capture #
+# Peripheral Examples - TIMER Frequency Generation #
 
 ## Summary ##
 
