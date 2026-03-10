@@ -2890,6 +2890,108 @@
     <properties key="sltPackagePath" value="series3/letimer/pulse_width_modulation/SimplicityStudio/letimer_pulse_width_modulation_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
+  <descriptors name="pcnt_extclk_quadrature_s3" label="Peripheral Examples - PCNT EXTCLK Quadrature" description="This project demonstrates the external quadrature mode of the pulse counter peripheral. &#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.pcnt.extclk_quadrature.SimplicityStudio.pcnt_extclk_quadrature_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/pcnt/extclk_quadrature/SimplicityStudio/pcnt_extclk_quadrature_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/pcnt/extclk_quadrature/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/pcnt/extclk_quadrature/SimplicityStudio/pcnt_extclk_quadrature_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="pcnt_extclk_single_overflow_s3" label="Peripheral Examples - PCNT EXTCLK Single Overflow" description="This project demonstrates the externally clocked single input counter mode of the pulse counter with interrupts.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.pcnt.extclk_single_overflow.SimplicityStudio.pcnt_extclk_single_overflow_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/pcnt/extclk_single_overflow/SimplicityStudio/pcnt_extclk_single_overflow_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/pcnt/extclk_single_overflow/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/pcnt/extclk_single_overflow/SimplicityStudio/pcnt_extclk_single_overflow_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="pcnt_extclk_single_underflow_s3" label="Peripheral Examples - PCNT EXTCLK Single Underflow" description="This project demonstrates the externally clocked single input down-counter mode of the pulse counter with interrupts.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.pcnt.extclk_single_underflow.SimplicityStudio.pcnt_extclk_single_underflow_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/pcnt/extclk_single_underflow/SimplicityStudio/pcnt_extclk_single_underflow_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/pcnt/extclk_single_underflow/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/pcnt/extclk_single_underflow/SimplicityStudio/pcnt_extclk_single_underflow_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="pcnt_oversampling_overflow_s3" label="Peripheral Examples - PCNT Single Oversampling Overflow" description="This project demonstrates the single input oversampling mode of the pulse counter with interrupts.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.pcnt.oversampling_overflow.SimplicityStudio.pcnt_oversampling_overflow_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/pcnt/oversampling_overflow/SimplicityStudio/pcnt_oversampling_overflow_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/pcnt/oversampling_overflow/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/pcnt/oversampling_overflow/SimplicityStudio/pcnt_oversampling_overflow_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="pcnt_oversampling_quadrature_s3" label="Peripheral Examples - PCNT Oversampling Quadrature" description="This project demonstrates the oversampling quadrature decoder mode of the pulse counter peripheral.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.pcnt.oversampling_quadrature.SimplicityStudio.pcnt_oversampling_quadrature_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/pcnt/oversampling_quadrature/SimplicityStudio/pcnt_oversampling_quadrature_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/pcnt/oversampling_quadrature/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/pcnt/oversampling_quadrature/SimplicityStudio/pcnt_oversampling_quadrature_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
+  <descriptors name="pcnt_oversampling_underflow_s3" label="Peripheral Examples - PCNT Oversampling Underflow" description="This project demonstrates the single input oversampling mode of the pulse down-counter with interrupts.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series3.pcnt.oversampling_underflow.SimplicityStudio.pcnt_oversampling_underflow_s3.slcp"/>
+    <properties key="projectFilePaths" value="series3/pcnt/oversampling_underflow/SimplicityStudio/pcnt_oversampling_underflow_s3.slcp"/>
+    <properties key="readmeFiles" value="series3/pcnt/oversampling_underflow/readme.md"/>
+    <properties key="boardCompatibility" value="brd4407a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*simg301.*"/>
+    <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
+    <properties key="toolchainCompatibility" value="gcc iar llvm"/>
+    <properties key="category" value="Example|Peripheral Examples"/>
+    <properties key="quality" value="EVALUATION"/>
+    <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackagePath" value="series3/pcnt/oversampling_underflow/SimplicityStudio/pcnt_oversampling_underflow_s3.slcp"/>
+    <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
+  </descriptors>
   <descriptors name="pixelrz_ldma_letimer_prs_gpio_s3" label="Peripheral Examples - PIXELRZ Sequential" description="This project demonstrates how to configure the PIXELRZ in sequential mode to drive a WS2812B LED strip.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>

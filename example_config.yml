@@ -1018,6 +1018,25 @@ example:
 - path: series3/pixelrz/ldma_letimer_prs_gpio/SimplicityStudio/pixelrz_ldma_letimer_prs_gpio_s3.slcp
   board_whitelist: *board_whitelist_s3
 
+  # PCNT examples
+- path: series3/pcnt/extclk_quadrature/SimplicityStudio/pcnt_extclk_quadrature_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/pcnt/extclk_single_overflow/SimplicityStudio/pcnt_extclk_single_overflow_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/pcnt/extclk_single_underflow/SimplicityStudio/pcnt_extclk_single_underflow_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/pcnt/oversampling_overflow/SimplicityStudio/pcnt_oversampling_overflow_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/pcnt/oversampling_quadrature/SimplicityStudio/pcnt_oversampling_quadrature_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
+- path: series3/pcnt/oversampling_underflow/SimplicityStudio/pcnt_oversampling_underflow_s3.slcp
+  board_whitelist: *board_whitelist_s3
+
   # PRS examples
 - path: series3/prs/logic_unit/SimplicityStudio/prs_logic_unit_s3.slcp
   board_whitelist: *board_whitelist_s3

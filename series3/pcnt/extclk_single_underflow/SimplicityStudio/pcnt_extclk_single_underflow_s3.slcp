@@ -1,0 +1,36 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: pcnt_extclk_single_underflow_s3
+package: peripheral_examples
+description: |
+    This project demonstrates the externally clocked single input down-counter mode of the pulse counter with interrupts.
+quality: evaluation
+label: Peripheral Examples - PCNT EXTCLK Single Underflow
+
+category: Example|Peripheral Examples
+filter:
+- name: Device Type
+  value: [SoC]
+- name: MCU
+  value: [32-bit MCU]
+- name: Project Difficulty
+  value: [Beginner]
+readme:
+- path: ../readme.md
+source:
+- path: ../src/app.c
+include:
+- path: .
+  file_list:
+  - path: ../src/app.h
+component:
+- id: sl_main
+- id: silabs_bsp
+  from: peripheral_examples
+- id: clock_manager
+- id: power_manager
+- id: device_init
+- id: hal_pcnt
+- id: hal_prs
+sdk_extension:
+ - id: peripheral_examples
+   version: 1.0.0
