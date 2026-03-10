@@ -95,6 +95,10 @@ After installing the extension:
 3. Click **Refresh**
 
 
+## ⚠️ Compatibility Warning
+
+SiXG301 is **not supported** when using the IAR toolchain **v9.40.1**, which is the latest version officially supported by the Simplicity SDK noted in this repository's commit tag. Refer to the Simplicity SDK release notes for more information.
+
 ## Reporting Bugs/Issues and Posting Questions and Comments ##
 
 All examples in this repo is are considered EVALUATION QUALITY, meaning this code has been minimally tested to ensure that it builds with the specified dependencies and is suitable as a demonstration for evaluation purposes only. This code will be maintained at the sole discretion of Silicon Labs.
