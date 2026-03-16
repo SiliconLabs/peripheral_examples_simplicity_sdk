@@ -38,5 +38,5 @@ configuration:
     value: "CMU_EM01GRPACLKCTRL_CLKSEL_HFRCODPLL"
 sdk_extension:
   - id: peripheral_examples
-    version: 1.0.0
+    version: 1.1.0
   

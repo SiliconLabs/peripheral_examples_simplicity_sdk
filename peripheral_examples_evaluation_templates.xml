@@ -13,7 +13,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/acmp/interrupt/SimplicityStudio/acmp_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -30,7 +30,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/acmp/pin_output/SimplicityStudio/acmp_pin_output.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -47,7 +47,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/acmp/polled/SimplicityStudio/acmp_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -64,7 +64,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/acmp/vmon/SimplicityStudio/acmp_vmon.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -81,7 +81,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/burtc/em4_buram/SimplicityStudio/burtc_em4_buram.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -98,7 +98,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/cmu/lfrco_cal_interrupt/SimplicityStudio/cmu_lfrco_cal_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -115,7 +115,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/cmu/lfrco_cal_polled/SimplicityStudio/cmu_lfrco_cal_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -132,7 +132,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/emu/dcdc_vmon/SimplicityStudio/emu_dcdc_vmon.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -149,7 +149,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/emu/em01_voltage_scaling/SimplicityStudio/emu_em01_voltage_scaling.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -166,7 +166,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/emu/em0_dcdc/SimplicityStudio/emu_em0_dcdc.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -183,7 +183,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/emu/em1_dcdc/SimplicityStudio/emu_em1_dcdc.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -200,7 +200,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/emu/em23_voltage_scaling/SimplicityStudio/emu_em23_voltage_scaling.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -217,7 +217,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/emu/em2_dcdc/SimplicityStudio/emu_em2_dcdc.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -234,7 +234,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/emu/em3_dcdc/SimplicityStudio/emu_em3_dcdc.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -251,7 +251,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/emu/em4_no_dcdc/SimplicityStudio/emu_em4_no_dcdc.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -268,7 +268,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/etampdet/em2/SimplicityStudio/etampdet_em2.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -285,7 +285,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/etampdet/em4/SimplicityStudio/etampdet_em4.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -302,7 +302,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/euart/echo/SimplicityStudio/euart_echo.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -319,7 +319,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/euart/half_duplex/SimplicityStudio/euart_half_duplex.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -336,7 +336,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/euart/ldma_em2/SimplicityStudio/euart_ldma_em2.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -353,7 +353,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/eusart/async_autobaud/SimplicityStudio/eusart_async_autobaud.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -370,7 +370,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/eusart/async_dma_em2/SimplicityStudio/eusart_async_dma_em2.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -387,7 +387,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/eusart/async_half_duplex/SimplicityStudio/eusart_async_half_duplex.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -404,7 +404,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/eusart/async_interrupt/SimplicityStudio/eusart_async_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -421,7 +421,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/eusart/async_polled/SimplicityStudio/eusart_async_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -438,7 +438,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/eusart/spi_main_dma/SimplicityStudio/eusart_spi_main_dma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -455,7 +455,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/eusart/spi_main_interrupt/SimplicityStudio/eusart_spi_main_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -472,7 +472,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/eusart/spi_main_polled/SimplicityStudio/eusart_spi_main_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -489,7 +489,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/eusart/spi_secondary_dma/SimplicityStudio/eusart_spi_secondary_dma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -506,7 +506,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/eusart/spi_secondary_interrupt/SimplicityStudio/eusart_spi_secondary_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -523,7 +523,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/eusart/spi_secondary_polled/SimplicityStudio/eusart_spi_secondary_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -540,7 +540,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/gpcrc/dma/SimplicityStudio/gpcrc_dma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -557,7 +557,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/gpcrc/software/SimplicityStudio/gpcrc_software.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -574,7 +574,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/gpio/em4_wakeup/SimplicityStudio/gpio_em4_wakeup.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -591,7 +591,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/gpio/periph/SimplicityStudio/gpio_periph.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -608,7 +608,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/gpio/slew_rate/SimplicityStudio/gpio_slew_rate.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -625,7 +625,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/gpio/switch_led_interrupt/SimplicityStudio/gpio_switch_led_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -642,7 +642,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/gpio/switch_led_polled/SimplicityStudio/gpio_switch_led_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -659,7 +659,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/i2c/follower/SimplicityStudio/i2c_follower.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -676,7 +676,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/i2c/leader_dma/SimplicityStudio/i2c_leader_dma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -693,7 +693,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/i2c/leader_polled/SimplicityStudio/i2c_leader_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -710,7 +710,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/scan_continuous_ldma/SimplicityStudio/iadc_scan_continuous_ldma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -727,7 +727,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/scan_gpio_prs_ldma/SimplicityStudio/iadc_scan_gpio_prs_ldma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -744,7 +744,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/scan_iadc_timer/SimplicityStudio/iadc_scan_iadc_timer.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -761,7 +761,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/scan_interrupt/SimplicityStudio/iadc_scan_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -778,7 +778,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/scan_letimer_interrupt/SimplicityStudio/iadc_scan_letimer_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -795,7 +795,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/scan_letimer_prs_ldma/SimplicityStudio/iadc_scan_letimer_prs_ldma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -812,7 +812,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/single_calibration/SimplicityStudio/iadc_single_calibration.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -829,7 +829,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/single_differential_polled/SimplicityStudio/iadc_single_differential_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -846,7 +846,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/single_gpio_prs_ldma/SimplicityStudio/iadc_single_gpio_prs_ldma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -863,7 +863,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/single_interrupt/SimplicityStudio/iadc_single_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -880,7 +880,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/single_letimer_interrupt/SimplicityStudio/iadc_single_letimer_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -897,7 +897,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/single_letimer_prs_ldma/SimplicityStudio/iadc_single_letimer_prs_ldma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -914,7 +914,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/single_oversampling/SimplicityStudio/iadc_single_oversampling_16bit.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -931,7 +931,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/single_oversampling/SimplicityStudio/iadc_single_oversampling_20bit.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -948,7 +948,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/single_window_compare/SimplicityStudio/iadc_single_window_compare.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -965,7 +965,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/iadc/vmon/SimplicityStudio/iadc_vmon.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -982,7 +982,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/ldma/2d_copy/SimplicityStudio/ldma_2d_copy.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -999,7 +999,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/ldma/interchannel_synchronization/SimplicityStudio/ldma_interchannel_synchronization.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1016,7 +1016,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/ldma/linked_list/SimplicityStudio/ldma_linked_list.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1033,7 +1033,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/ldma/linked_list_looped/SimplicityStudio/ldma_linked_list_looped.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1050,7 +1050,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/ldma/ping_pong/SimplicityStudio/ldma_ping_pong.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1067,7 +1067,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/ldma/scatter_gather/SimplicityStudio/ldma_scatter_gather.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1084,7 +1084,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/ldma/single_button/SimplicityStudio/ldma_single_button.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1101,7 +1101,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/ldma/single_looped/SimplicityStudio/ldma_single_looped.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1118,7 +1118,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/lesense/decoder/SimplicityStudio/lesense_decoder.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1135,7 +1135,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/lesense/multi_channel/SimplicityStudio/lesense_multi_channel.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1152,7 +1152,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/lesense/single_channel/SimplicityStudio/lesense_single_channel.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1169,7 +1169,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/letimer/one_shot_output_compare/SimplicityStudio/letimer_one_shot_output_compare.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1186,7 +1186,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/letimer/pulse_train/SimplicityStudio/letimer_pulse_train.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1203,7 +1203,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/letimer/pulse_width_modulation/SimplicityStudio/letimer_pulse_width_modulation.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1220,7 +1220,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/msc/page_lock/SimplicityStudio/msc_page_lock.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1237,7 +1237,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/msc/rw/SimplicityStudio/msc_rw.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1254,7 +1254,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/pcnt/extclk_quadrature/SimplicityStudio/pcnt_extclk_quadrature.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1271,7 +1271,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/pcnt/extclk_single_overflow/SimplicityStudio/pcnt_extclk_single_overflow.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1288,7 +1288,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/pcnt/extclk_single_underflow/SimplicityStudio/pcnt_extclk_single_underflow.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1305,7 +1305,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/pcnt/oversampling_overflow/SimplicityStudio/pcnt_oversampling_overflow.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1322,7 +1322,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/pcnt/oversampling_quadrature/SimplicityStudio/pcnt_oversampling_quadrature.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1339,7 +1339,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/pcnt/oversampling_underflow/SimplicityStudio/pcnt_oversampling_underflow.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1356,7 +1356,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/pdm/stereo_interrupt/SimplicityStudio/pdm_stereo_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1373,7 +1373,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/pdm/stereo_ldma/SimplicityStudio/pdm_stereo_ldma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1390,7 +1390,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/prs/logic_unit/SimplicityStudio/prs_logic_unit.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1407,7 +1407,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/rtcc/interrupt/SimplicityStudio/rtcc_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1424,7 +1424,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/timer/dma_edge_capture/SimplicityStudio/timer_dma_edge_capture.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1441,7 +1441,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/timer/frequency_generation/SimplicityStudio/timer_frequency_generation.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1458,7 +1458,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/timer/input_capture_interrupt/SimplicityStudio/timer_input_capture_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1475,7 +1475,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/timer/period_measurement_interrupt/SimplicityStudio/timer_period_measurement_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1492,7 +1492,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/timer/period_measurement_polled/SimplicityStudio/timer_period_measurement_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1509,7 +1509,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/timer/pulse_capture/SimplicityStudio/timer_pulse_capture.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1526,7 +1526,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/timer/pwm_dma/SimplicityStudio/timer_pwm_dma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1543,7 +1543,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/timer/pwm_interrupt/SimplicityStudio/timer_pwm_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1560,7 +1560,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/timer/single_edge_output_compare/SimplicityStudio/timer_single_edge_output_compare.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1577,7 +1577,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/timer/single_pulse_generation_dma/SimplicityStudio/timer_single_pulse_generation_dma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1594,7 +1594,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/timer/single_pulse_generation_interrupt/SimplicityStudio/timer_single_pulse_generation_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1611,7 +1611,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/timer/single_pulse_generation_polled/SimplicityStudio/timer_single_pulse_generation_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1628,7 +1628,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/usart/async_interrupt/SimplicityStudio/usart_async_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1645,7 +1645,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/usart/async_polled/SimplicityStudio/usart_async_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1662,7 +1662,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/usart/spi_main_dma/SimplicityStudio/usart_spi_main_dma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1679,7 +1679,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/usart/spi_main_interrupt/SimplicityStudio/usart_spi_main_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1696,7 +1696,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/usart/spi_main_polled/SimplicityStudio/usart_spi_main_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1713,7 +1713,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/usart/spi_secondary_dma/SimplicityStudio/usart_spi_secondary_dma.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1730,7 +1730,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/usart/spi_secondary_interrupt/SimplicityStudio/usart_spi_secondary_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1747,7 +1747,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/usart/spi_secondary_polled/SimplicityStudio/usart_spi_secondary_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1764,7 +1764,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/vdac/continuous/SimplicityStudio/vdac_continuous.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1781,7 +1781,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/vdac/differential/SimplicityStudio/vdac_differential.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1798,7 +1798,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/vdac/sample_off/SimplicityStudio/vdac_sample_off.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1815,7 +1815,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/vdac/sine_wave_synch/SimplicityStudio/vdac_sine_wave_synch.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1832,7 +1832,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/vdac/sine_wave_synch_prs/SimplicityStudio/vdac_sine_wave_synch_prs.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1849,7 +1849,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/vdac/timer_dma_waveform/SimplicityStudio/vdac_timer_dma_waveform.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1866,7 +1866,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/wdog/prs_clear/SimplicityStudio/wdog_prs_clear.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1883,7 +1883,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/wdog/prs_monitor/SimplicityStudio/wdog_prs_monitor.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1900,7 +1900,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/wdog/timeout_interrupt/SimplicityStudio/wdog_timeout_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1917,7 +1917,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/wdog/timeout_reset/SimplicityStudio/wdog_timeout_reset.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1934,7 +1934,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/wdog/warning_interrupt/SimplicityStudio/wdog_warning_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1951,7 +1951,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series2/wdog/window_interrupt/SimplicityStudio/wdog_window_interrupt.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1968,7 +1968,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/acmp/interrupt/SimplicityStudio/acmp_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -1985,7 +1985,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/acmp/pin_output/SimplicityStudio/acmp_pin_output_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2002,7 +2002,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/acmp/polled/SimplicityStudio/acmp_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2019,7 +2019,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/acmp/vmon/SimplicityStudio/acmp_vmon_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2036,7 +2036,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/adc/scan_adc_timer/SimplicityStudio/adc_scan_adc_timer_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2053,7 +2053,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/adc/scan_continuous_ldma/SimplicityStudio/adc_scan_continuous_ldma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2070,7 +2070,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/adc/scan_gpio_prs_ldma/SimplicityStudio/adc_scan_gpio_prs_ldma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2087,7 +2087,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/adc/scan_interrupt/SimplicityStudio/adc_scan_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2104,7 +2104,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/adc/scan_letimer_interrupt/SimplicityStudio/adc_scan_letimer_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2121,7 +2121,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/adc/scan_letimer_prs_ldma/SimplicityStudio/adc_scan_letimer_prs_ldma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2138,7 +2138,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/adc/scan_window_compare_vmon/SimplicityStudio/adc_scan_window_compare_vmon_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2155,7 +2155,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/adc/single_differential_polled/SimplicityStudio/adc_single_differential_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2172,7 +2172,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/adc/single_gpio_prs_ldma/SimplicityStudio/adc_single_gpio_prs_ldma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2189,7 +2189,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/adc/single_interrupt/SimplicityStudio/adc_single_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2206,7 +2206,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/adc/single_letimer_interrupt/SimplicityStudio/adc_single_letimer_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2223,7 +2223,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/adc/single_letimer_prs_ldma/SimplicityStudio/adc_single_letimer_prs_ldma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2240,7 +2240,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/adc/single_oversampling/SimplicityStudio/adc_single_oversampling_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2257,7 +2257,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/adc/single_window_compare/SimplicityStudio/adc_single_window_compare_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2274,7 +2274,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/burtc/em4_buram/SimplicityStudio/burtc_em4_buram_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2291,7 +2291,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/emu/em0/SimplicityStudio/emu_em0_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2308,7 +2308,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/emu/em1_em1div16/SimplicityStudio/emu_em1_em1div16_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2325,7 +2325,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/emu/em4/SimplicityStudio/emu_em4_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2342,7 +2342,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/eusart/async_autobaud/SimplicityStudio/eusart_async_autobaud_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2359,7 +2359,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/eusart/async_dma/SimplicityStudio/eusart_async_dma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2376,7 +2376,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/eusart/async_half_duplex/SimplicityStudio/eusart_async_half_duplex_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2393,7 +2393,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/eusart/async_interrupt/SimplicityStudio/eusart_async_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2410,7 +2410,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/eusart/async_polled/SimplicityStudio/eusart_async_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2427,7 +2427,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/eusart/spi_main_dma/SimplicityStudio/eusart_spi_main_dma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2444,7 +2444,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/eusart/spi_main_interrupt/SimplicityStudio/eusart_spi_main_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2461,7 +2461,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/eusart/spi_main_polled/SimplicityStudio/eusart_spi_main_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2478,7 +2478,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/eusart/spi_secondary_dma/SimplicityStudio/eusart_spi_secondary_dma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2495,7 +2495,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/eusart/spi_secondary_interrupt/SimplicityStudio/eusart_spi_secondary_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2512,7 +2512,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/eusart/spi_secondary_polled/SimplicityStudio/eusart_spi_secondary_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2529,7 +2529,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/gpcrc/dma/SimplicityStudio/gpcrc_dma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2546,7 +2546,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/gpcrc/software/SimplicityStudio/gpcrc_software_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2563,7 +2563,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/gpio/em4_wakeup/SimplicityStudio/gpio_em4_wakeup_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2580,7 +2580,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/gpio/periph/SimplicityStudio/gpio_periph_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2597,7 +2597,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/gpio/slew_rate/SimplicityStudio/gpio_slew_rate_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2614,7 +2614,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/gpio/switch_led_interrupt/SimplicityStudio/gpio_switch_led_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2631,7 +2631,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/gpio/switch_led_polled/SimplicityStudio/gpio_switch_led_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2648,7 +2648,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/i2c/follower/SimplicityStudio/i2c_follower_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2665,7 +2665,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/i2c/leader_dma/SimplicityStudio/i2c_leader_dma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2682,7 +2682,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/i2c/leader_interrupt/SimplicityStudio/i2c_leader_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2699,7 +2699,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/i2c/leader_polled/SimplicityStudio/i2c_leader_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2716,7 +2716,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/ldma/2d_copy/SimplicityStudio/ldma_2d_copy_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2733,7 +2733,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/ldma/interchannel_synchronization/SimplicityStudio/ldma_interchannel_synchronization_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2750,7 +2750,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/ldma/linked_list/SimplicityStudio/ldma_linked_list_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2767,7 +2767,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/ldma/linked_list_looped/SimplicityStudio/ldma_linked_list_looped_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2784,7 +2784,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/ldma/ping_pong/SimplicityStudio/ldma_ping_pong_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2801,7 +2801,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/ldma/scatter_gather/SimplicityStudio/ldma_scatter_gather_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2818,7 +2818,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/ldma/single_button/SimplicityStudio/ldma_single_button_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2835,7 +2835,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/ldma/single_looped/SimplicityStudio/ldma_single_looped_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2852,7 +2852,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/letimer/one_shot_output_compare/SimplicityStudio/letimer_one_shot_output_compare_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2869,7 +2869,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/letimer/pulse_train/SimplicityStudio/letimer_pulse_train_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2886,7 +2886,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/letimer/pulse_width_modulation/SimplicityStudio/letimer_pulse_width_modulation_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2903,7 +2903,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/pcnt/extclk_quadrature/SimplicityStudio/pcnt_extclk_quadrature_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2920,7 +2920,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/pcnt/extclk_single_overflow/SimplicityStudio/pcnt_extclk_single_overflow_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2937,7 +2937,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/pcnt/extclk_single_underflow/SimplicityStudio/pcnt_extclk_single_underflow_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2954,7 +2954,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/pcnt/oversampling_overflow/SimplicityStudio/pcnt_oversampling_overflow_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2971,7 +2971,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/pcnt/oversampling_quadrature/SimplicityStudio/pcnt_oversampling_quadrature_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -2988,7 +2988,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/pcnt/oversampling_underflow/SimplicityStudio/pcnt_oversampling_underflow_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3005,7 +3005,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/pixelrz/ldma_letimer_prs_gpio/SimplicityStudio/pixelrz_ldma_letimer_prs_gpio_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3022,7 +3022,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/prs/logic_unit/SimplicityStudio/prs_logic_unit_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3039,7 +3039,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/timer/dma_edge_capture/SimplicityStudio/timer_dma_edge_capture_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3056,7 +3056,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/timer/frequency_generation/SimplicityStudio/timer_frequency_generation_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3073,7 +3073,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/timer/input_capture_interrupt/SimplicityStudio/timer_input_capture_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3090,7 +3090,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/timer/period_measurement_interrupt/SimplicityStudio/timer_period_measurement_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3107,7 +3107,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/timer/period_measurement_polled/SimplicityStudio/timer_period_measurement_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3124,7 +3124,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/timer/pulse_capture/SimplicityStudio/timer_pulse_capture_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3141,7 +3141,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/timer/pwm_dma/SimplicityStudio/timer_pwm_dma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3158,7 +3158,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/timer/pwm_interrupt/SimplicityStudio/timer_pwm_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3175,7 +3175,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/timer/single_edge_output_compare/SimplicityStudio/timer_single_edge_output_compare_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3192,7 +3192,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/timer/single_pulse_generation_dma/SimplicityStudio/timer_single_pulse_generation_dma_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3209,7 +3209,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/timer/single_pulse_generation_interrupt/SimplicityStudio/timer_single_pulse_generation_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3226,7 +3226,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/timer/single_pulse_generation_polled/SimplicityStudio/timer_single_pulse_generation_polled_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3243,7 +3243,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/wdog/prs_clear/SimplicityStudio/wdog_prs_clear_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3260,7 +3260,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/wdog/prs_monitor/SimplicityStudio/wdog_prs_monitor_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3277,7 +3277,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/wdog/timeout_interrupt/SimplicityStudio/wdog_timeout_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3294,7 +3294,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/wdog/timeout_reset/SimplicityStudio/wdog_timeout_reset_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3311,7 +3311,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/wdog/warning_interrupt/SimplicityStudio/wdog_warning_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
@@ -3328,7 +3328,7 @@
     <properties key="category" value="Example|Peripheral Examples"/>
     <properties key="quality" value="EVALUATION"/>
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
-    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.0.0&quot;}"/>
+    <properties key="sltPackageIds" value="{&quot;peripheral_examples&quot;:&quot;~1.1.0&quot;}"/>
     <properties key="sltPackagePath" value="series3/wdog/window_interrupt/SimplicityStudio/wdog_window_interrupt_s3.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
