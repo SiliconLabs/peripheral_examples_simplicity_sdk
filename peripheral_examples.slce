@@ -1,8 +1,8 @@
 id: peripheral_examples
-label: Peripheral Examples Simplicity SDK
+version: 1.0.0
+label: Peripheral Examples for Simplicity SDK
 description: >
   Peripheral Examples extension for Simplicity SDK.
-version: 1.0.0
 sdk:
   id: simplicity_sdk
   version: "2025.6.0"

@@ -11,6 +11,9 @@ provides:
 template_contribution:
   - name: component_catalog
     value: silabs_bsp
+metadata:
+  sbom:
+    license: MSLA
 config_file:
   - override:
       component: "%extension-peripheral_examples%silabs_bsp"
