@@ -45,7 +45,6 @@ consumption to be higher than what is specified in the EFR32ZG28 datasheet.
         * PD03 -  Push button PB1 (Escape Hatch)
 		* PB00 -  Red LED on radio board, yellow LED0 on mainboard
 
-
 * Board: Silicon Labs EFR32xG22 2.4 GHz 6 dBm Radio Board (BRD4182A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG22C224F512IM40
         * PB00 -  Push button PB0 (Escape Hatch)
@@ -91,3 +90,9 @@ consumption to be higher than what is specified in the EFR32ZG28 datasheet.
     * Device: EFR32MG29B140F1024IM40
         * PB01 -  Push Button PB1
         * PB00 -  LED0, Push Button PB0 (Escape Hatch)
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+        * PB01 -  Push Button PB0 (Escape Hatch)
+        * PB03 -  Push Button PB1
+        * PB02 -  LED0

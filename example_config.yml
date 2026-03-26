@@ -12,6 +12,7 @@ template:
     - brd4194a             # efr32mg27
     - brd4204d             # efr32zg23
     - brd4270b             # efr32fg25
+    - brd4277a             # efr32fg2d
     - brd4400c             # efr32zg28
     - brd4412a             # efr32mg29
     - brd4420a             # efr32bg29

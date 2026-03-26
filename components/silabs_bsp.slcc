@@ -57,6 +57,10 @@ config_file:
     condition: [brd4412a]
   - override:
       component: "%extension-peripheral_examples%silabs_bsp"
+  - path: components/series2/EFR32FG2D_BRD4277A/pin_config.h
+    condition: [brd4277a]
+  - override:
+      component: "%extension-peripheral_examples%silabs_bsp"
   - path: components/series2/EFR32BG29_BRD4420A/pin_config.h
     condition: [brd4420a]
   - override:

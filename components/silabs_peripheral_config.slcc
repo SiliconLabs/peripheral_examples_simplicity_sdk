@@ -35,6 +35,8 @@ config_file:
     condition: [brd4400c]
   - path: components/series2/EFR32MG29_BRD4412A/peripheral_config.h
     condition: [brd4412a]
+  - path: components/series2/EFR32FG2D_BRD4277A/peripheral_config.h
+    condition: [brd4277a]
   - path: components/series2/EFR32BG29_BRD4420A/peripheral_config.h
     condition: [brd4420a]
   - path: components/series3/SIMG301_BRD4407A/peripheral_config.h
