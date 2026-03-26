@@ -5,6 +5,6 @@ description: >
   Peripheral Examples extension for Simplicity SDK.
 sdk:
   id: simplicity_sdk
-  version: "2025.6.2"
+  version: "2025.6.3"
 component_path:
   - path: "components"
