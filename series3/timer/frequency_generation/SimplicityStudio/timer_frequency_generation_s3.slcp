@@ -35,4 +35,5 @@ configuration:
  - {name: SL_CLOCK_MANAGER_EM01GRPACLK_SOURCE, value: CMU_EM01GRPACLKCTRL_CLKSEL_HFRCODPLL}
 sdk_extension:
   - id: peripheral_examples
+    vendor: silabs
     version: 1.1.0

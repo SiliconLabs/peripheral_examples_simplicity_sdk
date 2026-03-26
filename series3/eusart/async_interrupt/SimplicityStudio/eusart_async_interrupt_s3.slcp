@@ -41,5 +41,6 @@ configuration:
     value: "CMU_EM01GRPCCLKCTRL_CLKSEL_HFRCOEM23"
 sdk_extension:
   - id: peripheral_examples
+    vendor: silabs
     version: 1.1.0
   

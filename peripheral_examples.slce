@@ -8,3 +8,5 @@ sdk:
   version: "2025.6.3"
 component_path:
   - path: "components"
+supplier: Silicon Laboratories Inc.
+vendor: silabs

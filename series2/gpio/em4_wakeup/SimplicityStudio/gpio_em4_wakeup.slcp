@@ -36,5 +36,6 @@ configuration:
     value: "EMU_EM4CTRL_EM4IORETMODE_SWUNLATCH"
 sdk_extension:
   - id: peripheral_examples
+    vendor: silabs
     version: 1.1.0
   
