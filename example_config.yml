@@ -27,14 +27,14 @@ template:
 
 # Example-specific settings
 example:
-## Template 
+## Template
 #    # GPIO examples
 #  - path: series2/gpio/switch_led_interrupt/SimplicityStudio/switch_led_interrupt.slcp # Path to the SLCP file
 #    board_whitelist: *board_whitelist        # Reference the supported boards
 #    board_blacklist:                         # Define boards that should NOT be used for this example
 #      - brd4111a                             # Exclude a specific board
 #      - brd4420a                             # Exclude a specific board
-  
+
   # ACMP examples
 - path: series2/acmp/vmon/SimplicityStudio/acmp_vmon.slcp
   board_whitelist: *board_whitelist
@@ -87,7 +87,7 @@ example:
     - brd4204d # xG23 Radio Board
     - brd4400c # xG28 Radio Board
   board_blacklist:
-   
+
   # EMU examples
 - path: series2/emu/dcdc_vmon/SimplicityStudio/emu_dcdc_vmon.slcp
   board_whitelist: *board_whitelist
@@ -108,7 +108,7 @@ example:
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4181a # Removing xG21 board
-    - brd4270b # Removing xG25 Radio Board 
+    - brd4270b # Removing xG25 Radio Board
     - brd4420a # Removing xG29 Boost Radio Board
 
 - path: series2/emu/em1_dcdc/SimplicityStudio/emu_em1_dcdc.slcp
@@ -153,7 +153,7 @@ example:
     - brd4194a # xG27 Board
     - brd4412a # xG29 Board
   board_blacklist:
- 
+
   # EUART examples
 - path: series2/euart/echo/SimplicityStudio/euart_echo.slcp
   board_whitelist:
@@ -178,7 +178,7 @@ example:
     - brd4182a # Removing xG22 Radio Board
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4420a # Removing xG29 Boost Radio Board
-    
+
 - path: series2/eusart/async_dma_em2/SimplicityStudio/eusart_async_dma_em2.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
@@ -427,43 +427,43 @@ example:
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4420a # Removing xG29 Boost Radio Board
-    
+
 - path: series2/ldma/interchannel_synchronization/SimplicityStudio/ldma_interchannel_synchronization.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4420a # Removing xG29 Boost Radio Board
-    
+
 - path: series2/ldma/linked_list/SimplicityStudio/ldma_linked_list.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4420a # Removing xG29 Boost Radio Board
-    
+
 - path: series2/ldma/linked_list_looped/SimplicityStudio/ldma_linked_list_looped.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4420a # Removing xG29 Boost Radio Board
-    
+
 - path: series2/ldma/ping_pong/SimplicityStudio/ldma_ping_pong.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4420a # Removing xG29 Boost Radio Board
-    
+
 - path: series2/ldma/scatter_gather/SimplicityStudio/ldma_scatter_gather.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4420a # Removing xG29 Boost Radio Board
-    
+
 - path: series2/ldma/single_button/SimplicityStudio/ldma_single_button.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4420a # Removing xG29 Boost Radio Board
-    
+
 - path: series2/ldma/single_looped/SimplicityStudio/ldma_single_looped.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
@@ -472,10 +472,11 @@ example:
 
   # LESENSE examples
 - path: series2/lesense/decoder/SimplicityStudio/lesense_decoder.slcp
-  board_whitelist: 
+  board_whitelist:
     - brd4204d # xG23 Board
     - brd4270b # xG25 Board
     - brd4400c # xG28 Board
+    - brd4277a # xG2D Board
   board_blacklist:
 
 - path: series2/lesense/multi_channel/SimplicityStudio/lesense_multi_channel.slcp
@@ -483,13 +484,15 @@ example:
     - brd4204d # xG23 Board
     - brd4270b # xG25 Board
     - brd4400c # xG28 Board
+    - brd4277a # xG2D Board
   board_blacklist:
 
 - path: series2/lesense/single_channel/SimplicityStudio/lesense_single_channel.slcp
-  board_whitelist: 
+  board_whitelist:
     - brd4204d # xG23 Board
     - brd4270b # xG25 Board
     - brd4400c # xG28 Board
+    - brd4277a # xG2D Board
   board_blacklist:
 
   # LETIMER examples
@@ -567,7 +570,7 @@ example:
     - brd4412a # Removing xG29 Radio Board due to lack of PCNT peripheral
     - brd4111a # Removing xG27 Radio Board due to lack of PCNT peripheral
     - brd4420a # Removing xG29 Radio Board due to lack of PCNT peripheral
-    
+
 - path: series2/pcnt/oversampling_overflow/SimplicityStudio/pcnt_oversampling_overflow.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
@@ -604,7 +607,7 @@ example:
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4420a # Removing xG29 Boost Radio Board
-    
+
   # RTCC examples
 - path: series2/rtcc/interrupt/SimplicityStudio/rtcc_interrupt.slcp
   board_whitelist: *board_whitelist
@@ -689,7 +692,7 @@ example:
   board_blacklist:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4420a # Removing xG29 Boost Radio Board
-    
+
   # USART examples
 - path: series2/usart/async_interrupt/SimplicityStudio/usart_async_interrupt.slcp
   board_whitelist: *board_whitelist
@@ -748,7 +751,7 @@ example:
     - brd4420a # Removing xG29 Boost Radio Board
 
   # VDAC examples
-- path: series2/vdac/continuous/SimplicityStudio/vdac_continuous.slcp 
+- path: series2/vdac/continuous/SimplicityStudio/vdac_continuous.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4181a # Removing xG21 Radio Board due to lack of VDAC peripheral
@@ -758,7 +761,7 @@ example:
     - brd4412a # Removing xG29 Radio Board due to lack of VDAC peripheral
     - brd4420a # Removing xG29 Radio Board due to lack of VDAC peripheral
 
-- path: series2/vdac/differential/SimplicityStudio/vdac_differential.slcp 
+- path: series2/vdac/differential/SimplicityStudio/vdac_differential.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4181a # Removing xG21 Radio Board due to lack of VDAC peripheral
@@ -768,7 +771,7 @@ example:
     - brd4412a # Removing xG29 Radio Board due to lack of VDAC peripheral
     - brd4420a # Removing xG29 Radio Board due to lack of VDAC peripheral
 
-- path: series2/vdac/sample_off/SimplicityStudio/vdac_sample_off.slcp 
+- path: series2/vdac/sample_off/SimplicityStudio/vdac_sample_off.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4181a # Removing xG21 Radio Board due to lack of VDAC peripheral
@@ -778,7 +781,7 @@ example:
     - brd4412a # Removing xG29 Radio Board due to lack of VDAC peripheral
     - brd4420a # Removing xG29 Radio Board due to lack of VDAC peripheral
 
-- path: series2/vdac/sine_wave_synch/SimplicityStudio/vdac_sine_wave_synch.slcp 
+- path: series2/vdac/sine_wave_synch/SimplicityStudio/vdac_sine_wave_synch.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4181a # Removing xG21 Radio Board due to lack of VDAC peripheral
@@ -788,11 +791,11 @@ example:
     - brd4412a # Removing xG29 Radio Board due to lack of VDAC peripheral
     - brd4420a # Removing xG29 Radio Board due to lack of VDAC peripheral
 
-- path: series2/vdac/sine_wave_synch_prs/SimplicityStudio/vdac_sine_wave_synch_prs.slcp 
+- path: series2/vdac/sine_wave_synch_prs/SimplicityStudio/vdac_sine_wave_synch_prs.slcp
   board_whitelist: brd4400c # Only xG28 supports PRS‑controlled sine generation
   board_blacklist:
 
-- path: series2/vdac/timer_dma_waveform/SimplicityStudio/vdac_timer_dma_waveform.slcp 
+- path: series2/vdac/timer_dma_waveform/SimplicityStudio/vdac_timer_dma_waveform.slcp
   board_whitelist: *board_whitelist
   board_blacklist:
     - brd4181a # Removing xG21 Radio Board due to lack of VDAC peripheral
@@ -913,7 +916,7 @@ example:
   # GPCRC examples
 - path: series3/gpcrc/dma/SimplicityStudio/gpcrc_dma_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/gpcrc/software/SimplicityStudio/gpcrc_software_s3.slcp
   board_whitelist: *board_whitelist_s3
 
@@ -951,32 +954,32 @@ example:
 
 - path: series3/eusart/spi_main_dma/SimplicityStudio/eusart_spi_main_dma_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/eusart/spi_main_interrupt/SimplicityStudio/eusart_spi_main_interrupt_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/eusart/spi_main_polled/SimplicityStudio/eusart_spi_main_polled_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/eusart/spi_secondary_dma/SimplicityStudio/eusart_spi_secondary_dma_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/eusart/spi_secondary_interrupt/SimplicityStudio/eusart_spi_secondary_interrupt_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/eusart/spi_secondary_polled/SimplicityStudio/eusart_spi_secondary_polled_s3.slcp
-  board_whitelist: *board_whitelist_s3  
-  
+  board_whitelist: *board_whitelist_s3
+
   # I2C examples
 - path: series3/i2c/follower/SimplicityStudio/i2c_follower_s3.slcp
   board_whitelist: *board_whitelist_s3
 
 - path: series3/i2c/leader_dma/SimplicityStudio/i2c_leader_dma_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/i2c/leader_interrupt/SimplicityStudio/i2c_leader_interrupt_s3.slcp
   board_whitelist: *board_whitelist_s3
-  
+
 - path: series3/i2c/leader_polled/SimplicityStudio/i2c_leader_polled_s3.slcp
   board_whitelist: *board_whitelist_s3
 
