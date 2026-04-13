@@ -52,3 +52,6 @@ consecutive transfers you do.
 
 * Board:  Silicon Labs EFR32xG29 Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
 	* Device: EFR32MG29B140F1024IM40
+	
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
