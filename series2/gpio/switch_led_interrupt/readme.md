@@ -6,9 +6,9 @@ This project demonstrates how to use GPIO pins to trigger external interrupts.
 If push-button 0 is pressed, then LED1 will toggle. The GPIO's even or odd interrupt
 handler will be triggered when based on an even or odd pin.
 
-Note: 
-- The EFR32MG21 can wake from EM2/3 sleep modes only through GPIO interrupts on 
-  ports A or B, or through EM4WU pins. Since the push buttons on the WSTK are 
+Note:
+- The EFR32MG21 can wake from EM2/3 sleep modes only through GPIO interrupts on
+  ports A or B, or through EM4WU pins. Since the push buttons on the WSTK are
   connected to port D, they must be re-routed to an interrupt-capable port.
   For this example, jump pins 7 to pins 14 on the Expansion Header of the WSTK.
 - On the EFR32xG27 and EFR32xG29, PB0 and LED0 share the same pin.
@@ -72,8 +72,13 @@ Note:
     * Device: EFR32ZG28B312F1024IM68
         * PB01 -  Push Button PB0
         * PD03 -  LED1
-		
+
 * Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG29B140F1024IM40
         * PB00 - Push Button PB0
         * PB01 - LED1
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+        * PB01 -  Push Button PB0
+        * PD03 -  LED1

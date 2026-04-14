@@ -9,7 +9,7 @@ system from EM4 and toggles the LED0 indefinitely.
 
 Before entering EM4, an "escape hatch" mechanism can be used to pause the
 device so that a debugger can connect in order to erase flash, among other
-things. This is achieved by pressing and holding the specified button (PB1 
+things. This is achieved by pressing and holding the specified button (PB1
 for EFR32MG21 and PB0 for all others devices) while performing a reset.
 
 ## Peripherals used ##
@@ -30,11 +30,11 @@ for EFR32MG21 and PB0 for all others devices) while performing a reset.
    exit from EM4. Observing current consumption in Energy Profiler
    verifies that the device is in EM0.
 
-Note for Testing on xG28: BRD4400C has a RF SPDT switch on the 2.4 GHz 
-radio output that draws ~63 µA of additional current when powered by a 
-logic high level on GPIO PD02. Unless configured otherwise, this 
-pin defaults to GPIO disabled mode (high-Z), such that the switch is 
-powered down. Driving PD02 high turns the switch on, causing current 
+Note for Testing on xG28: BRD4400C has a RF SPDT switch on the 2.4 GHz
+radio output that draws ~63 µA of additional current when powered by a
+logic high level on GPIO PD02. Unless configured otherwise, this
+pin defaults to GPIO disabled mode (high-Z), such that the switch is
+powered down. Driving PD02 high turns the switch on, causing current
 consumption to be higher than what is specified in the EFR32ZG28 datasheet.
 
 ## Hardware & Connections ##
@@ -43,7 +43,7 @@ consumption to be higher than what is specified in the EFR32ZG28 datasheet.
     * Device: EFR32MG21A010F1024IM32
         * PD02 -  Push button PB0
         * PD03 -  Push button PB1 (Escape Hatch)
-		* PB00 -  Red LED on radio board, yellow LED0 on mainboard
+        * PB00 -  Red LED on radio board, yellow LED0 on mainboard
 
 * Board: Silicon Labs EFR32xG22 2.4 GHz 6 dBm Radio Board (BRD4182A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG22C224F512IM40
@@ -85,7 +85,7 @@ consumption to be higher than what is specified in the EFR32ZG28 datasheet.
         * PB01 -  Push Button PB0 (Escape Hatch)
         * PB03 -  Push Button PB1
         * PB02 -  LED0
-		
+
 * Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG29B140F1024IM40
         * PB01 -  Push Button PB1

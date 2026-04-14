@@ -3,17 +3,17 @@
 ## Summary ##
 
 This project demonstrates how to set the slew rate for GPIO pins. A 1 MHz square
-wave is generated on a pin. In this example, pressing button PB0 increments the 
+wave is generated on a pin. In this example, pressing button PB0 increments the
 slew rate setting such pressing the button 8 times cycles the through all the
-slew rate settings. The effects of these settings on the pin's slew rate can be 
-observed by placing a 50uF capacitor on the output pin and observing the change 
+slew rate settings. The effects of these settings on the pin's slew rate can be
+observed by placing a 50uF capacitor on the output pin and observing the change
 in rise and fall times of the 1 MHz square wave.
 
 Series 2 devices provide only a single 3-bit wide field to specify slew rate.
 The lowest slew rate setting of 3'b000 (0) is a low drive mode limited to about 1 mA.
-A setting of 3'b001 (1) or higher provides full drive strength with 3'b110 (6) 
+A setting of 3'b001 (1) or higher provides full drive strength with 3'b110 (6)
 being the highest setting in normal use cases. A setting of 3'b111 (7) should only be
-used for high-speed clock signals (above 10 MHz) and should not be used on more than 
+used for high-speed clock signals (above 10 MHz) and should not be used on more than
 one pin per port.
 
 ## Peripherals used ##
@@ -26,9 +26,9 @@ one pin per port.
 
 1. Build the project and download to the Starter Kit
 2. Click the Play/Resume (F8) button in the debugger to run the program
-3. While observing the rise and fall times of the waveform on the output pin, 
+3. While observing the rise and fall times of the waveform on the output pin,
    press PB0 to change the slew rate
-    
+
 ## Hardware & Connections ##
 
 * Board: Silicon Labs EFR32xG21 2.4 GHz 10 dBm Radio Board (BRD4181A) + Wireless Starter Kit Mainboard
@@ -75,3 +75,8 @@ one pin per port.
     * Device: EFR32MG29B140F1024IM40
         * PB00 -  Push Button PB0
         * PC00 -  1 MHz output (Expansion Header Pin 4)
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+        * PB01 -  Push Button PB0
+        * PC00 -  1 MHz output (Expansion Header Pin 10)
