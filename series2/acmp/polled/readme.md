@@ -94,3 +94,7 @@ behavior can be observed in the absence of undamped mechanical noise.
 		* PB00 - LED0, WSTK Pin 4, Expansion Header Pin 7. Note that on this radio board, the buttons and LEDs are connected to the same pin, and the LEDs are ON when the output is 0.
 		* PB01 - ACMP positive input, push button PB1, WSTK Pin 6, Expansion Header Pin 9
 
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard (BRD4001A)
+    * Device: EFR32FG2DB010F512IM48
+		* PB03 -  ACMP positive input, push button PB1
+		* PB02 -  LED0, WSTK Pin 19

@@ -28,6 +28,8 @@ Like the acmp_interrupt and acmp_pin_output examples, operation is in
 EM3, such that crossing the threshold in either direction wakes the
 device. LED1 is turned on and LED0 is turned off in response to
 ACMP_IF_RISE interrupt and vice versa in response to ACMP_IF_FALL.
+If a noisy supply is used, it is possible both interrupts will be triggered,
+leading to unexpected results.
 
 ## Peripherals used ##
 **ACMP0** - See configuration details above and in the source file.
@@ -38,12 +40,12 @@ ACMP_IF_RISE interrupt and vice versa in response to ACMP_IF_FALL.
 1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the example project and download it to the target system.
 3. If debugging is active, terminate the debug session in your IDE to disconnect from the target device.
-4. Slide the target system power switch to the BAT positrion to disconnect the debugger's power.
+4. Slide the target system power switch to the BAT position to disconnect the debugger's power.
 5. Attach a power supply to GND and VMCU pins of the mainboard expansion header; 3.30 V should be connected to EXP pin 2 and 0.0 V applied EXP pin 1.
 6. Vary the power supply voltage above and below the 2.54 V threshold while otherwise observing the datasheet-specified supply range.
 7. Observe the states of LED0 and LED1 on the mainboard when the supply is above and below the threshold.
 
-### Simplified Testing With A Pro Kit Mainboard (BRD40002A): ###
+### Simplified Testing With A Pro Kit Mainboard (BRD4002A): ###
 
 1. Follow steps 1, 2, and 3 above.
 2. While in the Simplicity Studio IDE, navigate to **Tools → Device Manager Tool**.
@@ -131,3 +133,9 @@ Experiment accordingly to determine production system suitability.
 		* VMCU - Expansion Header Pin 2
 		* GND  - Expansion Header Pin 1 
 
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard (BRD4001A)
+    * Device: EFR32FG2DB010F512IM48
+		* PB02 - GPIO Push/Pull output, WSTK Pin 19, LED0
+		* PD03 - GPIO Push/Pull output, WSTK Pin 26, LED1
+		* VMCU - Expansion Header Pin 2
+		* GND  - Expansion Header Pin 1 
