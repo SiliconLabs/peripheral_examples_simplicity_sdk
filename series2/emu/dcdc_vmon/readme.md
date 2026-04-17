@@ -2,7 +2,7 @@
 
 ## Summary ##
 This project demonstrates the DCDC VREGVDD Threshold Comparator.
-The device will be switching between DCDC regulator on and DCDC bypass mode 
+The device will be switching between DCDC regulator on and DCDC bypass mode
 depending on the input voltage to VREGVDD as below:
 - Switch DCDC to bypass mode if VREGVDD is below 2.2 V
 - Enable DCDC if VREGVDD is above 2.2 V
@@ -16,10 +16,10 @@ EMU
 1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Build the project and download to the Starter Kit
 3. If debugging is active, terminate the debug session in your IDE to disconnect from the target device
-4. Place the Starter Kit power switch into BAT to disconnect the debugger's power 
+4. Place the Starter Kit power switch into BAT to disconnect the debugger's power
 5. Attach a power supply to GND and VMCU pins of the WSTK Expansion Header; Positive 3.30V should be applied to EXP pin 2 and 0.0V applied to EXP pin 1
 6. Press the reset button the mainboard
-7. Vary the power supply voltage above/below the thresholds as per the instructions on the terminal program to start testing 
+7. Vary the power supply voltage above/below the thresholds as per the instructions on the terminal program to start testing
 8. Observe the state of LED1. LED1 turns on when bypass mode is enabled and turns off again when bypass mode is disabled.
 
 Note: When applying voltages independently to supply rails, please observe the operating conditions in the device's data sheet.
@@ -29,7 +29,7 @@ Note: When applying voltages independently to supply rails, please observe the o
 1. Follow steps 1, 2, and 3 above.
 2. While in the Simplicity Studio IDE, navigate to **Tools → Device Manager Tool**.
 3. Select your board, click **Configure**, then open **Terminal → Admin**.
-4. Change the VMCU supply voltage to 2 V by typing "target voltage 2 --nocalibrate" (no quotation marks) and pressing Enter. LED1 will turn on. 
+4. Change the VMCU supply voltage to 2 V by typing "target voltage 2 --nocalibrate" (no quotation marks) and pressing Enter. LED1 will turn on.
 5. Raise VMCU back to the typical 3.3 V by typing "target voltage 3.30 --nocalibrate" (again, no quotation marks) and pressing Enter. LED1 will turn off.
 6. When testing is complete, close the console tab in the IDE.
 
@@ -45,49 +45,49 @@ To test the DC-DC voltage monitoring example on BRD4270B, make the following mod
 ## Hardware & Connections ##
 
 * Board:  Silicon Labs EFR32xG22 Radio Board (BRD4182A) + Wireless Starter Kit Mainboard (BRD4001A)
-	* Device: EFR32MG22A224F512IM40
-		* VMCU - Expansion Header Pin 2
-		* GND  - Expansion Header Pin 1
-		* PD03  - LED1
+    * Device: EFR32MG22A224F512IM40
+        * VMCU - Expansion Header Pin 2
+        * GND  - Expansion Header Pin 1
+        * PD03  - LED1
 
 * Board:  Silicon Labs EFR32xG23 Radio Board (BRD4204D) + Wireless Starter Kit Mainboard (BRD4001A)
-	* Device: EFR32ZG23B010F512IM48
-		* VMCU - Expansion Header Pin 2
-		* GND  - Expansion Header Pin 1 
-		* PD03  - LED1
+    * Device: EFR32ZG23B010F512IM48
+        * VMCU - Expansion Header Pin 2
+        * GND  - Expansion Header Pin 1
+        * PD03  - LED1
 
 * Board:  Silicon Labs EFR32xG24 Radio Board (BRD4186C) + Wireless Starter Kit Mainboard (BRD4001A)
-	* Device: EFR32MG24B210F1536IM48
-		* VMCU - Expansion Header Pin 2
-		* GND  - Expansion Header Pin 1 
-		* PB04  - LED1
+    * Device: EFR32MG24B210F1536IM48
+        * VMCU - Expansion Header Pin 2
+        * GND  - Expansion Header Pin 1
+        * PB04  - LED1
 
 * Board:  Silicon Labs EFR32xG25 Radio Board (BRD4270B) + Wireless Starter Kit Mainboard (BRD4001A)
-	* Device: EFR32FG25B222F1920IM56
-		* VMCU - Expansion Header Pin 2
-		* GND  - Expansion Header Pin 1
-		* PC07  - LED1
+    * Device: EFR32FG25B222F1920IM56
+        * VMCU - Expansion Header Pin 2
+        * GND  - Expansion Header Pin 1
+        * PC07  - LED1
 
 * Board:  Silicon Labs EFR32xG26 Radio Board (BRD4117A) + Wireless Starter Kit Mainboard (BRD4001A)
-	* Device: EFR32MG26B420F3200IM48
-		* VMCU - Expansion Header Pin 2
-		* GND  - Expansion Header Pin 1
-		* PB04 -  LED1
+    * Device: EFR32MG26B420F3200IM48
+        * VMCU - Expansion Header Pin 2
+        * GND  - Expansion Header Pin 1
+        * PB04 -  LED1
 
 * Board:  Silicon Labs EFR32xG27 Radio Board (BRD4194A) + Wireless Starter Kit Mainboard (BRD4001A)
-	* Device: EFR32MG27C140F768IM40
-		* VMCU - Expansion Header Pin 2
-		* GND  - Expansion Header Pin 1 
-		* PB01  - LED1
+    * Device: EFR32MG27C140F768IM40
+        * VMCU - Expansion Header Pin 2
+        * GND  - Expansion Header Pin 1
+        * PB01  - LED1
 
 * Board:  Silicon Labs EFR32xG28 Radio Board (BRD4400C) +Wireless Starter Kit Mainboard (BRD4001A)
-	* Device: EFR32ZG28B312F1024IM68
-		* VMCU - Expansion Header Pin 2
-		* GND  - Expansion Header Pin 1 
-		* PD03  - LED1
+    * Device: EFR32ZG28B312F1024IM68
+        * VMCU - Expansion Header Pin 2
+        * GND  - Expansion Header Pin 1
+        * PD03  - LED1
 
 * Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
-	* Device: EFR32MG29B140F1024IM40
-		* VMCU - Expansion Header Pin 2
-		* GND  - Expansion Header Pin 1 
-		* PB01 - LED1
+    * Device: EFR32MG29B140F1024IM40
+        * VMCU - Expansion Header Pin 2
+        * GND  - Expansion Header Pin 1
+        * PB01 - LED1
