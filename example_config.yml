@@ -78,6 +78,7 @@ example:
     - brd4181a # xG21 Radio Board
     - brd4204d # xG23 Radio Board
     - brd4400c # xG28 Radio Board
+    - brd4277a # xG2D Radio Board
   board_blacklist:
 
 - path: series2/cmu/lfrco_cal_polled/SimplicityStudio/cmu_lfrco_cal_polled.slcp
@@ -86,6 +87,7 @@ example:
     - brd4181a # xG21 Radio Board
     - brd4204d # xG23 Radio Board
     - brd4400c # xG28 Radio Board
+    - brd4277a # xG2D Radio Board
   board_blacklist:
 
   # EMU examples

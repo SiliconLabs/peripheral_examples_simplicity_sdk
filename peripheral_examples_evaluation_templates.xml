@@ -91,8 +91,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.cmu.lfrco_cal_interrupt.SimplicityStudio.cmu_lfrco_cal_interrupt.slcp"/>
     <properties key="projectFilePaths" value="series2/cmu/lfrco_cal_interrupt/SimplicityStudio/cmu_lfrco_cal_interrupt.slcp"/>
     <properties key="readmeFiles" value="series2/cmu/lfrco_cal_interrupt/readme.md"/>
-    <properties key="boardCompatibility" value="brd4181a brd4204d brd4270b brd4400c com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4181a brd4204d brd4270b brd4277a brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32fg2d.* .*efr32mg21.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
@@ -108,8 +108,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.cmu.lfrco_cal_polled.SimplicityStudio.cmu_lfrco_cal_polled.slcp"/>
     <properties key="projectFilePaths" value="series2/cmu/lfrco_cal_polled/SimplicityStudio/cmu_lfrco_cal_polled.slcp"/>
     <properties key="readmeFiles" value="series2/cmu/lfrco_cal_polled/readme.md"/>
-    <properties key="boardCompatibility" value="brd4181a brd4204d brd4270b brd4400c com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32mg21.* .*efr32zg23.* .*efr32zg28.*"/>
+    <properties key="boardCompatibility" value="brd4181a brd4204d brd4270b brd4277a brd4400c com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32fg25.* .*efr32fg2d.* .*efr32mg21.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>

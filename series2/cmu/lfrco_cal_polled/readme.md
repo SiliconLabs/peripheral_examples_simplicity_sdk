@@ -44,3 +44,7 @@ Note: While the factory-calibrated LFRCO frequency is an average of 32.768 kHz, 
 * Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm Radio Board (BRD4400C) + Wireless Starter Kit Mainboard
     * Device: EFR32ZG28B312F1024IM68
         * PD09 -  LFRCO output (Expansion Header Pin 8)
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+        * PC03 -  LFRCO output (Expansion Header Pin 8)
