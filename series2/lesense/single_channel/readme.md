@@ -53,3 +53,8 @@ is pressed.
     * Device: EFR32ZG28B312F1024IM68
         * PB01 -  Push Button PB0
         * PB02 -  LED0
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+        * PB01 - Push Button PB0
+        * PB02 - LED0

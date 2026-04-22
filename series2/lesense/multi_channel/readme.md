@@ -64,8 +64,7 @@ jumper wire to GND (Expansion Header pins 1 or 19) prior to test procedure below
 
 ## Hardware & Connections ##
 
-* Board:  Silicon Labs EFR32xG23 Radio Board (BRD4204D) + 
-        Wireless Starter Kit Mainboard
+* Board:  Silicon Labs EFR32xG23 Radio Board (BRD4204D) + Wireless Starter Kit Mainboard
     * Device: EFR32ZG23B010F512IM48
         * PB01 -  LESENSE Channel 0 (Push Button PB0)
         * PB03 -  LESENSE Channel 1 (Push Button PB1)
@@ -74,8 +73,7 @@ jumper wire to GND (Expansion Header pins 1 or 19) prior to test procedure below
         * PB02 -  LED0
         * PD03 -  LED1
 
-* Board:  Silicon Labs EFR32xG25 Radio Board (BRD4270B) + 
-        Wireless Starter Kit Mainboard
+* Board:  Silicon Labs EFR32xG25 Radio Board (BRD4270B) + Wireless Starter Kit Mainboard
     * Device: EFR32FG25B222F1920IM56
         * PB00 -  LESENSE Channel 0 (Push Button PB0)
         * PB01 -  LESENSE Channel 1 (Push Button PB1)
@@ -84,8 +82,7 @@ jumper wire to GND (Expansion Header pins 1 or 19) prior to test procedure below
         * PC06 -  LED0
         * PC07 -  LED1
 
-* Board:  Silicon Labs EFR32xG28 Radio Board (BRD4400C) +
-        Wireless Starter Kit Mainboard
+* Board:  Silicon Labs EFR32xG28 Radio Board (BRD4400C) + Wireless Starter Kit Mainboard
     * Device: EFR32ZG28B312F1024IM68
         * PB01 -  LESENSE Channel 0 (Push Button PB0)
         * PB03 -  LESENSE Channel 1 (Push Button PB1)
@@ -93,3 +90,10 @@ jumper wire to GND (Expansion Header pins 1 or 19) prior to test procedure below
         * PB05 -  LESENSE Channel 3 (Expansion Header 13)
         * PB02 -  LED0
         * PD03 -  LED1
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+        * PB01 - LESENSE Channel 0 (Push Button PB0)
+        * PB03 - LESENSE Channel 1 (Push Button PB1)
+        * PA06 - LESENSE Channel 2 (Expansion Header 11)
+        * PA07 - LESENSE Channel 3 (Expansion Header 13)
