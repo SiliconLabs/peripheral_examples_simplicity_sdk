@@ -119,7 +119,7 @@
     <properties key="sltPackagePath" value="series2/cmu/lfrco_cal_polled/SimplicityStudio/cmu_lfrco_cal_polled.slcp"/>
     <properties key="filters" value="Device\ Type|SoC MCU|32-bit\ MCU Project\ Difficulty|Beginner"/>
   </descriptors>
-  <descriptors name="emu_dcdc_vmon" label="Peripheral Examples - EMU DCDC VMON" description="This project demonstrates the DCDC VREGVDD Threshold Comparator.&#xA;">
+  <descriptors name="emu_dcdc_vmon" label="Peripheral Examples - EMU DCDC Voltage Monitor" description="This project demonstrates using the VREGVDD comparator interrupt to change DCDC regulation mode when above/below the configured VREGVDD input voltage threshold.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.emu.dcdc_vmon.SimplicityStudio.emu_dcdc_vmon.slcp"/>
@@ -1111,7 +1111,7 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.lesense.decoder.SimplicityStudio.lesense_decoder.slcp"/>
     <properties key="projectFilePaths" value="series2/lesense/decoder/SimplicityStudio/lesense_decoder.slcp"/>
     <properties key="readmeFiles" value="series2/lesense/decoder/readme.md"/>
-    <properties key="boardCompatibility" value="brd4204d brd4277a brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="boardCompatibility" value="brd4204d brd4270b brd4277a brd4400c com.silabs.board.none"/>
     <properties key="partCompatibility" value=".*efr32fg25.* .*efr32fg2d.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
@@ -1128,7 +1128,7 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.lesense.multi_channel.SimplicityStudio.lesense_multi_channel.slcp"/>
     <properties key="projectFilePaths" value="series2/lesense/multi_channel/SimplicityStudio/lesense_multi_channel.slcp"/>
     <properties key="readmeFiles" value="series2/lesense/multi_channel/readme.md"/>
-    <properties key="boardCompatibility" value="brd4204d brd4277a brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="boardCompatibility" value="brd4204d brd4270b brd4277a brd4400c com.silabs.board.none"/>
     <properties key="partCompatibility" value=".*efr32fg25.* .*efr32fg2d.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
@@ -1145,7 +1145,7 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.lesense.single_channel.SimplicityStudio.lesense_single_channel.slcp"/>
     <properties key="projectFilePaths" value="series2/lesense/single_channel/SimplicityStudio/lesense_single_channel.slcp"/>
     <properties key="readmeFiles" value="series2/lesense/single_channel/readme.md"/>
-    <properties key="boardCompatibility" value="brd4204d brd4277a brd4270b brd4400c com.silabs.board.none"/>
+    <properties key="boardCompatibility" value="brd4204d brd4270b brd4277a brd4400c com.silabs.board.none"/>
     <properties key="partCompatibility" value=".*efr32fg25.* .*efr32fg2d.* .*efr32zg23.* .*efr32zg28.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>

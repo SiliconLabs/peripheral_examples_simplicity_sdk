@@ -2,9 +2,9 @@
 project_name: emu_dcdc_vmon
 package: peripheral_examples
 quality: evaluation
-label: Peripheral Examples - EMU DCDC VMON
+label: Peripheral Examples - EMU DCDC Voltage Monitor
 description: >
-  This project demonstrates the DCDC VREGVDD Threshold Comparator.
+  This project demonstrates using the VREGVDD comparator interrupt to change DCDC regulation mode when above/below the configured VREGVDD input voltage threshold.
 category: Example|Peripheral Examples
 filter:
   - name: "Device Type"
@@ -26,6 +26,7 @@ component:
   - id: sl_main
   - id: device_init
   - id: clock_manager
+  - id: power_manager
   - id: silabs_bsp
     from: peripheral_examples
   - id: silabs_peripheral_config
@@ -34,4 +35,8 @@ sdk_extension:
   - id: peripheral_examples
     vendor: silabs
     version: 2.0.0
-  
+configuration:
+  - name: "SL_DEVICE_INIT_DCDC_ENABLE"
+    value: "0"
+  - name: "SL_DEVICE_INIT_DCDC_BYPASS"
+    value: "1"
