@@ -107,9 +107,14 @@ clocks has no effect on xG21 devices.
     * PB04 - IADC positive differential input, WSTK EXP Header Pin 11
     * PB01 - Push Button PB0
 
-* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board 
-          (BRD4412A) + Wireless Starter Kit Mainboard
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
   * Device: EFR32MG29B140F1024IM40
     * PB01 - LED1, WSTK EXP Header Pin 9
     * PB02 - IADC positive differential input, WSTK EXP Header Pin 15
     * PB00 - Push Button PB0
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+  * Device: EFR32FG2DB010F512IM48
+    * PD03 - LED1, WSTK P26
+    * PA05 - IADC positive differential input, WSTK EXP Header Pin 7, WSTK P4
+    * PB01 - Push Button PB0

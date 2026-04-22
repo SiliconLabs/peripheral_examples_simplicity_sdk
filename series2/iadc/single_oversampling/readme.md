@@ -80,8 +80,12 @@ GPIO pin whenever the IADC finishes one single conversion.
     * PB04 - IADC positive differential input, WSTK EXP Header Pin 11
     * PB01 - GPIO Push/Pull output, WSTK P17
 
-* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board 
-          (BRD4412A) + Wireless Starter Kit Mainboard
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
   * Device: EFR32MG29B140F1024IM40
     * PB02 - IADC positive differential input, WSTK EXP Header Pin 15
     * PB01 - GPIO Push/Pull output, WSTK EXP Header Pin 9, WSTK P6
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+  * Device: EFR32FG2DB010F512IM48
+    * PA05 - IADC positive differential input, WSTK EXP Header Pin 7, WSTK P4
+    * PB01 - GPIO Push/Pull output, WSTK P17

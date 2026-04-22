@@ -91,3 +91,7 @@ In this example, the single input channel may be a pin with an odd-numbered iden
   * Device: EFR32MG29B140F1024IM40
     * PB02 - IADC input, single-ended, Expansion Header Pin 15, WSTK P12
 
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board 
+		  (BRD4277A) + Wireless Starter Kit Mainboard
+  * Device: EFR32FG2DB010F512IM48
+    * PA05 - IADC input, single-ended, Expansion Header Pin 7, WSTK P4

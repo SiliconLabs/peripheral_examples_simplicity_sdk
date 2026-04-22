@@ -31,8 +31,7 @@ clocks has no effect on xG21 devices.
 2. Build the project and download it to the Starter Kit.
 3. Start a debug session in the IDE and add `sample` and `singleResult` to the 
    Watch/Variables window.
-4. Set a breakpoint at the first function within the infinite while loop 
-   (`IADC_command`).
+4. Set a breakpoint within app_process_action().
 5. Run the example.
 6. Using a precision voltage source, supply full scale positive voltage across 
    differential positive and negative inputs:  
@@ -114,10 +113,16 @@ show the previous conversion loop results.
     * PB05 - IADC negative differential input, WSTK EXP Header Pin 13
     * PD03 - LED1, WSTK P19
 
-* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board 
-          (BRD4412A) + Wireless Starter Kit Mainboard
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
   * Device: EFR32MG29B140F1024IM40
     * PB00 - Push Button PB0
     * PB02 - IADC positive differential input, WSTK EXP Header Pin 15
     * PB03 - IADC negative differential input, WSTK EXP Header Pin 16
     * PB01 - LED1, WSTK EXP Header Pin 9
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+  * Device: EFR32FG2DB010F512IM48
+    * PB01 - Push Button PB0
+    * PA05 - IADC positive differential input, WSTK EXP Header Pin 7, WSTK P4
+    * PA06 - IADC negative differential input, WSTK EXP Header Pin 11, WSTK P8
+    * PD03 - LED1, WSTK P26
