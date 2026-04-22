@@ -115,3 +115,9 @@ To test the IADC voltage monitoring example on BRD4270B, make the following modi
 		* VMCU - Expansion Header Pin 2
         * GND  - Expansion Header Pin 1
 		* PB01 - LED1, WSTK Expansion Header Pin 9
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+	* Device: EFR32FG2DB010F512IM48
+        * VMCU - Expansion Header Pin 2
+        * GND  - Expansion Header Pin 1
+        * PD03 - LED1, WSTK P26

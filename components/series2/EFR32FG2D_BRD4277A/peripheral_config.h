@@ -72,8 +72,8 @@
 #define LESENSE_IADC_INPUT_3_BUSALLOC      GPIO_ABUSALLOC_AODD0_ADC0
 
 // IADC scan configuration
-#define IADC_SCAN_NUM_INPUTS       4
-#define IADC_SCANFIFO_DVL          iadcFifoCfgDvl4
+#define IADC_SCAN_NUM_INPUTS       8
+#define IADC_SCANFIFO_DVL          iadcFifoCfgDvl8
 
 // Lock word for the last flash memory page
 #define PAGELOCKn                  PAGELOCK1

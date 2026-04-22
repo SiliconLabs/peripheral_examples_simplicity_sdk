@@ -37,7 +37,7 @@ array. Each time the program halts at the test breakpoint, the values in
 "scanResult" in the Expression window will contain the first set of scan table
 results.
 
-For devices with 8-entry FIFO (EFR32xG24, EFR32xG25, EFR32xG26 and EFR32xG28),
+For devices with 8-entry FIFO (EFR32xG24, EFR32xG25, EFR32xG26, EFR32xG28, and EFR32xG2D),
 the IADC scan table is configued to process 8 channels at a time to avoid FIFO
 overflow. The IADC interrupts on scan table completion and the IRQ handler reads
 the conversion results from the FIFO and using the scan table entry IDs, saves
@@ -119,3 +119,9 @@ update with all eight channels' results.
   * Device: EFR32MG29B140F1024IM40
     * PB02 - IADC input, single-ended, Expansion Header Pin 15, WSTK P12
     * PB03 - IADC input, single-ended, Expansion Header Pin 16, WSTK P13
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board 
+		  (BRD4277A) + Wireless Starter Kit Mainboard
+  * Device: EFR32FG2DB010F512IM48
+    * PA05 - IADC input, single-ended, Expansion Header Pin 7, WSTK P4
+    * PA06 - IADC input, single-ended, Expansion Header Pin 11, WSTK P8

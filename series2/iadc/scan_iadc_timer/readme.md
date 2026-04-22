@@ -109,3 +109,10 @@ needed. See the reference manual for more details.
     * PB02 - IADC input, single-ended, Expansion Header Pin 15, WSTK P12
     * PB03 - IADC input, single-ended, Expansion Header Pin 16, WSTK P13
     * PA08 - GPIO Push/Pull output, Expansion Header Pin 13, WSTK P10
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board 
+		  (BRD4277A) + Wireless Starter Kit Mainboard
+  * Device: EFR32FG2DB010F512IM48
+    * PA05 - IADC input, single-ended, Expansion Header Pin 7, WSTK P4
+    * PA06 - IADC input, single-ended, Expansion Header Pin 11, WSTK P8
+    * PC05 - GPIO Push/Pull output, Expansion Header Pin 15, WSTK P12
