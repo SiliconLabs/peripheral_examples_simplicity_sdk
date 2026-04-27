@@ -52,3 +52,7 @@ This project demonstrates single output compare using the TIMER peripheral. TIME
 * Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG29B140F1024IM40
         * PA06  - TIM0_CC0 (WSTK P11, Expansion Header Pin 14)
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+		* PA06  - TIM0_CC0 (WSTK P8, Expansion Header Pin 11)

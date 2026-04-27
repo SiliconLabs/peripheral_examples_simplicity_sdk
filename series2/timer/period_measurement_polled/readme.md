@@ -6,7 +6,7 @@ This project demonstrates period measurement using TIMER0. The main loop polls t
 
 Once the flag is set, the two captured edge times are saved, and the overflow flag is checked in order to account for cases in which two edges span the time during which the counter rolls over from 0xFFFFFFFF (TIMER0 is 32 bits wide) to 0. These values are passed to the calculatePeriod() function, which returns the measuredPeriod as an integer value in microseconds, such that the measuredPeriod value shows 1000 for an input signal with a period of 1 kHz.
 
-Note: The range of frequencies this program can measure accurately is limited by the selected frequency of the EM01GRPACLK, prescaling of the local TIMER clock, and the counter width of the selected TIMER, e.g. TIMER0 is 32 bits wide while other TIMERs are generally 16 bits wide.
+> Note: The range of frequencies this program can measure accurately is limited by the selected frequency of the EM01GRPACLK, prescaling of the local TIMER clock, and the counter width of the selected TIMER, e.g. TIMER0 is 32 bits wide while other TIMERs are generally 16 bits wide.
 
 ## Peripherals used ##
 
@@ -57,3 +57,7 @@ Note: The range of frequencies this program can measure accurately is limited by
 * Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG29B140F1024IM40
         * PA06  - TIM0_CC0 (WSTK P11, Expansion Header Pin 14)
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+		* PA06  - TIM0_CC0 (WSTK P8, Expansion Header Pin 11)

@@ -4,7 +4,7 @@
 
 This project demonstrates use of the TIMER module for interrupt-driven input capture. Button 0 presses trigger a TIMER interrupt, and TIMER interrupt handler captures the CC0 count and stores value to a circular buffer. 
 
-Note: This example captures falling edge because one side of each STK push button switch is grounded while the other is intended to be pulled high by the GPIO pin to which it is connected.
+> Note: This example captures falling edge because one side of each STK push button switch is grounded while the other is intended to be pulled high by the GPIO pin to which it is connected.
 
 Comments are provided in the example that explain how to convert the code from interrupt-driven to polled operation.
 
@@ -57,3 +57,7 @@ Comments are provided in the example that explain how to convert the code from i
 * Board: Silicon Labs EFR32xG29 Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG29B140F1024IM40
         * PB00  - Push Button PB0 (WSTK P4, Expansion Header Pin 7)
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+		* PA06  - TIM0_CC0 (WSTK P8, Expansion Header Pin 11)
