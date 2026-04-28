@@ -71,7 +71,7 @@ const sl_gpio_t GPIO_LED0 = { .port = LED0_PORT, .pin = LED0_PIN };
  * @brief
  *   LDMA Callback Function
  ******************************************************************************/
-void ldmaCallback(void)
+void ldma_callback(void)
 {
   // Toggle GPIO to notify that transfer is complete
   sl_gpio_toggle_pin(&GPIO_LED0);
@@ -81,7 +81,7 @@ void ldmaCallback(void)
  * @brief
  *   Setup LED0 as indicator for complete transfer
  ******************************************************************************/
-void initGPIO(void)
+void init_gpio(void)
 {
   // Initialize GPIO
   sl_gpio_init();
@@ -95,7 +95,7 @@ void initGPIO(void)
  *   Initialize the LDMA controller for scatter transfer.
  *   Scatter data from one larger array into smaller arrays. 
  ******************************************************************************/
-void initLdmaScatter(void)
+void init_ldma_scatter(void)
 {
   unsigned int channelId = LDMA_CHANNEL;
   bool active;
@@ -155,7 +155,7 @@ void initLdmaScatter(void)
     DMADRV_LdmaStartTransfer(channelId,
                              &periTransferTx,
                              descLink,
-                             (DMADRV_Callback_t)ldmaCallback,
+                             (DMADRV_Callback_t)ldma_callback,
                              NULL);
   }
 
@@ -166,7 +166,7 @@ void initLdmaScatter(void)
  *   Initialize the LDMA controller for gather transfer.
  *   Gather data from smaller arrays into one larger array. 
  ******************************************************************************/
-void initLdmaGather(void)
+void init_ldma_gather(void)
 {
   unsigned int channelId = LDMA_CHANNEL;
   bool active;
@@ -218,7 +218,7 @@ void initLdmaGather(void)
     DMADRV_LdmaStartTransfer(channelId,
                              &memTransferTx,
                              descLink,
-                             (DMADRV_Callback_t)ldmaCallback,
+                             (DMADRV_Callback_t)ldma_callback,
                              NULL);
   }
 }
@@ -229,13 +229,13 @@ void initLdmaGather(void)
 void app_init(void)
 {
   // Initialize LED
-  initGPIO();
+  init_gpio();
 
   // Initialize LDMA for Scatter transfer
-  initLdmaScatter();
+  init_ldma_scatter();
 
   // Initialize LDMA for Gather transfer
-  initLdmaGather();
+  init_ldma_gather();
 }
 
 /*******************************************************************************

@@ -17,11 +17,11 @@ matrix, and be moved to (DST_COL_INDEX, DST_ROW_INDEX) in the destination
 matrix. The width and height of this submatrix is defined by TRANSFER_HEIGHT
 and TRANSFER_WIDTH.
 
-With the sample values given, the LDMA will transfer
-10 11 12
-20 21 22
-30 31 32
-40 41 42
+With the sample values given, the LDMA will transfer  
+10 11 12  
+20 21 22  
+30 31 32  
+40 41 42  
 from the source matrix to index (2, 1) of the destination matrix.
 
 ## Peripherals used ##
@@ -36,7 +36,7 @@ from the source matrix to index (2, 1) of the destination matrix.
 1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Build the project and download to the Starter Kit
 3. Start a debug session in the IDE and add "dst2d" to the Watch/Variables window
-4. Add a breakpoint to the beginning of ldmaCallback()
+4. Add a breakpoint to the beginning of ldma_callback()
 5. Run the debugger. It should halt inside the callback subroutine
 6. You can expand the "dst2d" variable in the Watch/Variables window to see that the
    submatrix has been successfully transferred. LED0 will toggle
@@ -78,3 +78,7 @@ from the source matrix to index (2, 1) of the destination matrix.
 * Board: Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG29B140F1024IM40
         * PB00 - LED0, WSTK EXP Header 7
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+        * PB02 - LED0, WSTK P19

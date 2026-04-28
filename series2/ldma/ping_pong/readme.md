@@ -27,7 +27,7 @@ transfered to pong, etc.
 2. Build the project and download to the Starter Kit
 3. Start a debug session in the IDE and add "pingBuffer" and "pongBuffer" to the
    Watch/Variables window
-4. Add a breakpoint at the beginning of ldmaCallback()
+4. Add a breakpoint at the beginning of ldma_callback()
 5. Run the debugger. It should halt inside the callback subroutine with the
    first descriptor complete (this can be seen in the Watch/Variables window)
    and LED0 will toggle
@@ -71,3 +71,7 @@ transfered to pong, etc.
 * Board: Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG29B140F1024IM40
         * PB00 - LED0, WSTK EXP Header 7
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+        * PB02 - LED0, WSTK P19

@@ -93,3 +93,9 @@ After you press the second button (regardless of the order),
         * PB00 - Push Button PB0, WSTK EXP Header Pin 7
         * PB01 - Push Button PB1, WSTK EXP Header Pin 9
         * PB02 - WSTK EXP Header 15
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+        * PB01 - Push Button PB0, WSTK Pin 17
+        * PB03 - Push Button PB1, WSTK Pin 21
+        * PB02 - LED0, WSTK P19

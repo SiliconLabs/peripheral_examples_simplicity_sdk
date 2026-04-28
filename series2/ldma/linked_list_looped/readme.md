@@ -15,7 +15,7 @@ A, B, A, B, A, B, A, B, C
 The transfer is requested by software at the end of the LDMA initialization.
 
 If you wanted to have the transfers run automatically without interrupts, 
-you can remove from initLdma() the following lines:
+you can remove from init_ldma() the following lines:
 
 	// Enable interrupts
 	descLink[0].xfer.doneIfs = true;
@@ -94,3 +94,7 @@ Also remove from LDMA_IRQHandler() the following lines:
 * Board: Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG29B140F1024IM40
         * PB00 - LED0, WSTK EXP Header 7
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+        * PB02 - LED0, WSTK P19

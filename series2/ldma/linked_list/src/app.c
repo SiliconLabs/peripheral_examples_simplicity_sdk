@@ -70,7 +70,7 @@ const sl_gpio_t GPIO_LED0 = {.port = LED0_PORT, .pin = LED0_PIN};
  * @brief
  *   LDMA Callback Function
  ******************************************************************************/
-void ldmaCallback(void)
+void ldma_callback(void)
 {
   // Toggle GPIO to notify that transfer is complete
   sl_gpio_toggle_pin(&GPIO_LED0);
@@ -83,7 +83,7 @@ void ldmaCallback(void)
  * @brief
  *   Setup LED0 as indicator for complete transfer
  ******************************************************************************/
-void initGPIO(void)
+void init_gpio(void)
 {
   // Initialize GPIO
   sl_gpio_init();
@@ -96,7 +96,7 @@ void initGPIO(void)
  * @brief
  *   Initialize the LDMA controller for descriptor linked list
  ******************************************************************************/
-void initLdma(void)
+void init_ldma(void)
 {
   unsigned int channelId = LDMA_CHANNEL;
   bool active;
@@ -148,7 +148,7 @@ void initLdma(void)
     DMADRV_LdmaStartTransfer(channelId,
                              &periTransferTx,
                              descLink,
-                             (DMADRV_Callback_t)ldmaCallback,
+                             (DMADRV_Callback_t)ldma_callback,
                              NULL);
   }
 }
@@ -159,10 +159,10 @@ void initLdma(void)
 void app_init(void)
 {
   // Initialize LED
-  initGPIO();
+  init_gpio();
 
   // Initialize LDMA
-  initLdma();
+  init_ldma();
 }
 
 /*******************************************************************************

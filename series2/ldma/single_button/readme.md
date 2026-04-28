@@ -26,7 +26,7 @@ or a button press on Push Button 1 (#define USE_GPIO_PRS 1).
 1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Build the project and download to the Starter Kit
 3. Start a debug session in the IDE and add "dstBuffer" to the Watch/Variables window
-4. Add a breakpoint at the beginning of ldmaCallback()
+4. Add a breakpoint at the beginning of ldma_callback()
 5. The transfer is requested by software (#define USE_GPIO_PRS 0):
    Run the debugger. It should halt inside the callback subroutine with the
    transfer complete (this can be seen in the Watch/Variables window)
@@ -81,3 +81,8 @@ or a button press on Push Button 1 (#define USE_GPIO_PRS 1).
     * Device: EFR32MG29B140F1024IM40
         * PB01 - Push Button PB1, WSTK EXP Pin 9
         * PB00 - LED0, WSTK EXP Header 7
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+        * PB03 - Push Button PB1, WSTK Pin 21
+        * PB02 - LED0, WSTK P19

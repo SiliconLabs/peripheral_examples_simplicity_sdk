@@ -76,7 +76,7 @@ const sl_gpio_t GPIO_LED0 = { .port = LED0_PORT, .pin = LED0_PIN };
  * @brief
  *   LDMA Callback Function
  ******************************************************************************/
-void ldmaCallback(void)
+void ldma_callback(void)
 {
   // Toggle GPIO to notify that transfer is complete
   sl_gpio_toggle_pin(&GPIO_LED0);
@@ -87,7 +87,7 @@ void ldmaCallback(void)
  * @brief
  *   Setup push button PB1 as PRS source for DMAREQ0.
  ******************************************************************************/
-static void gpioPrsSetup(void)
+static void gpio_prs_setup(void)
 {
   // Enable peripheral clocks
   sl_clock_manager_enable_bus_clock(SL_BUS_CLOCK_PRS);
@@ -117,7 +117,7 @@ static void gpioPrsSetup(void)
  * @brief
  *   Setup LED0 as indicator for complete transfer
  ******************************************************************************/
-void initGPIO(void)
+void init_gpio(void)
 {
   // Initialize GPIO
   sl_gpio_init();
@@ -130,7 +130,7 @@ void initGPIO(void)
  * @brief
  *   Setup LDMA to be triggered either by software or by pressing PB1
  ******************************************************************************/
-void initLdma(void)
+void init_ldma(void)
 {
   unsigned int channelId = LDMA_CHANNEL;
   bool active;
@@ -185,7 +185,7 @@ void initLdma(void)
     DMADRV_LdmaStartTransfer(channelId,
                              &periTransferConfigPB1,
                              &desc,
-                             (DMADRV_Callback_t)ldmaCallback,
+                             (DMADRV_Callback_t)ldma_callback,
                              NULL);
   }
 }
@@ -196,15 +196,15 @@ void initLdma(void)
 void app_init(void)
 {
   // Initialize LED
-  initGPIO();
+  init_gpio();
 
 #if (USE_GPIO_PRS == 1)
   // Initialize GPIO for PRS
-  gpioPrsSetup();
+  gpio_prs_setup();
 #endif
   
   // Initialize LDMA
-  initLdma();
+  init_ldma();
 }
 
 /*******************************************************************************
