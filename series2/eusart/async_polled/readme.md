@@ -25,7 +25,7 @@ these back to the user.
 Alternatively, the example may be tested with a USB-to-serial converter,
 such as the Silicon Labs CP2102N-EK.  Refer to the list below for the
 mapping of EUSART signals to Expansion (EXP) Header pins.
-    
+
 ## Hardware & Connections ##
 
 * Board:  Silicon Labs EFR32ZG23 868-915 MHz 14 dBm Radio Board (BRD4204D) + Wireless Starter Kit Mainboard
@@ -62,3 +62,8 @@ mapping of EUSART signals to Expansion (EXP) Header pins.
     * Device: EFR32MG29B140F1024IM40
         * PA05 -  EUSART0 transmit, Expansion Header Pin 12, WSTK P9
         * PA06 -  EUSART0 receive,  Expansion Header Pin 14, WSTK P11
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+        * PA08 -  EUSART0 transmit, Expansion Header Pin 12, WSTK P9
+        * PA09 -  EUSART0 receive,  Expansion Header Pin 14, WSTK P11

@@ -43,7 +43,7 @@ one pin per port.
    it does not require a debug connection.
 2. Build the project again but this time with INITIAL_TRANSMITTER #defined
    and download it to a second Starter Kit by launching the debugger.  Do
-   not run the example at this time. 
+   not run the example at this time.
 3. Connect the two boards' EUSART TX pins together.  Also connect the
    grounds on both boards (e.g. the EXP header ground on pin 1).
 4. Open a terminal program and configure it for 9600N81 operation on the
@@ -60,10 +60,10 @@ one pin per port.
    Initial TX: Receive success and transmitting now
 > Note: If the messages do not appear as expected, reset the setup by
    (a) stopping execution on the transmitter board, (b) pressing the reset
-   button on the receiver board, (c) resetting the transmitter board 
+   button on the receiver board, (c) resetting the transmitter board
    (d) restarting execution on the transmitter
    board.
-    
+
 ## Hardware & Connections ##
 
 * Board:  Silicon Labs EFR32ZG23 868-915 MHz 14 dBm Radio Board (BRD4204D) + Wireless Starter Kit Mainboard
@@ -93,3 +93,7 @@ one pin per port.
 * Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard
     * Device: EFR32MG29B140F1024IM40
         * PA05 -  EUSART0 transmit, Expansion Header Pin 12, WSTK P9
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+        * PA08 -  EUSART0 transmit, Expansion Header Pin 12, WSTK P9

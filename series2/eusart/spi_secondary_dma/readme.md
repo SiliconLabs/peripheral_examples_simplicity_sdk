@@ -35,13 +35,13 @@ because this example is intended to run with one of the main mode
 examples, which constantly transmit data, it is required so that data is
 received in the expected order when the main asserts the chip select.
 
-The program flow is controlled by a simple state machine with three states: 
-**INIT**, **RECEIVE**, and **RX_COMPLETE**. The switch statement in 
-the `app_process_action` loop includes an intentional fall-through from 
+The program flow is controlled by a simple state machine with three states:
+**INIT**, **RECEIVE**, and **RX_COMPLETE**. The switch statement in
+the `app_process_action` loop includes an intentional fall-through from
 **RX_COMPLETE** to **INIT**, allowing the next transfer to begin immediately
-for uninterrupted operation.  The LDMA has been configured so that (a) one 
-channel moves each byte in `outbuf[]` to the EUSARTn_TXDATA register when 
-there is space in the transmit FIFO (EUSARTn_STATUS_TXFL is asserted), and 
+for uninterrupted operation.  The LDMA has been configured so that (a) one
+channel moves each byte in `outbuf[]` to the EUSARTn_TXDATA register when
+there is space in the transmit FIFO (EUSARTn_STATUS_TXFL is asserted), and
 (b) another channel moves the matching received byte from EUSARTn_RXDATA to
 `inbuf[]` (upon assertion of EUSARTn_STATUS_RXFL).  Transfers are started for
 these channels, and the device enters the EM1 low-energy mode.
@@ -56,9 +56,9 @@ writes each byte from the receive FIFO to `inbuf[]`.
 This process occurs autonomously, and only the LDMA interrupt request
 (assertion of one or more of the LDMA_IF_DONEx flags or LDMA_IF_ERROR in
 the event of some kind of problem) causes the device to exit EM1.
-Entering EM1 is handled by the Power Manager when exiting 
-`app_process_action()`.  The `ldma_rx_callback()` sets the state machine 
-to RX_COMPLETE, and the chip select is de-asserted once the last byte 
+Entering EM1 is handled by the Power Manager when exiting
+`app_process_action()`.  The `ldma_rx_callback()` sets the state machine
+to RX_COMPLETE, and the chip select is de-asserted once the last byte
 is received.
 
 > Note: This example uses inclusive lexicon wherever possible. For more
@@ -89,7 +89,7 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
     | SCLK     | <-> | SCLK          |
     | CSn      | <-> | CSn           |
 
-4. Before running the example, set a breakpoint at the start of case **SEND**
+4. Before running the example, set a breakpoint at the start of case **RX_COMPLETE**
    in ``app_process_action``.  Examine the ``inbuf[]`` array to see the
    received data from the secondary.  This example transfers data
    continuously but will not start until PB0 is pressed on the board running
@@ -98,7 +98,7 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
 ## Hardware & Connections
 
 * Board:  Silicon Labs EFR32ZG23 868-915 MHz 14 dBm Radio Board (BRD4204D)
-        + Wireless Starter Kit Mainboard (BRD4001A)
+        + Wireless Starter Kit Mainboard
   * Device: EFR32ZG23B010F512IM48
     * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
@@ -106,7 +106,7 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
     * PA07 -  EUSART0_CS (CSn)   - Expansion Header Pin 13, WSTK Pin 10
 
 * Board:  Silicon Labs EFR32xG24 2.4 GHz 10 dBm Radio Board (BRD4186C)
-        + Wireless Starter Kit Mainboard (BRD4001A)
+        + Wireless Starter Kit Mainboard
   * Device: EFR32MG24B210F1536IM48
     * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
@@ -114,7 +114,7 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
     * PA07 -  EUSART0_CS (CSn)   - Expansion Header Pin 13, WSTK Pin 10
 
 * Board:  Silicon Labs EFR32FG25 902-928 MHz 14 dBm Radio Board (BRD4270B)
-        + Wireless Starter Kit Mainboard (BRD4001A)
+        + Wireless Starter Kit Mainboard
   * Device: EFR32FG25B222F1920IM56
     * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
@@ -122,7 +122,7 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
     * PA07 -  EUSART0_CS (CSn)   - Expansion Header Pin 13, WSTK Pin 10
 
 * Board:  Silicon Labs EFR32xG26 2.4 GHz 20 dBm Radio Board (BRD4117A)
-        + Wireless Starter Kit Mainboard (BRD4001A)
+        + Wireless Starter Kit Mainboard
   * Device: EFR32MG26B420F3200IM48
     * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
@@ -137,7 +137,7 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
     * PC02 -  EUSART0_CLK (SCLK) - Expansion Header Pin 8, WSTK Pin 5
     * PC03 -  EUSART0_CS (CSn)   - Expansion Header Pin 10, WSTK Pin 7
 
-* Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm 
+* Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm
           Radio Board (BRD4400C) + Wireless Starter Kit Mainboard
   * Device: EFR32ZG28B312F1024IM68
     * PA11 -  EUSART0_TX (MOSI)  - Expansion Header Pin 3, WSTK Pin 0
@@ -145,10 +145,18 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
     * PA13 -  EUSART0_CLK (SCLK) - Expansion Header Pin 7, WSTK Pin 4
     * PA14 -  EUSART0_CS (CSn)   - Expansion Header Pin 9, WSTK Pin 6
 
-* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board 
-          (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board
+          (BRD4412A) + Wireless Starter Kit Mainboard
   * Device: EFR32MG29B140F1024IM40
     * PA05 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA06 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
     * PB02 -  EUSART0_CLK (SCLK) - Expansion Header Pin 15, WSTK Pin 12
     * PB03 -  EUSART0_CS (CSn)   - Expansion Header Pin 16, WSTK Pin 13
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A)
+        + Wireless Starter Kit Mainboard
+  * Device: EFR32FG2DB010F512IM48
+    * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
+    * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
+    * PA10 -  EUSART0_CLK (SCLK) - Expansion Header Pin 3, WSTK Pin 0
+    * PA07 -  EUSART0_CS (CSn)   - Expansion Header Pin 13, WSTK Pin 10

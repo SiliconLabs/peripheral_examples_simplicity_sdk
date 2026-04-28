@@ -22,7 +22,7 @@ save each byte that is simultaneously received.  `EUSART_Spi_TxRx()` polls
 the FIFO level flag (EUSART_STATUS_TXFL), and, if space is available,
 writes a byte to the transmit data register to be sent.  It then polls
 the receive FIFO level flag (EUSART_STATUS_RXFL) to determine when all
-bits of the incoming frame have been received, which indicates that a 
+bits of the incoming frame have been received, which indicates that a
 complete byte is available to be read from the receive data register.
 
 After BUFLEN characters have been transmitted and received, the chip
@@ -51,7 +51,7 @@ the divisor necessary to derive the desired bit rate.
 ## How To Test
 
 1. This example requires two Starter Kits/Pro Kits for any two Series 2 EFM32
-   or EFR32 devices.  Build the `spi_secondary_polled` example and download it 
+   or EFR32 devices.  Build the `spi_secondary_polled` example and download it
    to the first board.
 
 2. Build this project and download it to the second board.
@@ -75,7 +75,7 @@ the divisor necessary to derive the desired bit rate.
 ## Hardware & Connections
 
 * Board:  Silicon Labs EFR32ZG23 868-915 MHz 14 dBm Radio Board (BRD4204D)
-        + Wireless Starter Kit Mainboard (BRD4001A)
+        + Wireless Starter Kit Mainboard
   * Device: EFR32ZG23B010F512IM48
     * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
@@ -83,7 +83,7 @@ the divisor necessary to derive the desired bit rate.
     * PA07 -  EUSART0_CS (CSn)   - Expansion Header Pin 13, WSTK Pin 10
 
 * Board:  Silicon Labs EFR32xG24 2.4 GHz 10 dBm Radio Board (BRD4186C)
-        + Wireless Starter Kit Mainboard (BRD4001A)
+        + Wireless Starter Kit Mainboard
   * Device: EFR32MG24B210F1536IM48
     * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
@@ -91,7 +91,7 @@ the divisor necessary to derive the desired bit rate.
     * PA07 -  EUSART0_CS (CSn)   - Expansion Header Pin 13, WSTK Pin 10
 
 * Board:  Silicon Labs EFR32FG25 902-928 MHz 14 dBm Radio Board (BRD4270B)
-        + Wireless Starter Kit Mainboard (BRD4001A)
+        + Wireless Starter Kit Mainboard
   * Device: EFR32FG25B222F1920IM56
     * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
@@ -99,7 +99,7 @@ the divisor necessary to derive the desired bit rate.
     * PA07 -  EUSART0_CS (CSn)   - Expansion Header Pin 13, WSTK Pin 10
 
 * Board:  Silicon Labs EFR32xG26 2.4 GHz 20 dBm Radio Board (BRD4117A)
-        + Wireless Starter Kit Mainboard (BRD4001A)
+        + Wireless Starter Kit Mainboard
   * Device: EFR32MG26B420F3200IM48
     * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
@@ -114,7 +114,7 @@ the divisor necessary to derive the desired bit rate.
     * PC02 -  EUSART0_CLK (SCLK) - Expansion Header Pin 8, WSTK Pin 5
     * PC03 -  EUSART0_CS (CSn)   - Expansion Header Pin 10, WSTK Pin 7
 
-* Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm 
+* Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm
           Radio Board (BRD4400C) + Wireless Starter Kit Mainboard
   * Device: EFR32ZG28B312F1024IM68
     * PA11 -  EUSART0_TX (MOSI)  - Expansion Header Pin 3, WSTK Pin 0
@@ -122,10 +122,18 @@ the divisor necessary to derive the desired bit rate.
     * PA13 -  EUSART0_CLK (SCLK) - Expansion Header Pin 7, WSTK Pin 4
     * PA14 -  EUSART0_CS (CSn)   - Expansion Header Pin 9, WSTK Pin 6
 
-* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board 
-          (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board
+          (BRD4412A) + Wireless Starter Kit Mainboard
   * Device: EFR32MG29B140F1024IM40
     * PA05 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA06 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
     * PB02 -  EUSART0_CLK (SCLK) - Expansion Header Pin 15, WSTK Pin 12
     * PB03 -  EUSART0_CS (CSn)   - Expansion Header Pin 16, WSTK Pin 13
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A)
+        + Wireless Starter Kit Mainboard
+  * Device: EFR32FG2DB010F512IM48
+    * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
+    * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
+    * PA10 -  EUSART0_CLK (SCLK) - Expansion Header Pin 3, WSTK Pin 0
+    * PA07 -  EUSART0_CS (CSn)   - Expansion Header Pin 13, WSTK Pin 10

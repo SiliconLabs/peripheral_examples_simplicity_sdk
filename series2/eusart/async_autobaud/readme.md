@@ -38,7 +38,7 @@ duration break character.  This break sequence is used to alert nodes
 on the network that a packet has been started and that a SYNC character
 will arrive next so that all receivers can auto baud.  If a receiver
 were to somehow lose network synchronization, the break character is
-what allows it to resync. 
+what allows it to resync.
 
 Apart from using a protocol like LIN that provides inherent
 protection for proper auto baud operation, another option would be to
@@ -48,7 +48,7 @@ could consist of using a TIMER input capture to start a counter in
 response to the start bit falling edge.  If the counter were to overflow
 or otherwise reach some predetermined value before the auto baud done
 interrupt is requested, firmware could then wait for the EUSART receiver
-to return to the idle state and re-enable auto baud detection. 
+to return to the idle state and re-enable auto baud detection.
 
 ## Peripherals used ##
 
@@ -86,7 +86,7 @@ baud rate:
 Alternatively, the example may be tested with a USB-to-serial converter,
 such as the Silicon Labs CP2102N-EK.  Refer to the list below for the
 mapping of USART signals to Expansion (EXP) Header pins.
-    
+
 ## Hardware & Connections ##
 
 * Board:  Silicon Labs EFR32ZG23 868-915 MHz 14 dBm Radio Board (BRD4204D) + Wireless Starter Kit Mainboard
@@ -123,3 +123,8 @@ mapping of USART signals to Expansion (EXP) Header pins.
    * Device: EFR32MG29B140F1024IM40
       * PA05 -  EUSART0 transmit, Expansion Header Pin 12, WSTK P9
       * PA06 -  EUSART0 receive,  Expansion Header Pin 14, WSTK P11
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard
+    * Device: EFR32FG2DB010F512IM48
+        * PA08 -  EUSART0 transmit, Expansion Header Pin 12, WSTK P9
+        * PA09 -  EUSART0 receive,  Expansion Header Pin 14, WSTK P11

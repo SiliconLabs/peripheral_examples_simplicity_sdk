@@ -11,7 +11,7 @@ It is important to note that because this example runs in secondary mode,
 the GPIO configuration of the EUSART receive and transmit pins is reversed.
 This is reflected in their SPI signal names: Main In/Secondary Out
 (MISO) and Main Out/Secondary In (MOSI).  Thus, in main mode the EUSART_TX and
-EUSART_RX pins are output and input, respectively, while in secondary mode 
+EUSART_RX pins are output and input, respectively, while in secondary mode
 they operate as input (MOSI) and output (MISO), respectively.
 
 Likewise, the clock and chip select pins are also secondary mode inputs.
@@ -29,7 +29,7 @@ A single output buffer is populated with 10 bytes (set by BUFLEN) of
 outbound data that will be overwritten by the incoming data.  The device
 polls for the falling edge of the chip select and then clears the receive
 FIFO.  This step is not necessary in a well-behaved SPI system
-configuration, but because this example is intended to run with one of the 
+configuration, but because this example is intended to run with one of the
 main mode examples, which constantly transmit data, it is required so that
 data is received in the expected order when the main asserts the chip
 select.
@@ -69,17 +69,17 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
     | SCLK     | <-> | SCLK          |
     | CSn      | <-> | CSn           |
 
-4. Before running the example, set a breakpoint at the 
+4. Before running the example, set a breakpoint at the
    `sl_hal_gpio_clear_interrupts` call in the main loop.  The `buffer[]` array
-   contain 0s on initial execution, after which it should hold the values 
-   sent by the main device (0 to 9 inclusive).  The secondary example transfers 
-   data continuously but will not start until PB0 is pressed on the board 
+   contain 0s on initial execution, after which it should hold the values
+   sent by the main device (0 to 9 inclusive).  The secondary example transfers
+   data continuously but will not start until PB0 is pressed on the board
    running the main code.
 
 ## Hardware & Connections
 
 * Board:  Silicon Labs EFR32ZG23 868-915 MHz 14 dBm Radio Board (BRD4204D)
-        + Wireless Starter Kit Mainboard (BRD4001A)
+        + Wireless Starter Kit Mainboard
   * Device: EFR32ZG23B010F512IM48
     * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
@@ -87,7 +87,7 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
     * PA07 -  EUSART0_CS (CSn)   - Expansion Header Pin 13, WSTK Pin 10
 
 * Board:  Silicon Labs EFR32xG24 2.4 GHz 10 dBm Radio Board (BRD4186C)
-        + Wireless Starter Kit Mainboard (BRD4001A)
+        + Wireless Starter Kit Mainboard
   * Device: EFR32MG24B210F1536IM48
     * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
@@ -95,7 +95,7 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
     * PA07 -  EUSART0_CS (CSn)   - Expansion Header Pin 13, WSTK Pin 10
 
 * Board:  Silicon Labs EFR32FG25 902-928 MHz 14 dBm Radio Board (BRD4270B)
-        + Wireless Starter Kit Mainboard (BRD4001A)
+        + Wireless Starter Kit Mainboard
   * Device: EFR32FG25B222F1920IM56
     * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
@@ -103,7 +103,7 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
     * PA07 -  EUSART0_CS (CSn)   - Expansion Header Pin 13, WSTK Pin 10
 
 * Board:  Silicon Labs EFR32xG26 2.4 GHz 20 dBm Radio Board (BRD4117A)
-        + Wireless Starter Kit Mainboard (BRD4001A)
+        + Wireless Starter Kit Mainboard
   * Device: EFR32MG26B420F3200IM48
     * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
@@ -118,7 +118,7 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
     * PC02 -  EUSART0_CLK (SCLK) - Expansion Header Pin 8, WSTK Pin 5
     * PC03 -  EUSART0_CS (CSn)   - Expansion Header Pin 10, WSTK Pin 7
 
-* Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm 
+* Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm
           Radio Board (BRD4400C) + Wireless Starter Kit Mainboard
   * Device: EFR32ZG28B312F1024IM68
     * PA11 -  EUSART0_TX (MOSI)  - Expansion Header Pin 3, WSTK Pin 0
@@ -126,10 +126,18 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
     * PA13 -  EUSART0_CLK (SCLK) - Expansion Header Pin 7, WSTK Pin 4
     * PA14 -  EUSART0_CS (CSn)   - Expansion Header Pin 9, WSTK Pin 6
 
-* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board 
-          (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
+* Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board
+          (BRD4412A) + Wireless Starter Kit Mainboard
   * Device: EFR32MG29B140F1024IM40
     * PA05 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
     * PA06 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
     * PB02 -  EUSART0_CLK (SCLK) - Expansion Header Pin 15, WSTK Pin 12
     * PB03 -  EUSART0_CS (CSn)   - Expansion Header Pin 16, WSTK Pin 13
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A)
+        + Wireless Starter Kit Mainboard
+  * Device: EFR32FG2DB010F512IM48
+    * PA08 -  EUSART0_TX (MOSI)  - Expansion Header Pin 12, WSTK Pin 9
+    * PA09 -  EUSART0_RX (MISO)  - Expansion Header Pin 14, WSTK Pin 11
+    * PA10 -  EUSART0_CLK (SCLK) - Expansion Header Pin 3, WSTK Pin 0
+    * PA07 -  EUSART0_CS (CSn)   - Expansion Header Pin 13, WSTK Pin 10
