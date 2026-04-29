@@ -53,3 +53,7 @@ LETIMER0 - free mode
 * Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
 	* Device: EFR32MG29B140F1024IM40
 		* PA06 - LET0_O0 (Expansion Header Pin 14)
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter/Pro Kit Mainboard (BRD4001A/BRD4002A)
+    * Device: EFR32FG2DB010F512IM48
+        * PA00 - LET0_O0 (Expansion Header Pin 5)
