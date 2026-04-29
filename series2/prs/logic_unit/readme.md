@@ -43,7 +43,7 @@ Note: Various other logic functions like AND, NAND, NOR, XOR, NOT etc are
 available. You can switch between these logic functions by changing the 
 parameters passed when calling PRS_Combine() function in app.c.
 
-Note: For EFR32xG22/xG23/xG24/xG25/xG26/xG27/xG28 devices, you may choose any asynchronous
+Note: For every device besides EFR32xG21 devices, you may choose any asynchronous
 PRS channel as your input B. For EFR32xG21 devices, you have to choose
 (input A - 1) as your input B. This is reflected on the PRS channel selection 
 in the source file.
@@ -117,7 +117,7 @@ Listed below are the port and pin mappings for working with this example.
 
 * Board:  Silicon Labs EFR32xG28 868/915 MHz +14 dBm + 2.4 GHz +10 dBm Radio Board (BRD4400C) + Wireless Starter Kit Mainboard (BRD4001A)
 	* Device: EFR32ZG28B312F1024IM68
-		*PRS 
+		* PRS 
 			* Channel 5, PB0
 			* Channel 6, PB1 routed to LED1 (Output)
 		* PB01 - push button PB0
@@ -126,9 +126,18 @@ Listed below are the port and pin mappings for working with this example.
 		
 * Board:  Silicon Labs EFR32xG29 Wireless 2.4 GHz 8 dBm Buck Radio Board (BRD4412A) + Wireless Starter Kit Mainboard (BRD4001A)
 	* Device: EFR32MG29B140F1024IM40
-		*PRS 
+		* PRS 
 			* Channel 5, PB0
 			* Channel 6, PB1 routed to PC03 (Output)
 		* PB00  - push button PB0
 		* PB01  - push button PB1
 		* PC03  - PRS Channel 6 (Expansion Header 10)
+
+* Board:  Silicon Labs EFR32FG2D 868-915 MHz 14 dBm Radio Board (BRD4277A) + Wireless Starter Kit Mainboard (BRD4001A)
+    * Device: EFR32FG2DB010F512IM48
+		* PRS
+			* Channel 5, PB0
+			* Channel 6, PB1 routed to LED1 (Output)
+		* PB01  - push button PB0
+		* PB03  - push button PB1
+		* PD03  - PRS Channel 6
