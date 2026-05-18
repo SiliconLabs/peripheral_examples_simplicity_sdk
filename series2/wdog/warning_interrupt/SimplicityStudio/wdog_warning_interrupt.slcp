@@ -31,6 +31,8 @@ component:
   - id: emlib_wdog
   - id: silabs_bsp
     from: peripheral_examples
+  - id: silabs_peripheral_config
+    from: peripheral_examples
 configuration:
   - name: "SL_CLOCK_MANAGER_WDOG0CLK_SOURCE"
     value: "CMU_WDOG0CLKCTRL_CLKSEL_ULFRCO"

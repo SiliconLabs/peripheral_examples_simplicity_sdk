@@ -42,6 +42,7 @@
 #include "sl_hal_gpio.h"
 #include "sl_clock_manager.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 // Constants for inter-channel sync transfer
 #define SYNC_SET            0x80

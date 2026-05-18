@@ -24,6 +24,7 @@
 #include "sl_hal_letimer.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 // Desired LETIMER frequency in Hz
 #define LETIMER_FREQ   2

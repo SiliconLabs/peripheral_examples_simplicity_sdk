@@ -23,6 +23,7 @@
 #include "sl_clock_manager.h"
 #include "sl_gpio.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 #define BURTC_LFXO_EN (0)
 

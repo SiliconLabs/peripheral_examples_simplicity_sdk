@@ -23,6 +23,7 @@
 #include "em_vdac.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 // Note: The sine wave output is always generated on Channel 0. Channel 1 may
 // still be used independently as a single-ended DAC output; however, its

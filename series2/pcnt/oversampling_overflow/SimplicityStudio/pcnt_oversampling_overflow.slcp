@@ -23,14 +23,16 @@ include:
 readme:
   - path: ../readme.md
 component:
-- id: sl_main
-- id: silabs_bsp
-  from: peripheral_examples
-- id: clock_manager
-- id: power_manager
-- id: device_init
-- id: emlib_pcnt
-- id: emlib_prs
+  - id: sl_main
+  - id: clock_manager
+  - id: power_manager
+  - id: device_init
+  - id: emlib_pcnt
+  - id: emlib_prs
+  - id: silabs_bsp
+    from: peripheral_examples
+  - id: silabs_peripheral_config
+    from: peripheral_examples
 sdk_extension:
   - id: peripheral_examples
     vendor: silabs

@@ -22,6 +22,7 @@
 #include "em_letimer.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 // Set CLK_ADC to 10 MHz
 #define CLK_SRC_ADC_FREQ        20000000  // CLK_SRC_ADC

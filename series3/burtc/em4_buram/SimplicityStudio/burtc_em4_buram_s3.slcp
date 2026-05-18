@@ -27,6 +27,8 @@ component:
   - id: device_init
   - id: silabs_bsp
     from: peripheral_examples
+  - id: silabs_peripheral_config
+    from: peripheral_examples
   - id: clock_manager
   - id: interrupt_manager
   - id: power_manager

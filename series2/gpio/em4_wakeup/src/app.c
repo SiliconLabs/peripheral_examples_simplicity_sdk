@@ -18,6 +18,7 @@
 #include "sl_clock_manager.h"
 #include "sl_gpio.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 #include "em_rmu.h"
 #include "sl_main_init.h"
 #include "sl_power_manager.h"

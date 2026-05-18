@@ -29,6 +29,8 @@ component:
   - id: power_manager
   - id: silabs_bsp
     from: peripheral_examples
+  - id: silabs_peripheral_config
+    from: peripheral_examples
   - id: hal_acmp
 sdk_extension:
   - id: peripheral_examples

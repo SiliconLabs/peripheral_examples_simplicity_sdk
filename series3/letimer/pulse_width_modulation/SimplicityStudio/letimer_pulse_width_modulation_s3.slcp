@@ -30,6 +30,8 @@ component:
   - id: hal_letimer
   - id: silabs_bsp
     from: peripheral_examples
+  - id: silabs_peripheral_config
+    from: peripheral_examples
 sdk_extension:
   - id: peripheral_examples
     vendor: silabs

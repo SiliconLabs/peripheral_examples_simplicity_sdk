@@ -19,6 +19,7 @@
 #include "sl_gpio.h"
 #include "sl_hal_gpio.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 #include "em_prs.h"
 
 #ifndef BUTTON0_PORT

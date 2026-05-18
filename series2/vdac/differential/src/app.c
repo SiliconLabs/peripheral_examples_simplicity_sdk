@@ -23,6 +23,7 @@
 #include "em_vdac.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 // Set the VDAC to max frequency of 1 MHz
 #define CLK_VDAC_FREQ              1000000

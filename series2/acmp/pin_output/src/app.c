@@ -20,6 +20,7 @@
 #include "sl_hal_gpio.h"
 #include "em_acmp.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 #ifndef BUTTON0_PORT
   #define BUTTON0_PORT LED0_BUTTON0_PORT

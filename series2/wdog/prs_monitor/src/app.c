@@ -23,6 +23,7 @@
 #include "em_rmu.h"
 #include "em_wdog.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 #ifndef LED0_PORT
   #define LED0_PORT LED0_BUTTON0_PORT

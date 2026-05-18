@@ -32,6 +32,8 @@ component:
   - id: dmadrv
   - id: silabs_bsp
     from: peripheral_examples
+  - id: silabs_peripheral_config
+    from: peripheral_examples
 configuration:
   - name: "SL_CLOCK_MANAGER_EUART0CLK_SOURCE"
     value: "CMU_EUART0CLKCTRL_CLKSEL_EM23GRPACLK"

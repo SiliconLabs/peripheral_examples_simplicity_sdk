@@ -41,6 +41,7 @@
 #include "sl_clock_manager.h"
 #include "sl_gpio.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 #define PD01REGNORETAIN  0  // EM0/1 peripheral register retention
 #define SCAN_FREQ        8  // 8 Hz

@@ -29,6 +29,7 @@
 #include "stdio.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 // Number of 1 KHz ULFRCO clocks between BURTC interrupts
 #define BURTC_IRQ_PERIOD  3000

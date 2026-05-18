@@ -36,6 +36,8 @@ component:
   - id: emlib_gpio
   - id: silabs_bsp
     from: peripheral_examples
+  - id: silabs_peripheral_config
+    from: peripheral_examples
 configuration:
   - name: "SL_CLOCK_MANAGER_HFRCOEM23_BAND"
     value: "cmuHFRCOEM23Freq_1M0Hz"

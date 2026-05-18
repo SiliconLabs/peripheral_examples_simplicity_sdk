@@ -23,6 +23,7 @@
 #include "em_vdac.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 // Select which VDAC channel to use (0 or 1)
 #define CHANNEL_NUM 0

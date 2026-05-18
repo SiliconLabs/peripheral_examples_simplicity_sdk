@@ -21,6 +21,7 @@
 #include "sl_hal_prs.h"
 #include "sl_hal_wdog.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 const sl_gpio_t GPIO_LED0 = { .port = LED0_PORT, .pin = LED0_PIN };
 const sl_gpio_t GPIO_PRS_WDOG = { .port = WDOG_PRS_PORT, .pin = WDOG_PRS_PIN };

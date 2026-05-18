@@ -21,6 +21,7 @@
 #include "sl_hal_gpio.h"
 #include "sl_hal_prs.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 #define PRS_CH_A 6
 #define PRS_CH_B 1

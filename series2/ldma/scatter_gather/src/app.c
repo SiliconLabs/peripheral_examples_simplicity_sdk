@@ -39,6 +39,7 @@
 #include "sl_gpio.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 // DMA channel used for the example
 #define LDMA_CHANNEL         0

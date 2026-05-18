@@ -31,6 +31,8 @@ component:
   - id: emlib_rmu
   - id: silabs_bsp
     from: peripheral_examples
+  - id: silabs_peripheral_config
+    from: peripheral_examples
 configuration:
   - name: "SL_POWER_MANAGER_INIT_EMU_EM4_PIN_RETENTION_MODE"
     value: "EMU_EM4CTRL_EM4IORETMODE_SWUNLATCH"

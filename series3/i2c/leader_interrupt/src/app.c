@@ -23,6 +23,7 @@
 #include "sl_hal_i2c.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 #include "app.h"
 

@@ -20,6 +20,7 @@
 #include "sl_hal_gpio.h"
 #include "sl_hal_letimer.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 // Desired frequency in Hz
 #define OUT_FREQ 1000

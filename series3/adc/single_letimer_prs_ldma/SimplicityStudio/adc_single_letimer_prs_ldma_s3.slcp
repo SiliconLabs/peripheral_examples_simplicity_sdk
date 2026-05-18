@@ -28,6 +28,8 @@ component:
   - id: clock_manager
   - id: silabs_bsp
     from: peripheral_examples
+  - id: silabs_peripheral_config
+    from: peripheral_examples
   - id: hal_adc
   - id: hal_ldma
   - id: hal_letimer

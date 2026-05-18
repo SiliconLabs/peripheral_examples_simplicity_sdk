@@ -23,6 +23,7 @@
 #include "sl_hal_gpio.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 /*
  * Desired ADC TIMER frequency in Hz; ADC TIMER period is based on CLK_SRC_ADC,

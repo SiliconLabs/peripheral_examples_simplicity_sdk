@@ -23,6 +23,7 @@
 #include "sl_gpio.h"
 #include "sl_interrupt_manager.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 /******************************************************************************
  *******************************   DEFINES   **********************************

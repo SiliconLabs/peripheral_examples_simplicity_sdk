@@ -42,6 +42,7 @@
 #include "sl_clock_manager.h"
 #include "sl_gpio.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 #define PD01REGNORETAIN  1  // EM0/1 peripheral register retention
 

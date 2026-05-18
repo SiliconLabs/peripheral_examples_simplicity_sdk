@@ -23,6 +23,7 @@
 #include "em_eusart.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 // Size of the buffer for received data
 #define BUFLEN  10

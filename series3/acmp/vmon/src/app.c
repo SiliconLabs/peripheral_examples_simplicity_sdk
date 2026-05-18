@@ -20,6 +20,7 @@
 #include "sl_gpio.h"
 #include "sl_hal_acmp.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 const sl_gpio_t GPIO_LED0 = { .port = LED0_PORT, .pin = LED0_PIN };
 

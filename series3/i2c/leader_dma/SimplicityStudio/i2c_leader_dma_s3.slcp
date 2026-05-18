@@ -32,6 +32,8 @@ component:
   - id: dmadrv
   - id: silabs_bsp
     from: peripheral_examples
+  - id: silabs_peripheral_config
+    from: peripheral_examples
 configuration:
   - name: "SL_BOARD_ENABLE_SENSOR_RHT"
     value: "1"

@@ -23,6 +23,7 @@
 #include "sl_hal_gpio.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 const sl_gpio_t GPIO_ADC_INPUT0  = { .port = ADC_INPUT0_PORT,
                                      .pin  = ADC_INPUT0_PIN };

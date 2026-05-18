@@ -36,6 +36,8 @@ component:
   - id: emlib_gpio
   - id: silabs_bsp
     from: peripheral_examples
+  - id: silabs_peripheral_config
+    from: peripheral_examples
 configuration:
   - name: "SL_CLOCK_MANAGER_EM23GRPACLK_SOURCE"
     value: "CMU_EM23GRPACLKCTRL_CLKSEL_LFRCO"

@@ -34,6 +34,8 @@ component:
   - id: dmadrv
   - id: silabs_bsp
     from: peripheral_examples
+  - id: silabs_peripheral_config
+    from: peripheral_examples
 configuration:
   - name: "SL_CLOCK_MANAGER_IADCCLK_SOURCE"
     value: "CMU_IADCCLKCTRL_CLKSEL_FSRCO"

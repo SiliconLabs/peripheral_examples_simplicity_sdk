@@ -23,6 +23,7 @@
 #include "sl_hal_adc.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 /*
  * Upper and lower bound for Window Comparator

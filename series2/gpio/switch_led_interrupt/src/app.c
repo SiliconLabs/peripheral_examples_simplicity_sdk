@@ -19,6 +19,7 @@
 #include "sl_interrupt_manager.h"
 #include "sl_gpio.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 // Define GPIO mapping for boards where LED0 and button0 share the same pins
 #ifndef BUTTON0_PORT

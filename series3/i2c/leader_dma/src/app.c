@@ -26,6 +26,7 @@
 #include "sl_hal_ldma.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 // Address of the I2C follower device (left-shifted to bits [7:1])
 #define I2C_FOLLOWER_ADDRESS    0xE2

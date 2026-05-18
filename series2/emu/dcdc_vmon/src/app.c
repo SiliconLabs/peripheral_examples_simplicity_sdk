@@ -17,6 +17,7 @@
 
 #include "em_emu.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 #include "sl_interrupt_manager.h"
 #include "sl_gpio.h"
 

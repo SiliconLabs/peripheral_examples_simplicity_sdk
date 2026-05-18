@@ -25,6 +25,7 @@
 #include "sl_hal_ldma.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 // Define number samples to capture
 #define NUM_SAMPLES   10

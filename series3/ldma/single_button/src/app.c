@@ -41,6 +41,7 @@
 #include "sl_clock_manager.h"
 #include "sl_device_peripheral.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 // DMA channel used for the example
 #define LDMA_CHANNEL        0

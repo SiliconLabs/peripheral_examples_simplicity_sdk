@@ -23,6 +23,7 @@
 #include "sl_hal_i2c.h"
 
 #include "pin_config.h"
+#include "peripheral_config.h"
 
 #define I2C_ADDRESS       0xE2
 #define I2C_BUFFER_SIZE   10

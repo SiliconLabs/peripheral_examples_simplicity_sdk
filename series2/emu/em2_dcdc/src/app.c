@@ -20,6 +20,7 @@
 #include "em_burtc.h"
 #include "sl_gpio.h"
 #include "pin_config.h"
+#include "peripheral_config.h"
 #include "sl_clock_manager.h"
 #include "sl_power_manager.h"
 
