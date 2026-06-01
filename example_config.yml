@@ -621,6 +621,7 @@ example:
     - brd4111a # Removing xG27 Boost Radio Board
     - brd4400c # Removing xG28 Radio Board due to lack of RTCC peripheral
     - brd4420a # Removing xG29 Boost Radio Board
+    - brd4277a # Removing xG2D Radio Board due to lack of RTCC peripheral
 
   # TIMER examples
 - path: series2/timer/dma_edge_capture/SimplicityStudio/timer_dma_edge_capture.slcp

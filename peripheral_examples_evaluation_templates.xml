@@ -1400,8 +1400,8 @@
     <properties key="solutionReferenceId" value="extension.peripheral_examples_simplicity_sdk.series2.rtcc.interrupt.SimplicityStudio.rtcc_interrupt.slcp"/>
     <properties key="projectFilePaths" value="series2/rtcc/interrupt/SimplicityStudio/rtcc_interrupt.slcp"/>
     <properties key="readmeFiles" value="series2/rtcc/interrupt/readme.md"/>
-    <properties key="boardCompatibility" value="brd4181a brd4182a brd4194a brd4277a brd4412a com.silabs.board.none"/>
-    <properties key="partCompatibility" value=".*efr32fg2d.* .*efr32mg21.* .*efr32mg22.* .*efr32mg27.* .*efr32mg29.*"/>
+    <properties key="boardCompatibility" value="brd4181a brd4182a brd4194a brd4412a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32mg21.* .*efr32mg22.* .*efr32mg27.* .*efr32mg29.*"/>
     <properties key="ideCompatibility" value="generic-template iar-embedded-workbench makefile-ide simplicity-ide visual-studio-code"/>
     <properties key="toolchainCompatibility" value="gcc iar llvm"/>
     <properties key="category" value="Example|Peripheral Examples"/>
