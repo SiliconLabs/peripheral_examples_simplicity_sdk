@@ -15,27 +15,27 @@ metadata:
   sbom:
     license: MSLA
 config_file:
-  - path: series2/kit/EFR32BG27_BRD4111A/peripheral_config.h
+  - path: components/series2/EFR32BG27_BRD4111A/peripheral_config.h
     condition: [brd4111a]
-  - path: series2/kit/EFR32FG25_BRD4270B/peripheral_config.h
+  - path: components/series2/EFR32FG25_BRD4270B/peripheral_config.h
     condition: [brd4270b]
-  - path: series2/kit/EFR32MG21_BRD4181A/peripheral_config.h
+  - path: components/series2/EFR32MG21_BRD4181A/peripheral_config.h
     condition: [brd4181a]
-  - path: series2/kit/EFR32MG22_BRD4182A/peripheral_config.h
+  - path: components/series2/EFR32MG22_BRD4182A/peripheral_config.h
     condition: [brd4182a]
-  - path: series2/kit/EFR32MG24_BRD4186C/peripheral_config.h
+  - path: components/series2/EFR32MG24_BRD4186C/peripheral_config.h
     condition: [brd4186c]
-  - path: series2/kit/EFR32MG26_BRD4117A/peripheral_config.h
+  - path: components/series2/EFR32MG26_BRD4117A/peripheral_config.h
     condition: [brd4117a]
-  - path: series2/kit/EFR32MG27_BRD4194A/peripheral_config.h
+  - path: components/series2/EFR32MG27_BRD4194A/peripheral_config.h
     condition: [brd4194a] 
-  - path: series2/kit/EFR32ZG23_BRD4204D/peripheral_config.h
+  - path: components/series2/EFR32ZG23_BRD4204D/peripheral_config.h
     condition: [brd4204d]
-  - path: series2/kit/EFR32ZG28_BRD4400C/peripheral_config.h
+  - path: components/series2/EFR32ZG28_BRD4400C/peripheral_config.h
     condition: [brd4400c]
-  - path: series2/kit/EFR32MG29_BRD4412A/peripheral_config.h
+  - path: components/series2/EFR32MG29_BRD4412A/peripheral_config.h
     condition: [brd4412a]
-  - path: series2/kit/EFR32BG29_BRD4420A/peripheral_config.h
+  - path: components/series2/EFR32BG29_BRD4420A/peripheral_config.h
     condition: [brd4420a]
-  - path: series3/kit/SIMG301_BRD4407A/peripheral_config.h
+  - path: components/series3/SIMG301_BRD4407A/peripheral_config.h
     condition: [brd4407a]
