@@ -18,6 +18,7 @@
 #include "sl_clock_manager.h"
 #include "sl_interrupt_manager.h"
 #include "sl_gpio.h"
+#include "sl_hal_gpio.h"
 #include "sl_hal_prs.h"
 #include "pin_config.h"
 
