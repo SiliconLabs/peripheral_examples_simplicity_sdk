@@ -28,7 +28,7 @@ CMU    - HFRCODPLL @ 38MHz
 
 ## How to Test ##
 
-1. Update the kit's firmware from the Simplicity Launcher (if necessary)
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the project and download to the Wireless Starter Kit, then exit
    from the debugger.
 3. Open the Simplicity Studio's Energy Profiler.  Select Start Energy Capture

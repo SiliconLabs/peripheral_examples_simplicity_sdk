@@ -35,14 +35,13 @@ needed. See the reference manual for more details.
 
 ## How To Test
 
-1. Update the kit's firmware from the Simplicity Studio Launcher, if
-   necessary.
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the project and download it to the Starter Kit.
-3. Open the Debugger and add "scanResult" to the Expressions window.
+3. Open the Debugger and add "scanResult" to the Watch/Variables window.
 4. Using an oscilloscope, monitor the GPIO output, which toggles after
    each scan is complete (every 1 ms).
 5. Set a breakpoint at the end of the IADC_IRQHandler.
-6. At the breakpoint, observe the measured voltages in the Expressions
+6. At the breakpoint, observe the measured voltages in the Watch/Variables
    window and how they respond to different voltage values on the
    corresponding pins (see below).
 

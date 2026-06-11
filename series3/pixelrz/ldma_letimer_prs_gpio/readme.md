@@ -18,7 +18,7 @@ In rainbow mode, the LETIMER is configured to underflow at a frequency of 500 Hz
 
 ## How to Test ##
 
-1. Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Power the LED strip to a 5V power supply.
 3. Connect the LED strip Data In signal to the Wireless Pro Kit as defined in Hardware & Connections section.
 4. Build the example project and download it to the target system.

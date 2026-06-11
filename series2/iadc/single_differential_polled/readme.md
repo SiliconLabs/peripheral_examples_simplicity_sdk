@@ -24,14 +24,14 @@ clocks has no effect on xG21 devices.
   
 ## How to Test ##
 
-1. Update the kit's firmware from the Simplicity Launcher (if necessary).
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the project and download it to the Starter Kit.
-3. Open the Simplicity Debugger and add `singleResult` to the Expressions 
+3. Start a debug session in the IDE and add `singleResult` to the Watch/Variables 
    Window.
 4. Set a breakpoint at the first function within the infinite while loop 
    (`IADC_command`).
 5. Run the example project.
-6. At the breakpoint, observe the measured voltage in the Expressions Window 
+6. At the breakpoint, observe the measured voltage in the Watch/Variables window 
    and how it responds to different voltage values on the corresponding pins.
 
 > The first time the program halts at the breakpoint, the values in the 
@@ -40,7 +40,7 @@ show the previous conversion loop results.
 
 > Note: If you want to view the raw result from the IADC instead of the 
 converted voltage, you can watch `sample` in addition to `singleResult` in 
-the Expressions Window. 
+the Watch/Variables window. 
 
 ## Hardware & Connections ##
 

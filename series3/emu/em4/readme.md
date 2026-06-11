@@ -21,7 +21,7 @@ In both configurations, all GPIOs are disabled to eliminate external leakage pat
 
 ## How to Test ##
 
-1. Ensure the kit firmware is up to date using the Simplicity Studio Launcher.  
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary). 
 2. Open `app.c` and select the desired EM4 configuration by setting the `USE_BURTC_IN_EM4` macro (`1` to enable BURTC during EM4, `0` to disable it).  
 3. Build and flash the project to the Wireless Starter Kit, then exit the debugger.  
 4. Open Simplicity Studio’s Energy Profiler.  

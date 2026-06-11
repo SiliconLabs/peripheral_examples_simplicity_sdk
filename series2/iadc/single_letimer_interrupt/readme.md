@@ -41,12 +41,12 @@ the reference manual for more details.
 
 ## How To Test
 
-1. Update the kit's firmware from the Simplicity Launcher (if necessary)
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Build the project and download to the Starter Kit
-3. Open the Simplicity Debugger and add "singleResult" to the Expressions Window
+3. Start a debug session in the IDE and add "singleResult" to the Watch/Variables window
 4. Set a breakpoint at the end of the IADC_IRQHandler (IADC_command)
 5. Run the example project
-6. At the breakpoint, observe the measured voltage in the Expressions Window
+6. At the breakpoint, observe the measured voltage in the Watch/Variables window
    and how they respond to different voltage values on the corresponding pin 
    (see below)
 

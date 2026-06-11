@@ -43,9 +43,9 @@ clocks has no effect on xG21 devices.
 
 ## How to Test ##
 
-1. Update the kit's firmware from the Simplicity Launcher (if necessary).
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the project and download it to the Starter Kit.
-3. Open the Simplicity Debugger and add `singleBuffer` to the Expressions 
+3. Start a debug session in the IDE and add `singleBuffer` to the Watch/Variables 
    Window.
 4. Set a breakpoint at the end of the `ldma_callback`.  
    * For EFR32MG21 Radio Board BRD4181A, jumper PA06 to PD02 to use the 
@@ -53,7 +53,7 @@ clocks has no effect on xG21 devices.
      for PRS in EM2.)
 5. Run the example project; press push button PB0 `NUM_SAMPLES` times to 
    collect IADC samples.
-6. At the breakpoint, observe `singleBuffer` in the Expressions Window and how 
+6. At the breakpoint, observe `singleBuffer` in the Watch/Variables window and how 
    it responds to different voltage values on the corresponding pin.
 
 ## Hardware & Connections ##

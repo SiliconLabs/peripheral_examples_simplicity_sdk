@@ -53,21 +53,39 @@ This repo contains simple peripheral examples based on emlib in Simplicity SDK f
 
 ## Requirements ##
 1. A compatible **Silicon Labs Starter Kit**
-2. **Simplicity Studio 5**
+2. **Simplicity Studio 6**
 3. **Simplicity SDK** (match the SDK version noted in the commit tag)
-4. Clone this repository into the Simplicity SDK extension directory:`C:\Users\<username>\SimplicityStudio\SDKs\simplicity_sdk\extension` 
+4. Clone this repository to a local directory (any location is supported), for example:`C:\Users\<username>\SimplicityStudio\extensions` 
 
-## Importing Examples into Simplicity Studio 5 ##
-1. Launch **Simplicity Studio 5**.
-2. Select your development board using either:
-   - the **My Products** tab, or  
-   - the **Adapter** tab  
-3. In the Launcher perspective, click **Manage SDKs** under **Preferred SDKs** and enable the SDK where the examples are installed as an extension.
-4. To browse available examples:
-   - choose **Create New Project** from the *Overview* tab, or  
-   - open the **Examples and Demos** tab  
-5. Apply the filter: **32-bit MCU**
-6. Select an example and click **Create** to import it into your workspace.
+## Installing the SDK Extension 
+
+In Simplicity Studio 6, extensions must be installed through the Studio and attached to a specific SDK.
+
+1. Open **Settings**
+2. Navigate to **SDKs**
+3. Locate your installed **Simplicity SDK**
+4. Click **Add Extension**
+5. Browse to the folder where this repository was cloned
+6. Select the extension and click **Finish**
+7. When prompted, click **Trust**
+
+## Importing Examples into Simplicity Studio 6 ##
+
+1. Launch **Simplicity Studio 6**
+2. Open the Devices view by clicking the **DEVICES** button
+3. Select your development board:
+   - from the **CONNECTED** section (if hardware is attached), or
+   - from the **VIRTUAL** section (if no hardware is connected)
+4. To locate your device, use:
+   - the **search bar**, or
+   - filters such as **Technology**, **Device Type**, or **Board**
+5. Click on your selected device to open its device view
+6. In the device view, click **Create New Project**
+7. In the **Example Projects & Demos** page:
+   - browse or filter available examples
+   - select an example
+   - click **CREATE**  
+8. Complete project configuration and click **Finish** to import the example into your workspace
 
 ## Adding Support for a New Board
 These peripheral examples use the `peripheral_examples_evaluation_templates.xml` file along with a custom component that provides dedicated Pin Configuration headers to support multiple development boards. To add support for a new board:
@@ -76,7 +94,7 @@ These peripheral examples use the `peripheral_examples_evaluation_templates.xml`
 Modify the `partCompatibility` and `boardCompatibility` entries for the example inside: `peripheral_examples_evaluation_templates.xml`
 
 ### 2. Add a Pin Configuration File
-Create a new `pin_config.h` file for your board and place it under the appropriate kit directory, following the structure used by existing boards.
+Create a new `pin_config.h` file for your board and place it under the appropriate kit directory, following the structure used by existing boards
 Example: `series2/kit/EFR32MG21_BRD4181A/pin_config.h`
 
 ### 3. Update `silabs_bsp.slcc`

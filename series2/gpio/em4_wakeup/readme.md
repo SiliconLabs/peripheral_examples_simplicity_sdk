@@ -22,8 +22,7 @@ for EFR32MG21 and PB0 for all others devices) while performing a reset.
 ## How to Test ##
 
 1. Build the project and download it to the Starter Kit.
-2. Terminate the debug session and return to the IDE or Launcher in
-   Simplicity Studio,
+2. Terminate the debug session.
 3. Observe the current consumption of the device to verify that it is in
    EM4 using Studio's Energy Profiler.
 4. Press Escape Hatch button to exit EM4.

@@ -27,17 +27,17 @@ NOTE: To modify this example to take a differential external measurement, the ne
 
 ## How to Test ##
 
-1. Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Place the Wireless Pro Kit power switch into BAT to disconnect the debugger's power
 3. Attach an external adjustable power supply to GND and VMCU pins of the WPK Expansion Header: 
    * Connect positive 3.3 VDC to EXP pin 2
    * Connect negative GND (0.0 VDC) to EXP pin 1
 4. Build the example project and download it to the target system.
-5. Open the Simplicity Debugger perspective and add "sample" and "scanResults" to the Expressions Window.
+5. Start a debug session in the IDE and add "sample" and "scanResults" to the Watch/Variables window.
 6. Set a breakpoint at the end of the ADC0_Handler().
 7. Run the example project.
 8. Slowly adjust the external supply voltage down to the threshold for AVDD/IOVDD/DVDD (near or below 1.70V)
-9. At the breakpoint, observe the raw data sample and calculated voltages for the four internal supplies within the Expressions window:
+9. At the breakpoint, observe the raw data sample and calculated voltages for the four internal supplies within the Watch/Variables window:
 10. Observe the LED0 toggle while input voltage is within the specified comparison window.
 
 ## Hardware & Connections ##

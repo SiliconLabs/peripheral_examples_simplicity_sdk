@@ -30,7 +30,7 @@ Option 2 – HFRCODPLL configuration
 
 ## How to Test ##
 
-1. Update the kit’s firmware from the Simplicity Studio Launcher (if necessary).  
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary). 
 2. Open `app.c` and select the desired mode by setting the `USE_EM1DIV16` macro (`1` for EM1DIV16 or `0` for EM1); when EM1 is selected (`USE_EM1DIV16 = 0`), the SYSCLK source can be chosen using the `USE_EM1_HFRCODPLL_100MHZ` macro.
 3. Build the project and download it to the Wireless Starter Kit, then exit the debugger.
 4. Open Simplicity Studio’s Energy Profiler.

@@ -35,9 +35,9 @@ ACMP_IF_RISE interrupt and vice versa in response to ACMP_IF_FALL.
 ## How to Test ##
 
 ### Basic testing ###
-1. Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the example project and download it to the target system.
-3. If in the Simplicity Studio Debugger, disconnect from the target system by terminating the debug sussion (navigate to the Run menu and click Disconnect).
+3. If debugging is active, terminate the debug session in your IDE to disconnect from the target device.
 4. Slide the target system power switch to the BAT positrion to disconnect the debugger's power.
 5. Attach a power supply to GND and VMCU pins of the mainboard expansion header; 3.30 V should be connected to EXP pin 2 and 0.0 V applied EXP pin 1.
 6. Vary the power supply voltage above and below the 2.54 V threshold while otherwise observing the datasheet-specified supply range.
@@ -46,8 +46,8 @@ ACMP_IF_RISE interrupt and vice versa in response to ACMP_IF_FALL.
 ### Simplified Testing With A Pro Kit Mainboard (BRD40002A): ###
 
 1. Follow steps 1, 2, and 3 above.
-2. While in the Simplicity Studio IDE, right-click on the target system in the Debug Adapters panel and select Launch Console...
-3. Click the Admin tab, then press Enter.
+2. While in the Simplicity Studio IDE, navigate to **Tools → Device Manager Tool**.
+3. Select your board, click **Configure**, then open **Terminal → Admin**.
 4. Change the VMCU supply voltage to 2.2 V by typing "target voltage 2.20 --nocalibrate" (no quotation marks) and pressing Enter. LED0 will be on and LED1 will be off. 
 5. Raise VMCU back to the typical 3.3 V by typing "target voltage 3.30 --nocalibrate" (again, no quotation marks) and pressing Enter. LED1 will be on and LED0 will be off.
 6. When testing is complete, close the console tab in the IDE.
@@ -56,9 +56,7 @@ ACMP_IF_RISE interrupt and vice versa in response to ACMP_IF_FALL.
 
 VMCU powers only the serial flash and the IOVDD0 and IOVDD1 supplies on BRD4270B. A separate 3.6 V LDO on the radio board powers the remaining supply rails. To test supply monitoring on BRD4270B, the LDO must be bypassed so that VMCU can be used instead. This requires two resistor changes that are described below. After making these modifications, testing can be performed as described above, with the exception that instead of LED0 and LED1, PA08 and PA09 respectively must be observed with an oscilloscope, as ports C and D are not available in EM2/3. 
 
-1. Select the target system in the Debug Adapters panel from within the Simplicity Studio Launcher view.
-2. Select the Documentation tab, then check the Schematic and Layout Files Resource Type checkbox. Open the schematic and assembly files for BRD4270B.
-3. On the radio board, remove 0 ohm resistor R211 and install 0 ohm resistor R210. Use the assembly drawing to locate the resistors on the radio board.
+On the radio board, remove 0 ohm resistor R211 and install 0 ohm resistor R210. Refer to the BRD4270B schematic and assembly documentation for details. Search for these resistor designators in the assembly file to identify their exact locations on the board.
 
 ### Reducing Current: ###
 

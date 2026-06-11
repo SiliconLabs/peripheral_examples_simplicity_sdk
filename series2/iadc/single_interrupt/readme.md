@@ -35,13 +35,12 @@ In this example, the single input channel may be a pin with an odd-numbered iden
 
 ## How To Test
 
-1. Update the kit's firmware from the Simplicity Studio Launcher, if
-   necessary.
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the project and download to the Starter Kit.
-3. Open the Debugger and add "singleResult" to the Expressions window.
+3. Open the Debugger and add "singleResult" to the Watch/Variables window.
 4. Set a breakpoint at the end of the IADC_IRQHandler.
 5. Run the example project
-6. At the breakpoint, observe the measured voltages in the Expressions
+6. At the breakpoint, observe the measured voltages in the Watch/Variables
    window and how it responds to different voltage values on the
    corresponding pin.
 

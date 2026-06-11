@@ -30,16 +30,16 @@ NOTE: To modify this example to take a differential external measurement, the ne
 
 ## How to Test ##
 
-1. Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the example project and download it to the target system.
-3. Open the Simplicity Debugger perspective and add "scanBuffer" to the Expressions Window.
+3. Start a debug session in the IDE and add "scanBuffer" to the Watch/Variables window.
 4. Set a breakpoint at the end of the ldma_callback() function.
 5. Run the example project.
 6. Press and release push button BTN0 (rising edge on release) NUM_SAMPLES / 2 times to collect ADC samples (2 conversions per scan)
    * Vary voltage between presses to observe change in conversion results once LDMA transfer completes.
    * Observe LED0 toggle on/off. 
    * Both channel conversions are present in the buffer, meaning every other conversion result corresponds to each of the two channels. Channel ID is stored in the raw data's 8 MSBs. 
-7. At the breakpoint, observe the raw data stored in the buffer within the Expressions window:
+7. At the breakpoint, observe the raw data stored in the buffer within the Watch/Variables window:
    * Observe how these values respond to different voltage inputs on the corresponding pin.
 8. Repeat steps 5-7
 

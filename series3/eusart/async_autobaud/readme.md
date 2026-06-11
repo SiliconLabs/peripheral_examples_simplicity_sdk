@@ -74,10 +74,9 @@ to return to the idle state and re-enable auto baud detection.
 > NOTE: The WSTK board controller defaults to 115200 baud for the virtual
 COM port (JLink CDC UART Port).  Follow these steps to use a different
 baud rate:
-1. From the Simplicity Studio Launcher, select the J-Link adapter in the
-   Debug Adapters window, right-click on it and select Launch Console.
-2. When the console appears, switch to the Admin tab, click in the input
-   area, and press Enter.  The WSTK> prompt will appear.
+1. While in the Simplicity Studio IDE, navigate to **Tools → Device Manager Tool**.
+2. Select your board, click **Configure**, then open **Terminal → Admin**.
+   The WSTK> prompt will appear.
 3. To change the virtual COM (VCOM) port baud rate, enter the following
    command:
 

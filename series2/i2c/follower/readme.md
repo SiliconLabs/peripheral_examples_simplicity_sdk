@@ -44,8 +44,7 @@ information, visit https://www.silabs.com/about-us/inclusive-lexicon-project
 1.  Connect the SDA, SCL and GND lines between two kits via the EXP header
 2.  Jumper 4.7kOhm pull-up resistors from VMCU to the SDA and SCL lines (only
     one pull-up needed for each line).
-3.  Open Simplicity Studio and update each kit's firmware from the Simplicity
-    Launcher (if necessary)
+3.  Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 4.  Build both the leader and follower projects and download to two Starter Kits
 5.  For follower kit, in the drop-down menu, select "Profile As Simplicity
     Energy Profiler Target"

@@ -17,7 +17,7 @@ By default, the project sets `USE_HFRCODPLL_100MHZ` to `1`, which switches the S
 
 ## How to Test ##
 
-1. Update the kit’s firmware from the Simplicity Studio Launcher (if necessary).  
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary). 
 2. Open `app.c` and select the desired mode by setting the `USE_HFRCODPLL_100MHZ` variable to `1` for the HFRCODPLL based EM0 example or `0` for the SOCPLL based EM0 example.
 3. Build the project and download it to the Wireless Starter Kit, then exit the debugger.  
 4. Open Simplicity Studio’s Energy Profiler.  

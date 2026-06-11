@@ -34,12 +34,12 @@ NOTE: To modify this example to take a differential external measurement, the ne
 
 ## How to Test ##
 
-1. Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the example project and download it to the target system.
-3. Open the Simplicity Debugger perspective and add "singleBuffer" to the Expressions Window.
+3. Start a debug session in the IDE and add "singleBuffer" to the Watch/Variables window.
 4. Set a breakpoint at the end of the ldma_callback().
 5. Run the example project.
-6. At the breakpoint, observe the raw data stored in the buffer within the Expressions window:
+6. At the breakpoint, observe the raw data stored in the buffer within the Watch/Variables window:
    * LDMA callback is called when transfer completes after NUM_SAMPLES of LETIMER underflow events.
    * Observe how these values respond to different voltage inputs on the corresponding pin.
    * Both channel conversions are present in the buffer, meaning every other conversion result corresponds to each of the two channels. Channel ID is stored in the raw data's 8 MSBs. 

@@ -46,10 +46,9 @@ needed. See the reference manual for more details.
 
 ## How To Test
 
-1. Update the kit's firmware from the Simplicity Studio Launcher, if
-   necessary.
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the project and download to the Starter Kit.
-3. Open the Debugger and add "scanBuffer" to the Expressions window.
+3. Open the Debugger and add "scanBuffer" to the Watch/Variables window.
 4. On BRD4181A for EFR32xG21 only, jumper PA06 to PD02 in order to use
    push button 0 to trigger each scan sequence.  Alternatively, toggle
    PA06 low then high repeatedly to generate the falling edge triggers.
@@ -58,7 +57,7 @@ needed. See the reference manual for more details.
 7. Press push button 0 (or toggle PA06 on EFR32xG21 BRD4181A) to trigger
    a scan conversion sequence.  Do this 5 times to collect 10 (the
    default for NUM_SAMPLES) total IADC samples.
-8. At the breakpoint, observe the conversion results in the Expressions
+8. At the breakpoint, observe the conversion results in the Watch/Variables
    window and how they respond to different voltage values on the
    corresponding pins.
 

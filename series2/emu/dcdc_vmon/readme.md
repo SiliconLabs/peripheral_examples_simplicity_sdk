@@ -13,9 +13,9 @@ EMU
 ## How to Test ##
 
 ### Basic testing ###
-1. Update the kit's firmware from the Simplicity Launcher (if necessary)
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Build the project and download to the Starter Kit
-3. If connected, disconnect Simplicity Studio debugger from the starter kit (just click disconnect button in Simplicity Studio)
+3. If debugging is active, terminate the debug session in your IDE to disconnect from the target device
 4. Place the Starter Kit power switch into BAT to disconnect the debugger's power 
 5. Attach a power supply to GND and VMCU pins of the WSTK Expansion Header; Positive 3.30V should be applied to EXP pin 2 and 0.0V applied to EXP pin 1
 6. Press the reset button the mainboard
@@ -27,8 +27,8 @@ Note: When applying voltages independently to supply rails, please observe the o
 ### Simplified Testing With A Pro Kit Mainboard (BRD40002A): ###
 
 1. Follow steps 1, 2, and 3 above.
-2. While in the Simplicity Studio IDE, right-click on the target system in the Debug Adapters panel and select Launch Console...
-3. Click the Admin tab, then press Enter.
+2. While in the Simplicity Studio IDE, navigate to **Tools → Device Manager Tool**.
+3. Select your board, click **Configure**, then open **Terminal → Admin**.
 4. Change the VMCU supply voltage to 2 V by typing "target voltage 2 --nocalibrate" (no quotation marks) and pressing Enter. LED1 will turn on. 
 5. Raise VMCU back to the typical 3.3 V by typing "target voltage 3.30 --nocalibrate" (again, no quotation marks) and pressing Enter. LED1 will turn off.
 6. When testing is complete, close the console tab in the IDE.
@@ -38,13 +38,9 @@ VMCU only powers IOVDD0-1 and the serial flash on BRD4270B. The 3.6 V LDO powers
 rest of the rails on the radio board. Therefore, in order to use VMCU to control the
 threshold for different voltage monitoring rails, VMCU will need to power all the rails.
 To test the DC-DC voltage monitoring example on BRD4270B, make the following modification:
-1. Complete Steps 1 and 2 from the "How to Test" section above.
-2. Select the device in the Debug Adapters pane within the Simplicity Studio
-   Launcher view. 
-3. Select the Documentation tab, then check the Schematic and Layout file 
-   resource checkbox. Open the schematic and assembly files for BRD4270B.
-4. Unmount resistor R211 and mount resistor R210. Search for the resistors in the assembly 
-   file to determine its position on the board.
+1. Complete Steps 1 and 2 from the "Basic testing" section above.
+2. Unmount resistor R211 and mount resistor R210. Refer to the BRD4270B schematic and assembly documentation for details. Search for these resistor designators in the assembly file to identify their exact locations on the board.
+3. Complete Steps 4 to 8 from the "Basic testing" section above.
 
 ## Hardware & Connections ##
 

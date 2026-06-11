@@ -18,9 +18,9 @@ consecutive transfers you do.
 
 ## How To Test ##
 
-1. Update the kit's firmware from the Simplicity Launcher (if necessary)
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Build the project and download to the Starter Kit
-3. Open the Simplicity Debugger and add "results" to the Expressions window
+3. Start a debug session in the IDE and add "results" to the Watch/Variables window
 4. Run the debugger, then pause it. You should notice that "results" is
    filled with "checked" values
 

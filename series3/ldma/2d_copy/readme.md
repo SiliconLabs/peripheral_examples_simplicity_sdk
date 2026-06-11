@@ -33,12 +33,12 @@ from the source matrix to index (2, 1) of the destination matrix.
 
 ## How to Test ##
 
-1. Update the kit's firmware from the Simplicity Launcher (if necessary)
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Build the project and download to the Pro Kit
-3. Open Simplicity Debugger and add "dst2d" to the Expressions window
+3. Start a debug session in the IDE and add "dst2d" to the Watch/Variables window
 4. Add a breakpoint to the beginning of ldma_callback()
 5. Run the debugger. It should halt inside the callback subroutine
-6. You can expand the "dst2d" variable in the Expressions window to see that the
+6. You can expand the "dst2d" variable in the Watch/Variables window to see that the
    submatrix has been successfully transferred. LED0 will toggle
 
 ## Hardware & Connections ##

@@ -30,15 +30,14 @@ If an I2C error is detected or the write data is not verified when re-read from 
 
 1.  Connect the SDA, SCL and GND lines between two kits via the EXP header.
 2.  This example enables external I2C bus pull-ups on the Wireless Pro Kit as stated in the note in the description. If developing with custom or different hardware, external pull-up resistors are likely needed from VMCU to the SDA and SCL lines (only one pull-up needed for each line).
-3.  Open Simplicity Studio and update each kit's firmware from the Simplicity
-    Launcher (if necessary).
+3.  Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 4.  Build the follower project and download it to one of the kits. It is not necessary for this kit to be connected to a PC running Simplicity Studio. Power can, for example, be provided by a USB wall charger.
 5.  Build the leader project and download it to the kit that will be connected to the debugger during testing.
 6.  Run the leader example. It will enter the main loop and wait for PB0. Before continuing, press the reset button of the kit running the follower example.
 7.  Press PB0 on the leader kit to trigger an I2C test (read follower buffer, increment, write, read, verify).
 8.  Observe LED0 toggle with a successful I2C test.
 9.  Click the Pause button (parallel yellow bars) in the debugger to suspend code execution.
-10. Observe that the values received from the follower match the values transmitted by leader by adding "i2c_rxBuffer" and "i2c_txBuffer", which are global variables, to the list in the Expressions tab.
+10. Observe that the values received from the follower match the values transmitted by leader by adding "i2c_rxBuffer" and "i2c_txBuffer", which are global variables, to the list in the Watch/Variables tab.
 
 ## Hardware & Connections ##
 

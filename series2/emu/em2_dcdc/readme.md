@@ -29,7 +29,7 @@ the debugger connection can be resumed to erase flash, etc.
 BURTC  - 32.768 kHz LFRCO clock source
 
 ## How to Test ##
-1. Update the kit's firmware from the Simplicity Launcher (if necessary)
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Build the project and download to the Wireless Starter Kit, then exit
    from the debugger.
 3. Open the Simplicity Studio's Energy Profiler.  Select Start Energy Capture
@@ -57,17 +57,13 @@ by the output of the DCDC, IOVDD0-1 is powered by VMCU on the radio board and
 IOVDD2 is powered by the USB_VREG. To measure the 3.6V LDO current, the 
 following extra steps must be taken.
 1. Complete Steps 1 and 2 from the "How to Test" section above.
-2. Select the device in the Debug Adapters pane within the Simplicity Studio
-   Launcher view. 
-2. Select the Documentation tab, then check the Schematic and Layout file 
-   resource checkbox. Open the schematic and assembly files for BRD4270B.
-3. Resistor R247 is a 0 Ohm resistor that can be removed to  measure the 
-   current consumption of the device. Search for this resistor in the assembly 
-   file to determine its position on the board. This resistor is present on the 
-   underside of BRD4270B. 
-4. Remove R247 and solder two leads to each pad where R247 was previously. 
+2. Resistor R247 is a 0 Ohm resistor that can be removed to  measure the 
+   current consumption of the device. Refer to the BRD4270B schematic and assembly 
+   documentation for details. Search for these resistor designators in the assembly 
+   file to identify their exact locations on the board.
+3. Remove R247 and solder two leads to each pad where R247 was previously. 
    Connect these leads to a multimeter to measure the current consumption of the 
-   device.
+   device. 
 
 ### Additional note for Testing on xG27 ###
 On xG27 devices, the top 8 KB of RAM (BLK1) **MUST** remain powered in EM2/3

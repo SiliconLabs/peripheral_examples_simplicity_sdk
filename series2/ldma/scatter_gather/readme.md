@@ -48,10 +48,10 @@ srcBuffer =  0,  1,  2,  3,  4,  5,  6,  7,
   
 ## How to Test ##
 
-1. Update the kit's firmware from the Simplicity Launcher (if necessary)
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Build the project and download to the Starter Kit
-3. Open Simplicity Debugger and add "srcBuffer" and "dstBuffer" to the
-   Expressions window
+3. Start a debug session in the IDE and add "srcBuffer" and "dstBuffer" to the
+   Watch/Variables window
 4. Add a breakpoint inside ldmaCallback()
 5. Run the debugger. It should halt inside the callback subroutine with values in
    dstBuffer that match the values described above. LED0 will toggle

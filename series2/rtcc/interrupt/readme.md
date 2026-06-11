@@ -18,7 +18,7 @@ an LED.
 * GPIO
 
 ## How To Test: ##
-1. Update the kit's firmware from the Simplicity Launcher (if necessary)
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Build the project and download it to the Starter Kit
 3. Close debug session in IDE
 4. Press the reset button on the mainboard

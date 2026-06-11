@@ -29,10 +29,10 @@ GPIO pin whenever the IADC finishes one single conversion.
 
 ## How to Test ##
 
-1. Update the kit's firmware from the Simplicity Launcher (if necessary).
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the project and download it to the Starter Kit.
-3. Open the Simplicity Debugger and add `sample` and `singleResult` to the 
-   Expressions Window.
+3. Start a debug session in the IDE and add `sample` and `singleResult` to the 
+   Watch/Variables window.
 4. Apply a voltage to the IADC input pin.
 5. Observe the `sample` field:  
   - 16-bit result: `singleResult = sample * VREF / (2^16)`  
@@ -41,7 +41,7 @@ GPIO pin whenever the IADC finishes one single conversion.
   - 16-bit resolution: period ≈ 13 µs (≈ 77 kHz sampling)  
   - 20-bit resolution: period ≈ 208 µs (≈ 4.8 kHz sampling)  
 7. Suspend the debugger and observe how the measured voltage in the 
-   Expressions Window responds to different input voltages.
+   Watch/Variables window responds to different input voltages.
 
 ## Hardware & Connections ##
 

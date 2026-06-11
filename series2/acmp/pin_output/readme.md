@@ -27,7 +27,7 @@ This functionality is available in all energy modes except EM4.
 ## How to Test ##
 
 ### EFR32xG25 ###
-1.  Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
+1.  Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2.  Build the example project and download it to the target system.
 3.  Press and hold button PB1; Observe the interrupt driven GPIO using an oscilloscope. The output will be 1.
 4.  When button PB1 is released; Observe the interrupt driven GPIO using an oscilloscope. The output will be 0.
@@ -36,7 +36,7 @@ BRD4270B radio board is handled differently from the other radio boards because 
 
 ### EFR32xG27 and EFR32xG29 ###
 
-1.  Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
+1.  Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2.  Build the example project and download it to the target system.
 3.  Press and hold button PB1; both LED0 and LED1 will turn on.
 4.  When button PB1 is released; LED0 and LED1 will turn off.
@@ -45,7 +45,7 @@ Note that PB1 and LED1 share the same pin, which is why LED1 toggles
 even though the LED0 pin is configured as the comparator output.
 
 ### All other devices ###
-1.  Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
+1.  Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2.  Build the example project and download it to the target system.
 3.  Press and hold button PB1; LED0 will turn on.
 4.  When button PB1 is released; LED0 will turn off.

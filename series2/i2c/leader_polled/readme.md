@@ -71,8 +71,7 @@ must be provided when running this project.
     (e.g. SCL can be connected to VMCU on one kit and SDA to VMCU on the
     other kit).
 
-3.  Open Simplicity Studio and update each kit's firmware from the Launcher,
-    if necessary.
+3.  Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 
 4.  Build the follower project and download it to one of the kits.  It
     is not necessary for this kit to be connected to a PC running
@@ -96,7 +95,7 @@ must be provided when running this project.
 
 10. Observe that the values received from the follower match the values
     transmitted by leader by adding "i2c_rxBuffer" and "i2c_txBuffer",
-    which are global variables, to the list in the Expressions tab.
+    which are global variables, to the list in the Watch/Variables tab.
 
 ## Hardware & Connections
 

@@ -50,13 +50,12 @@ needed. See the reference manual for more details.
 
 ## How to Test
 
-1. Update the kit's firmware from the Simplicity Studio Launcher, if
-   necessary.
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the project and download to the Starter Kit.
-3. Open the Debugger and add "scanBuffer" to the Expressions window.
+3. Open the Debugger and add "scanBuffer" to the Watch/Variables window.
 4. Set a breakpoint at the end of the ldma_callback.
 5. Run the project.
-6. At the breakpoint, observe the measured voltages in the Expressions
+6. At the breakpoint, observe the measured voltages in the Watch/Variables
    window and how they respond to different voltage values on the
    corresponding pins.
 

@@ -22,9 +22,9 @@ Like the acmp_interrupt and acmp_pin_output examples, operation is in EM1, such 
 
 ## How to Test ##
 
-1. Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the example project and download it to the target system.
-3. If in the Simplicity Studio Debugger, disconnect from the target system by terminating the debug sussion (navigate to the Run menu and click Disconnect).
+3. If debugging is active, terminate the debug session in your IDE to disconnect from the target device.
 4. Slide the target system power switch to the BAT positrion to disconnect the debugger's power.
 5. Attach a power supply to GND and VMCU pins of the mainboard expansion header; 3.30 V should be connected to EXP pin 2 and 0.0 V applied EXP pin 1.
 6. Vary the power supply voltage above and below the 2.54 V threshold while otherwise observing the datasheet-specified supply range.
@@ -32,8 +32,8 @@ Like the acmp_interrupt and acmp_pin_output examples, operation is in EM1, such 
 
 Simplified Testing With A Pro Kit Mainboard (BRD40002A):
 1. Follow steps 1, 2, and 3 above.
-2. While in the Simplicity Studio IDE, right-click on the target system in the Debug Adapters panel and select Launch Console...
-3. Click the Admin tab, then press Enter.
+2. While in the Simplicity Studio IDE, navigate to **Tools → Device Manager Tool**.
+3. Select your board, click **Configure**, then open **Terminal → Admin**.
 4. Change the VMCU supply voltage to 2.2 V by typing "target voltage 2.20" (no quotation marks) and pressing Enter. LED0 will be on.
 5. Raise VMCU back to the typical 3.3 V by typing "target voltage 3.30" (again, no quotation marks) and pressing Enter. LED0 will be off.
 6. When testing is complete, close the console tab in the IDE.

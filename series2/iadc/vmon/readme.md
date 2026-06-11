@@ -34,10 +34,9 @@ both channels are also stored globally.
 
 ## How to Test ##
 
-1. Update the kit's firmware from the Simplicity Launcher (if necessary)
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Build the project and download to the Starter Kit
-3. Disconnect Simplicity Studio debugger from the starter kit (just click 
-   disconnect button in Simplicity Studio)
+3. If debugging is active, terminate the debug session in your IDE to disconnect from the target device
 4. Place the Starter Kit power switch into BAT to disconnect the debugger's power
 5. Attach a power supply to GND and VMCU pins of the WSTK Expansion Header; 
    Positive voltage should be applied to EXP pin 2 and 0.0V applied to EXP pin 1
@@ -56,12 +55,10 @@ rest of the rails on the radio board. Therefore, in order to use VMCU to control
 threshold for different voltage monitoring rails, VMCU will need to power all the rails.
 To test the IADC voltage monitoring example on BRD4270B, make the following modification:
 1. Complete Steps 1 and 2 from the "How to Test" section above.
-2. Select the device in the Debug Adapters pane within the Simplicity Studio
-   Launcher view. 
-2. Select the Documentation tab, then check the Schematic and Layout file 
-   resource checkbox. Open the schematic and assembly files for BRD4270B.
-3. Unmount resistor R211 and mount resistor R210. Search for the resistors in the assembly 
-   file to determine its position on the board.
+2. Unmount resistor R211 and mount resistor R210. Refer to the BRD4270B schematic and 
+   assembly documentation for details. Search for these resistor designators in the 
+   assembly file to identify their exact locations on the board.
+3. Complete Steps 4 to 7 from the "How to Test" section above.
   
 ## Hardware & Connections ##
 

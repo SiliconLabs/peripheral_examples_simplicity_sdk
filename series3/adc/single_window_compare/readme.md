@@ -26,13 +26,13 @@ NOTE: To modify this example to take a differential external measurement, the ne
 
 ## How to Test ##
 
-1. Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the example project and download it to the target system.
-3. Open the Simplicity Debugger perspective and add "sample" and "singleResult" to the Expressions Window.
+3. Start a debug session in the IDE and add "sample" and "singleResult" to the Watch/Variables window.
 4. Set a breakpoint at the end of the ADC0_Handler().
 5. Run the example project.
 6. Adjust the analog input voltage between the defined window (between 0.60V and 1.80V)
-7. At the breakpoint, observe the raw data and calculated voltage in the Expressions window:
+7. At the breakpoint, observe the raw data and calculated voltage in the Watch/Variables window:
    * Observe how these values respond to different voltage inputs on the corresponding pin.
 8. Observe the LED0 toggle while input voltage is within the specified comparison window.
 

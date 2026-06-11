@@ -50,8 +50,7 @@ one pin per port.
    "JLink CDC UART Port" that is provided by the board controller on the
    Starter Kit mainboard.
 5. Now run the example on the device configured as the INITIAL_TRANSMITTER
-   (the device with the active connection in the Simplicity Studio
-   debugger).
+   (the device with the active connection in the debugger).
 6. If successful, the terminal program window should show:
    Initial RX: Receive success and transmitting now
    Initial TX: Receive success and transmitting now

@@ -20,12 +20,12 @@ There are interrupts triggered after the second and fourth descriptors.
 
 ## How to Test ##
 
-1. Update the kit's firmware from the Simplicity Launcher (if necessary)
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Build the project and download to the Pro Kit
-3. Open Simplicity Debugger and add "dest_buffer" to the Expressions window
+3. Start a debug session in the IDE and add "dest_buffer" to the Watch/Variables window
 4. Add a breakpoint at the beginning of ldma_callback()
 5. Run the debugger. It should halt inside the callback subroutine with the
-   first two descriptors complete (this can be seen in the Expressions window).
+   first two descriptors complete (this can be seen in the Watch/Variables window).
    LED0 will toggle
 6. Resume the debugger. It should halt inside the callback subroutine again
    after all the descriptors have completed.

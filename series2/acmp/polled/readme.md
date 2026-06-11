@@ -26,7 +26,7 @@ the GPIO pin connected to LED0 is driven low or high in response.
 
 ### EFR32xG27 and EFR32xG29 ###
 
-1.  Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
+1.  Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2.  Build the example project and download it to the target system.
 3.  Press and hold button PB1; both LED0 and LED1 will turn on.
 4.  When button PB1 is released; LED0 and LED1 will turn off.
@@ -36,7 +36,7 @@ even though the LED0 pin is configured as the comparator output.
 
 ### All other boards ###
 
-1.  Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
+1.  Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2.  Build the example project and download it to the target system.
 3.  Press and hold button PB1; LED0 will turn on.
 4.  When button PB1 is released; LED0 will turn off.

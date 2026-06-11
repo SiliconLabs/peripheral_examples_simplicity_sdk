@@ -27,14 +27,14 @@ clocks has no effect on xG21 devices.
 ## How to Test ##
 
 How To Test:
-1. Update the kit's firmware from the Simplicity Launcher (if necessary)
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Build the project and download to the Starter Kit
-3. Open the Simplicity Debugger and add "sample" and "singleResult" to the 
-   Expressions window
+3. Start a debug session in the IDE and add "sample" and "singleResult" to the 
+   Watch/Variables window
 4. Observe GPIO output (WSTK LED1) using an oscilloscope while varying the input
    voltage; GPIO will toggle while the input is within the specified window, and
    hold steady to the last state when the input voltage moves outside the window 
-5. Suspend the debugger, observe the measured voltage in the Expressions Window
+5. Suspend the debugger, observe the measured voltage in the Watch/Variables window
    of the most recent conversion within the specified window.
   
 ## Hardware & Connections ##

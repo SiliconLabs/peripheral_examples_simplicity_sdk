@@ -29,7 +29,7 @@ sequence.
 
 ## How to Test ##
 
-1. Update the Starter Kit's firmware via Simplicity Studio if needed.
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the project and download it to the Starter Kit.
 3. Run the program.
 4. Press the pause button. The program should halt in a `app_process_action()` loop.

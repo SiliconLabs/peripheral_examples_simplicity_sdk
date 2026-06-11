@@ -16,8 +16,8 @@ the CPU isn't busy.
 ## How to Test ##
 
 1. Build the project and download it to the Thunderboard
-2. Open the Simplicity Debugger and add `ping_buffer`, `pong_buffer`, `left`, and `right` to the Expressions Window
-3. Suspend the debugger; observe the data buffers in the Expressions Window
+2. Start a debug session in the IDE and add `ping_buffer`, `pong_buffer`, `left`, and `right` to the Watch/Variables window
+3. Suspend the debugger; observe the data buffers in the Watch/Variables window
 
 > Note:
 In order to change this example to use receive mono audio from a single MEMs

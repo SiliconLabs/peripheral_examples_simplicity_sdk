@@ -27,10 +27,10 @@ clocks has no effect on xG21 devices.
 
 ## How to Test ##
 
-1. Update the kit's firmware from the Simplicity Launcher (if necessary).
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the project and download it to the Starter Kit.
-3. Open the Simplicity Debugger and add `sample` and `singleResult` to the 
-   Expressions Window.
+3. Start a debug session in the IDE and add `sample` and `singleResult` to the 
+   Watch/Variables window.
 4. Set a breakpoint at the first function within the infinite while loop 
    (`IADC_command`).
 5. Run the example.
@@ -43,7 +43,7 @@ clocks has no effect on xG21 devices.
    to apply a zero volt potential across the IADC inputs.
 9. Once the IADC inputs are shorted, press and release PB0 again.
 10. At the breakpoint, observe the raw data and measured voltage in the 
-    Expressions Window. Measurement results should be near zero voltage as the 
+    Watch/Variables window. Measurement results should be near zero voltage as the 
     IADC inputs are still shorted.
 11. Remove the jumper from across the differential inputs, and connect a 
     variable voltage source (stay at or below full scale to avoid damaging the 

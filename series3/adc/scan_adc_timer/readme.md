@@ -26,12 +26,12 @@ NOTE: To modify this example to take a differential external measurement, the ne
 
 ## How to Test ##
 
-1. Open Simplicity Studio and update the kit's firmware from the Simplicity Launcher (if necessary).
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary).
 2. Build the example project and download it to the target system.
-3. Open the Simplicity Debugger perspective and add "sample" and "scanResults" to the Expressions Window.
+3. Start a debug session in the IDE and add "sample" and "scanResults" to the Watch/Variables window.
 4. Set a breakpoint at the end of the ADC0_Handler().
 5. Run the example project.
-6. At the breakpoint, observe the raw data sample and calculated voltages within the Expressions window:
+6. At the breakpoint, observe the raw data sample and calculated voltages within the Watch/Variables window:
    * Observe how these values respond to different voltage inputs on the corresponding pins.
 7. Using an oscilloscope, observe the ADC GPIO output toggle with each two channel scan completion.
 

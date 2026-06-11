@@ -28,7 +28,7 @@ CPU. At this point, a the debugger connection can be resumed to erase flash, etc
 BURTC  - 32.768 kHz LFRCO clock source
 
 ## How to Test ##
-1. Update the kit's firmware from the Simplicity Launcher, if necessary.
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Using two jumper-wires, electrically connect `ETAMPOUT0` to `ETAMPIN0` and 
    `ETAMPOUT1` to `ETAMPIN1`
 3. Build the project and download to the Wireless Starter Kit, then exit
@@ -52,22 +52,16 @@ IOVDD2 is powered by the VLDO_3V3. To best replicate datasheet test conditions
 for current consumption measurements, the VDD and VLDO_3V3 net configurations
 need to also be powered by VMCU. Please use the following extra steps:
 1. Complete Steps 1 and 2 from the "How to Test" section above.
-2. Select the device in the Debug Adapters pane within the Simplicity Studio
-   Launcher view. 
-2. Select the Documentation tab, then check the Schematic and Layout file 
-   resource checkbox. Open the schematic and assembly files for BRD4270B.
-3. Resistors R210 and R211 are 0 Ohm resistor jumpers used to select the supply
+2. Resistors R210 and R211 are 0 Ohm resistor jumpers used to select the supply
    configuration for net VDD. By default, R210 is not populated and R211 is
-   populated, powering VDD through VLDO_3V6. Search for these resistors in the 
-   assembly file to determine their position on the board. These resistors are
-   both located on the underside of BRD4270B. 
-4. Remove R211 and solder a 0 Ohm resistor to R210.
-5. Resistors R202 and R248 are 0 Ohm resistor jumpers used to select the supply
+   populated, powering VDD through VLDO_3V6. Refer to the BRD4270B schematic and assembly 
+   documentation for details. Search for these resistor designators in the assembly 
+   file to identify their exact locations on the board.
+3. Remove R211 and solder a 0 Ohm resistor to R210.
+4. Resistors R202 and R248 are 0 Ohm resistor jumpers used to select the supply
    configuration for net VLDO_3V3. By default, R202 is not populated and R248 is
-   populated, powering VLDO_3V3 through onboard LDO. Search for these resistors
-   in the assembly file to determine their position on the board. These
-   resistors are both located on the underside of BRD4270B. 
-6. Remove R248 and solder a 0 Ohm resistor to R202.
+   populated, powering VLDO_3V3 through onboard LDO. 
+5. Remove R248 and solder a 0 Ohm resistor to R202.
 
 ### Note for Testing on xG27 ###
 On BRD4194A, VMCU is a 3.3V supply that powers AVDD and IOVDD on xG27.

@@ -28,9 +28,9 @@ benchmarking data) is available here - https://github.com/SiliconLabs/platform_a
 * LDMA  - Channel 0
 
 ## How To Test ##
-1. Update the kit's firmware from the Simplicity Launcher (if necessary)
+1. Open Simplicity Studio and update the kit's firmware using **Device Manager Tool**(if necessary)
 2. Build the project and download to the Starter Kit
-3. Open the Simplicity Debugger and add "crcResult" to the Expressions window
+3. Start a debug session in the IDE and add "crcResult" to the Watch/Variables window
 4. Add a breakpoint in the crcCheckResult() function where crcResult is read out
 5. Run the debugger. You should see it the same values in crcResult and 
    FIBONACCI_CRC_16WORDS.  

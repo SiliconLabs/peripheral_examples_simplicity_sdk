@@ -16,8 +16,7 @@ connect to the device.
 ## How to Test ##
 
 1. Build the project and download it to the Starter Kit.
-2. Terminate the debug session and return to the IDE or Launcher in
-   Simplicity Studio.
+2. Terminate the debug session and return to the IDE.
 3. Observe the current consumption of the device to verify that it is in
    EM4 using Studio's Energy Profiler.
 4. Press PB0 to exit EM4.
