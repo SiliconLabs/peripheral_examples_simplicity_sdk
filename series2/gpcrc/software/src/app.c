@@ -16,7 +16,6 @@
  ******************************************************************************/
 
 #include "em_gpcrc.h"
-#include "em_ldma.h"
 #include "sl_clock_manager.h"
 
 /* The width of the CRC calculation and result.
