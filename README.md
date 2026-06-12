@@ -55,23 +55,59 @@ This repo contains simple peripheral examples based on emlib in Simplicity SDK f
 ## Requirements ##
 1. A compatible **Silicon Labs Starter Kit**
 2. **Simplicity Studio 6**
-3. **Simplicity SDK** (match the SDK version noted in the commit tag)
-4. Clone this repository to a local directory (any location is supported), for example:`C:\Users\<username>\SimplicityStudio\extensions` 
+3. **Simplicity SDK** (match the SDK version noted in the commit tag, if cloning directly)
 
-## Installing the SDK Extension 
+## Obtaining the Peripheral Examples
+There are two ways to obtain the peripheral examples:
 
-In Simplicity Studio 6, extensions must be installed through the Studio and attached to a specific SDK.
+### Option 1 (Recommended): Install via Simplicity Installer/SLT
+The peripheral examples are available as an installable extension directly within **Simplicity Installer/SLT**, making this the easiest way to get started (no repository cloning required).
+> The version of the peripheral examples installed through Simplicity Studio is automatically aligned with your installed **Simplicity SDK**. 
 
-1. Open **Settings**
-2. Navigate to **SDKs**
-3. Locate your installed **Simplicity SDK**
-4. Click **Add Extension**
-5. Browse to the folder where this repository was cloned
-6. Select the extension and click **Finish**
+#### Using Simplicity Installer (GUI)
+1. Download **Simplicity Installer** for your OS  
+2. Open **Simplicity Installer**
+3. Click on **Installation Wizard**
+4. Click **Technology Install**
+5. Select **Peripheral Examples** under *Optional Packages*
+6. Click **NEXT**
+7. Accept the Terms of Use and License Agreement
+8. Click **INSTALL** to begin installation
+
+#### Using Silicon Labs Tool (SLT CLI)
+1. Download **Silicon Labs Tool (SLT)** for your OS  
+2. Extract the archive and add the directory to your system `PATH`
+3. Install the SDK (this will also make associated extensions available):
+```bash
+slt install simplicity-sdk
+```
+
+### Option 2: Clone from GitHub (Manual Installation)
+> ⚠️ **Important:**  
+> You must clone or check out the **repository tag/commit that matches your Simplicity SDK version** to ensure compatibility.
+
+```bash
+git clone https://github.com/SiliconLabsSoftware/peripheral_examples.git
+cd peripheral_examples
+git checkout <sdk-matching-tag>
+```
+
+Then install it as an SDK extension:
+1. Open **Simplicity Studio 6 → Settings**  
+2. Navigate to **SDKs**  
+3. Select your installed **Simplicity SDK**  
+4. Click **Add Extension**  
+5. Browse to the cloned repository folder  
+6. Select the extension and click **Finish**  
 7. When prompted, click **Trust**
 
-## Importing Examples into Simplicity Studio 6 ##
+## Post-Installation Steps
+After successful installation:
+1. Restart Simplicity Studio to ensure the extension is properly loaded.
+2. Verify Installation, open **settings → SDKs**  and confirm that **Peripheral Examples** appears as extension under SDK 
+3. Explore peripheral examples that are available in the **Example Projects & Demos** view when creating a new project.
 
+## Importing Examples into Simplicity Studio 6 ##
 1. Launch **Simplicity Studio 6**
 2. Open the Devices view by clicking the **DEVICES** button
 3. Select your development board:
@@ -94,34 +130,29 @@ These peripheral examples use the `peripheral_examples_evaluation_templates.xml`
 ### 1. Update Compatibility Metadata
 Modify the `partCompatibility` and `boardCompatibility` entries for the example inside: `peripheral_examples_evaluation_templates.xml`
 
-### 2. Add a Pin Configuration File
-Create a new `pin_config.h` file for your board and place it under the appropriate kit directory, following the structure used by existing boards
-Example: `series2/kit/EFR32MG21_BRD4181A/pin_config.h`
+### 2. Add Configuration Files
+Create a new `pin_config.h` file and a new `peripheral_config.h` file for your board and place it under the appropriate directory, following the structure used by existing boards
+Example: `components/series2/EFR32MG21_BRD4181A/pin_config.h`
 
-### 3. Update `silabs_bsp.slcc`
-Append the new pin configuration path:
+### 3. Update `silabs_bsp.slcc` and `silabs_peripheral_config.slcc` files
+Append the new configuration path. 
+
+For example:
 ```yaml
 - override:
     component: "%extension-peripheral_examples%silabs_bsp"
-- path: series2/kit/EFR32MG21_BRD4181A/pin_config.h
+- path: components/series2/EFR32MG21_BRD4181A/pin_config.h
   condition: [brd4181a]
   ```
 
 ### 4. Refresh the SDK
-After installing the extension:
-1. Open **Window → Preferences**
-2. Navigate to **Simplicity Studio → SDKs**
-3. Click **Refresh**
-
-
-## ⚠️ Compatibility Warning
-
-SiXG301 is **not supported** when using the IAR toolchain **v9.40.1**, which is the latest version officially supported by the Simplicity SDK noted in this repository's commit tag. Refer to the Simplicity SDK release notes for more information.
+1. Open **settings → SDKs**
+2. Select the SDK version used and click **Refresh**
 
 ## Reporting Bugs/Issues and Posting Questions and Comments ##
 
 All examples in this repo is are considered EVALUATION QUALITY, meaning this code has been minimally tested to ensure that it builds with the specified dependencies and is suitable as a demonstration for evaluation purposes only. This code will be maintained at the sole discretion of Silicon Labs.
 
-To report bugs in the peripheral example projects, please create a new "Issue" in the "Issues" section of this repo.  Please reference the board, project, and source files associated with the bug, and reference line numbers.  If you are proposing a fix, also include information on the proposed fix.  Silicon Labs engineers will address bugs and push them to the public repository periodically.
+To report bugs in the peripheral example projects, please create a new "Issue" in the "Issues" section of this repo (https://github.com/SiliconLabsSoftware/peripheral_examples).  Please reference the board, project, and source files associated with the bug, and reference line numbers.  If you are proposing a fix, also include information on the proposed fix.  Silicon Labs engineers will address bugs and push them to the public repository periodically.
 
 Questions and comments related to the peripheral examples should be made by creating a new "Issue" in the "Issues" section of this repo.
