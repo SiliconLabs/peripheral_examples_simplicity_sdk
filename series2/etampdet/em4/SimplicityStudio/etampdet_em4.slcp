@@ -31,7 +31,7 @@ component:
   - id: emlib_rmu
   - id: power_manager
   - id: emlib_burtc
-  - id: sl_sleeptimer
+  - id: sleeptimer
   - id: silabs_bsp
     from: peripheral_examples
   - id: silabs_peripheral_config

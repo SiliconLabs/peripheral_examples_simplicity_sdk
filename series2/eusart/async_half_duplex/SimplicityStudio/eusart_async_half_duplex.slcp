@@ -28,7 +28,7 @@ component:
   - id: clock_manager
   - id: emlib_eusart
   - id: power_manager
-  - id: power_manager_no_deepspleep
+  - id: power_manager_no_deepsleep
   - id: interrupt_manager
   - id: silabs_bsp
     from: peripheral_examples
