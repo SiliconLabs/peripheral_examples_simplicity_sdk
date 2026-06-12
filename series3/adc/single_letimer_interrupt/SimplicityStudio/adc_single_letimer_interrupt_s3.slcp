@@ -36,5 +36,5 @@ component:
 sdk_extension:
   - id: peripheral_examples
     vendor: silabs
-    version: 1.1.0
+    version: 2.0.0
   

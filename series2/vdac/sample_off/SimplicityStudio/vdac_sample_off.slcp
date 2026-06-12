@@ -35,7 +35,7 @@ component:
 sdk_extension:
   - id: peripheral_examples
     vendor: silabs
-    version: 1.1.0
+    version: 2.0.0
 configuration:
   - name: "SL_CLOCK_MANAGER_VDAC0CLK_SOURCE"
     value: "CMU_VDAC0CLKCTRL_CLKSEL_EM23GRPACLK"
