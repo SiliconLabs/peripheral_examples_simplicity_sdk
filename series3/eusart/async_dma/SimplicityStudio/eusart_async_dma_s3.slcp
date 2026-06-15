@@ -44,4 +44,5 @@ sdk_extension:
   - id: peripheral_examples
     vendor: silabs
     version: 2.0.0
-  
+define:
+  - name: SL_SUPPRESS_DEPRECATION_WARNINGS_SDK_2026_6
