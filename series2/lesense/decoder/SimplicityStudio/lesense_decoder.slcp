@@ -28,9 +28,7 @@ component:
   - id: device_init
   - id: clock_manager
   - id: power_manager
-  - id: dmadrv
   - id: emlib_acmp
-  - id: emlib_ldma
   - id: emlib_lesense
   - id: emlib_gpio
   - id: silabs_bsp
