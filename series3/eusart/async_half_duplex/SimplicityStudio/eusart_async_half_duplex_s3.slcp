@@ -41,5 +41,5 @@ configuration:
 sdk_extension:
   - id: peripheral_examples
     vendor: silabs
-    version: 2.0.0
+    version: 2.1.0
   

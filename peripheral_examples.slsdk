@@ -1,10 +1,10 @@
 # Properties file for Simplicity Studio metadata
 id=uc.extension.peripheral_examples
 
-version=2.0.0
+version=2.1.0
 
 label=peripheral_examples
 description=Peripheral Examples for Simplicity SDK
 
 prop.file.templatesFile=peripheral_examples_evaluation_templates.xml
-prop.subLabel=Peripheral\\ Examples\\ Simplicity\\ SDK\\2.0.0
+prop.subLabel=Peripheral\\ Examples\\ Simplicity\\ SDK\\2.1.0
